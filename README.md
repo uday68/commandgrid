@@ -1,4 +1,4 @@
-# NexaFlow
+# CommandGrid
 
 
 
@@ -22,11 +22,11 @@ git push -uf origin main
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/vuday8370/nexaflow/-/settings/integrations)
+- [ ] [Set up project integrations](https://github.com/uday68/commandgrid/-/settings/integrations)
 
 ## Collaborate with your team
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
+- [ ] [Invite team members and collaborators](https://docs.github.com/ee/user/project/members/)
 - [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
 - [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
 - [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
