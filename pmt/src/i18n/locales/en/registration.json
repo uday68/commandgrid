@@ -1,0 +1,87 @@
+{
+  "title": "Create Your Account",
+  "subtitle": "Join thousands of teams and start your journey to better project management",
+  "welcome": {
+    "title": "Welcome to IntelliFlow",
+    "subtitle": "The smarter way to manage projects with AI-powered insights, real-time collaboration and simplified workflows.",
+    "features": {
+      "security": "Enterprise-grade security with end-to-end encryption",
+      "collaboration": "Real-time collaboration across teams and time zones",
+      "efficiency": "AI-powered automation to save 30% of your time"
+    }
+  },
+  "steps": {
+    "account": "Account",
+    "personal": "Personal",
+    "team": "Team",
+    "organization": "Organization",
+    "admin": "Admin",
+    "review": "Review"
+  },
+  "registrationType": {
+    "individual": "Individual",
+    "team": "Team",
+    "company": "Company",
+    "companyAdmin": "Company + Admin"
+  },
+  "fields": {
+    "email": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone Number",
+    "companyName": "Company Name",
+    "industry": "Industry",
+    "companySize": "Company Size",
+    "role": "Your Role",
+    "teamName": "Team Name",
+    "teamDescription": "Team Description",
+    "teamSize": "Team Size",
+    "address": "Address",
+    "city": "City",
+    "state": "State/Province",
+    "zipCode": "ZIP/Postal Code",
+    "country": "Country",
+    "category": "Company Category",
+    "sector": "Business Sector",
+    "adminFirstName": "Admin First Name",
+    "adminLastName": "Admin Last Name",
+    "adminEmail": "Admin Email",
+    "adminPassword": "Admin Password",
+    "adminConfirmPassword": "Confirm Admin Password"
+  },
+  "placeholders": {
+    "phone": "Enter your phone number (optional)",
+    "category": "Enter your company category (optional)"
+  },
+  "buttons": {
+    "uploadPhoto": "Upload Photo",
+    "completeRegistration": "Complete Registration"
+  },
+  "labels": {
+    "preferAgile": "I prefer Agile methodology for project management",
+    "agilePreference": "Agile Preference"
+  },
+  "passwordRequirement": "Minimum 8 characters required",
+  "review": {
+    "account": "Account Information",
+    "personal": "Personal Information",
+    "organization": "Organization Information",
+    "team": "Team Information",
+    "admin": "Admin Information"
+  },
+  "terms": {
+    "agree": "I agree to the",
+    "termsService": "Terms of Service",
+    "and": "and",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "haveAccount": "Already have an account?",
+  "signIn": "Sign In",
+  "notProvided": "Not provided",
+  "adminInfo": "Admin Account Information",
+  "errors": {
+    "registrationFailed": "Registration failed. Please try again."
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "hero": {
+    "title": "人工智能驱动的高性能团队项目管理",
+    "subtitle": "智能平台帮助团队自动化日常任务，预测障碍，更快更高效地完成项目。",
+    "getStarted": "开始使用",
+    "bookDemo": "预约演示",
+    "tryAI": "试用AI助手",
+    "joinCommunity": "加入我们的社区",
+    "kanban": "看板",
+    "table": "表格",
+    "timeline": "时间线",
+    "kanbanPreview": "可视化工作流程",
+    "tablePreview": "跟踪所有项目细节",
+    "timelinePreview": "监控项目时间线"
+  },
+  "features": {
+    "title": "核心功能",
+    "subtitle": "为现代团队构建，配备强大工具以提升协作和生产力",
+    "showDetails": "显示详情",
+    "hideDetails": "隐藏详情",
+    "ai": {
+      "title": "AI助手",
+      "desc": "对任务、时间线和资源的智能指导",
+      "details": {
+        "1": "基于当前工作量的智能任务推荐",
+        "2": "使用历史数据自动估算时间",
+        "3": "在问题出现前识别风险",
+        "4": "会议摘要和行动项提取"
+      },
+      "enhancedTitle": "高级AI功能",
+      "enhancedSubtitle": "全面的AI功能，彻底改变您的项目管理体验",
+      "allFeatures": "所有功能",
+      "projectManagement": "项目管理",
+      "teamCollaboration": "团队协作",
+      "intelligentAnalytics": "智能分析",
+      "systemIntegrations": "集成",
+      "exploreFeatures": "探索所有AI功能"
+    },
+    "workflows": {
+      "title": "智能工作流",
+      "desc": "自动化常规任务并确保项目一致性",
+      "details": {
+        "1": "针对不同项目类型的自定义工作流模板",
+        "2": "基于团队技能的自动任务分配",
+        "3": "顺序和并行任务依赖关系"
+      }
+    },
+    "military": {
+      "title": "军事级安全",
+      "desc": "为您的敏感项目数据提供企业级保护",
+      "details": {
+        "1": "所有项目数据的端到端加密",
+        "2": "基于角色的访问控制，详细审计日志",
+        "3": "符合GDPR和HIPAA等主要安全标准"
+      }
+    },
+    "integrations": {
+      "title": "无缝集成",
+      "desc": "连接您喜爱的工具和工作流",
+      "details": {
+        "1": "与GitHub、Slack和Google Workspace的原生集成",
+        "2": "强大的API用于自定义集成",
+        "3": "项目迁移的导入/导出功能"
+      }
+    }
+  },
+  "results": {
+    "title": "为像您这样的团队带来真实结果",
+    "faster": "项目完成速度提高35%",
+    "saved": "成本降低28%",
+    "earlyWarning": "87%的问题提前识别"
+  },
+  "technical": {
+    "title": "技术卓越",
+    "cognitive": "认知AI助手",
+    "multiagent": "多代理协作",
+    "realtime": "实时分析",
+    "predictive": "预测性风险评估",
+    "enterprise": "企业级安全"
+  },
+  "usecases": {
+    "title": "成功案例",
+    "executives": "高管领导",
+    "executivesCase": "\"我们需要一种方式快速了解12个团队的项目状态\"",
+    "executivesResult": "高管仪表板提供项目健康指标和潜在瓶颈的即时可见性，每周节省5小时状态会议。",
+    "engineers": "工程团队",
+    "engineersCase": "\"管理多个存储库中的任务变得混乱\"",
+    "engineersResult": "与版本控制系统集成创建自动任务更新，减少40%的手动跟踪并改善代码交付时间。",
+    "pms": "项目经理",
+    "pmsCase": "\"准确预测时间线是我们最大的挑战\"",
+    "pmsResult": "AI驱动的估算将预测准确性提高了65%，使客户承诺更可靠，资源分配更好。"
+  },
+  "roi": {
+    "title": "我们交付的价值",
+    "standups": {
+      "before": "每人每天15分钟",
+      "after": "每人每天5分钟"
+    },
+    "risk": {
+      "before": "在后期阶段发现",
+      "after": "在影响发生前预测"
+    },
+    "reports": {
+      "before": "每周准备4小时",
+      "after": "自动生成"
+    },
+    "enhancedTitle": "真实世界影响",
+    "enhancedSubtitle": "我们的AI驱动平台交付的可衡量成果",
+    "downloadReport": "下载完整ROI报告",
+    "enhancedProductivity": {
+      "metric": "68%",
+      "desc": "通过AI任务指导提高团队生产力"
+    },
+    "costSavings": {
+      "metric": "42%",
+      "desc": "通过AI资源优化减少项目成本"
+    },
+    "riskReduction": {
+      "metric": "76%",
+      "desc": "的潜在项目风险在影响时间线前被识别"
+    },
+    "timeToMarket": {
+      "metric": "55%",
+      "desc": "通过AI工作流自动化加快上市时间"
+    }
+  },
+  "perfectFor": {
+    "title": "完美适用于",
+    "scaleups": "成长中的初创公司",
+    "distributed": "分布式团队",
+    "gov": "政府项目",
+    "vc": "风投投资组合管理"
+  },
+  "difference": {
+    "title": "IntelliFlow的不同之处",
+    "quote": "与传统项目管理工具不同，我们利用人工智能不仅跟踪工作，还主动引导其成功完成。"
+  },
+  "cta": {
+    "title": "准备好转变您的项目管理了吗？",
+    "demo": "预约演示",
+    "playground": "尝试AI实验场"
+  },
+  "pricing": {
+    "title": "简单透明的定价",
+    "subtitle": "选择适合您团队的计划",
+    "starter": {
+      "title": "入门版"
+    },
+    "pro": {
+      "title": "专业版"
+    },
+    "enterprise": {
+      "title": "企业版"
+    },
+    "mostPopular": "最受欢迎",
+    "contactSales": "联系销售",
+    "getStarted": "开始使用",
+    "getTrial": "开始免费试用",
+    "compareFeatures": "比较功能",
+    "roiCalculator": {
+      "title": "计算您的ROI",
+      "subtitle": "了解使用我们的平台可以节省多少时间和金钱。我们的典型客户在几周内（而非几个月）就看到了ROI。",
+      "cta": "计算您的节省"
+    },
+    "testimonials": {
+      "title": "客户怎么说"
+    },
+    "faq": {
+      "title": "常见问题"
+    },
+    "finalCta": {
+      "title": "准备好开始了吗？",
+      "subtitle": "加入数千个已经改变项目管理方法并看到惊人ROI的团队。",
+      "trial": "开始您的免费试用",
+      "sales": "与销售交谈"
+    }
+  }
+}

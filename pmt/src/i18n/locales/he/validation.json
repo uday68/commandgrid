@@ -1,0 +1,14 @@
+{
+  "required": "{{field}} הוא שדה חובה",
+  "invalidEmail": "אנא הזן כתובת אימייל תקינה",
+  "minLength": "חייב להכיל לפחות {{count}} תווים",
+  "maxLength": "לא יכול לחרוג מ-{{count}} תווים",
+  "passwordsDontMatch": "הסיסמאות אינן תואמות",
+  "termsRequired": "עליך להסכים לתנאים וההגבלות כדי להמשיך",
+  "invalidFormat": "פורמט לא חוקי",
+  "invalidDate": "אנא הזן תאריך תקין",
+  "invalidNumber": "אנא הזן מספר תקין",
+  "emailExists": "כתובת האימייל הזו כבר רשומה",
+  "weakPassword": "הסיסמה חלשה מדי",
+  "invalidPhone": "אנא הזן מספר טלפון תקין"
+}

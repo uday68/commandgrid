@@ -1,0 +1,126 @@
+/* OVERLAY */
+.wolf-overlay {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    backdrop-filter: blur(6px);
+    z-index: 9997;
+  }
+  
+  /* CONTAINER */
+  .wolf-container {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    perspective: 1200px;
+    z-index: 9998;
+  }
+  
+  /* BASE IMAGE */
+  .wolf-image {
+    width: 360px;
+    opacity: 0.9;
+    filter: drop-shadow(0 0 15px rgba(255,255,255,0.1));
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-out;
+  }
+  
+  /* ROTATE IN */
+  .wolf-container.rotate {
+    animation: rotate-in 1.4s ease-out forwards;
+  }
+  @keyframes rotate-in {
+    from { transform: translate(-50%, -50%) scale(0) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) scale(1) rotate(360deg); }
+  }
+  
+  /* HIGHLIGHT PULSE */
+  .wolf-container.highlight .wolf-image {
+    animation: pulse-highlight 0.8s ease-in-out 2 alternate;
+  }
+  @keyframes pulse-highlight {
+    from { filter: drop-shadow(0 0 20px rgba(255,0,0,0.7)) brightness(1); }
+    to   { filter: drop-shadow(0 0 35px rgba(255,0,0,1)) brightness(1.2); }
+  }
+  
+  /* SCALE "POP" */
+  .wolf-container.scale {
+    animation: pop-scale 0.6s cubic-bezier(0.175,0.885,0.335,1.05) forwards;
+  }
+  @keyframes pop-scale {
+    0%   { transform: translate(-50%, -50%) scale(1) rotateX(0deg); }
+    60%  { transform: translate(-50%, -50%) scale(1.15) rotateY(8deg) rotateX(5deg); }
+    100% { transform: translate(-50%, -50%) scale(1) rotateY(0) rotateX(0); }
+  }
+  
+  /* EYE GLOW */
+  .wolf-eye {
+    position: absolute;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    top: 38%; left: 46%;
+    background: transparent;
+    transition: all 0.4s ease-in-out;
+  }
+  .wolf-eye.active {
+    background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(255,0,0,0) 65%);
+    box-shadow: 0 0 25px 12px rgba(255,0,0,0.6), 
+                inset 0 0 8px 4px rgba(255,255,255,0.8);
+    animation: eye-breathe 0.6s ease-in-out infinite alternate;
+  }
+  @keyframes eye-breathe {
+    from { transform: scale(1); opacity: 0.8; box-shadow: 0 0 25px 12px rgba(255,0,0,0.6); }
+    to   { transform: scale(1.2); opacity: 1; box-shadow: 0 0 35px 18px rgba(255,0,0,0.8); }
+  }
+  
+  /* LIGHT SWEEP */
+  .light-sweep {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(130deg, transparent 45%, rgba(255,255,255,0.2) 50%, transparent 55%);
+    transform: translateX(-100%);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+  .light-sweep.active {
+    animation: sweep 2.8s ease-in-out forwards;
+  }
+  @keyframes sweep {
+    to { transform: translateX(100%); }
+  }
+  
+  /* EXIT DISSOLVE */
+  .wolf-container.exit {
+    animation: dissolve-out 0.5s ease-in forwards;
+  }
+  @keyframes dissolve-out {
+    to {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+      filter: blur(4px);
+    }
+  }
+  
+  /* Additional AI-inspired effects */
+  .wolf-container::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    background: radial-gradient(circle at 50% 50%, 
+                rgba(255,0,0,0.05) 0%, 
+                rgba(0,60,255,0.01) 50%, 
+                transparent 70%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .wolf-container.highlight::before {
+    opacity: 1;
+    animation: pulse-glow 2s infinite alternate;
+  }
+  
+  @keyframes pulse-glow {
+    from { transform: scale(1); opacity: 0.4; }
+    to { transform: scale(1.1); opacity: 0.7; }
+  }

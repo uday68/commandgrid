@@ -1,0 +1,14 @@
+{
+  "required": "{{field}}为必填项",
+  "invalidEmail": "请输入有效的电子邮箱地址",
+  "minLength": "至少需要{{count}}个字符",
+  "maxLength": "不能超过{{count}}个字符",
+  "passwordsDontMatch": "密码不匹配",
+  "termsRequired": "您必须接受条款和条件才能继续",
+  "invalidFormat": "格式无效",
+  "invalidDate": "请输入有效的日期",
+  "invalidNumber": "请输入有效的数字",
+  "emailExists": "此电子邮箱已经注册",
+  "weakPassword": "密码太弱",
+  "invalidPhone": "请输入有效的电话号码"
+}

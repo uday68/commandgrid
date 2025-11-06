@@ -1,0 +1,21 @@
+Date,Issue Type,Severity,Status,Department,Resolution Time,Reporter,Priority
+2024-01-15,Bug,High,Resolved,Engineering,4,John Smith,Critical
+2024-01-18,Feature Request,Medium,In Progress,Marketing,0,Sarah Johnson,Medium
+2024-01-20,Bug,Low,Resolved,IT,2,Mike Davis,Low
+2024-01-22,Security Vulnerability,Critical,Resolved,Security,1,Alex Rodriguez,Critical
+2024-01-25,Performance Issue,High,In Progress,Engineering,0,David Lee,High
+2024-01-28,Bug,Medium,Resolved,QA,3,Tom Wilson,Medium
+2024-02-01,Feature Request,Low,Open,UX,0,Lisa Chen,Low
+2024-02-03,Bug,High,Resolved,Engineering,5,John Smith,High
+2024-02-05,Data Issue,Medium,Resolved,Data Science,2,Emma Brown,Medium
+2024-02-08,Bug,Critical,Resolved,IT,1,Chris Anderson,Critical
+2024-02-10,Feature Request,Medium,In Progress,Marketing,0,Maria Garcia,Medium
+2024-02-12,Bug,Low,Resolved,QA,1,Kevin Martinez,Low
+2024-02-15,Security Vulnerability,High,Resolved,Security,2,James Wilson,High
+2024-02-18,Performance Issue,Medium,Open,Engineering,0,David Lee,Medium
+2024-02-20,Bug,High,Resolved,IT,3,Mike Davis,High
+2024-02-22,Feature Request,High,In Progress,UX,0,Amy White,High
+2024-02-25,Bug,Medium,Resolved,Engineering,4,John Smith,Medium
+2024-02-28,Data Issue,Low,Resolved,Data Science,1,Rachel Thompson,Low
+2024-03-01,Bug,Critical,Resolved,IT,2,Chris Anderson,Critical
+2024-03-03,Feature Request,Medium,Open,Marketing,0,Sarah Johnson,Medium

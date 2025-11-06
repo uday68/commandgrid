@@ -1,0 +1,116 @@
+{
+  "errors": {
+    "somethingWentWrong": "Algo salió mal",
+    "projectCreationError": "Error al crear el proyecto",
+    "taskCreationError": "Error al crear la tarea"
+  },
+  "stats": {
+    "totalUsers": "Usuarios Totales",
+    "totalProjects": "Proyectos Totales",
+    "totalTasks": "Tareas Totales",
+    "pendingTasks": "Tareas Pendientes"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "new": "Nuevo Proyecto",
+    "team": "Equipo",
+    "progress": "Progreso",
+    "actions": "Acciones",
+    "members": "miembros",
+    "noProjects": "No hay proyectos disponibles",
+    "noProjectsAvailable": "No hay proyectos disponibles"
+  },
+  "tasks": {
+    "recentTasks": "Tareas Recientes",
+    "new": "Nueva Tarea",
+    "title": "Título",
+    "project": "Proyecto",
+    "assignedTo": "Asignado a",
+    "dueDate": "Fecha de Entrega",
+    "startDate": "Fecha de Inicio",
+    "noTasks": "No hay tareas recientes disponibles",
+    "createNewTask": "Crear Nueva Tarea",
+    "priority": {
+      "low": "Baja",
+      "medium": "Media",
+      "high": "Alta"
+    }
+  },
+  "tools": {
+    "title": "Herramientas Administrativas",
+    "databaseBackup": "Copia de Seguridad de Base de Datos",
+    "exportData": "Exportar Datos",
+    "bulkImport": "Importación Masiva",
+    "securityScan": "Escaneo de Seguridad",
+    "printAllData": "Imprimir Todos los Datos",
+    "processing": "Procesando...",
+    "backupFolderPath": "Ruta de Carpeta de Respaldo",
+    "confirmBackup": "Confirmar Respaldo",
+    "output": "Salida",
+    "usingCachedData": "Usando datos en caché de la sesión anterior"
+  },
+  "actionFailed": "Acción Fallida",
+  "usingCachedData": "Usando datos en caché",
+  "dashboard": {
+    "title": "Panel de Administración",
+    "summary": "Resumen de Administración",
+    "cards": {
+      "users": "Usuarios",
+      "projects": "Proyectos",
+      "tasks": "Tareas",
+      "security": "Estado de Seguridad"
+    },
+    "metrics": {
+      "active": "Activo",
+      "completed": "Completado",
+      "new": "Nuevo",
+      "overdue": "Atrasado",
+      "threats": "Amenazas",
+      "vulnerabilities": "Vulnerabilidades"
+    },
+    "sections": {
+      "keyMetrics": "Métricas Clave",
+      "activityCharts": "Gráficos de Actividad",
+      "systemHealth": "Salud del Sistema",
+      "recentActivity": "Actividad Reciente",
+      "teamAndEvents": "Equipo y Eventos"
+    },
+    "charts": {
+      "active": "Activo",
+      "completed": "Completado",
+      "pending": "Pendiente",
+      "projectStatusDistribution": "Distribución de Estado de Proyectos",
+      "taskCompletion": "Finalización de Tareas",
+      "userActivity": "Actividad de Usuario",
+      "taskTrend": "Tendencia de Tareas",
+      "tasksCreated": "Tareas Creadas",
+      "tasksCompleted": "Tareas Completadas",
+      "activeUsers": "Usuarios Activos"
+    },
+    "system": {
+      "cpu": "Uso de CPU",
+      "memory": "Uso de Memoria",
+      "disk": "Espacio en Disco",
+      "uptime": "Tiempo de Actividad",
+      "days": "días",
+      "temperature": "Temperatura",
+      "services": "Servicios",
+      "lastReboot": "Último Reinicio",
+      "networkIn": "Red Entrada",
+      "networkOut": "Red Salida"
+    },
+    "noActivity": "Sin actividad reciente",
+    "view": "Ver",
+    "viewAll": "Ver Todo",
+    "loadError": "Error al cargar datos del panel",
+    "retry": "Reintentar",
+    "teamStatus": "Estado del Equipo",
+    "activeMembers": "Miembros Activos",
+    "projectProgress": "Progreso del Proyecto",
+    "manageTeam": "Gestionar Equipo",
+    "upcomingEvents": "Próximos Eventos",
+    "attendees": "asistentes",
+    "viewDetails": "Ver Detalles",
+    "viewCalendar": "Ver Calendario"
+  }
+}

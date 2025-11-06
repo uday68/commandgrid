@@ -1,0 +1,64 @@
+{
+  "title": "Fonctionnalités Puissantes",
+  "subtitle": "Tout ce dont vous avez besoin pour gérer efficacement les projets",
+  "ai": {
+    "title": "Assistance IA",
+    "desc": "Fonctionnalités intelligentes d'IA pour améliorer la productivité",
+    "details": {
+      "1": "Priorisation automatisée des tâches",
+      "2": "Suivi intelligent du temps",
+      "3": "Résumé de contenu",
+      "4": "Suggestions de révision de code"
+    }
+  },
+  "wellbeing": {
+    "title": "Bien-être de l'Équipe",
+    "desc": "Outils pour maintenir le bien-être de l'équipe et prévenir l'épuisement",
+    "details": {
+      "1": "Indicateurs d'équilibre travail-vie",
+      "2": "Rappels de pauses",
+      "3": "Analyse de la charge de travail",
+      "4": "Ressources de bien-être"
+    }
+  },
+  "community": {
+    "title": "Collaboration Communautaire",
+    "desc": "Fonctionnalités communautaires intégrées pour favoriser le travail d'équipe",
+    "details": {
+      "1": "Forums et discussions d'équipe",
+      "2": "Hubs de partage de connaissances",
+      "3": "Système de reconnaissance par les pairs",
+      "4": "Communautés de pratique"
+    }
+  },
+  "integrations": {
+    "title": "Intégrations Puissantes",
+    "desc": "Connectez-vous avec vos outils favoris sans effort",
+    "details": {
+      "1": "Intégration GitHub et GitLab",
+      "2": "Slack et Microsoft Teams",
+      "3": "Google Workspace et Office 365",
+      "4": "Zoom et Google Meet"
+    }
+  },
+  "workflows": {
+    "title": "Flux de Travail Personnalisés",
+    "desc": "Créez des processus adaptés à votre équipe",
+    "details": {
+      "1": "Constructeur de flux de travail par glisser-déposer",
+      "2": "Mises à jour automatiques des statuts",
+      "3": "Processus d'approbation personnalisés"
+    }
+  },
+  "military": {
+    "title": "Sécurité de Niveau Militaire",
+    "desc": "Protection de niveau entreprise pour vos données",
+    "details": {
+      "1": "Chiffrement de bout en bout",
+      "2": "Contrôles d'accès basés sur les rôles",
+      "3": "Conformité aux principales réglementations"
+    }
+  },
+  "showDetails": "Afficher les Détails",
+  "hideDetails": "Masquer les Détails"
+}

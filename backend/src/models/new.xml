@@ -1,0 +1,208 @@
+<!-- This XML file is generated for a diagram in draw.io (diagrams.net). Text font colors are set to #000000 (black) for maximum visibility -->
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-06-06T12:00:00.000Z" agent="5.0 (Windows)" etag="dummy" version="20.2.3" type="device">
+  <diagram id="0IK7eiuoPbVwY-ayz29v" name="ER Diagram Chen Style">
+    <mxGraphModel dx="1234" dy="876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Entity: USERS -->
+        <mxCell id="2" value="USERS" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#DAE8FC;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="140" height="160" as="geometry"/>
+        </mxCell>
+        <!-- Attributes for USERS -->
+        <mxCell id="attr_2_1" value="&#x1F4BB; USER_ID (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#082567;fillColor=#A9C8F7;" vertex="1" parent="1">
+          <mxGeometry x="10" y="20" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_2_2" value="NAME" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#082567;fillColor=#A9C8F7;" vertex="1" parent="1">
+          <mxGeometry x="10" y="50" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_2_3" value="EMAIL (Unique)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#082567;fillColor=#A9C8F7;" vertex="1" parent="1">
+          <mxGeometry x="10" y="80" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_2_4" value="USERNAME (Unique)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#082567;fillColor=#A9C8F7;" vertex="1" parent="1">
+          <mxGeometry x="10" y="110" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_2_5" value="PASSWORD_HASH" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#082567;fillColor=#A9C8F7;" vertex="1" parent="1">
+          <mxGeometry x="10" y="140" width="120" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Entity: ADMINS -->
+        <mxCell id="3" value="ADMINS" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFE6CC;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="140" height="130" as="geometry"/>
+        </mxCell>
+        <!-- Attributes for ADMINS -->
+        <mxCell id="attr_3_1" value="ADMIN_ID (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#7F4E00;fillColor=#FFDDA6;" vertex="1" parent="1">
+          <mxGeometry x="210" y="20" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_3_2" value="FIRST_NAME" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#7F4E00;fillColor=#FFDDA6;" vertex="1" parent="1">
+          <mxGeometry x="210" y="50" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_3_3" value="LAST_NAME" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#7F4E00;fillColor=#FFDDA6;" vertex="1" parent="1">
+          <mxGeometry x="210" y="80" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_3_4" value="EMAIL (Unique)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#7F4E00;fillColor=#FFDDA6;" vertex="1" parent="1">
+          <mxGeometry x="210" y="110" width="120" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Entity: TEAMS -->
+        <mxCell id="4" value="TEAMS" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="20" y="250" width="140" height="140" as="geometry"/>
+        </mxCell>
+        <!-- Attributes for TEAMS -->
+        <mxCell id="attr_4_1" value="TEAM_ID (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#2F6627;fillColor=#A9D18E;" vertex="1" parent="1">
+          <mxGeometry x="10" y="250" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_4_2" value="NAME" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#2F6627;fillColor=#A9D18E;" vertex="1" parent="1">
+          <mxGeometry x="10" y="280" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_4_3" value="CREATED_AT" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#2F6627;fillColor=#A9D18E;" vertex="1" parent="1">
+          <mxGeometry x="10" y="310" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_4_4" value="PROJECT_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#2F6627;fillColor=#A9D18E;" vertex="1" parent="1">
+          <mxGeometry x="10" y="340" width="120" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Entity: PROJECTS -->
+        <mxCell id="5" value="PROJECTS" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFE6E6;" vertex="1" parent="1">
+          <mxGeometry x="220" y="250" width="140" height="140" as="geometry"/>
+        </mxCell>
+        <!-- Attributes for PROJECTS -->
+        <mxCell id="attr_5_1" value="PROJECT_ID (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#990000;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="250" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_5_2" value="NAME" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#990000;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="280" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_5_3" value="DESCRIPTION" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#990000;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="310" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_5_4" value="CREATED_AT" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#990000;fillColor=#FF9999;" vertex="1" parent="1">
+          <mxGeometry x="210" y="340" width="120" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Entity: TASKS -->
+        <mxCell id="6" value="TASKS" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FDF2E9;" vertex="1" parent="1">
+          <mxGeometry x="440" y="250" width="140" height="140" as="geometry"/>
+        </mxCell>
+        <!-- Attributes for TASKS -->
+        <mxCell id="attr_6_1" value="TASK_ID (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#9E7B55;fillColor=#FCE9CC;" vertex="1" parent="1">
+          <mxGeometry x="430" y="250" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_6_2" value="PROJECT_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#9E7B55;fillColor=#FCE9CC;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_6_3" value="ASSIGNED_TO" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#9E7B55;fillColor=#FCE9CC;" vertex="1" parent="1">
+          <mxGeometry x="430" y="310" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_6_4" value="TITLE" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#9E7B55;fillColor=#FCE9CC;" vertex="1" parent="1">
+          <mxGeometry x="430" y="340" width="120" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Entity: NOTIFICATIONS -->
+        <mxCell id="7" value="NOTIFICATIONS" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#E1D5E7;" vertex="1" parent="1">
+          <mxGeometry x="650" y="20" width="140" height="130" as="geometry"/>
+        </mxCell>
+        <!-- Attributes for NOTIFICATIONS -->
+        <mxCell id="attr_7_1" value="NOTIFICATION_ID (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#5E366A;fillColor=#D4C1E2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="20" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_7_2" value="USER_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#5E366A;fillColor=#D4C1E2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="50" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_7_3" value="MESSAGE" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#5E366A;fillColor=#D4C1E2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_7_4" value="IS_READ" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#5E366A;fillColor=#D4C1E2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="110" width="120" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Entity: ACTIVITY_FEED -->
+        <mxCell id="8" value="ACTIVITY_FEED" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="650" y="250" width="140" height="140" as="geometry"/>
+        </mxCell>
+        <!-- Attributes for ACTIVITY_FEED -->
+        <mxCell id="attr_8_1" value="ACTIVITY_ID (PK)" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#997300;fillColor=#FFFD9F;" vertex="1" parent="1">
+          <mxGeometry x="640" y="250" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_8_2" value="ACTOR_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#997300;fillColor=#FFFD9F;" vertex="1" parent="1">
+          <mxGeometry x="640" y="280" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_8_3" value="ACTOR_TYPE" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#997300;fillColor=#FFFD9F;" vertex="1" parent="1">
+          <mxGeometry x="640" y="310" width="120" height="26" as="geometry"/>
+        </mxCell>
+        <mxCell id="attr_8_4" value="VERB" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#997300;fillColor=#FFFD9F;" vertex="1" parent="1">
+          <mxGeometry x="640" y="340" width="120" height="26" as="geometry"/>
+        </mxCell>
+
+        <!-- Relationships -->
+
+        <!-- USERS to TEAMS (Many-to-Many via TEAM_MEMBERS), simplified as many for diagram -->
+
+        <mxCell id="r1" value="Belongs to" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1_label" value="1..N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="90" y="300" width="30" height="20" relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="r2" value="Manages" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2_label" value="1..N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="270" y="150" width="30" height="20" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- TEAMS to PROJECTS relationship -->
+
+        <mxCell id="r3" value="Works on" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r3_label" value="1..N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="170" y="370" width="30" height="20" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- PROJECTS to TASKS relationship -->
+
+        <mxCell id="r4" value="Contains" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r4_label" value="1..N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="390" y="370" width="30" height="20" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USERS to TASKS relationship -->
+
+        <mxCell id="r5" value="Assigned to" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r5_label" value="1..N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="278" y="320" width="30" height="20" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USERS to NOTIFICATIONS relationship -->
+
+        <mxCell id="r6" value="Receives" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="2" target="7">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r6_label" value="1..N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="415" y="120" width="30" height="20" relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- USERS to ACTIVITY_FEED relationship -->
+
+        <mxCell id="r7" value="Performs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#000000;" edge="1" parent="1" source="2" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="r7_label" value="1..N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="390" y="280" width="30" height="20" relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
+
+
+

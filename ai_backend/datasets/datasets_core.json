@@ -1,0 +1,82 @@
+[
+  {
+    "nl_query": "List all projects without upcoming milestones in next 30 days",
+    "sql_query": "SELECT * FROM projects p WHERE NOT EXISTS (SELECT 1 FROM milestones m WHERE m.project_id = p.project_id AND m.due_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '30 days');"
+  },
+  {
+    "nl_query": "Calculate total file storage used by project",
+    "sql_query": "SELECT SUM(pg_column_size(f.file_url)) AS total_storage FROM files f WHERE f.project_id = $1;"
+  },
+  {
+    "nl_query": "Find team leaders without active teams",
+    "sql_query": "SELECT * FROM team_leader tl WHERE NOT EXISTS (SELECT 1 FROM teams t WHERE t.leader_id = tl.leader_id AND t.status = 'active');"
+  },
+  {
+    "nl_query": "List all tasks assigned to user that are overdue",
+    "sql_query": "SELECT * FROM tasks WHERE assigned_to = $1 AND due_date < CURRENT_DATE AND status != 'Completed';"
+  },
+  {
+    "nl_query": "Find projects with high priority tasks that have no assignee",
+    "sql_query": "SELECT p.*, t.task_id, t.title FROM projects p JOIN tasks t ON p.project_id = t.project_id WHERE t.priority = 'High' AND t.assigned_to IS NULL;"
+  },
+  {
+    "nl_query": "Calculate task completion rate per project",
+    "sql_query": "SELECT project_id, (COUNT(CASE WHEN status = 'Completed' THEN 1 END) * 100.0 / NULLIF(COUNT(*), 0)) AS completion_rate FROM tasks GROUP BY project_id;"
+  },
+  {
+    "nl_query": "Find users who haven't logged time in the last 7 days",
+    "sql_query": "SELECT u.* FROM users u LEFT JOIN time_entries t ON u.user_id = t.user_id AND t.created_at >= CURRENT_DATE - INTERVAL '7 days' WHERE t.time_entry_id IS NULL;"
+  },
+  {
+    "nl_query": "List all meetings scheduled for next week",
+    "sql_query": "SELECT * FROM meetings WHERE meeting_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '7 days';"
+  },
+  {
+    "nl_query": "Find tasks with comments in the last 24 hours",
+    "sql_query": "SELECT t.* FROM tasks t JOIN task_comments tc ON t.task_id = tc.task_id WHERE tc.created_at >= CURRENT_TIMESTAMP - INTERVAL '24 hours';"
+  },
+  {
+    "nl_query": "Calculate average hours logged per user",
+    "sql_query": "SELECT u.name, AVG(te.hours) AS avg_hours FROM users u JOIN time_entries te ON u.user_id = te.user_id GROUP BY u.name;"
+  },
+  {
+    "nl_query": "Find projects with budget greater than $1",
+    "sql_query": "SELECT * FROM projects WHERE budget > $1;"
+  },
+  {
+    "nl_query": "List tasks due this week by project",
+    "sql_query": "SELECT p.name AS project_name, t.* FROM tasks t JOIN projects p ON t.project_id = p.project_id WHERE t.due_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '7 days';"
+  },
+  {
+    "nl_query": "Find team members with the most completed tasks",
+    "sql_query": "SELECT u.name, COUNT(*) AS completed_tasks FROM users u JOIN tasks t ON u.user_id = t.assigned_to WHERE t.status = 'Completed' GROUP BY u.name ORDER BY completed_tasks DESC;"
+  },
+  {
+    "nl_query": "List recent activity logs for project",
+    "sql_query": "SELECT * FROM activity_logs WHERE project_id = $1 ORDER BY created_at DESC LIMIT 10;"
+  },
+  {
+    "nl_query": "Calculate project progress percentage",
+    "sql_query": "SELECT project_id, (COUNT(CASE WHEN status = 'Completed' THEN 1 END) * 100.0 / NULLIF(COUNT(*), 0)) AS progress FROM tasks GROUP BY project_id;"
+  },
+  {
+    "nl_query": "Find unread notifications for user",
+    "sql_query": "SELECT * FROM notifications WHERE user_id = $1 AND is_read = FALSE;"
+  },
+  {
+    "nl_query": "List all team members and their roles",
+    "sql_query": "SELECT u.name, t.name AS team_name, tm.role FROM team_members tm JOIN users u ON tm.user_id = u.user_id JOIN teams t ON tm.team_id = t.team_id;"
+  },
+  {
+    "nl_query": "Find tasks blocked by incomplete dependencies",
+    "sql_query": "SELECT t.* FROM tasks t JOIN task_dependencies td ON t.task_id = td.task_id WHERE td.dependency_task_id IN (SELECT task_id FROM tasks WHERE status != 'Completed');"
+  },
+  {
+    "nl_query": "Calculate time spent per project this month",
+    "sql_query": "SELECT p.name, SUM(te.hours) AS total_hours FROM projects p JOIN tasks t ON p.project_id = t.project_id JOIN time_entries te ON t.task_id = te.task_id WHERE EXTRACT(MONTH FROM te.created_at) = EXTRACT(MONTH FROM CURRENT_DATE) GROUP BY p.name;"
+  },
+  {
+    "nl_query": "List all files uploaded in the last week",
+    "sql_query": "SELECT * FROM files WHERE created_at >= CURRENT_DATE - INTERVAL '7 days';"
+  }
+]

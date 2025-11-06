@@ -1,0 +1,64 @@
+{
+  "title": "Funcionalidades Potentes",
+  "subtitle": "Todo lo que necesitas para gestionar proyectos de manera eficiente",
+  "ai": {
+    "title": "Asistencia de IA",
+    "desc": "Características inteligentes de IA para aumentar la productividad",
+    "details": {
+      "1": "Priorización automatizada de tareas",
+      "2": "Seguimiento inteligente del tiempo",
+      "3": "Resumen de contenido",
+      "4": "Sugerencias de revisión de código"
+    }
+  },
+  "wellbeing": {
+    "title": "Bienestar del Equipo",
+    "desc": "Herramientas para mantener el bienestar del equipo y prevenir el agotamiento",
+    "details": {
+      "1": "Indicadores de equilibrio trabajo-vida",
+      "2": "Recordatorios de descanso",
+      "3": "Análisis de carga de trabajo",
+      "4": "Recursos de bienestar"
+    }
+  },
+  "community": {
+    "title": "Colaboración Comunitaria",
+    "desc": "Características comunitarias integradas para fomentar el trabajo en equipo",
+    "details": {
+      "1": "Foros y discusiones de equipo",
+      "2": "Centros de intercambio de conocimientos",
+      "3": "Sistema de reconocimiento entre pares",
+      "4": "Comunidades de práctica"
+    }
+  },
+  "integrations": {
+    "title": "Integraciones Potentes",
+    "desc": "Conéctate con tus herramientas favoritas sin esfuerzo",
+    "details": {
+      "1": "Integración con GitHub y GitLab",
+      "2": "Slack y Microsoft Teams",
+      "3": "Google Workspace y Office 365",
+      "4": "Zoom y Google Meet"
+    }
+  },
+  "workflows": {
+    "title": "Flujos de Trabajo Personalizados",
+    "desc": "Crea procesos adaptados para tu equipo",
+    "details": {
+      "1": "Constructor de flujos de trabajo de arrastrar y soltar",
+      "2": "Actualizaciones automáticas de estado",
+      "3": "Procesos de aprobación personalizados"
+    }
+  },
+  "military": {
+    "title": "Seguridad de Nivel Militar",
+    "desc": "Protección de nivel empresarial para tus datos",
+    "details": {
+      "1": "Cifrado de extremo a extremo",
+      "2": "Controles de acceso basados en roles",
+      "3": "Cumplimiento con las principales regulaciones"
+    }
+  },
+  "showDetails": "Mostrar Detalles",
+  "hideDetails": "Ocultar Detalles"
+}

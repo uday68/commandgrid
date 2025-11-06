@@ -1,0 +1,69 @@
+{
+  "title": "Réunions",
+  "create": "Créer une Réunion",
+  "createNew": "Créer une Nouvelle Réunion",
+  "description": "Description de la Réunion",
+  "start": "Démarrer la Réunion",
+  "startImmediate": "Démarrer une réunion immédiate",
+  "stats": {
+    "Active_Meetings": "Réunions Actives",
+    "Team_Members": "Membres de l'Équipe",
+    "Project_Progress": "Progression du Projet"
+  },
+  "errors": {
+    "teamsFetchFailed": "Échec de la récupération des équipes. Veuillez réessayer.",
+    "userDataFetchFailed": "Échec de la récupération des données utilisateur. Veuillez réessayer.",
+    "projectsFetchFailed": "Échec de la récupération des projets. Veuillez réessayer.",
+    "teamMembersFetchFailed": "Échec de la récupération des membres de l'équipe. Veuillez réessayer.",
+    "projectTeamsFetchFailed": "Échec de la récupération des équipes du projet. Veuillez réessayer.",
+    "titleRequired": "Le titre de la réunion est requis",
+    "dateRequired": "La date de la réunion est requise",
+    "timeRequired": "L'heure de la réunion est requise",
+    "durationInvalid": "La durée de la réunion doit être positive",
+    "contextRequired": "Le contexte de la réunion est requis",
+    "schedulingFailed": "Échec de la planification de la réunion. Veuillez réessayer."
+  },
+  "scheduler": {
+    "title": "Planifier une Réunion",
+    "meetingTitle": "Titre de la Réunion",
+    "description": "Description",
+    "agenda": "Ordre du Jour",
+    "date": "Date",
+    "time": "Heure",
+    "duration": "Durée",
+    "context": "Contexte de la Réunion",
+    "contexts": {
+      "company": "Entreprise",
+      "team": "Équipe",
+      "project": "Projet"
+    },
+    "project": "Projet",
+    "noProject": "Aucun Projet",
+    "team": "Équipe",
+    "noTeam": "Aucune Équipe",
+    "attendees": "Participants",
+    "isRecurring": "Réunion Récurrente",
+    "isPublic": "Réunion Publique",
+    "schedule": "Planifier la Réunion",
+    "recurringPattern": "Modèle de Récurrence",
+    "patterns": {
+      "daily": "Quotidien",
+      "weekly": "Hebdomadaire",
+      "biweekly": "Bihebdomadaire",
+      "monthly": "Mensuel"
+    }
+  },
+  "details": {
+    "join": "Rejoindre la Réunion",
+    "edit": "Modifier la Réunion",
+    "delete": "Supprimer la Réunion",
+    "notFound": "Réunion non trouvée",
+    "information": "Informations sur la Réunion",
+    "organizer": "Organisateur",
+    "agenda": "Ordre du Jour",
+    "attachments": "Pièces Jointes",
+    "participants": "Participants",
+    "deleteConfirm": "Confirmer la Suppression",
+    "deleteWarning": "Êtes-vous sûr de vouloir supprimer cette réunion? Cette action ne peut pas être annulée."
+  }
+}

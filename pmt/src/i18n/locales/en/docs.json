@@ -1,0 +1,17 @@
+{
+  "translation": {
+    "title": "Translation Documentation",
+    "page_title": "Translation Documentation - Project Management Tool",
+    "current_config": "Current Configuration",
+    "current_language": "Current Language",
+    "text_direction": "Text Direction",
+    "namespaces": "Available Namespaces",
+    "supported_languages": "Supported Languages",
+    "usage_examples": "Usage Examples",
+    "resources": "Additional Resources",
+    "resources_intro": "For more information on the internationalization system, please check the following resources:",
+    "resources_docs": "Project translation documentation in /docs/translation-guide.md",
+    "resources_i18next": "i18next documentation: https://www.i18next.com/",
+    "resources_reacti18next": "React i18next: https://react.i18next.com/"
+  }
+}

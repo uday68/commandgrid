@@ -1,0 +1,116 @@
+{
+  "errors": {
+    "somethingWentWrong": "Etwas ist schief gelaufen",
+    "projectCreationError": "Fehler beim Erstellen des Projekts",
+    "taskCreationError": "Fehler beim Erstellen der Aufgabe"
+  },
+  "stats": {
+    "totalUsers": "Gesamte Benutzer",
+    "totalProjects": "Gesamte Projekte",
+    "totalTasks": "Gesamte Aufgaben",
+    "pendingTasks": "Ausstehende Aufgaben"
+  },
+  "projects": {
+    "title": "Projekte",
+    "new": "Neues Projekt",
+    "team": "Team",
+    "progress": "Fortschritt",
+    "actions": "Aktionen",
+    "members": "Mitglieder",
+    "noProjects": "Keine Projekte verfügbar",
+    "noProjectsAvailable": "Keine Projekte verfügbar"
+  },
+  "tasks": {
+    "recentTasks": "Neueste Aufgaben",
+    "new": "Neue Aufgabe",
+    "title": "Titel",
+    "project": "Projekt",
+    "assignedTo": "Zugewiesen an",
+    "dueDate": "Fälligkeitsdatum",
+    "startDate": "Startdatum",
+    "noTasks": "Keine neueren Aufgaben verfügbar",
+    "createNewTask": "Neue Aufgabe erstellen",
+    "priority": {
+      "low": "Niedrig",
+      "medium": "Mittel",
+      "high": "Hoch"
+    }
+  },
+  "tools": {
+    "title": "Verwaltungswerkzeuge",
+    "databaseBackup": "Datenbank-Backup",
+    "exportData": "Daten exportieren",
+    "bulkImport": "Massenimport",
+    "securityScan": "Sicherheitsscan",
+    "printAllData": "Alle Daten drucken",
+    "processing": "Verarbeitung läuft...",
+    "backupFolderPath": "Backup-Ordnerpfad",
+    "confirmBackup": "Backup bestätigen",
+    "output": "Ausgabe",
+    "usingCachedData": "Verwenden von zwischengespeicherten Daten aus der vorherigen Sitzung"
+  },
+  "actionFailed": "Aktion fehlgeschlagen",
+  "usingCachedData": "Verwendung von zwischengespeicherten Daten",
+  "dashboard": {
+    "title": "Administrator-Dashboard",
+    "summary": "Administrator-Übersicht",
+    "cards": {
+      "users": "Benutzer",
+      "projects": "Projekte",
+      "tasks": "Aufgaben",
+      "security": "Sicherheitsstatus"
+    },
+    "metrics": {
+      "active": "Aktiv",
+      "completed": "Abgeschlossen",
+      "new": "Neu",
+      "overdue": "Überfällig",
+      "threats": "Bedrohungen",
+      "vulnerabilities": "Schwachstellen"
+    },
+    "sections": {
+      "keyMetrics": "Schlüsselkennzahlen",
+      "activityCharts": "Aktivitätsdiagramme",
+      "systemHealth": "Systemzustand",
+      "recentActivity": "Aktuelle Aktivitäten",
+      "teamAndEvents": "Team & Ereignisse"
+    },
+    "charts": {
+      "active": "Aktiv",
+      "completed": "Abgeschlossen",
+      "pending": "Ausstehend",
+      "projectStatusDistribution": "Projektstatus-Verteilung",
+      "taskCompletion": "Aufgabenabschluss",
+      "userActivity": "Benutzeraktivität",
+      "taskTrend": "Aufgabenabschluss-Trend",
+      "tasksCreated": "Erstellte Aufgaben",
+      "tasksCompleted": "Abgeschlossene Aufgaben",
+      "activeUsers": "Aktive Benutzer"
+    },
+    "system": {
+      "cpu": "CPU-Auslastung",
+      "memory": "Speichernutzung",
+      "disk": "Festplattenspeicher",
+      "uptime": "Betriebszeit",
+      "days": "Tage",
+      "temperature": "Temperatur",
+      "services": "Dienste",
+      "lastReboot": "Letzter Neustart",
+      "networkIn": "Netzwerk Ein",
+      "networkOut": "Netzwerk Aus"
+    },
+    "noActivity": "Keine aktuelle Aktivität",
+    "view": "Anzeigen",
+    "viewAll": "Alle anzeigen",
+    "loadError": "Fehler beim Laden der Dashboard-Daten",
+    "retry": "Wiederholen",
+    "teamStatus": "Team-Status",
+    "activeMembers": "Aktive Mitglieder",
+    "projectProgress": "Projektfortschritt",
+    "manageTeam": "Team verwalten",
+    "upcomingEvents": "Bevorstehende Ereignisse",
+    "attendees": "Teilnehmer",
+    "viewDetails": "Details anzeigen",
+    "viewCalendar": "Kalender anzeigen"
+  }
+}

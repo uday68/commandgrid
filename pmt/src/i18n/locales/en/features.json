@@ -1,0 +1,64 @@
+{
+  "title": "Powerful Features",
+  "subtitle": "Everything you need to manage projects efficiently",
+  "ai": {
+    "title": "AI Assistance",
+    "desc": "Intelligent AI features to boost productivity",
+    "details": {
+      "1": "Automated task prioritization",
+      "2": "Smart time tracking",
+      "3": "Content summarization",
+      "4": "Code review suggestions"
+    }
+  },
+  "wellbeing": {
+    "title": "Team Wellbeing",
+    "desc": "Tools to maintain team wellbeing and prevent burnout",
+    "details": {
+      "1": "Work-life balance indicators",
+      "2": "Break reminders",
+      "3": "Workload analysis",
+      "4": "Wellbeing resources"
+    }
+  },
+  "community": {
+    "title": "Community Collaboration",
+    "desc": "Built-in community features to foster teamwork",
+    "details": {
+      "1": "Team forums and discussions",
+      "2": "Knowledge sharing hubs",
+      "3": "Peer recognition system",
+      "4": "Communities of practice"
+    }
+  },
+  "integrations": {
+    "title": "Powerful Integrations",
+    "desc": "Connect with your favorite tools effortlessly",
+    "details": {
+      "1": "GitHub and GitLab integration",
+      "2": "Slack and Microsoft Teams",
+      "3": "Google Workspace and Office 365",
+      "4": "Zoom and Google Meet"
+    }
+  },
+  "workflows": {
+    "title": "Custom Workflows",
+    "desc": "Create tailored processes for your team",
+    "details": {
+      "1": "Drag-and-drop workflow builder",
+      "2": "Automated status updates",
+      "3": "Custom approval processes"
+    }
+  },
+  "military": {
+    "title": "Military-grade Security",
+    "desc": "Enterprise-level protection for your data",
+    "details": {
+      "1": "End-to-end encryption",
+      "2": "Role-based access controls",
+      "3": "Compliance with major regulations"
+    }
+  },
+  "showDetails": "Show Details",
+  "hideDetails": "Hide Details"
+}

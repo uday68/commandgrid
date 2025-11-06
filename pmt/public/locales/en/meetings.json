@@ -1,0 +1,69 @@
+{
+  "title": "Meetings",
+  "create": "Create Meeting",
+  "createNew": "Create New Meeting",
+  "description": "Meeting Description",
+  "start": "Start Meeting",
+  "startImmediate": "Start an immediate meeting",
+  "stats": {
+    "Active_Meetings": "Active Meetings",
+    "Team_Members": "Team Members",
+    "Project_Progress": "Project Progress"
+  },
+  "errors": {
+    "teamsFetchFailed": "Failed to fetch teams. Please try again.",
+    "userDataFetchFailed": "Failed to fetch user data. Please try again.",
+    "projectsFetchFailed": "Failed to fetch projects. Please try again.",
+    "teamMembersFetchFailed": "Failed to fetch team members. Please try again.",
+    "projectTeamsFetchFailed": "Failed to fetch project teams. Please try again.",    "titleRequired": "Meeting title is required",
+    "dateRequired": "Meeting date is required",
+    "timeRequired": "Meeting time is required",
+    "durationInvalid": "Meeting duration must be positive",
+    "contextRequired": "Meeting context is required",
+    "schedulingFailed": "Failed to schedule the meeting. Please try again.",
+    "createFailed": "Failed to create the meeting. Please try again.",
+    "fetchFailed": "Failed to fetch meetings. Please try again."
+  },
+  "scheduler": {
+    "title": "Schedule Meeting",
+    "meetingTitle": "Meeting Title",
+    "description": "Description",
+    "agenda": "Agenda",
+    "date": "Date",
+    "time": "Time",
+    "duration": "Duration",
+    "context": "Meeting Context",
+    "contexts": {
+      "company": "Company",
+      "team": "Team",
+      "project": "Project"
+    },
+    "project": "Project",
+    "noProject": "No Project",
+    "team": "Team",
+    "noTeam": "No Team",
+    "attendees": "Attendees",
+    "isRecurring": "Recurring Meeting",
+    "isPublic": "Public Meeting",
+    "schedule": "Schedule Meeting",
+    "recurringPattern": "Recurring Pattern",
+    "patterns": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "biweekly": "Bi-weekly",
+      "monthly": "Monthly"
+    }
+  },  "details": {
+    "join": "Join Meeting",
+    "edit": "Edit Meeting",
+    "delete": "Delete Meeting",
+    "notFound": "Meeting not found",
+    "information": "Meeting Information",
+    "organizer": "Organizer",
+    "agenda": "Agenda",
+    "attachments": "Attachments",
+    "participants": "Participants",
+    "deleteConfirm": "Confirm Delete",
+    "deleteWarning": "Are you sure you want to delete this meeting? This action cannot be undone."
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "example_key": "Beispielwert",
+  "app": {
+    "title": "Projektmanagement-Tool",
+    "welcome": "Willkommen beim Projektmanagement-Tool",
+    "tagline": "Optimieren Sie Ihren Arbeitsablauf mit unserer umfassenden Projektmanagementlösung",
+    "loading": "Anwendung wird geladen...",
+    "footer": "© {{year}} Projektmanagement-Tool - Alle Rechte vorbehalten"
+  },
+  "hero": {
+    "title": "Das KI-gestützte Produktivitätsbetriebssystem",
+    "subtitle": "Transformieren Sie die Teamleistung mit der weltweit ersten selbstlernenden Projektintelligenzplattform, die Hindernisse vorhersieht, Arbeitsabläufe automatisiert und strategische Erkenntnisse in Echtzeit liefert – bevor Sie überhaupt wissen, dass Sie sie brauchen.",
+    "getStarted": "Loslegen",
+    "bookDemo": "7-Min Demo buchen",
+    "tryAI": "KI-Playground testen",
+    "joinCommunity": "Unserer Community beitreten",
+    "kanban": "War Room Ansicht",
+    "table": "Analyse-Ansicht",
+    "timeline": "Zeitleisten-Ansicht",
+    "kanbanPreview": "KI-gestütztes Kanban mit prädiktiven Einblicken",
+    "tablePreview": "Datengesteuerte Entscheidungen mit Echtzeit-Metriken",
+    "timelinePreview": "Intelligente Zeitleiste mit automatisiertem Abhängigkeits-Mapping"
+  },
+  "features": {
+    "title": "Warum Teams IntelliFlow gegenüber einfachen Task-Managern bevorzugen",
+    "subtitle": "Erleben Sie den Unterschied mit unserer KI-gestützten Plattform für moderne Teams",
+    "ai": {
+      "title": "KI-Copilot",
+      "desc": "Nicht nur Automatisierung – Ihre Projekte erhalten einen autonomen Strategen",
+      "details": {
+        "1": "Prognostiziert Terminrisiken 72 Stunden früher als manuelle Verfolgung",
+        "2": "Weist Aufgaben automatisch basierend auf Echtzeit-Skills-Mapping zu",
+        "3": "Generiert boardroom-fertige Berichte mit einem natürlichsprachlichen Befehl",
+        "4": "Bietet kontinuierliche Optimierungsvorschläge während der Arbeit"
+      },
+      "enhancedTitle": "Erweiterte KI-Funktionen",
+      "enhancedSubtitle": "Umfassende KI-Funktionalitäten zur Transformation Ihrer Projektmanagement-Erfahrung",
+      "allFeatures": "Alle Funktionen",
+      "projectManagement": "Projektmanagement",
+      "teamCollaboration": "Team-Zusammenarbeit",
+      "intelligentAnalytics": "Intelligente Analytik",
+      "systemIntegrations": "Integrationen",
+      "exploreFeatures": "Alle KI-Funktionen erkunden",
+      "projectTaskGuidance": {
+        "desc": "Unsere KI erstellt detaillierte Implementierungsleitfäden und zerlegt komplexe Aufgaben intelligent"
+      },
+      "timeResource": {
+        "desc": "KI-gestützte Zeitschätzungen und Ressourcenzuweisungsempfehlungen zur Optimierung der Projektplanung"
+      },
+      "teamFormation": {
+        "desc": "Intelligente Teamzusammensetzung und Arbeitsbelastungsausgleich für optimale Projektleistung"
+      },
+      "predictiveAnalytics": {
+        "desc": "Projektfortschritt prognostizieren und potenzielle Risiken identifizieren, bevor sie sich auf Ihr Projekt auswirken"
+      },
+      "reporting": {
+        "desc": "Automatische Erstellung umfassender Berichte und prägnanter Inhaltszusammenfassungen"
+      },
+      "fileManagement": {
+        "desc": "Intelligente Dateiverwaltung mit Komprimierung, Integritätsprüfung und Inhaltszusammenfassung"
+      },
+      "chatAssistant": {
+        "desc": "Interagieren Sie mit einem intelligenten Assistenten, der Ihren Projektkontext und Ihre Bedürfnisse versteht"
+      },
+      "integration": {
+        "desc": "Nahtlose Verbindung mit beliebten Tools und Zugriff auf einen Marktplatz für Themes und Erweiterungen"
+      },
+      "roles": {
+        "desc": "Erstellen Sie benutzerdefinierte Rollen mit spezifischen Berechtigungen für verschiedene organisatorische Anforderungen"
+      },
+      "attendance": {
+        "desc": "Automatisierte Anwesenheitsüberwachung und intelligente Zuweisung von Arbeitsstunden"
+      },
+      "analytics": {
+        "desc": "Überwachung wichtiger Leistungskennzahlen und Vorhersage potenzieller Systemprobleme"
+      },
+      "versionControl": {
+        "desc": "Integrierte Versionsverfolgung und anpassbare Workflow-Prozesse"
+      }
+    },
+    "workflows": {
+      "title": "Benutzerdefinierte Workflows",
+      "desc": "Erstellen Sie maßgeschneiderte Workflows für verschiedene Projekttypen und Teams",
+      "details": {
+        "1": "Drag-and-Drop-Workflow-Designer",
+        "2": "Automatisierte Aufgabenübergänge und Benachrichtigungen",
+        "3": "Benutzerdefinierte Genehmigungsprozesse und Validierungsregeln"
+      }
+    },
+    "military": {
+      "title": "Militärische Sicherheit",
+      "desc": "Unternehmenssicherheit mit fortschrittlicher Verschlüsselung und Compliance",
+      "details": {
+        "1": "Ende-zu-Ende-Verschlüsselung für alle Daten",
+        "2": "Rollenbasierte Zugriffskontrollen und Auditprotokolle",
+        "3": "Einhaltung von GDPR, HIPAA und ISO-Standards"
+      }
+    },
+    "integrations": {
+      "title": "Nahtlose Integrationen",
+      "desc": "Verbindung mit Ihren Lieblingstools und -plattformen für einen einheitlichen Workflow",
+      "details": {
+        "1": "Über 100 vorgefertigte Integrationen mit beliebten Tools",
+        "2": "Benutzerdefinierter API-Zugriff für spezielle Verbindungen",
+        "3": "Bidirektionale Datensynchronisation mit externen Systemen"
+      }
+    },
+    "showDetails": "Details anzeigen",
+    "hideDetails": "Details ausblenden"
+  },
+  "results": {
+    "title": "Kampferprobte Ergebnisse",
+    "faster": "227% schnellere Projektstarts mit KI-generierten Vorlagen",
+    "saved": "41 Stunden/Monat pro Teammitglied bei Statusaktualisierungen gespart",
+    "earlyWarning": "Frühwarnsystem erkennt 83% der Risiken, bevor sie eskalieren"
+  },
+  "technical": {
+    "title": "Technische Superkräfte",
+    "cognitive": "Kognitive Architektur",
+    "multiagent": "Multi-Agent KI-System (FLAN-T5 + GPT-4 Turbo + Custom NLP)",
+    "realtime": "Echtzeit-Sync-Engine - 10ms Update-Latenz für über 10K+ Aufgaben",
+    "predictive": "Prädiktive Analytik - Projektvollendungstermine mit 92% Genauigkeit",
+    "enterprise": "Enterprise-Ready Stack"
+  },
+  "usecases": {
+    "title": "Anwendungsfälle",
+    "executives": "Führungskräfte",
+    "executivesCase": "Benötigen Echtzeit-Einblick in Projektfortschritt, Ressourcenzuweisung und finanzielle Leistung.",
+    "executivesResult": "Erhalten umfassende Dashboards mit KPIs, Budgetverfolgung und Kennzahlen zur Ressourcennutzung.",
+    "engineers": "Ingenieure",
+    "engineersCase": "Müssen an technischen Aufgaben zusammenarbeiten, Probleme verfolgen und die Code-Integration verwalten.",
+    "engineersResult": "Zugriff auf ein optimiertes Ticketsystem mit Git-Integration und automatisierten Workflows.",
+    "pms": "Projektmanager",
+    "pmsCase": "Müssen Projekte planen, Ressourcen zuweisen, Fortschritte verfolgen und über Meilensteine berichten.",
+    "pmsResult": "Verwenden interaktive Gantt-Diagramme, Ressourcenzuweisungstools und automatisierte Berichte."
+  },
+  "roi": {
+    "title": "ROI-Rechner",
+    "standups": {
+      "before": "5 Std/Team",
+      "after": "22 Min (KI-protokolliert)"
+    },
+    "risk": {
+      "before": "Post-mortem",
+      "after": "Präventiv (durchschnittlich 9 Tage früher)"
+    },
+    "reports": {
+      "before": "8 Std/manuell",
+      "after": "12 Sek/KI-generiert"
+    },
+    "enhancedTitle": "Reale Auswirkungen",
+    "enhancedSubtitle": "Messbare Ergebnisse, die unsere KI-gestützte Plattform liefert",
+    "downloadReport": "Vollständigen ROI-Bericht herunterladen",
+    "enhancedProductivity": {
+      "metric": "68%",
+      "desc": "Steigerung der Teamproduktivität durch KI-gestützte Aufgabenführung"
+    },
+    "costSavings": {
+      "metric": "42%",
+      "desc": "Reduzierung der Projektkosten durch KI-Ressourcenoptimierung"
+    },
+    "riskReduction": {
+      "metric": "76%",
+      "desc": "der potenziellen Projektrisiken werden identifiziert, bevor sie den Zeitplan beeinflussen"
+    },
+    "timeToMarket": {
+      "metric": "55%",
+      "desc": "schnellere Markteinführung mit KI-Workflow-Automatisierung"
+    }
+  },
+  "perfectFor": {
+    "title": "Perfekt für",
+    "scaleups": "Wachstumsunternehmen, bei denen Prozesse bei 50+ Mitarbeitern brechen",
+    "distributed": "Verteilte Teams, die im asynchronen Chaos ertrinken",
+    "gov": "Regierung/Gesundheitswesen, die luftdichte Audit-Trails benötigen",
+    "vc": "VC-finanzierte Startups, die Investoren-Berichte benötigen"
+  },
+  "difference": {
+    "title": "Der IntelliFlow-Unterschied",
+    "quote": "Andere Tools zeigen Ihnen, wo Ihre Projekte stehen – wir zeigen Ihnen, wohin sie gehen, warum es wichtig ist und genau wie Sie den Weg dorthin optimieren können."
+  },
+  "cta": {
+    "title": "Sehen Sie die Plattform in Aktion",
+    "demo": "7-Min Demo buchen",
+    "playground": "KI-Playground testen"
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preisgestaltung",
+    "subtitle": "Wählen Sie den Plan, der zu den Bedürfnissen Ihres Teams passt",
+    "starter": {
+      "title": "Starter"
+    },
+    "pro": {
+      "title": "Pro"
+    },
+    "enterprise": {
+      "title": "Enterprise"
+    },
+    "mostPopular": "Am beliebtesten",
+    "contactSales": "Vertrieb kontaktieren"
+  },
+  "admin": {
+    "tools": {
+      "title": "Admin-Werkzeuge",
+      "databaseBackup": "Datenbank-Sicherung",
+      "exportData": "Daten Exportieren",
+      "bulkImport": "Massenimport",
+      "securityScan": "Sicherheitsscan",
+      "printAllData": "Alle Daten Drucken",
+      "processing": "Verarbeitung...",
+      "backupFolderPath": "Backup-Ordnerpfad",
+      "confirmBackup": "Backup Bestätigen",
+      "output": "Ausgabe",
+      "usingCachedData": "Verwenden von zwischengespeicherten Daten aus der vorherigen Sitzung"
+    },
+    "dashboard": {
+      "viewDetails": "Details Anzeigen",
+      "attendees": "Teilnehmer",
+      "taskCompletion": "Aufgabenabschluss"
+    },
+    "actionFailed": "Aktion fehlgeschlagen",
+    "usingCachedData": "Verwenden von zwischengespeicherten Daten"
+  },
+  "auditLogs": {
+    "title": "Audit-Protokolle",
+    "timestamp": "Zeitstempel",
+    "action": "Aktion",
+    "user": "Benutzer",
+    "project": "Projekt",
+    "system": "System",
+    "searchPlaceholder": "Protokolle durchsuchen...",
+    "noLogsFound": "Keine Protokolle gefunden",
+    "timeframe": {
+      "last24Hours": "Letzte 24 Stunden",
+      "last7Days": "Letzte 7 Tage",
+      "allTime": "Gesamte Zeit"
+    }
+  },
+  "common": {
+    "na": "N/V",
+    "logout": "Abmelden"
+  },
+  "auth": {
+    "login": {
+      "invalidCredentials": "Ungültige E-Mail oder Passwort"
+    }
+  },
+  "login": {
+    "logoAlt": "Firmenlogo",
+    "welcomeBack": "Willkommen zurück",
+    "signInPrompt": "Melden Sie sich bei Ihrem Konto an",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "forgotPassword": "Passwort vergessen?",
+    "signIn": "Anmelden",
+    "signingIn": "Anmeldung läuft...",
+    "noAccount": "Haben Sie noch kein Konto?",
+    "signUp": "Registrieren"
+  }
+}

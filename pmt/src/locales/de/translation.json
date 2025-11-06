@@ -1,0 +1,120 @@
+{
+  "connection": {
+    "reconnected": "Die Verbindung wurde wiederhergestellt",
+    "offline": "Sie sind derzeit offline"
+  },
+  
+  "budget": {
+    "projectName": "Projektname",
+    "budget": "Budget",
+    "progress": "Fortschritt",
+    "viewDetails": "Details anzeigen",
+    "editBudget": "Budget bearbeiten",
+    "downloadReport": "Bericht herunterladen",
+    "resetBudget": "Budget zurücksetzen",
+    "projectBudgets": "Projektbudgets"
+  },
+  "project": {
+    "fields": {
+      "name": "Projektname",
+      "description": "Beschreibung",
+      "manager": "Projektmanager",
+      "selectManager": "Manager auswählen",
+      "status": "Status",
+      "startDate": "Startdatum",
+      "endDate": "Enddatum",
+      "budget": "Budget"
+    },
+    "status": {
+      "Planning": "Planung",
+      "In Progress": "In Bearbeitung",
+      "On Hold": "Angehalten", 
+      "Completed": "Abgeschlossen"
+    },
+    "errors": {
+      "noUsers": "Keine Benutzer zum Zuweisen verfügbar"
+    },
+    "modal": {
+      "title": "Neues Projekt erstellen"
+    },
+    "actions": {
+      "cancel": "Abbrechen",
+      "create": "Projekt erstellen"
+    }
+  },
+  "timeTracker": {
+    "title": "Zeiterfassung",
+    "noEntries": "Keine Zeiteinträge gefunden",
+    "addEntry": "Eintrag hinzufügen",
+    "project": "Projekt",
+    "selectProject": "Projekt auswählen",
+    "description": "Beschreibung",
+    "priority": "Priorität",
+    "start": "Start",
+    "stop": "Stopp",
+    "pause": "Pause",
+    "todayTotal": "Heutiges Gesamt",
+    "weekTotal": "Diese Woche",
+    "reports": "Berichte",
+    "date": "Datum",
+    "time": "Zeit",
+    "actions": "Aktionen",
+    "recentEntries": "Neueste Einträge",
+    "from": "Von",
+    "to": "Bis",
+    "export": "Exportieren",
+    "addManualEntry": "Manuellen Eintrag hinzufügen",
+    "hours": "Stunden",
+    "reminders": "Erinnerungen",
+    "reminder5": "5 Minuten vorher",
+    "reminder15": "15 Minuten vorher",
+    "reminder30": "30 Minuten vorher",
+    "reminder60": "1 Stunde vorher",
+    "reminder1440": "1 Tag vorher",
+    "minutesBefore": "Minuten vorher"
+  },
+  "events": {
+    "edit": "Ereignis bearbeiten",
+    "create": "Ereignis erstellen",
+    "title": "Titel",
+    "description": "Beschreibung",
+    "start": "Beginn",
+    "end": "Ende",
+    "allDay": "Ganztägig",
+    "details": "Ereignisdetails",
+    "project": "Projekt",
+    "location": "Ort",
+    "color": "Farbe",
+    "attendees": "Teilnehmer",
+    "settings": "Ereigniseinstellungen",
+    "priority": "Priorität",
+    "reminders": "Erinnerungen",
+    "private": "Privates Ereignis",
+    "updated": "Ereignis erfolgreich aktualisiert",
+    "failedSave": "Ereignis konnte nicht gespeichert werden"
+  },
+  "importExport": {
+    "title": "Import & Export",
+    "exportData": "Daten exportieren",
+    "exportDescription": "Exportieren Sie Ihre Systemdaten in verschiedenen Formaten für Backup- oder Analysezwecke.",
+    "exportFormat": "Exportformat",
+    "dataType": "Datentyp",
+    "allData": "Alle Daten",
+    "usersOnly": "Nur Benutzer",
+    "projectsOnly": "Nur Projekte",
+    "tasksOnly": "Nur Aufgaben",
+    "includeMetadata": "Metadaten einschließen",
+    "export": "Daten exportieren",
+    "importData": "Daten importieren",
+    "importDescription": "Importieren Sie Daten aus externen Dateien, um Ihr System zu aktualisieren oder zu befüllen.",
+    "dropFilesHere": "Dateien hier ablegen",
+    "dragAndDrop": "Dateien hierher ziehen oder zum Durchsuchen klicken",
+    "acceptedFormats": "Akzeptiert .csv, .xlsx, .json Dateien",
+    "importOptions": "Import-Optionen",
+    "replaceAll": "Alle Daten ersetzen",
+    "mergeData": "Mit vorhandenen Daten zusammenführen",
+    "skipExisting": "Vorhandene Datensätze überspringen",
+    "import": "Daten importieren"
+  },
+  "tryAgain": "Erneut versuchen"
+}

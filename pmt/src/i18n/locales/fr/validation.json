@@ -1,0 +1,14 @@
+{
+  "required": "{{field}} est requis",
+  "invalidEmail": "Veuillez entrer une adresse e-mail valide",
+  "minLength": "Doit contenir au moins {{count}} caractères",
+  "maxLength": "Ne peut pas dépasser {{count}} caractères",
+  "passwordsDontMatch": "Les mots de passe ne correspondent pas",
+  "termsRequired": "Vous devez accepter les conditions générales pour continuer",
+  "invalidFormat": "Format invalide",
+  "invalidDate": "Veuillez entrer une date valide",
+  "invalidNumber": "Veuillez entrer un nombre valide",
+  "emailExists": "Cet e-mail est déjà enregistré",
+  "weakPassword": "Le mot de passe est trop faible",
+  "invalidPhone": "Veuillez entrer un numéro de téléphone valide"
+}

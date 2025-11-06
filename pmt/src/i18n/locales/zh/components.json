@@ -1,0 +1,60 @@
+{
+  "languageSelector": {
+    "tooltip": "更改语言",
+    "language": "{{language}}"
+  },
+  "loadingSpinner": {
+    "loading": "加载中..."
+  },
+  "profile": {
+    "title": "个人资料",
+    "editProfile": "编辑个人资料",
+    "currentPassword": "当前密码",
+    "newPassword": "新密码",
+    "confirmPassword": "确认密码",
+    "save": "保存",
+    "cancel": "取消",
+    "saving": "正在保存...",
+    "successMessage": "个人资料已成功更新",
+    "errorMessage": "更新个人资料失败",
+    "verified": "已验证账户",
+    "personalDetails": "个人详情",
+    "security": "安全和密码",
+    "name": "全名",
+    "email": "电子邮件地址",
+    "phone": "电话号码",
+    "location": "位置",
+    "company": "公司",
+    "language": "首选语言",
+    "memberSince": "注册时间",
+    "lastPasswordChange": "上次密码更改",
+    "changePassword": "更改密码",
+    "notSpecified": "未指定",
+    "notProvided": "未提供",
+    "notAvailable": "不可用",
+    "loading": "正在加载个人资料..."
+  },
+  "chatRoom": {
+    "title": "聊天",
+    "typing": "{{user}} 正在输入...",
+    "send": "发送",
+    "typeMessage": "输入消息...",
+    "pinnedMessages": "已固定的消息",
+    "unpin": "取消固定",
+    "pin": "固定",
+    "you": "你",
+    "projectChat": "项目聊天 - {projectId}",
+    "teamChat": "团队聊天",
+    "minimize": "最小化",
+    "maximize": "最大化",
+    "restore": "还原",
+    "severalTyping": "多人正在输入..."
+  },
+  "validation": {
+    "required": "{{field}}是必填的",
+    "minLength": "必须至少有{{count}}个字符",
+    "passwordRequirement": "至少8个字符",
+    "termsRequired": "您必须接受条款"
+  },
+  "button_label": "按钮"
+}

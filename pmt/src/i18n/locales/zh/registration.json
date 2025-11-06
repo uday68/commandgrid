@@ -1,0 +1,78 @@
+{
+  "title": "创建您的账户",
+  "subtitle": "加入数千个团队，开始您的项目管理之旅",
+  "steps": {
+    "account": "账户",
+    "personal": "个人信息",
+    "team": "团队",
+    "organization": "组织",
+    "admin": "管理员",
+    "review": "审核"
+  },
+  "registrationType": {
+    "individual": "个人",
+    "team": "团队",
+    "company": "公司",
+    "companyAdmin": "公司 + 管理员"
+  },
+  "fields": {
+    "email": "电子邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "firstName": "名字",
+    "lastName": "姓氏",
+    "phone": "电话号码",
+    "companyName": "公司名称",
+    "industry": "行业",
+    "companySize": "公司规模",
+    "role": "您的角色",
+    "teamName": "团队名称",
+    "teamDescription": "团队描述",
+    "teamSize": "团队规模",
+    "address": "地址",
+    "city": "城市",
+    "state": "州/省",
+    "zipCode": "邮政编码",
+    "country": "国家",
+    "category": "公司类别",
+    "sector": "业务部门",
+    "adminFirstName": "管理员名字",
+    "adminLastName": "管理员姓氏",
+    "adminEmail": "管理员邮箱",
+    "adminPassword": "管理员密码",
+    "adminConfirmPassword": "确认管理员密码"
+  },
+  "placeholders": {
+    "phone": "输入您的电话号码（可选）",
+    "category": "输入您的公司类别（可选）"
+  },
+  "buttons": {
+    "uploadPhoto": "上传照片",
+    "completeRegistration": "完成注册"
+  },
+  "labels": {
+    "preferAgile": "我偏好敏捷方法论进行项目管理",
+    "agilePreference": "敏捷偏好"
+  },
+  "passwordRequirement": "至少需要8个字符",
+  "review": {
+    "account": "账户信息",
+    "personal": "个人信息",
+    "organization": "组织信息",
+    "team": "团队信息",
+    "admin": "管理员信息"
+  },
+  "terms": {
+    "agree": "我同意",
+    "termsService": "服务条款",
+    "and": "和",
+    "privacyPolicy": "隐私政策"
+  },
+  "haveAccount": "已有账户？",
+  "signIn": "登录",
+  "notProvided": "未提供",
+  "adminInfo": "管理员账户信息",
+  "errors": {
+    "registrationFailed": "注册失败。请重试。"
+  }
+}

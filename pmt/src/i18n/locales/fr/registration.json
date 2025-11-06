@@ -1,0 +1,78 @@
+{
+  "title": "Créez Votre Compte",
+  "subtitle": "Rejoignez des milliers d'équipes et commencez votre parcours vers une meilleure gestion de projet",
+  "steps": {
+    "account": "Compte",
+    "personal": "Personnel",
+    "team": "Équipe",
+    "organization": "Organisation",
+    "admin": "Administrateur",
+    "review": "Révision"
+  },
+  "registrationType": {
+    "individual": "Individuel",
+    "team": "Équipe",
+    "company": "Entreprise",
+    "companyAdmin": "Entreprise + Admin"
+  },
+  "fields": {
+    "email": "Adresse e-mail",
+    "password": "Mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Numéro de téléphone",
+    "companyName": "Nom de l'entreprise",
+    "industry": "Secteur d'activité",
+    "companySize": "Taille de l'entreprise",
+    "role": "Votre rôle",
+    "teamName": "Nom de l'équipe",
+    "teamDescription": "Description de l'équipe",
+    "teamSize": "Taille de l'équipe",
+    "address": "Adresse",
+    "city": "Ville",
+    "state": "État/Province",
+    "zipCode": "Code postal",
+    "country": "Pays",
+    "category": "Catégorie d'entreprise",
+    "sector": "Secteur d'activité",
+    "adminFirstName": "Prénom de l'administrateur",
+    "adminLastName": "Nom de l'administrateur",
+    "adminEmail": "E-mail de l'administrateur",
+    "adminPassword": "Mot de passe de l'administrateur",
+    "adminConfirmPassword": "Confirmer le mot de passe de l'administrateur"
+  },
+  "placeholders": {
+    "phone": "Entrez votre numéro de téléphone (facultatif)",
+    "category": "Entrez la catégorie de votre entreprise (facultatif)"
+  },
+  "buttons": {
+    "uploadPhoto": "Télécharger une photo",
+    "completeRegistration": "Terminer l'inscription"
+  },
+  "labels": {
+    "preferAgile": "Je préfère la méthodologie Agile pour la gestion de projet",
+    "agilePreference": "Préférence Agile"
+  },
+  "passwordRequirement": "Minimum 8 caractères requis",
+  "review": {
+    "account": "Informations du compte",
+    "personal": "Informations personnelles",
+    "organization": "Informations sur l'organisation",
+    "team": "Informations sur l'équipe",
+    "admin": "Informations de l'administrateur"
+  },
+  "terms": {
+    "agree": "J'accepte les",
+    "termsService": "Conditions d'utilisation",
+    "and": "et la",
+    "privacyPolicy": "Politique de confidentialité"
+  },
+  "haveAccount": "Vous avez déjà un compte ?",
+  "signIn": "Se connecter",
+  "notProvided": "Non fourni",
+  "adminInfo": "Informations du compte administrateur",
+  "errors": {
+    "registrationFailed": "L'inscription a échoué. Veuillez réessayer."
+  }
+}

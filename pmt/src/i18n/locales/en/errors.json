@@ -1,0 +1,60 @@
+{
+  "general": {
+    "unknown": "An unknown error occurred",
+    "serverError": "Server error occurred",
+    "connectionFailed": "Failed to connect to server",
+    "timeout": "Request timed out",
+    "unauthorized": "Unauthorized access",
+    "forbidden": "Access forbidden",
+    "notFound": "Resource not found",
+    "validationFailed": "Validation failed"
+  },
+  "auth": {
+    "invalidCredentials": "Invalid username or password",
+    "accountLocked": "Your account has been locked",
+    "sessionExpired": "Your session has expired, please login again",
+    "emailInUse": "Email is already in use",
+    "weakPassword": "Password is too weak",
+    "loginRequired": "You must be logged in to access this feature"
+  },
+  "connection": {
+    "offline": "You are offline. Some features may be limited.",
+    "reconnecting": "Reconnecting...",
+    "reconnected": "Connection reestablished",
+    "failed": "Connection failed",
+    "realtimeConnection": "Real-time connection error: {{error}}",
+    "checkConnection": "Please check your internet connection",
+    "persistentOffline": "You seem to be persistently offline. Please check your network settings or try again later."
+  },
+  "projects": {
+    "createFailed": "Failed to create project",
+    "updateFailed": "Failed to update project",
+    "deleteFailed": "Failed to delete project",
+    "accessDenied": "You don't have permission to access this project"
+  },
+  "tasks": {
+    "createFailed": "Failed to create task",
+    "updateFailed": "Failed to update task",
+    "deleteFailed": "Failed to delete task",
+    "assignFailed": "Failed to assign task",
+    "statusChangeFailed": "Failed to change task status"
+  },
+  "files": {
+    "uploadFailed": "File upload failed",
+    "downloadFailed": "File download failed",
+    "fileTooLarge": "File is too large",
+    "invalidFileType": "Invalid file type"
+  },
+  "translation": {
+    "failed": "Failed to load translation.",
+    "notFound": "Translation key not found."
+  },
+  "pageError": "Page Error",
+  "unexpectedError": "An unexpected error occurred",
+  "goBack": "Go Back",
+  "returnHome": "Return to Home",
+  "tryAgain": "Try Again",
+  "somethingWentWrong": "Something Went Wrong",
+  "applicationCrashed": "Application Crashed",
+  "generalError": "Error"
+}

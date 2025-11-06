@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\project_management_tool\\backend\\logs\\.f12d2dd34828d2961548fd2eb1a0976b9b1293ac-audit.json",
+    "files": [
+        {
+            "date": 1749418172083,
+            "name": "D:\\project_management_tool\\backend\\logs\\exceptions-2025-06-09.log",
+            "hash": "a3e244055d34969d6b405f3620e4f85672430bb98d85cacb217ed2a60090bd96"
+        },
+        {
+            "date": 1749494286469,
+            "name": "D:\\project_management_tool\\backend\\logs\\exceptions-2025-06-10.log",
+            "hash": "1a244f4327c3792eb1bfeeabdc8d52eb3eb450ca768ac3686c415ad5fd4176ff"
+        },
+        {
+            "date": 1749581206151,
+            "name": "D:\\project_management_tool\\backend\\logs\\exceptions-2025-06-11.log",
+            "hash": "41b711dae2e863ab9ad21d7aada91f51002ea5dc8bb3c44473157f06aac253dd"
+        },
+        {
+            "date": 1749727232353,
+            "name": "D:\\project_management_tool\\backend\\logs\\exceptions-2025-06-12.log",
+            "hash": "6762619c9ff273d932fbb993244a13c88607f2ea3db3e30baa404bb705abe102"
+        },
+        {
+            "date": 1749814125557,
+            "name": "D:\\project_management_tool\\backend\\logs\\exceptions-2025-06-13.log",
+            "hash": "fd27ead7978d42912ae786d9fb7652cd1948250dd28571ffe4636310e14df0d9"
+        },
+        {
+            "date": 1749902567845,
+            "name": "D:\\project_management_tool\\backend\\logs\\exceptions-2025-06-14.log",
+            "hash": "608432111ca06724c3779d140c245346b905adf8da49daadfdd19a69d5c5e16c"
+        },
+        {
+            "date": 1749925800941,
+            "name": "D:\\project_management_tool\\backend\\logs\\exceptions-2025-06-15.log",
+            "hash": "d296fde141d8264c792956e957c2830db9228ca5be17ef29d8a42629df37676d"
+        },
+        {
+            "date": 1750012241290,
+            "name": "D:\\project_management_tool\\backend\\logs\\exceptions-2025-06-16.log",
+            "hash": "8b13acce9e702473d783b5b8548a4c98c2d7fc3f587a5cccc5e863cbeb6ba89f"
+        }
+    ],
+    "hashType": "sha256"
+}

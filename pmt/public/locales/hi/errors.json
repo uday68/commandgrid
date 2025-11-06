@@ -1,0 +1,7 @@
+{
+  "connection": {
+    "reconnected": "पुनः कनेक्ट हो गया",
+    "disconnected": "कनेक्शन टूट गया",
+    "unstable": "कनेक्शन अस्थिर है"
+  }
+}

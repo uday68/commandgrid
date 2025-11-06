@@ -1,0 +1,308 @@
+{
+  "common": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "role": "Role",
+    "count": "Count",
+    "you": "You",
+    "none": "None",
+    "noMetricsAvailable": "No metrics available",
+    "searchMessages": "Search Messages",
+    "searchMessagesPlaceholder": "Search in conversation...",
+    "emojiPicker": "Emoji Picker",
+    "gifPicker": "GIF Picker",
+    "primaryColor": "Primary Color",
+    "secondaryColor": "Secondary Color",
+    "backgroundColor": "Background Color",
+    "typeMessagePlaceholder": "Type a message...",
+    "pinnedMessages": "Pinned Messages",
+    "pinMessage": "Pin Message",
+    "unpinMessage": "Unpin Message",
+    "searchGifsPlaceholder": "Search GIFs...",
+    "reset": "Reset"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "username": "Username"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "teams": "Teams",
+    "tasks": "Tasks",
+    "meetings": "Meetings",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "recentActivity": "Recent Activity",
+    "statistics": "Statistics",
+    "tasks": "Tasks",
+    "upcomingMeetings": "Upcoming Meetings",
+    "summary": "Dashboard Summary",
+    "upcomingDeadlines": "Upcoming Deadlines"
+  },
+  "roles": {
+    "admin": "Administrator",
+    "manager": "Manager",
+    "developer": "Developer",
+    "designer": "Designer",
+    "tester": "Tester",
+    "user": "User"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "createTask": "Create Task",
+    "taskName": "Task Name",
+    "description": "Description",
+    "dueDate": "Due Date",
+    "assignee": "Assignee",
+    "status": "Status",
+    "priority": "Priority"
+  },
+  "metrics": {
+    "systemMetrics": "System Metrics",
+    "systemDescription": "View system metrics and performance data",
+    "totalUsers": "Total Users",
+    "totalProjects": "Total Projects",
+    "totalTasks": "Total Tasks", 
+    "totalActivities": "Total Activities",
+    "budgetOverview": "Budget Overview",
+    "budget": "Budget",
+    "roleDistribution": "Role Distribution"
+  },
+  "calendar": {
+    "today": "Today",
+    "previous": "Previous",
+    "next": "Next",
+    "month": "Month",
+    "week": "Week",
+    "day": "Day",
+    "agenda": "Agenda",
+    "date": "Date",
+    "time": "Time",
+    "event": "Event",
+    "allDay": "All Day",
+    "showMore": "Show {count} more",
+    "importSuccess": "{count} events imported successfully",
+    "importFailed": "Failed to import calendar"
+  },
+  "fileViewer": {
+    "documentRepository": "Document Repository",
+    "listView": "List View",
+    "gridView": "Grid View",
+    "download": "Download",
+    "actions": "Actions",
+    "folders": {
+      "all_files": "All Files",
+      "documents": "Documents",
+      "images": "Images",
+      "videos": "Videos",
+      "audios": "Audios"
+    },
+    "tabs": {
+      "content": "Content",
+      "summary": "Summary",
+      "enhance": "Enhance",
+      "chat": "Chat",
+      "archive": "Archive",
+      "history": "History",
+      "send": "Send"
+    }
+  },
+  "admin": {
+    "projectManagement": "Project Management",
+    "tools": {
+      "title": "Admin Tools",
+      "databaseBackup": "Database Backup",
+      "exportData": "Export Data",
+      "bulkImport": "Bulk Import",
+      "securityScan": "Security Scan",
+      "printAllData": "Print All Data"
+    },
+    "reports": {
+      "title": "Reports"
+    }
+  },
+  "auditLogs": {
+    "title": "Audit Logs"
+  },
+  "chatRoom": {
+    "projectChat": "Project Chat - {projectId}",
+    "teamChat": "Team Chat",
+    "restore": "Restore",
+    "minimize": "Minimize",
+    "maximize": "Maximize"
+  },
+  "events": {
+    "edit": "Edit Event",
+    "create": "Create Event",
+    "updated": "Event updated successfully",
+    "created": "Event created successfully",
+    "deleted": "Event deleted successfully",
+    "failedSave": "Failed to save event",
+    "failedDelete": "Failed to delete event",
+    "title": "Title",
+    "description": "Description",
+    "start": "Start",
+    "end": "End",
+    "allDay": "All Day",
+    "project": "Project",
+    "location": "Location",
+    "attendees": "Attendees",
+    "priority": "Priority",
+    "private": "Private Event",
+    "reminders": "Reminders",
+    "minutesBefore": "minutes before",
+    "reminder5": "5 minutes before",
+    "reminder15": "15 minutes before",
+    "reminder30": "30 minutes before",
+    "reminder60": "1 hour before",
+    "reminder1440": "1 day before"
+  },
+  "priority": {
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "profile": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving..."
+  },
+  "components": {
+    "languageSelector": {
+      "tooltip": "Change language"
+    },
+    "profile": {
+      "editProfile": "Edit Profile",
+      "successMessage": "Profile updated successfully",
+      "errorMessage": "Failed to update profile",
+      "updatePassword": "Update Password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving..."
+    }
+  },
+  "features": {
+    "ai": {
+      "title": "AI Assistance",
+      "desc": "Smart AI features to boost productivity",
+      "details": {
+        "1": "Automated task prioritization",
+        "2": "Smart time tracking",
+        "3": "Content summarization",
+        "4": "Code review suggestions"
+      }
+    },
+    "wellbeing": {
+      "title": "Team Wellbeing",
+      "desc": "Tools to maintain team wellness and prevent burnout",
+      "details": {
+        "1": "Work-life balance indicators",
+        "2": "Break time reminders",
+        "3": "Workload analytics",
+        "4": "Wellness resources"
+      }
+    },
+    "community": {
+      "title": "Community Collaboration",
+      "desc": "Built-in community features to foster teamwork",
+      "details": {
+        "1": "Team forums and discussions",
+        "2": "Knowledge sharing hubs",
+        "3": "Peer recognition system",
+        "4": "Communities of practice"
+      }
+    },
+    "integrations": {
+      "title": "Powerful Integrations",
+      "desc": "Connect with your favorite tools seamlessly",
+      "details": {
+        "1": "GitHub and GitLab integration",
+        "2": "Slack and Microsoft Teams",
+        "3": "Google Workspace and Office 365",
+        "4": "Zoom and Google Meet"
+      }
+    }
+  },
+  "errors": {
+    "passwordsMismatch": "Passwords do not match"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageDescription": "Choose your preferred language. The application will immediately update to display content in the selected language.",
+    "notifications": "Notifications",
+    "notificationsDescription": "Configure how you receive notifications and alerts from the system.",
+    "theme": {
+      "title": "Theme Settings",
+      "description": "Customize the appearance of the application to match your preferences.",
+      "saveChanges": "Save your theme changes",
+      "resetDefaults": "Reset to default theme settings",
+      "reset": "Reset",
+      "mode": "Theme Mode",
+      "modes": {
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System"
+      },
+      "typography": "Typography",
+      "fontFamily": "Font Family",
+      "fontSize": "Font Size",
+      "appearance": "Appearance & Contrast",
+      "contrastLevel": "Contrast Level",
+      "contrast": {
+        "normal": "Normal",
+        "high": "High Contrast",
+        "veryHigh": "Very High Contrast"
+      },
+      "spacing": "Element Spacing",
+      "spacingOptions": {
+        "compact": "Compact",
+        "comfortable": "Comfortable",
+        "spacious": "Spacious"
+      },
+      "density": "Interface Density",
+      "densityOptions": {
+        "compact": "Compact",
+        "standard": "Standard",
+        "comfortable": "Comfortable"
+      },
+      "roundedCorners": "Use Rounded Corners",
+      "enableAnimations": "Enable Animations",
+      "colors": "Colors",
+      "primaryColor": "Primary Color",
+      "secondaryColor": "Secondary Color",
+      "buttonStyle": "Button Style",
+      "buttonStyles": {
+        "text": "Text",
+        "contained": "Contained",
+        "outlined": "Outlined"
+      },
+      "customBackground": "Custom Background",
+      "customBackgroundHelp": "Enter a URL or CSS gradient definition",
+      "preview": "Preview",
+      "previewText": "This is a preview of how your theme settings will look.",
+      "saveSuccess": "Theme settings saved successfully"
+    }
+  }
+}

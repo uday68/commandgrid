@@ -1,0 +1,1228 @@
+[
+    {
+      "nl_query": "List all tasks assigned to user with id $1 that are overdue.",
+      "sql_query": "SELECT * FROM tasks WHERE assigned_to = $1 AND due_date < CURRENT_DATE AND status != 'Completed';"
+    },
+    {
+      "nl_query": "Calculate average hours logged per user for company id $1.",
+      "sql_query": "SELECT user_id, AVG(hours) AS avg_hours FROM time_entries WHERE user_id IN (SELECT user_id FROM users WHERE company_id = $1) GROUP BY user_id;"
+    },
+    {
+      "nl_query": "Find all projects with budget over $2 for company id $1.",
+      "sql_query": "SELECT * FROM projects WHERE company_id = $1 AND budget > $2;"
+    },
+    {
+      "nl_query": "Show team members who haven't logged time in the last 7 days.",
+      "sql_query": "SELECT u.* FROM users u LEFT JOIN time_entries t ON u.user_id = t.user_id AND t.created_at >= CURRENT_DATE - INTERVAL '7 days' WHERE t.user_id IS NULL;"
+    },
+    {
+      "nl_query": "Count open tasks per project for admin id $1.",
+      "sql_query": "SELECT p.project_id, COUNT(t.task_id) FROM projects p JOIN tasks t ON p.project_id = t.project_id WHERE p.owner_id = $1 AND t.status != 'Completed' GROUP BY p.project_id;"
+    },
+    {
+      "nl_query": "Archive completed projects older than $1 months.",
+      "sql_query": "UPDATE projects SET status = 'archived' WHERE status = 'completed' AND end_date < CURRENT_DATE - INTERVAL '$1 months';"
+    },
+    {
+      "nl_query": "Find users with multiple failed login attempts in security audits.",
+      "sql_query": "SELECT user_id, COUNT(*) FROM security_audits WHERE event_type = 'failed_login' GROUP BY user_id HAVING COUNT(*) > 3;"
+    },
+    {
+      "nl_query": "List projects without milestones in the next 30 days.",
+      "sql_query": "SELECT * FROM projects p WHERE NOT EXISTS (SELECT 1 FROM milestones m WHERE m.project_id = p.project_id AND m.due_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '30 days');"
+    },
+    {
+      "nl_query": "Calculate total file storage used by project id $1.",
+      "sql_query": "SELECT SUM(pg_column_size(f.file_url)) AS total_storage FROM files f WHERE f.project_id = $1;"
+    },
+    {
+      "nl_query": "Find team leaders without active teams.",
+      "sql_query": "SELECT * FROM team_leader tl WHERE NOT EXISTS (SELECT 1 FROM teams t WHERE t.leader_id = tl.leader_id AND t.status = 'active');"
+    },
+    {
+      "nl_query": "List meetings with more than $2 participants for company id $1.",
+      "sql_query": "SELECT m.* FROM meetings m JOIN (SELECT meeting_id, COUNT(*) FROM meeting_participants GROUP BY meeting_id HAVING COUNT(*) > $2) mp ON m.meeting_id = mp.meeting_id WHERE m.company_id = $1;"
+    },
+    {
+      "nl_query": "Find tasks with missing due dates in project id $1.",
+      "sql_query": "SELECT * FROM tasks WHERE project_id = $1 AND due_date IS NULL;"
+    },
+    {
+      "nl_query": "Calculate percentage of completed tasks per project.",
+      "sql_query": "SELECT project_id, (COUNT(CASE WHEN status = 'Completed' THEN 1 END) * 100.0 / COUNT(*)) AS completion_percent FROM tasks GROUP BY project_id;"
+    },
+    {
+      "nl_query": "List users who are members of multiple teams.",
+      "sql_query": "SELECT user_id, COUNT(*) FROM team_members GROUP BY user_id HAVING COUNT(*) > 1;"
+    },
+    {
+      "nl_query": "Find projects exceeding their budget by more than $2.",
+      "sql_query": "SELECT p.*, (p.budget - COALESCE(SUM(t.hours * 50), 0)) AS over_budget FROM projects p LEFT JOIN time_entries t ON p.project_id = t.project_id GROUP BY p.project_id HAVING (p.budget - COALESCE(SUM(t.hours * 50), 0)) < -$2;"
+    },
+    {
+      "nl_query": "List reports pending approval older than $1 days.",
+      "sql_query": "SELECT * FROM reports WHERE status = 'pending' AND created_at < CURRENT_DATE - INTERVAL '$1 days';"
+    },
+    {
+      "nl_query": "Find meetings without meeting reports.",
+      "sql_query": "SELECT * FROM meetings m WHERE NOT EXISTS (SELECT 1 FROM meeting_reports mr WHERE mr.meeting_id = m.meeting_id);"
+    },
+    {
+      "nl_query": "Calculate average task completion time per project.",
+      "sql_query": "SELECT project_id, AVG(EXTRACT(EPOCH FROM (t.updated_at - t.created_at))/3600 AS avg_hours FROM tasks t WHERE status = 'Completed' GROUP BY project_id;"
+    },
+    {
+      "nl_query": "List users with 'Expert' level skills in 'Python'.",
+      "sql_query": "SELECT u.* FROM users u JOIN user_skills us ON u.user_id = us.user_id WHERE us.skill_name = 'Python' AND us.experience_level = 'Expert';"
+    },
+    {
+      "nl_query": "Find teams with no active members.",
+      "sql_query": "SELECT t.* FROM teams t LEFT JOIN team_members tm ON t.team_id = tm.team_id WHERE tm.team_id IS NULL;"
+    },
+    {
+      "nl_query": "Calculate monthly project creation trend for company id $1.",
+      "sql_query": "SELECT DATE_TRUNC('month', created_at) AS month, COUNT(*) FROM projects WHERE company_id = $1 GROUP BY month ORDER BY month;"
+    },
+    {
+      "nl_query": "List tasks with high priority and no assignee.",
+      "sql_query": "SELECT * FROM tasks WHERE priority = 'High' AND assigned_to IS NULL;"
+    },
+    {
+      "nl_query": "Find users who haven't updated their skills in over a year.",
+      "sql_query": "SELECT u.* FROM users u JOIN user_skills us ON u.user_id = us.user_id WHERE us.updated_at < CURRENT_DATE - INTERVAL '1 year';"
+    },
+    {
+      "nl_query": "Calculate total unread notifications per user.",
+      "sql_query": "SELECT user_id, COUNT(*) FROM notifications WHERE is_read = FALSE GROUP BY user_id;"
+    },
+    {
+      "nl_query": "List projects with missing end dates.",
+      "sql_query": "SELECT * FROM projects WHERE end_date IS NULL;"
+    },
+    {
+      "nl_query": "Find files uploaded in the last 24 hours.",
+      "sql_query": "SELECT * FROM files WHERE created_at >= CURRENT_TIMESTAMP - INTERVAL '24 hours';"
+    },
+    {
+      "nl_query": "List team leaders with their team count.",
+      "sql_query": "SELECT leader_id, COUNT(*) AS team_count FROM team_leader GROUP BY leader_id;"
+    },
+    {
+      "nl_query": "Find calendar events without associated projects.",
+      "sql_query": "SELECT * FROM calendar_events WHERE project_id IS NULL;"
+    },
+    {
+      "nl_query": "Calculate average meeting duration per company.",
+      "sql_query": "SELECT company_id, AVG(EXTRACT(EPOCH FROM (meeting_end_time - meeting_start_time))/3600 FROM meetings GROUP BY company_id;"
+    },
+    {
+      "nl_query": "List users with both 'Frontend' and 'Backend' skills.",
+      "sql_query": "SELECT u.* FROM users u WHERE EXISTS (SELECT 1 FROM user_skills WHERE user_id = u.user_id AND skill_name = 'Frontend') AND EXISTS (SELECT 1 FROM user_skills WHERE user_id = u.user_id AND skill_name = 'Backend');"
+    },
+    {
+      "nl_query": "Find tasks with conflicting due dates for user id $1.",
+      "sql_query": "SELECT t1.* FROM tasks t1 JOIN tasks t2 ON t1.assigned_to = t2.assigned_to WHERE t1.assigned_to = $1 AND t1.due_date = t2.due_date AND t1.task_id != t2.task_id;"
+    },
+    {
+      "nl_query": "List projects with all tasks completed.",
+      "sql_query": "SELECT p.* FROM projects p WHERE NOT EXISTS (SELECT 1 FROM tasks t WHERE t.project_id = p.project_id AND t.status != 'Completed');"
+    },
+    {
+      "nl_query": "Calculate busiest day of week for meetings.",
+      "sql_query": "SELECT EXTRACT(DOW FROM meeting_date) AS day_of_week, COUNT(*) FROM meetings GROUP BY day_of_week ORDER BY COUNT(*) DESC LIMIT 1;"
+    },
+    {
+      "nl_query": "List users who have never logged time.",
+      "sql_query": "SELECT u.* FROM users u LEFT JOIN time_entries t ON u.user_id = t.user_id WHERE t.user_id IS NULL;"
+    },
+    {
+      "nl_query": "Find most common security threat type.",
+      "sql_query": "SELECT threat_name, COUNT(*) FROM security_threats GROUP BY threat_name ORDER BY COUNT(*) DESC LIMIT 1;"
+    },
+    {
+      "nl_query": "List projects approaching their end date within $1 days.",
+      "sql_query": "SELECT * FROM projects WHERE end_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '$1 days';"
+    },
+    {
+      "nl_query": "Calculate ratio of internal vs external meetings for company id $1.",
+      "sql_query": "SELECT CASE WHEN company_id = $1 THEN 'internal' ELSE 'external' END AS meeting_type, COUNT(*) FROM meetings GROUP BY meeting_type;"
+    },
+    {
+      "nl_query": "List tasks with multiple tags.",
+      "sql_query": "SELECT task_id, COUNT(*) FROM task_tags GROUP BY task_id HAVING COUNT(*) > 1;"
+    },
+    {
+      "nl_query": "Find users with matching skills to task id $1.",
+      "sql_query": "SELECT u.* FROM users u JOIN user_skills us ON u.user_id = us.user_id WHERE us.skill_name IN (SELECT tag_name FROM task_tags tt JOIN tags t ON tt.tag_id = t.tag_id WHERE tt.task_id = $1);"
+    },
+    {
+      "nl_query": "Calculate average response time to reports.",
+      "sql_query": "SELECT AVG(EXTRACT(EPOCH FROM (updated_at - created_at))/3600) FROM reports WHERE status = 'reviewed';"
+    },
+    {
+      "nl_query": "List projects with no recent activity (30 days).",
+      "sql_query": "SELECT p.* FROM projects p LEFT JOIN activity_logs al ON p.project_id = al.project_id AND al.created_at >= CURRENT_DATE - INTERVAL '30 days' WHERE al.log_id IS NULL;"
+    },
+    {
+      "nl_query": "Find teams using deprecated tags.",
+      "sql_query": "SELECT DISTINCT t.* FROM teams t JOIN tasks ta ON t.team_id = ta.team_id JOIN task_tags tt ON ta.task_id = tt.task_id JOIN tags tg ON tt.tag_id = tg.tag_id WHERE tg.tag_name = 'deprecated';"
+    },
+    {
+      "nl_query": "Calculate weekly active users.",
+      "sql_query": "SELECT DATE_TRUNC('week', last_active) AS week, COUNT(DISTINCT user_id) FROM users GROUP BY week ORDER BY week;"
+    },
+    {
+      "nl_query": "List tasks blocked by incomplete dependencies.",
+      "sql_query": "SELECT t.* FROM tasks t JOIN task_dependencies td ON t.task_id = td.blocked_task_id WHERE td.dependency_task_id IN (SELECT task_id FROM tasks WHERE status != 'Completed');"
+    },
+    {
+      "nl_query": "Find administrators who haven't logged in for 90 days.",
+      "sql_query": "SELECT * FROM admins WHERE last_login < CURRENT_DATE - INTERVAL '90 days';"
+    },
+    {
+      "nl_query": "Calculate project budget utilization percentage.",
+      "sql_query": "SELECT p.project_id, (COALESCE(SUM(t.hours * hourly_rate), 0) / p.budget * 100) AS utilization FROM projects p LEFT JOIN time_entries t ON p.project_id = t.project_id GROUP BY p.project_id;"
+    },
+    {
+      "nl_query": "List users with expired security certifications.",
+      "sql_query": "SELECT u.* FROM users u JOIN user_certifications uc ON u.user_id = uc.user_id WHERE uc.expiry_date < CURRENT_DATE;"
+    },
+    {
+      "nl_query": "Find projects with similar keywords in descriptions.",
+      "sql_query": "SELECT p1.project_id, p2.project_id FROM projects p1, projects p2 WHERE p1.project_id != p2.project_id AND SIMILARITY(p1.description, p2.description) > 0.6;"
+    },
+    {
+      "nl_query": "Calculate average time between task assignment and completion.",
+      "sql_query": "SELECT AVG(EXTRACT(EPOCH FROM (updated_at - assigned_at))/3600) FROM tasks WHERE status = 'Completed';"
+    }
+    ,
+        {
+          "nl_query": "List users who haven't logged any time entries in the past 30 days.",
+          "sql_query": "SELECT u.* FROM users u LEFT JOIN time_entries t ON u.user_id = t.user_id AND t.created_at >= CURRENT_DATE - INTERVAL '30 days' WHERE t.user_id IS NULL;"
+        },
+        {
+          "nl_query": "Find projects with budgets exceeding $1 by more than 20% of their allocated budget.",
+          "sql_query": "SELECT * FROM projects WHERE (actual_cost - budget) > (budget * 0.2);"
+        },
+        {
+          "nl_query": "Show the 5 most active users based on task assignments in team id $1.",
+          "sql_query": "SELECT u.*, COUNT(t.task_id) AS task_count FROM users u JOIN tasks t ON u.user_id = t.assigned_to WHERE t.team_id = $1 GROUP BY u.user_id ORDER BY task_count DESC LIMIT 5;"
+        },
+        {
+          "nl_query": "List tasks with dependencies that are not yet completed.",
+          "sql_query": "SELECT t.* FROM tasks t JOIN task_dependencies td ON t.task_id = td.dependent_task_id WHERE td.dependency_task_id NOT IN (SELECT task_id FROM tasks WHERE status = 'Completed');"
+        },
+        {
+          "nl_query": "Calculate the average time between task creation and completion for project id $1.",
+          "sql_query": "SELECT AVG(EXTRACT(EPOCH FROM (updated_at - created_at))/3600) AS avg_hours FROM tasks WHERE project_id = $1 AND status = 'Completed';"
+        },
+        {
+          "nl_query": "Find meetings with unresolved action items from previous meetings.",
+          "sql_query": "SELECT m.* FROM meetings m JOIN meeting_reports mr ON m.meeting_id = mr.meeting_id WHERE mr.summary LIKE '%action item%' AND NOT EXISTS (SELECT 1 FROM tasks WHERE description LIKE '%action item%' AND status = 'Completed');"
+        },
+        {
+          "nl_query": "List users with conflicting calendar events on date $1.",
+          "sql_query": "SELECT u.user_id, COUNT(*) AS conflict_count FROM calendar_events ce JOIN users u ON ce.created_by = u.user_id WHERE ce.event_date = $1 GROUP BY u.user_id HAVING COUNT(*) > 1;"
+        },
+        {
+          "nl_query": "Show projects with no milestones defined.",
+          "sql_query": "SELECT * FROM projects p WHERE NOT EXISTS (SELECT 1 FROM milestones m WHERE m.project_id = p.project_id);"
+        },
+        {
+          "nl_query": "Find tasks tagged as 'urgent' but not assigned to any user.",
+          "sql_query": "SELECT t.* FROM tasks t JOIN task_tags tt ON t.task_id = tt.task_id JOIN tags tg ON tt.tag_id = tg.tag_id WHERE tg.tag_name = 'urgent' AND t.assigned_to IS NULL;"
+        },
+        {
+          "nl_query": "Calculate the percentage of meetings with reports generated within 24 hours.",
+          "sql_query": "SELECT (COUNT(CASE WHEN mr.generated_at <= m.created_at + INTERVAL '24 hours' THEN 1 END) * 100.0 / COUNT(*)) AS compliance_rate FROM meetings m LEFT JOIN meeting_reports mr ON m.meeting_id = mr.meeting_id;"
+        },
+        {
+          "nl_query": "List teams where the leader has no tasks assigned.",
+          "sql_query": "SELECT t.* FROM teams t JOIN team_leader tl ON t.leader_id = tl.leader_id LEFT JOIN tasks ta ON tl.leader_id = ta.assigned_to WHERE ta.task_id IS NULL;"
+        },
+        {
+          "nl_query": "Find users who attended all meetings in project id $1.",
+          "sql_query": "SELECT u.* FROM users u WHERE NOT EXISTS (SELECT 1 FROM meetings m WHERE m.project_id = $1 AND NOT EXISTS (SELECT 1 FROM meeting_participants mp WHERE mp.meeting_id = m.meeting_id AND mp.user_id = u.user_id));"
+        },
+        {
+          "nl_query": "Show the distribution of task priorities across all projects.",
+          "sql_query": "SELECT priority, COUNT(*) AS task_count FROM tasks GROUP BY priority ORDER BY task_count DESC;"
+        },
+        {
+          "nl_query": "List projects with tasks that have missing dependencies.",
+          "sql_query": "SELECT DISTINCT p.* FROM projects p JOIN tasks t ON p.project_id = t.project_id LEFT JOIN task_dependencies td ON t.task_id = td.dependency_task_id WHERE td.dependency_task_id IS NULL;"
+        },
+        {
+          "nl_query": "Calculate the average number of comments per task for user id $1.",
+          "sql_query": "SELECT AVG(comment_count) FROM (SELECT COUNT(*) AS comment_count FROM task_comments WHERE user_id = $1 GROUP BY task_id) AS sub;"
+        },
+        {
+          "nl_query": "Find security vulnerabilities with no associated remediation plan.",
+          "sql_query": "SELECT * FROM security_vulnerabilities WHERE remediation_plan IS NULL;"
+        },
+        {
+          "nl_query": "List users who have changed teams more than $2 times in the last $1 months.",
+          "sql_query": "SELECT user_id, COUNT(*) FROM team_members WHERE created_at >= CURRENT_DATE - INTERVAL '$1 months' GROUP BY user_id HAVING COUNT(*) > $2;"
+        },
+        {
+          "nl_query": "Show tasks with the longest time between updates.",
+          "sql_query": "SELECT task_id, EXTRACT(EPOCH FROM (CURRENT_TIMESTAMP - updated_at))/86400 AS days_inactive FROM tasks ORDER BY days_inactive DESC LIMIT 10;"
+        },
+        {
+          "nl_query": "Find admins who have not created any projects in the last 6 months.",
+          "sql_query": "SELECT a.* FROM admins a LEFT JOIN projects p ON a.admin_id = p.owner_id AND p.created_at >= CURRENT_DATE - INTERVAL '6 months' WHERE p.project_id IS NULL;"
+        },
+        {
+          "nl_query": "Calculate the ratio of internal vs. external reports for company id $1.",
+          "sql_query": "SELECT recipient, COUNT(*) * 100.0 / (SELECT COUNT(*) FROM reports WHERE company_id = $1) AS percentage FROM reports WHERE company_id = $1 GROUP BY recipient;"
+        },
+        {
+          "nl_query": "List users with identical skill sets as user id $1.",
+          "sql_query": "SELECT u2.* FROM user_skills us1 JOIN user_skills us2 ON us1.skill_name = us2.skill_name AND us1.experience_level = us2.experience_level JOIN users u2 ON us2.user_id = u2.user_id WHERE us1.user_id = $1 AND us2.user_id != $1 GROUP BY u2.user_id HAVING COUNT(*) = (SELECT COUNT(*) FROM user_skills WHERE user_id = $1);"
+        },
+        {
+          "nl_query": "Find calendar events that overlap with scheduled meetings for user id $1.",
+          "sql_query": "SELECT ce.* FROM calendar_events ce JOIN meetings m ON ce.event_date = m.meeting_date WHERE ce.created_by = $1 AND m.created_by = $1 AND ce.event_time < m.meeting_time + INTERVAL '1 hour' AND ce.event_time + INTERVAL '1 hour' > m.meeting_time;"
+        },
+        {
+          "nl_query": "Show projects where actual spending exceeds planned budget by more than $2.",
+          "sql_query": "SELECT p.*, (actual_cost - budget) AS overspend FROM projects WHERE actual_cost - budget > $2;"
+        },
+        {
+          "nl_query": "List tasks with the most revisions based on activity logs.",
+          "sql_query": "SELECT t.task_id, COUNT(*) AS revision_count FROM activity_logs al JOIN tasks t ON al.project_id = t.project_id WHERE al.action LIKE 'Task%modified' GROUP BY t.task_id ORDER BY revision_count DESC LIMIT 5;"
+        },
+        {
+          "nl_query": "Find users who have not updated their passwords in over a year.",
+          "sql_query": "SELECT * FROM users WHERE last_password_change < CURRENT_DATE - INTERVAL '1 year';"
+        },
+        {
+          "nl_query": "Calculate the average number of days to resolve security vulnerabilities.",
+          "sql_query": "SELECT AVG(EXTRACT(EPOCH FROM (resolved_at - created_at))/86400 AS avg_days FROM security_vulnerabilities WHERE resolved_at IS NOT NULL;"
+        },
+        {
+          "nl_query": "List projects with the highest number of cross-team collaborations.",
+          "sql_query": "SELECT p.project_id, COUNT(DISTINCT t.team_id) AS team_count FROM projects p JOIN tasks ta ON p.project_id = ta.project_id JOIN teams t ON ta.team_id = t.team_id GROUP BY p.project_id ORDER BY team_count DESC LIMIT 5;"
+        },
+        {
+          "nl_query": "Find reports that reference tasks not marked as completed.",
+          "sql_query": "SELECT r.* FROM reports r JOIN tasks t ON r.description LIKE '%' || t.task_id || '%' WHERE t.status != 'Completed';"
+        },
+        {
+          "nl_query": "Show the trend of new user registrations by month for company id $1.",
+          "sql_query": "SELECT DATE_TRUNC('month', created_at) AS month, COUNT(*) FROM users WHERE company_id = $1 GROUP BY month ORDER BY month;"
+        },
+        {
+          "nl_query": "List tasks that are blocked by more than $2 dependencies.",
+          "sql_query": "SELECT task_id, COUNT(*) FROM task_dependencies GROUP BY task_id HAVING COUNT(*) > $2;"
+        },
+        {
+          "nl_query": "Find meetings scheduled outside of business hours (9 AM to 5 PM).",
+          "sql_query": "SELECT * FROM meetings WHERE meeting_time < '09:00:00' OR meeting_time > '17:00:00';"
+        },
+        {
+          "nl_query": "Calculate the utilization rate of team members per team.",
+          "sql_query": "SELECT t.team_id, (COUNT(DISTINCT ta.assigned_to) * 100.0 / COUNT(DISTINCT tm.user_id)) AS utilization FROM teams t LEFT JOIN tasks ta ON t.team_id = ta.team_id LEFT JOIN team_members tm ON t.team_id = tm.team_id GROUP BY t.team_id;"
+        },
+        {
+          "nl_query": "List projects with expired deadlines but still marked as 'active'.",
+          "sql_query": "SELECT * FROM projects WHERE end_date < CURRENT_DATE AND status = 'active';"
+        },
+        {
+          "nl_query": "Find users who have been assigned to tasks in all projects of company id $1.",
+          "sql_query": "SELECT u.* FROM users u WHERE NOT EXISTS (SELECT 1 FROM projects p WHERE p.company_id = $1 AND NOT EXISTS (SELECT 1 FROM tasks t WHERE t.project_id = p.project_id AND t.assigned_to = u.user_id));"
+        },
+        {
+          "nl_query": "Show the distribution of security threat severities.",
+          "sql_query": "SELECT severity, COUNT(*) FROM security_threats GROUP BY severity ORDER BY COUNT(*) DESC;"
+        },
+        {
+          "nl_query": "List tasks with no activity logs in the past 7 days.",
+          "sql_query": "SELECT t.* FROM tasks t LEFT JOIN activity_logs al ON t.task_id = al.task_id AND al.created_at >= CURRENT_DATE - INTERVAL '7 days' WHERE al.log_id IS NULL;"
+        },
+        {
+          "nl_query": "Calculate the percentage of tasks completed on time per project.",
+          "sql_query": "SELECT project_id, (COUNT(CASE WHEN status = 'Completed' AND updated_at <= due_date THEN 1 END) * 100.0 / COUNT(*)) AS on_time_rate FROM tasks GROUP BY project_id;"
+        },
+        {
+          "nl_query": "Find teams with an average task completion time under $2 hours.",
+          "sql_query": "SELECT t.team_id, AVG(EXTRACT(EPOCH FROM (updated_at - created_at))/3600 AS avg_hours FROM tasks t JOIN teams tm ON t.team_id = tm.team_id GROUP BY t.team_id HAVING AVG(EXTRACT(EPOCH FROM (updated_at - created_at))/3600 < $2;"
+        },
+        {
+          "nl_query": "List users who have created tasks but never assigned any.",
+          "sql_query": "SELECT u.* FROM users u JOIN tasks t ON u.user_id = t.created_by WHERE t.assigned_to IS NULL GROUP BY u.user_id;"
+        },
+        {
+          "nl_query": "Show projects with the highest number of concurrent tasks.",
+          "sql_query": "SELECT project_id, MAX(concurrent_tasks) FROM (SELECT project_id, DATE_TRUNC('day', created_at), COUNT(*) AS concurrent_tasks FROM tasks GROUP BY project_id, DATE_TRUNC('day', created_at)) AS sub GROUP BY project_id ORDER BY MAX(concurrent_tasks) DESC LIMIT 5;"
+        },
+        {
+          "nl_query": "Find calendar events that conflict with company holidays.",
+          "sql_query": "SELECT ce.* FROM calendar_events ce JOIN company_holidays ch ON ce.event_date = ch.holiday_date;"
+        },
+        {
+          "nl_query": "List tasks that reference deprecated libraries or tools.",
+          "sql_query": "SELECT t.* FROM tasks t JOIN task_tags tt ON t.task_id = tt.task_id JOIN tags tg ON tt.tag_id = tg.tag_id WHERE tg.tag_name IN ('deprecated', 'legacy');"
+        },
+        {
+          "nl_query": "Calculate the average time to first response for user-reported issues.",
+          "sql_query": "SELECT AVG(EXTRACT(EPOCH FROM (first_response_time - created_at))/3600) FROM issues WHERE first_response_time IS NOT NULL;"
+        },
+        {
+          "nl_query": "Find projects using more than $2 third-party integrations.",
+          "sql_query": "SELECT p.* FROM projects p JOIN integrations i ON p.project_id = i.project_id GROUP BY p.project_id HAVING COUNT(*) > $2;"
+        },
+        {
+          "nl_query": "List users who have not participated in any meetings for project id $1.",
+          "sql_query": "SELECT u.* FROM users u WHERE NOT EXISTS (SELECT 1 FROM meeting_participants mp JOIN meetings m ON mp.meeting_id = m.meeting_id WHERE m.project_id = $1 AND mp.user_id = u.user_id);"
+        },
+        {
+          "nl_query": "Show the escalation path for unresolved security vulnerabilities older than $1 days.",
+          "sql_query": "SELECT sv.*, e.escalation_path FROM security_vulnerabilities sv JOIN escalation_procedures e ON sv.severity = e.severity_level WHERE sv.created_at < CURRENT_DATE - INTERVAL '$1 days' AND sv.resolved_at IS NULL;"
+        },
+        {
+          "nl_query": "Find tasks with circular dependencies.",
+          "sql_query": "SELECT t1.task_id AS task_a, t2.task_id AS task_b FROM task_dependencies td1 JOIN task_dependencies td2 ON td1.dependency_task_id = td2.task_id AND td1.task_id = td2.dependency_task_id JOIN tasks t1 ON td1.task_id = t1.task_id JOIN tasks t2 ON td2.task_id = t2.task_id WHERE t1.task_id != t2.task_id;"
+        },
+        {
+          "nl_query": "Calculate the monthly growth rate of new projects.",
+          "sql_query": "WITH monthly_counts AS (SELECT DATE_TRUNC('month', created_at) AS month, COUNT(*) AS count FROM projects GROUP BY month) SELECT month, count, LAG(count) OVER (ORDER BY month), (count - LAG(count) OVER (ORDER BY month)) * 100.0 / LAG(count) OVER (ORDER BY month) AS growth_rate FROM monthly_counts;"
+        },
+        {
+          "nl_query": "List users who have accessed the system from more than $2 different IP addresses.",
+          "sql_query": "SELECT user_id, COUNT(DISTINCT ip_address) FROM security_audits GROUP BY user_id HAVING COUNT(DISTINCT ip_address) > $2;"
+        },
+        {
+          "nl_query": "Find tasks that are prerequisites for more than $2 other tasks.",
+          "sql_query": "SELECT dependency_task_id, COUNT(*) FROM task_dependencies GROUP BY dependency_task_id HAVING COUNT(*) > $2;"
+        },
+        {
+          "nl_query": "Show the distribution of meeting durations for company id $1.",
+          "sql_query": "SELECT meeting_id, EXTRACT(EPOCH FROM (meeting_end_time - meeting_start_time))/3600 AS duration_hours FROM meetings WHERE company_id = $1 ORDER BY duration_hours;"
+        }
+        ,
+            {
+              "nl_query": "Find tasks that are blocked by completed dependencies but remain unstarted.",
+              "sql_query": "SELECT t.* FROM tasks t JOIN task_dependencies td ON t.task_id = td.task_id WHERE td.dependency_task_id IN (SELECT task_id FROM tasks WHERE status = 'Completed') AND t.status = 'Pending';"
+            },
+            {
+              "nl_query": "Calculate the rolling 7-day average of time entries per user for team id $1.",
+              "sql_query": "SELECT user_id, date, AVG(hours) OVER (PARTITION BY user_id ORDER BY date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) FROM time_entries WHERE user_id IN (SELECT user_id FROM team_members WHERE team_id = $1);"
+            },
+            {
+              "nl_query": "Identify projects where 50% of milestones are overdue by more than $2 days.",
+              "sql_query": "SELECT p.* FROM projects p JOIN (SELECT project_id, (COUNT(CASE WHEN due_date < CURRENT_DATE THEN 1 END) * 100.0 / COUNT(*)) AS overdue_pct FROM milestones GROUP BY project_id) m ON p.project_id = m.project_id WHERE m.overdue_pct > 50 AND (CURRENT_DATE - m.due_date) > $2;"
+            },
+            {
+              "nl_query": "Find security vulnerabilities affecting multiple projects simultaneously.",
+              "sql_query": "SELECT sv.* FROM security_vulnerabilities sv JOIN project_vulnerabilities pv1 ON sv.vulnerability_id = pv1.vulnerability_id JOIN project_vulnerabilities pv2 ON sv.vulnerability_id = pv2.vulnerability_id WHERE pv1.project_id != pv2.project_id GROUP BY sv.vulnerability_id HAVING COUNT(DISTINCT pv.project_id) > 1;"
+            },
+            {
+              "nl_query": "Calculate team velocity based on completed story points in last 3 sprints.",
+              "sql_query": "SELECT team_id, AVG(total_points) FROM (SELECT sprint_id, team_id, SUM(story_points) AS total_points FROM tasks WHERE sprint_id IN (SELECT sprint_id FROM sprints ORDER BY end_date DESC LIMIT 3) AND status = 'Completed' GROUP BY sprint_id, team_id) AS sub GROUP BY team_id;"
+            },
+            {
+              "nl_query": "Find users consistently exceeding estimated task hours by more than 20%.",
+              "sql_query": "SELECT u.* FROM users u JOIN tasks t ON u.user_id = t.assigned_to JOIN time_entries te ON t.task_id = te.task_id GROUP BY u.user_id HAVING AVG(te.hours / t.estimated_hours) > 1.2;"
+            },
+            {
+              "nl_query": "Identify projects with declining weekly activity (3 consecutive weeks).",
+              "sql_query": "WITH weekly_activity AS (SELECT project_id, DATE_TRUNC('week', created_at) AS week, COUNT(*) AS activity FROM activity_logs GROUP BY 1,2) SELECT * FROM weekly_activity wa1 WHERE EXISTS (SELECT 1 FROM weekly_activity wa2 WHERE wa1.project_id = wa2.project_id AND wa2.week = wa1.week - INTERVAL '1 week' AND wa2.activity < wa1.activity) AND EXISTS (SELECT 1 FROM weekly_activity wa3 WHERE wa1.project_id = wa3.project_id AND wa3.week = wa1.week - INTERVAL '2 weeks' AND wa3.activity < wa2.activity);"
+            },
+            {
+              "nl_query": "Find meetings where action items from previous meetings remain unresolved.",
+              "sql_query": "SELECT m.* FROM meetings m JOIN meeting_reports mr ON m.meeting_id = mr.meeting_id WHERE EXISTS (SELECT 1 FROM tasks t WHERE t.description LIKE '%Action Item:%' AND t.status != 'Completed' AND t.created_at < m.meeting_date);"
+            },
+            {
+              "nl_query": "Calculate resource contention score for teams sharing members.",
+              "sql_query": "SELECT t1.team_id, t2.team_id, COUNT(DISTINCT tm.user_id) AS shared_members FROM team_members tm1 JOIN team_members tm2 ON tm1.user_id = tm2.user_id JOIN teams t1 ON tm1.team_id = t1.team_id JOIN teams t2 ON tm2.team_id = t2.team_id WHERE t1.team_id != t2.team_id GROUP BY t1.team_id, t2.team_id HAVING COUNT(*) > 0;"
+            },
+            {
+              "nl_query": "Predict project completion dates using linear regression of task progress.",
+              "sql_query": "SELECT project_id, REGR_SLOPE(completion_pct, EXTRACT(EPOCH FROM log_date)) * target_pct + REGR_INTERCEPT(completion_pct, EXTRACT(EPOCH FROM log_date)) AS est_date FROM project_progress GROUP BY project_id;"
+            },
+            {
+              "nl_query": "Find tasks with priority inversion (high priority depending on low priority).",
+              "sql_query": "SELECT t1.task_id AS high_pri_task, t2.task_id AS low_pri_dependency FROM tasks t1 JOIN task_dependencies td ON t1.task_id = td.task_id JOIN tasks t2 ON td.dependency_task_id = t2.task_id WHERE t1.priority = 'High' AND t2.priority = 'Low';"
+            },
+            {
+              "nl_query": "Calculate context switching cost per user based on task jumps.",
+              "sql_query": "SELECT user_id, COUNT(DISTINCT project_id) * 0.5 AS estimated_cost FROM task_switches WHERE switch_time > last_switch_time + INTERVAL '1 hour' GROUP BY user_id;"
+            },
+            {
+              "nl_query": "Identify circular reporting relationships in organizational hierarchy.",
+              "sql_query": "WITH RECURSIVE reporting_chain AS (SELECT user_id, manager_id FROM users UNION ALL SELECT rc.user_id, u.manager_id FROM reporting_chain rc JOIN users u ON rc.manager_id = u.user_id) SELECT * FROM reporting_chain WHERE user_id = manager_id;"
+            },
+            {
+              "nl_query": "Find seasonal patterns in project creation over multiple years.",
+              "sql_query": "SELECT EXTRACT(MONTH FROM created_at) AS month, COUNT(*), AVG(COUNT(*)) OVER () FROM projects GROUP BY month HAVING COUNT(*) > AVG(COUNT(*)) OVER () * 1.2;"
+            },
+            {
+              "nl_query": "Calculate risk exposure index for projects with open vulnerabilities.",
+              "sql_query": "SELECT p.project_id, SUM(v.severity_score * (CURRENT_DATE - v.reported_date)) AS risk_index FROM projects p JOIN project_vulnerabilities pv ON p.project_id = pv.project_id JOIN vulnerabilities v ON pv.vulnerability_id = v.vulnerability_id WHERE v.status != 'Resolved' GROUP BY p.project_id;"
+            },
+            {
+              "nl_query": "Identify key user workflow bottlenecks using task handoff analysis.",
+              "sql_query": "SELECT transition_from, transition_to, AVG(transition_time) FROM (SELECT t1.assigned_to AS transition_from, t2.assigned_to AS transition_to, t2.created_at - t1.updated_at AS transition_time FROM tasks t1 JOIN task_dependencies td ON t1.task_id = td.dependency_task_id JOIN tasks t2 ON td.task_id = t2.task_id) AS transitions GROUP BY 1,2;"
+            },
+            {
+              "nl_query": "Find temporal clusters of security incidents using time-series analysis.",
+              "sql_query": "SELECT date_trunc('hour', incident_time) AS hour_bucket, COUNT(*) FROM security_incidents GROUP BY hour_bucket HAVING COUNT(*) > (SELECT AVG(count) + 2*STDDEV(count) FROM (SELECT COUNT(*) FROM security_incidents GROUP BY date_trunc('hour', incident_time)) AS avg_counts);"
+            },
+            {
+              "nl_query": "Calculate work distribution fairness across team members.",
+              "sql_query": "SELECT team_id, STDDEV(task_count) AS fairness_score FROM (SELECT team_id, user_id, COUNT(*) AS task_count FROM team_members tm JOIN tasks t ON tm.team_id = t.team_id GROUP BY 1,2) AS sub GROUP BY team_id;"
+            },
+            {
+              "nl_query": "Predict next quarter's capacity using Fourier time-series decomposition.",
+              "sql_query": "WITH periods AS (SELECT generate_series(1,24) AS period) SELECT period, AVG(task_count) * (1 + 0.2 * SIN(2*PI()*period/12)) AS forecast FROM (SELECT EXTRACT(MONTH FROM created_at) AS period, COUNT(*) AS task_count FROM tasks GROUP BY 1) AS hist JOIN periods ON hist.period = periods.period GROUP BY periods.period;"
+            },
+            {
+              "nl_query": "Find architectural hotspots using file change coupling analysis.",
+              "sql_query": "SELECT f1.file_id, f2.file_id, COUNT(*) AS coupling_score FROM file_changes fc1 JOIN file_changes fc2 ON fc1.commit_id = fc2.commit_id AND fc1.file_id < fc2.file_id GROUP BY 1,2 HAVING COUNT(*) > 5;"
+            },
+            {
+              "nl_query": "Identify hidden dependencies through comment mention networks.",
+              "sql_query": "SELECT DISTINCT t1.task_id, t2.task_id FROM task_comments c1 JOIN task_comments c2 ON c1.comment_text LIKE '%'||c2.task_id||'%' JOIN tasks t1 ON c1.task_id = t1.task_id JOIN tasks t2 ON c2.task_id = t2.task_id WHERE t1.task_id != t2.task_id;"
+            },
+            {
+              "nl_query": "Calculate technical debt interest using code quality metrics.",
+              "sql_query": "SELECT project_id, SUM(code_smells * 0.5 + bugs * 2 + vulnerabilities * 5) AS debt_interest FROM code_quality GROUP BY project_id;"
+            },
+            {
+              "nl_query": "Find temporal anti-patterns in CI/CD pipeline executions.",
+              "sql_query": "SELECT pipeline_id, COUNT(CASE WHEN result = 'failed' AND EXTRACT(HOUR FROM run_time) BETWEEN 2 AND 5 THEN 1 END) AS night_failures FROM pipeline_runs GROUP BY pipeline_id HAVING COUNT(*) > 0 AND night_failures * 2 > COUNT(*);"
+            },
+            {
+              "nl_query": "Optimize meeting schedules using participant time zone analysis.",
+              "sql_query": "WITH tz_groups AS (SELECT time_zone, COUNT(*) FROM users WHERE user_id IN (SELECT user_id FROM meeting_participants WHERE meeting_id = $1) GROUP BY time_zone) SELECT MODE() WITHIN GROUP (ORDER BY tz_groups.time_zone) AS optimal_tz FROM tz_groups;"
+            },
+            {
+              "nl_query": "Calculate bus factor for projects using contribution analysis.",
+              "sql_query": "SELECT project_id, 1 / SUM(POW(contribution_share,2)) AS bus_factor FROM (SELECT project_id, user_id, COUNT(*) / SUM(COUNT(*)) OVER (PARTITION BY project_id) AS contribution_share FROM tasks GROUP BY 1,2) AS contrib GROUP BY project_id;"
+            },
+            {
+              "nl_query": "Identify knowledge silos using communication network analysis.",
+              "sql_query": "SELECT user_id, 1 - (COUNT(DISTINCT receiver_id) / (SELECT COUNT(*) FROM users)) AS silo_score FROM messages GROUP BY user_id;"
+            },
+            {
+              "nl_query": "Predict infrastructure costs using seasonal ARIMA models.",
+              "sql_query": "SELECT time_bucket, cost, ARIMA_MODEL(cost) OVER (ORDER BY time_bucket) FROM infrastructure_costs;"
+            },
+            {
+              "nl_query": "Find architectural drift using dependency divergence metrics.",
+              "sql_query": "SELECT m1.module_id, m2.module_id, SUM(ABS(c1.deps - c2.deps)) AS drift_score FROM module_snapshots c1 JOIN module_snapshots c2 ON c1.module_id = c2.module_id JOIN modules m1 ON c1.module_id = m1.module_id JOIN modules m2 ON c2.module_id = m2.module_id WHERE c1.snapshot_date = CURRENT_DATE - INTERVAL '6 months' AND c2.snapshot_date = CURRENT_DATE;"
+            }
+            ,
+                {
+                  "nl_query": "List projects with security vulnerabilities affecting more than 3 team members.",
+                  "sql_query": "SELECT p.project_id, COUNT(DISTINCT tm.user_id) AS affected_users FROM projects p JOIN security_vulnerabilities sv ON p.project_id = sv.project_id JOIN team_members tm ON p.project_id = tm.project_id GROUP BY p.project_id HAVING COUNT(DISTINCT tm.user_id) > 3;"
+                },
+                {
+                  "nl_query": "Calculate hourly productivity trends for remote workers vs office workers.",
+                  "sql_query": "SELECT EXTRACT(HOUR FROM te.created_at) AS hour, u.work_location, AVG(te.hours) FROM time_entries te JOIN users u ON te.user_id = u.user_id GROUP BY hour, work_location ORDER BY hour;"
+                },
+                {
+                  "nl_query": "Identify tasks with conflicting requirements between tags and assigned team skills.",
+                  "sql_query": "SELECT t.task_id FROM tasks t JOIN task_tags tt ON t.task_id = tt.task_id JOIN tags tg ON tt.tag_id = tg.tag_id LEFT JOIN team_members tm ON t.team_id = tm.team_id LEFT JOIN user_skills us ON tm.user_id = us.user_id AND us.skill_name = tg.tag_name WHERE us.user_id IS NULL;"
+                },
+                {
+                  "nl_query": "Find meetings that could be merged based on overlapping participants and topics.",
+                  "sql_query": "SELECT m1.meeting_id, m2.meeting_id FROM meetings m1 JOIN meetings m2 ON m1.meeting_date = m2.meeting_date AND m1.meeting_id < m2.meeting_id WHERE m1.title % m2.title > 0.7 AND (SELECT COUNT(*) FROM meeting_participants mp1 JOIN meeting_participants mp2 ON mp1.user_id = mp2.user_id WHERE mp1.meeting_id = m1.meeting_id AND mp2.meeting_id = m2.meeting_id) > 0.5 * (SELECT COUNT(*) FROM meeting_participants WHERE meeting_id = m1.meeting_id);"
+                },
+                {
+                  "nl_query": "Optimize team assignments based on timezone overlap efficiency.",
+                  "sql_query": "SELECT t.team_id, COUNT(DISTINCT u.time_zone) AS tz_diversity, AVG(tz_overlap.score) AS overlap_score FROM teams t JOIN team_members tm ON t.team_id = tm.team_id JOIN users u ON tm.user_id = u.user_id JOIN timezone_overlap_scores tz_overlap ON u.time_zone = tz_overlap.time_zone GROUP BY t.team_id ORDER BY overlap_score DESC;"
+                },
+                {
+                  "nl_query": "Detect anomalous file access patterns in activity logs.",
+                  "sql_query": "SELECT user_id, COUNT(*) FROM activity_logs WHERE action = 'file_access' AND created_at::time BETWEEN '20:00' AND '04:00' GROUP BY user_id HAVING COUNT(*) > (SELECT AVG(count) + 2*STDDEV(count) FROM (SELECT COUNT(*) FROM activity_logs WHERE action = 'file_access' GROUP BY user_id) AS stats);"
+                },
+                {
+                  "nl_query": "Calculate technical debt interest accrual per sprint cycle.",
+                  "sql_query": "SELECT sprint_id, SUM(code_smells * 0.5 + bugs * 2 + vulnerabilities * 5) * (1 + 0.1 * sprint_number) AS debt_interest FROM code_quality JOIN sprints ON created_at BETWEEN start_date AND end_date GROUP BY sprint_id, sprint_number;"
+                },
+                {
+                  "nl_query": "Identify hidden dependencies through comment-based task relationships.",
+                  "sql_query": "WITH comment_links AS (SELECT DISTINCT c1.task_id AS source, CAST(SUBSTRING(c1.comment_text FROM '#([0-9a-fA-F\\-]+)') AS UUID) AS targetFROM task_comments c1WHERE c1.comment_text ~ '#[0-9a-fA-F\\-]+')SELECT * FROM comment_links WHERE target IN (SELECT task_id FROM tasks);"
+                },
+                {
+                  "nl_query": "Optimize CI/CD pipeline using historical failure patterns.",
+                  "sql_query": "SELECT stage_name, EXTRACT(DOW FROM run_time) AS day_of_week, AVG(run_duration) FROM pipeline_runs WHERE result = 'success' GROUP BY stage_name, day_of_week ORDER BY stage_name, day_of_week;"
+                },
+                {
+                  "nl_query": "Predict infrastructure costs using seasonal decomposition of time-series data.",
+                  "sql_query": "SELECT time_bucket, cost, cost - AVG(cost) OVER (ORDER BY time_bucket ROWS BETWEEN 11 PRECEDING AND CURRENT ROW) AS seasonal_component FROM infrastructure_costs;"
+                },
+                {
+                  "nl_query": "Calculate cross-team collaboration index based on shared task comments.",
+                  "sql_query": "SELECT t1.team_id, t2.team_id, COUNT(DISTINCT tc.task_id) AS collaboration_score FROM tasks t1 JOIN tasks t2 ON t1.project_id = t2.project_id JOIN task_comments tc ON t1.task_id = tc.task_id WHERE t1.team_id != t2.team_id GROUP BY t1.team_id, t2.team_id;"
+                },
+                {
+                  "nl_query": "Identify architectural drift using historical dependency graphs.",
+                  "sql_query": "SELECT m.module_id, COUNT(DISTINCT CASE WHEN s.snapshot_date < CURRENT_DATE - INTERVAL '6 months' THEN d.dependency_id END) AS old_deps, COUNT(DISTINCT CASE WHEN s.snapshot_date >= CURRENT_DATE - INTERVAL '6 months' THEN d.dependency_id END) AS new_deps FROM modules m JOIN snapshots s ON m.module_id = s.module_id JOIN dependencies d ON s.snapshot_id = d.snapshot_id GROUP BY m.module_id HAVING COUNT(DISTINCT CASE WHEN s.snapshot_date < CURRENT_DATE - INTERVAL '6 months' THEN d.dependency_id END) > 0;"
+                },
+                {
+                  "nl_query": "Optimize meeting times using participant circadian rhythm analysis.",
+                  "sql_query": "WITH user_peak_hours AS (SELECT user_id, MODE() WITHIN GROUP (ORDER BY EXTRACT(HOUR FROM created_at)) AS peak_hour FROM time_entries GROUP BY user_id) SELECT meeting_time, COUNT(*) FILTER (WHERE EXTRACT(HOUR FROM meeting_time) BETWEEN peak_hour-1 AND peak_hour+1) AS alignment_score FROM meetings JOIN meeting_participants USING (meeting_id) JOIN user_peak_hours USING (user_id) GROUP BY meeting_time ORDER BY alignment_score DESC;"
+                },
+                {
+                  "nl_query": "Detect hidden work patterns using IDE activity correlations.",
+                  "sql_query": "SELECT a1.user_id, a2.user_id, CORR(a1.activity_level, a2.activity_level) AS work_sync FROM ide_activity a1 JOIN ide_activity a2 ON a1.time_bucket = a2.time_bucket AND a1.user_id < a2.user_id GROUP BY a1.user_id, a2.user_id HAVING CORR(a1.activity_level, a2.activity_level) > 0.7;"
+                },
+                {
+                  "nl_query": "Predict developer burnout risk using work intensity metrics.",
+                  "sql_query": "SELECT user_id, AVG(hours) * STDDEV(hours) AS burnout_risk FROM time_entries WHERE created_at >= CURRENT_DATE - INTERVAL '30 days' GROUP BY user_id;"
+                }
+               
+                ,
+                    {
+                      "nl_query": "Predict CI/CD pipeline failures using historical deployment patterns.",
+                      "sql_query": "WITH features AS (SELECT pipeline_id, AVG(run_duration) OVER w AS avg_duration, COUNT(*) FILTER (WHERE result='failed') OVER w AS recent_fails FROM pipeline_runs WINDOW w AS (PARTITION BY pipeline_id ORDER BY run_time ROWS BETWEEN 10 PRECEDING)) SELECT pipeline_id, ML_PREDICT('pipeline_failure_model', features) AS failure_prob FROM features;"
+                    },
+                    {
+                      "nl_query": "Calculate feature importance for incident root causes using SHAP values.",
+                      "sql_query": "SELECT feature_name, AVG(ABS(shap_value)) AS importance FROM incident_features GROUP BY feature_name ORDER BY importance DESC LIMIT 10;"
+                    },
+                    {
+                      "nl_query": "Find optimal feature flags configuration using multi-armed bandit analysis.",
+                      "sql_query": "SELECT flag_name, variant, SUM(reward)/COUNT(*) AS expected_value FROM feature_flag_metrics GROUP BY flag_name, variant ORDER BY expected_value DESC;"
+                    },
+                    {
+                      "nl_query": "Detect model drift in production ML systems using PSI metric.",
+                      "sql_query": "SELECT feature_name, SUM((prod_dist - train_dist) * LN(prod_dist/train_dist)) AS psi FROM (SELECT feature_name, NTILE(10) OVER () AS bucket, COUNT(*)/SUM(COUNT(*)) OVER () AS prod_dist FROM production_data GROUP BY 1,2) prod JOIN (SELECT feature_name, bucket, distribution AS train_dist FROM training_distributions) train USING (feature_name, bucket) GROUP BY feature_name HAVING SUM((prod_dist - train_dist) * LN(prod_dist/train_dist)) > 0.1;"
+                    },
+                    {
+                      "nl_query": "Optimize hyperparameters using Bayesian optimization history.",
+                      "sql_query": "SELECT hyperparameter_config, AVG(validation_score) AS score, STDDEV(validation_score) AS uncertainty FROM model_runs GROUP BY hyperparameter_config ORDER BY score DESC, uncertainty ASC LIMIT 5;"
+                    },
+                    {
+                      "nl_query": "Calculate confusion matrix metrics for classifier deployments.",
+                      "sql_query": "SELECT class_label, SUM(CASE WHEN predicted_label = actual_label THEN 1 ELSE 0 END) AS tp, SUM(CASE WHEN predicted_label != actual_label THEN 1 ELSE 0 END) AS fp FROM predictions GROUP BY class_label;"
+                    },
+                    {
+                      "nl_query": "Identify adversarial examples using gradient-based attribution.",
+                      "sql_query": "SELECT input_hash, SUM(ABS(gradient)) AS sensitivity_score FROM model_gradients GROUP BY input_hash HAVING SUM(ABS(gradient)) > (SELECT AVG(SUM(ABS(gradient))) + 3*STDDEV(SUM(ABS(gradient))) FROM model_gradients GROUP BY input_hash);"
+                    },
+                    {
+                      "nl_query": "Monitor concept drift using moving KL-divergence window.",
+                      "sql_query": "SELECT window_end, SUM(target_dist * LN(target_dist/reference_dist)) AS kl_divergence FROM (SELECT time_bucket, feature_bucket, COUNT(*)/SUM(COUNT(*)) OVER () AS target_dist FROM production_data GROUP BY 1,2) recent JOIN reference_distribution USING (feature_bucket) GROUP BY window_end;"
+                    },
+                    {
+                      "nl_query": "Optimize batch inference costs using optimal batching strategy.",
+                      "sql_query": "SELECT batch_size, PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY inference_time) AS p95_latency, AVG(cost_per_batch) FROM inference_logs GROUP BY batch_size ORDER BY p95_latency ASC, cost_per_batch ASC LIMIT 1;"
+                    },
+                    {
+                      "nl_query": "Detect data leakage using target-feature correlation analysis.",
+                      "sql_query": "SELECT feature_name, ABS(CORR(feature_value, target)) AS leakage_score FROM training_data GROUP BY feature_name HAVING ABS(CORR(feature_value, target)) > 0.8;"
+                    }
+                    ,
+                        {
+                          "nl_query": "Find users with access to sensitive projects who haven't completed security training in the last year.",
+                          "sql_query": "SELECT u.* FROM users u JOIN project_members pm ON u.user_id = pm.user_id JOIN sensitive_projects sp ON pm.project_id = sp.project_id LEFT JOIN security_training st ON u.user_id = st.user_id AND st.completion_date > CURRENT_DATE - INTERVAL '1 year' WHERE st.user_id IS NULL;"
+                        },
+                        {
+                          "nl_query": "Detect files accessed by deactivated users after account termination.",
+                          "sql_query": "SELECT f.*, al.created_at FROM files f JOIN activity_logs al ON f.file_id = al.file_id JOIN users u ON al.user_id = u.user_id WHERE al.created_at > u.last_active AND u.status = 'inactive';"
+                        },
+                        {
+                          "nl_query": "Identify brute force attacks with 5+ failed logins from same IP in 5 minutes.",
+                          "sql_query": "SELECT ip_address, COUNT(*) FROM security_audits WHERE event_type = 'failed_login' AND timestamp > CURRENT_TIMESTAMP - INTERVAL '5 minutes' GROUP BY ip_address HAVING COUNT(*) >= 5;"
+                        },
+                        {
+                          "nl_query": "Calculate GDPR compliance score based on data access controls and audit trails.",
+                          "sql_query": "SELECT p.project_id, CASE WHEN COUNT(f.file_id) FILTER (WHERE f.access_controls IS NULL) = 0 AND COUNT(al.log_id) > 0 THEN 100 ELSE 80 END AS compliance_score FROM projects p LEFT JOIN files f ON p.project_id = f.project_id LEFT JOIN activity_logs al ON p.project_id = al.project_id GROUP BY p.project_id;"
+                        },
+                        {
+                          "nl_query": "Find PII data exposures in file comments and task descriptions.",
+                          "sql_query": "SELECT 'file' AS source, file_id AS id, comment_text AS content FROM task_comments WHERE comment_text ~ '\\\\\\\\d{3}-\\\\\\\\d{2}-\\\\\\\\d{4}' UNION SELECT 'task' AS source, task_id AS id, description AS content FROM tasks WHERE description ~ '\\\\\\\\d{3}-\\\\\\\\d{2}-\\\\\\\\d{4}';"
+                        },
+                        {
+                          "nl_query": "List third-party integrations without recent vulnerability scans.",
+                          "sql_query": "SELECT i.* FROM integrations i LEFT JOIN security_scans ss ON i.integration_id = ss.integration_id AND ss.scan_date > CURRENT_DATE - INTERVAL '90 days' WHERE ss.scan_id IS NULL;"
+                        },
+                        {
+                          "nl_query": "Detect permission creep for users with roles in 5+ projects.",
+                          "sql_query": "SELECT user_id, COUNT(DISTINCT project_id) AS project_count, ARRAY_AGG(DISTINCT role) AS roles FROM project_members GROUP BY user_id HAVING COUNT(DISTINCT project_id) > 5;"
+                        },
+                        {
+                          "nl_query": "Find stale admin accounts with no login activity in 6 months.",
+                          "sql_query": "SELECT a.* FROM admins a LEFT JOIN security_audits sa ON a.admin_id = sa.user_id AND sa.event_type = 'login' AND sa.timestamp > CURRENT_DATE - INTERVAL '6 months' WHERE sa.audit_id IS NULL;"
+                        },
+                        {
+                          "nl_query": "Calculate mean time to remediate vulnerabilities by severity level.",
+                          "sql_query": "SELECT severity, AVG(EXTRACT(EPOCH FROM (resolved_at - created_at))/86400) AS mttr_days FROM security_vulnerabilities WHERE resolved_at IS NOT NULL GROUP BY severity;"
+                        },
+                        {
+                          "nl_query": "Identify anomalous file downloads exceeding 90th percentile.",
+                          "sql_query": "WITH stats AS (SELECT PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY file_size) AS threshold FROM files) SELECT f.* FROM files f, stats WHERE f.file_size > stats.threshold AND f.download_count > (SELECT AVG(download_count) FROM files);"
+                        }
+                        ,
+                            {
+                              "nl_query": "Calculate system uptime percentage for services tied to project id $1.",
+                              "sql_query": "SELECT service_name, (SUM(EXTRACT(EPOCH FROM uptime_end - uptime_start)) FILTER (WHERE status='up') / SUM(EXTRACT(EPOCH FROM uptime_end - uptime_start))) * 100 AS uptime_pct FROM service_health WHERE project_id = $1 GROUP BY service_name;"
+                            },
+                            {
+                              "nl_query": "Identify API endpoints with response times above 500ms threshold.",
+                              "sql_query": "SELECT endpoint, PERCENTILE_CONT(0.95) WITHIN GROUP (ORDER BY response_time) AS p95 FROM api_metrics WHERE created_at > CURRENT_TIMESTAMP - INTERVAL '1 hour' GROUP BY endpoint HAVING PERCENTILE_CONT(0.95) > 500;"
+                            },
+                            {
+                              "nl_query": "Find deployment pipelines with success rates below 90% in last 30 days.",
+                              "sql_query": "SELECT pipeline_id, (COUNT(*) FILTER (WHERE status='success') * 100.0 / COUNT(*)) AS success_rate FROM deployments WHERE created_at > CURRENT_DATE - INTERVAL '30 days' GROUP BY pipeline_id HAVING (COUNT(*) FILTER (WHERE status='success') * 100.0 / COUNT(*)) < 90;"
+                            },
+                            {
+                              "nl_query": "Calculate error budget remaining based on SLO compliance.",
+                              "sql_query": "WITH slo_usage AS (SELECT service_id, (1 - (SUM(error_time) FILTER (WHERE status='up') / (EXTRACT(EPOCH FROM CURRENT_TIMESTAMP - MIN(uptime_start))))) AS error_consumption FROM service_health GROUP BY service_id) SELECT s.service_name, GREATEST(0, 1 - e.error_consumption) * 100 AS budget_remaining FROM slo_usage e JOIN services s ON e.service_id = s.service_id;"
+                            },
+                            {
+                              "nl_query": "Detect anomalous memory usage spikes across containers.",
+                              "sql_query": "SELECT container_id, AVG(memory_usage) OVER (PARTITION BY container_id ORDER BY time ROWS BETWEEN 10 PRECEDING) AS rolling_avg, memory_usage FROM container_metrics WHERE memory_usage > 2 * (AVG(memory_usage) OVER (PARTITION BY container_id ORDER BY time ROWS BETWEEN 100 PRECEDING));"
+                            },
+                            {
+                              "nl_query": "Identify database queries with execution times in 99th percentile.",
+                              "sql_query": "WITH stats AS (SELECT query_type, PERCENTILE_CONT(0.99) WITHIN GROUP (ORDER BY execution_time) AS threshold FROM db_queries GROUP BY query_type) SELECT q.* FROM db_queries q JOIN stats s ON q.query_type = s.query_type WHERE q.execution_time > s.threshold;"
+                            },
+                            {
+                              "nl_query": "Calculate mean time to recovery (MTTR) for critical incidents.",
+                              "sql_query": "SELECT severity, AVG(EXTRACT(EPOCH FROM (resolved_at - detected_at))/3600) AS mttr_hours FROM incidents WHERE status='resolved' AND severity IN ('critical', 'high') GROUP BY severity;"
+                            },
+                            {
+                              "nl_query": "Find services exceeding rate limits for API calls.",
+                              "sql_query": "SELECT service_id, COUNT(*) FROM api_calls WHERE created_at > CURRENT_TIMESTAMP - INTERVAL '1 minute' GROUP BY service_id HAVING COUNT(*) > (SELECT rate_limit FROM rate_limits WHERE limit_type = 'api_per_minute');"
+                            },
+                            {
+                              "nl_query": "Monitor auto-scaling efficiency for compute clusters.",
+                              "sql_query": "SELECT cluster_id, AVG(node_utilization) AS avg_utilization, COUNT(DISTINCT scaling_event) AS scale_events FROM cluster_metrics GROUP BY cluster_id HAVING AVG(node_utilization) < 0.4 OR AVG(node_utilization) > 0.8;"
+                            },
+                            {
+                              "nl_query": "Detect configuration drift between environments.",
+                              "sql_query": "SELECT config_key, prod_value, staging_value FROM (SELECT config_key, config_value AS prod_value FROM environment_configs WHERE environment='prod') prod FULL JOIN (SELECT config_key, config_value AS staging_value FROM environment_configs WHERE environment='staging') staging USING (config_key) WHERE prod_value != staging_value OR prod_value IS NULL OR staging_value IS NULL;"
+                            }
+                          
+                            ,
+                                {
+                                  "nl_query": "List departments exceeding their quarterly budget by more than 15%.",
+                                  "sql_query": "SELECT d.department_id, SUM(p.budget) AS total_projects, d.budget, (SUM(p.budget) - d.budget)/d.budget * 100 AS over_budget_pct FROM departments d JOIN projects p ON d.department_id = p.department_id WHERE EXTRACT(QUARTER FROM CURRENT_DATE) = EXTRACT(QUARTER FROM p.created_at) GROUP BY d.department_id HAVING (SUM(p.budget) - d.budget)/d.budget > 0.15;"
+                                },
+                                {
+                                  "nl_query": "Find departments where the head has been in role for less than 6 months.",
+                                  "sql_query": "SELECT d.* FROM departments d JOIN users u ON d.department_head_id = u.user_id WHERE u.role = 'Department Head' AND d.created_at > CURRENT_DATE - INTERVAL '6 months';"
+                                },
+                                {
+                                  "nl_query": "Calculate average team size per department including primary and secondary members.",
+                                  "sql_query": "SELECT d.department_id, COUNT(ud.user_id)/COUNT(DISTINCT d.department_id) AS avg_team_size FROM departments d LEFT JOIN user_departments ud ON d.department_id = ud.department_id GROUP BY d.department_id;"
+                                },
+                                {
+                                  "nl_query": "Identify departments with high-priority unresolved announcements older than 7 days.",
+                                  "sql_query": "SELECT d.* FROM departments d JOIN department_announcements da ON d.department_id = da.department_id WHERE da.priority = 'high' AND da.valid_until < CURRENT_DATE AND da.valid_until > CURRENT_DATE - INTERVAL '7 days';"
+                                },
+                                {
+                                  "nl_query": "List equipment needing maintenance in the next 30 days for department id $1.",
+                                  "sql_query": "SELECT dr.* FROM department_resources dr WHERE dr.department_id = $1 AND dr.type = 'equipment' AND (dr.maintenance_schedule->>'next_maintenance')::DATE BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '30 days';"
+                                },
+                                {
+                                  "nl_query": "Find departments with productivity KPIs below company average for 3 consecutive months.",
+                                  "sql_query": "WITH dept_metrics AS (SELECT department_id, month, value, LAG(value,1) OVER (PARTITION BY department_id ORDER BY month) AS prev_month, LAG(value,2) OVER (PARTITION BY department_id ORDER BY month) AS prev_prev_month FROM department_metrics WHERE kpi_type = 'productivity') SELECT d.* FROM departments d JOIN dept_metrics dm ON d.department_id = dm.department_id WHERE dm.value < (SELECT AVG(value) FROM department_metrics WHERE kpi_type = 'productivity') AND dm.prev_month < (SELECT AVG(value) FROM department_metrics WHERE kpi_type = 'productivity') AND dm.prev_prev_month < (SELECT AVG(value) FROM department_metrics WHERE kpi_type = 'productivity');"
+                                },
+                                {
+                                  "nl_query": "Calculate cost center utilization rates across departments.",
+                                  "sql_query": "SELECT d.cost_center, SUM(d.budget) AS allocated_budget, SUM(te.hours * u.hourly_rate) AS actual_spend, (SUM(te.hours * u.hourly_rate)/SUM(d.budget)) * 100 AS utilization_pct FROM departments d JOIN projects p ON d.department_id = p.department_id JOIN tasks t ON p.project_id = t.project_id JOIN time_entries te ON t.task_id = te.task_id JOIN users u ON te.user_id = u.user_id GROUP BY d.cost_center;"
+                                },
+                                {
+                                  "nl_query": "List department heads with multiple direct reports in different departments.",
+                                  "sql_query": "SELECT u.user_id, COUNT(DISTINCT d.department_id) AS managed_depts FROM users u JOIN departments d ON u.user_id = d.department_head_id GROUP BY u.user_id HAVING COUNT(DISTINCT d.department_id) > 1;"
+                                },
+                                {
+                                  "nl_query": "Find departments with overlapping resource allocations in the same time window.",
+                                  "sql_query": "SELECT dr1.department_id AS dept1, dr2.department_id AS dept2 FROM department_resources dr1 JOIN department_resources dr2 ON dr1.resource_id = dr2.resource_id WHERE dr1.department_id != dr2.department_id AND dr1.maintenance_schedule->>'next_maintenance' BETWEEN dr2.maintenance_schedule->>'last_maintenance' AND dr2.maintenance_schedule->>'next_maintenance';"
+                                },
+                                {
+                                  "nl_query": "Calculate department head span of control (direct reports per manager).",
+                                  "sql_query": "SELECT d.department_id, COUNT(ud.user_id) AS team_size FROM departments d JOIN user_departments ud ON d.department_id = ud.department_id WHERE ud.is_primary = TRUE GROUP BY d.department_id;"
+                                }
+                              
+                                ,
+                                  {
+                                    "nl_query": "List all users who have not logged any time entries in the past week.",
+                                    "sql_query": "SELECT u.* FROM users u LEFT JOIN time_entries t ON u.user_id = t.user_id AND t.created_at >= CURRENT_DATE - INTERVAL '7 days' WHERE t.entry_id IS NULL;"
+                                  },
+                                  {
+                                    "nl_query": "Find projects that have no tasks assigned yet.",
+                                    "sql_query": "SELECT p.* FROM projects p LEFT JOIN tasks t ON p.project_id = t.project_id WHERE t.task_id IS NULL;"
+                                  },
+                                  {
+                                    "nl_query": "Calculate the total budget allocated to all active projects.",
+                                    "sql_query": "SELECT SUM(budget) AS total_budget FROM projects WHERE status = 'active';"
+                                  },
+                                  {
+                                    "nl_query": "Update the due dates of all high-priority tasks to tomorrow.",
+                                    "sql_query": "UPDATE tasks SET due_date = CURRENT_DATE + INTERVAL '1 day' WHERE priority = 'High';"
+                                  },
+                                  {
+                                    "nl_query": "Show the number of completed tasks per user for the current month.",
+                                    "sql_query": "SELECT assigned_to, COUNT(*) AS completed_tasks FROM tasks WHERE status = 'Completed' AND EXTRACT(MONTH FROM updated_at) = EXTRACT(MONTH FROM CURRENT_DATE) GROUP BY assigned_to;"
+                                  },
+                                  {
+                                    "nl_query": "Identify users who have been assigned more than $1 tasks in the last week.",
+                                    "sql_query": "SELECT assigned_to, COUNT(*) AS task_count FROM tasks WHERE assigned_at >= CURRENT_DATE - INTERVAL '7 days' GROUP BY assigned_to HAVING COUNT(*) > $1;"
+                                  },
+                                  {
+                                    "nl_query": "List all security audits where the event type is 'login_failure' and occurred outside business hours.",
+                                    "sql_query": "SELECT * FROM security_audits WHERE event_type = 'login_failure' AND EXTRACT(HOUR FROM timestamp) NOT BETWEEN 9 AND 17;"
+                                  },
+                                  {
+                                    "nl_query": "Find tasks that are overdue and have no assignee.",
+                                    "sql_query": "SELECT * FROM tasks WHERE due_date < CURRENT_DATE AND assigned_to IS NULL;"
+                                  },
+                                  {
+                                    "nl_query": "Calculate the average number of tasks per project.",
+                                    "sql_query": "SELECT AVG(task_count) FROM (SELECT project_id, COUNT(*) AS task_count FROM tasks GROUP BY project_id) AS sub;"
+                                  },
+                                  {
+                                    "nl_query": "Retrieve the most recent time entry for each user.",
+                                    "sql_query": "SELECT DISTINCT ON (user_id) user_id, entry_id, created_at FROM time_entries ORDER BY user_id, created_at DESC;"
+                                  },
+                                  {
+                                    "nl_query": "List projects with budgets between $1 and $2 for company id $3.",
+                                    "sql_query": "SELECT * FROM projects WHERE company_id = $3 AND budget BETWEEN $1 AND $2;"
+                                  },
+                                  {
+                                    "nl_query": "Find users with no assigned tasks in project id $1.",
+                                    "sql_query": "SELECT u.* FROM users u WHERE NOT EXISTS (SELECT 1 FROM tasks t WHERE t.project_id = $1 AND t.assigned_to = u.user_id);"
+                                  },
+                                  {
+                                    "nl_query": "Calculate the total number of hours logged by team id $1 this month.",
+                                    "sql_query": "SELECT SUM(hours) FROM time_entries WHERE user_id IN (SELECT user_id FROM team_members WHERE team_id = $1) AND EXTRACT(MONTH FROM created_at) = EXTRACT(MONTH FROM CURRENT_DATE);"
+                                  },
+                                  {
+                                    "nl_query": "List tasks with descriptions containing the keyword 'urgent'.",
+                                    "sql_query": "SELECT * FROM tasks WHERE description LIKE '%urgent%';"
+                                  },
+                                  {
+                                    "nl_query": "Identify projects with no activity logs in the past 14 days.",
+                                    "sql_query": "SELECT p.* FROM projects p LEFT JOIN activity_logs al ON p.project_id = al.project_id AND al.created_at >= CURRENT_DATE - INTERVAL '14 days' WHERE al.log_id IS NULL;"
+                                  },
+                                  {
+                                    "nl_query": "Find the user with the most completed tasks in company id $1.",
+                                    "sql_query": "SELECT assigned_to, COUNT(*) AS completed_count FROM tasks WHERE company_id = $1 AND status = 'Completed' GROUP BY assigned_to ORDER BY completed_count DESC LIMIT 1;"
+                                  },
+                                  {
+                                    "nl_query": "List meetings scheduled for today with unresolved action items.",
+                                    "sql_query": "SELECT m.* FROM meetings m JOIN meeting_reports mr ON m.meeting_id = mr.meeting_id WHERE m.meeting_date = CURRENT_DATE AND mr.action_items_completed = FALSE;"
+                                  },
+                                  {
+                                    "nl_query": "Calculate the percentage of overdue tasks per team.",
+                                    "sql_query": "SELECT team_id, (COUNT(CASE WHEN due_date < CURRENT_DATE THEN 1 END) * 100.0 / COUNT(*) AS overdue_pct FROM tasks GROUP BY team_id;"
+                                  },
+                                  {
+                                    "nl_query": "Find files larger than $1 MB uploaded in the last 24 hours.",
+                                    "sql_query": "SELECT * FROM files WHERE file_size > $1 * 1048576 AND created_at >= CURRENT_TIMESTAMP - INTERVAL '24 hours';"
+                                  }
+                                  ,
+                                    {
+                                      "nl_query": "Find users who logged time but have no assigned tasks.",
+                                      "sql_query": "SELECT DISTINCT u.* FROM users u JOIN time_entries te ON u.user_id = te.user_id LEFT JOIN tasks t ON u.user_id = t.assigned_to WHERE t.task_id IS NULL;"
+                                    },
+                                    {
+                                      "nl_query": "List projects containing both 'High' and 'Low' priority tasks.",
+                                      "sql_query": "SELECT p.* FROM projects p WHERE EXISTS (SELECT 1 FROM tasks t WHERE t.project_id = p.project_id AND priority = 'High') AND EXISTS (SELECT 1 FROM tasks t WHERE t.project_id = p.project_id AND priority = 'Low');"
+                                    },
+                                    {
+                                      "nl_query": "Calculate median task completion time (hours) per project.",
+                                      "sql_query": "SELECT project_id, PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY EXTRACT(EPOCH FROM (updated_at - created_at))/3600 AS median_hours FROM tasks WHERE status = 'Completed' GROUP BY project_id;"
+                                    },
+                                    {
+                                      "nl_query": "Archive all security audit logs older than $1 years.",
+                                      "sql_query": "DELETE FROM security_audits WHERE timestamp < CURRENT_DATE - INTERVAL '$1 years';"
+                                    },
+                                    {
+                                      "nl_query": "List users with calendar events conflicting with company holidays.",
+                                      "sql_query": "SELECT u.* FROM users u JOIN calendar_events ce ON u.user_id = ce.created_by JOIN company_holidays ch ON ce.event_date = ch.holiday_date;"
+                                    },
+                                    {
+                                      "nl_query": "Calculate total file storage used per file type.",
+                                      "sql_query": "SELECT file_type, SUM(pg_column_size(file_url)) AS total_storage FROM files GROUP BY file_type;"
+                                    },
+                                    {
+                                      "nl_query": "Find tasks updated more than 5 times in the last week.",
+                                      "sql_query": "SELECT task_id, COUNT(*) FROM activity_logs WHERE action = 'Task Updated' AND created_at >= CURRENT_DATE - INTERVAL '7 days' GROUP BY task_id HAVING COUNT(*) > 5;"
+                                    },
+                                    {
+                                      "nl_query": "Identify projects where 90% of tasks were completed early.",
+                                      "sql_query": "SELECT project_id, (COUNT(CASE WHEN updated_at < due_date THEN 1 END) * 100.0 / COUNT(*)) AS early_completion_pct FROM tasks WHERE status = 'Completed' GROUP BY project_id HAVING (COUNT(CASE WHEN updated_at < due_date THEN 1 END) * 100.0 / COUNT(*)) >= 90;"
+                                    },
+                                    {
+                                      "nl_query": "List team leaders with average task completion time under 24 hours.",
+                                      "sql_query": "SELECT tl.* FROM team_leader tl JOIN tasks t ON tl.leader_id = t.assigned_to WHERE t.status = 'Completed' GROUP BY tl.leader_id HAVING AVG(EXTRACT(EPOCH FROM (t.updated_at - t.created_at)))/3600 < 24;"
+                                    },
+                                    {
+                                      "nl_query": "Find users assigned to tasks in conflicting time zones.",
+                                      "sql_query": "SELECT u.* FROM users u JOIN tasks t ON u.user_id = t.assigned_to JOIN meetings m ON t.project_id = m.project_id WHERE u.time_zone != m.time_zone;"
+                                    },
+                                    {
+                                      "nl_query": "Calculate daily active user count for the past 30 days.",
+                                      "sql_query": "SELECT DATE_TRUNC('day', last_active) AS day, COUNT(DISTINCT user_id) FROM users WHERE last_active >= CURRENT_DATE - INTERVAL '30 days' GROUP BY day;"
+                                    },
+                                    {
+                                      "nl_query": "List tasks with identical titles across different projects.",
+                                      "sql_query": "SELECT title, COUNT(DISTINCT project_id) FROM tasks GROUP BY title HAVING COUNT(DISTINCT project_id) > 1;"
+                                    },
+                                    {
+                                      "nl_query": "Flag users with identical names but different emails.",
+                                      "sql_query": "SELECT first_name, last_name, COUNT(DISTINCT email) FROM users GROUP BY first_name, last_name HAVING COUNT(DISTINCT email) > 1;"
+                                    },
+                                    {
+                                      "nl_query": "Find projects with task completion rates increasing by 10% monthly.",
+                                      "sql_query": "WITH monthly_stats AS (SELECT project_id, DATE_TRUNC('month', updated_at) AS month, (COUNT(CASE WHEN status = 'Completed' THEN 1 END) * 100.0 / COUNT(*)) AS completion_pct FROM tasks GROUP BY 1,2) SELECT * FROM monthly_stats WHERE completion_pct > LAG(completion_pct, 1) OVER (PARTITION BY project_id ORDER BY month) + 10;"
+                                    },
+                                    {
+                                      "nl_query": "Identify API endpoints with error rates exceeding 5% in the last hour.",
+                                      "sql_query": "SELECT endpoint, (COUNT(CASE WHEN status_code >= 400 THEN 1 END) * 100.0 / COUNT(*) AS error_rate FROM api_logs WHERE created_at >= CURRENT_TIMESTAMP - INTERVAL '1 hour' GROUP BY endpoint HAVING (COUNT(CASE WHEN status_code >= 400 THEN 1 END) * 100.0 / COUNT(*)) > 5;"
+                                    },
+                                    {
+                                      "nl_query": "List users with expired certifications in critical security roles.",
+                                      "sql_query": "SELECT u.* FROM users u JOIN user_certifications uc ON u.user_id = uc.user_id JOIN roles r ON u.role_id = r.role_id WHERE uc.expiry_date < CURRENT_DATE AND r.is_security_critical = TRUE;"
+                                    },
+                                    {
+                                      "nl_query": "Calculate ratio of internal/external contributors per document.",
+                                      "sql_query": "SELECT document_id, (COUNT(CASE WHEN is_internal THEN 1 END) * 100.0 / COUNT(*)) AS internal_pct FROM document_contributors GROUP BY document_id;"
+                                    },
+                                    {
+                                      "nl_query": "Find tasks with descriptions containing merge conflicts markers.",
+                                      "sql_query": "SELECT * FROM tasks WHERE description LIKE '%<<<<<<<%';"
+                                    },
+                                    {
+                                      "nl_query": "Identify database tables with over 1000 orphaned records.",
+                                      "sql_query": "SELECT 'projects' AS table_name, COUNT(*) FROM projects p LEFT JOIN companies c ON p.company_id = c.company_id WHERE c.company_id IS NULL UNION ALL SELECT 'tasks', COUNT(*) FROM tasks t LEFT JOIN projects p ON t.project_id = p.project_id WHERE p.project_id IS NULL;"
+                                    },
+                                    {
+                                      "nl_query": "List security groups with redundant access permissions.",
+                                      "sql_query": "SELECT sg1.group_id, sg2.group_id FROM security_groups sg1 JOIN security_groups sg2 ON sg1.permissions = sg2.permissions AND sg1.group_id < sg2.group_id;"
+                                    }
+                                    ,
+                                      {
+                                        "nl_query": "Find users with task completion rates dropping more than 20% month-over-month.",
+                                        "sql_query": "WITH monthly_stats AS (SELECT user_id, DATE_TRUNC('month', updated_at) AS month, COUNT(*) FILTER (WHERE status = 'Completed') * 100.0 / COUNT(*) AS completion_rate FROM tasks GROUP BY 1,2) SELECT * FROM monthly_stats WHERE completion_rate < LAG(completion_rate) OVER (PARTITION BY user_id ORDER BY month) - 20;"
+                                      },
+                                      {
+                                        "nl_query": "List projects containing tasks across all priority levels.",
+                                        "sql_query": "SELECT p.project_id FROM projects p WHERE (SELECT COUNT(DISTINCT priority) FROM tasks WHERE project_id = p.project_id) = (SELECT COUNT(DISTINCT priority) FROM tasks);"
+                                      },
+                                      {
+                                        "nl_query": "Calculate user rankings within their team based on completed tasks.",
+                                        "sql_query": "SELECT t.team_id, u.user_id, RANK() OVER (PARTITION BY t.team_id ORDER BY COUNT(*) DESC) FROM users u JOIN team_members tm ON u.user_id = tm.user_id JOIN teams t ON tm.team_id = t.team_id JOIN tasks ta ON u.user_id = ta.assigned_to WHERE ta.status = 'Completed' GROUP BY t.team_id, u.user_id;"
+                                      },
+                                      {
+                                        "nl_query": "Find tasks that block more than $1 other tasks.",
+                                        "sql_query": "SELECT dependency_task_id, COUNT(*) FROM task_dependencies GROUP BY dependency_task_id HAVING COUNT(*) > $1;"
+                                      },
+                                      {
+                                        "nl_query": "Identify users with 7+ consecutive days of time entries.",
+                                        "sql_query": "WITH streaks AS (SELECT user_id, created_at, created_at - ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY created_at)::INT AS grp FROM time_entries) SELECT user_id, MAX(streak_length) FROM (SELECT user_id, grp, COUNT(*) AS streak_length FROM streaks GROUP BY 1,2) sub GROUP BY user_id HAVING MAX(streak_length) >= 7;"
+                                      },
+                                      {
+                                        "nl_query": "Calculate 4-week moving average of completed tasks per project.",
+                                        "sql_query": "SELECT project_id, DATE_TRUNC('week', updated_at), AVG(COUNT(*)) OVER (PARTITION BY project_id ORDER BY DATE_TRUNC('week', updated_at) ROWS BETWEEN 3 PRECEDING AND CURRENT ROW) FROM tasks WHERE status = 'Completed' GROUP BY 1,2;"
+                                      },
+                                      {
+                                        "nl_query": "Find documents edited by multiple departments.",
+                                        "sql_query": "SELECT document_id FROM document_versions dv JOIN users u ON dv.edited_by = u.user_id GROUP BY document_id HAVING COUNT(DISTINCT u.department_id) > 1;"
+                                      },
+                                      {
+                                        "nl_query": "Identify tasks with GitHub-style markdown code blocks.",
+                                        "sql_query": "SELECT * FROM tasks WHERE description ~ '```[\\s\\S]+```';"
+                                      },
+                                      {
+                                        "nl_query": "Calculate cumulative budget utilization per project over time.",
+                                        "sql_query": "SELECT project_id, spent_date, SUM(hours * hourly_rate) OVER (PARTITION BY project_id ORDER BY spent_date) FROM time_entries JOIN tasks USING (task_id);"
+                                      },
+                                      {
+                                        "nl_query": "Find security groups with identical permission sets.",
+                                        "sql_query": "SELECT sg1.group_name, sg2.group_name FROM security_groups sg1 JOIN security_groups sg2 ON sg1.permissions @> sg2.permissions AND sg1.permissions <@ sg2.permissions AND sg1.group_id < sg2.group_id;"
+                                      },
+                                      {
+                                        "nl_query": "Identify weekly recurring meetings with declining attendance.",
+                                        "sql_query": "WITH attendance AS (SELECT meeting_id, DATE_TRUNC('week', meeting_date), COUNT(*) AS participants FROM meeting_participants GROUP BY 1,2) SELECT meeting_id, CORR(week_number, participants) FROM (SELECT *, ROW_NUMBER() OVER (PARTITION BY meeting_id ORDER BY week) AS week_number FROM attendance) sub GROUP BY meeting_id HAVING CORR(week_number, participants) < -0.7;"
+                                      },
+                                      {
+                                        "nl_query": "Calculate time estimation accuracy per user.",
+                                        "sql_query": "SELECT user_id, AVG(actual_hours - estimated_hours) AS avg_delta FROM tasks JOIN time_entries USING (task_id) GROUP BY user_id;"
+                                      },
+                                      {
+                                        "nl_query": "Find cross-department collaborators in document comments.",
+                                        "sql_query": "SELECT DISTINCT dc1.user_id AS user1, dc2.user_id AS user2 FROM document_comments dc1 JOIN document_comments dc2 ON dc1.document_id = dc2.document_id JOIN users u1 ON dc1.user_id = u1.user_id JOIN users u2 ON dc2.user_id = u2.user_id WHERE u1.department_id != u2.department_id;"
+                                      },
+                                      {
+                                        "nl_query": "Identify projects with circular task dependencies.",
+                                        "sql_query": "WITH RECURSIVE dep_path AS (SELECT task_id, dependency_task_id, 1 AS depth FROM task_dependencies UNION ALL SELECT dp.task_id, td.dependency_task_id, dp.depth + 1 FROM dep_path dp JOIN task_dependencies td ON dp.dependency_task_id = td.task_id WHERE dp.depth < 10) SELECT DISTINCT t.project_id FROM dep_path JOIN tasks t ON dep_path.task_id = t.task_id WHERE dep_path.task_id = dep_path.dependency_task_id;"
+                                      },
+                                      {
+                                        "nl_query": "Calculate hourly commit frequency patterns for developers.",
+                                        "sql_query": "SELECT EXTRACT(HOUR FROM commit_time) AS hour, COUNT(*) / COUNT(DISTINCT DATE(commit_time)) AS avg_commits FROM code_commits GROUP BY hour ORDER BY hour;"
+                                      },
+                                      {
+                                        "nl_query": "Find API endpoints with parameter type inconsistencies.",
+                                        "sql_query": "SELECT endpoint, parameter_name, COUNT(DISTINCT data_type) FROM api_parameters GROUP BY endpoint, parameter_name HAVING COUNT(DISTINCT data_type) > 1;"
+                                      },
+                                      {
+                                        "nl_query": "Identify teams with unbalanced work distribution (Gini coefficient > 0.4).",
+                                        "sql_query": "WITH task_counts AS (SELECT team_id, user_id, COUNT(*) AS tasks FROM tasks JOIN team_members USING (user_id) GROUP BY 1,2) SELECT team_id, 1 - (2 * SUM(running_total) / (MAX(total_tasks) * (COUNT(*) + 1))) AS gini FROM (SELECT *, SUM(tasks) OVER (PARTITION BY team_id ORDER BY tasks ROWS UNBOUNDED PRECEDING) AS running_total, SUM(tasks) OVER (PARTITION BY team_id) AS total_tasks FROM task_counts) sub GROUP BY team_id HAVING 1 - (2 * SUM(running_total) / (MAX(total_tasks) * (COUNT(*) + 1))) > 0.4;"
+                                      },
+                                      {
+                                        "nl_query": "Find documentation pages with broken hierarchical links.",
+                                        "sql_query": "SELECT p.page_id FROM documentation_pages p LEFT JOIN documentation_pages parent ON p.parent_page = parent.page_id WHERE p.parent_page IS NOT NULL AND parent.page_id IS NULL;"
+                                      },
+                                      {
+                                        "nl_query": "Calculate exponential moving average of daily active users.",
+                                        "sql_query": "SELECT date, AVG(user_count) OVER (ORDER BY date ROWS BETWEEN 6 PRECEDING AND CURRENT ROW) * 0.9 + user_count * 0.1 AS ema FROM (SELECT DATE(last_active) AS date, COUNT(DISTINCT user_id) AS user_count FROM users GROUP BY date);"
+                                      },
+                                      {
+                                        "nl_query": "Identify test cases covering multiple requirement tags.",
+                                        "sql_query": "SELECT test_case_id FROM requirement_coverage GROUP BY test_case_id HAVING COUNT(DISTINCT requirement_id) > 3;"
+                                      }
+                                  
+                                      ,
+                                        {
+                                          "nl_query": "Calculate project burn rate based on budget vs actual spending trends.",
+                                          "sql_query": "WITH monthly_spend AS (SELECT project_id, DATE_TRUNC('month', entry_date), SUM(hours * hourly_rate) AS spend FROM time_entries GROUP BY 1,2) SELECT project_id, (LAST(spend, month) - FIRST(spend, month)) / (LAST(budget, month) - FIRST(budget, month)) AS burn_rate FROM monthly_spend JOIN projects USING (project_id);"
+                                        },
+                                        {
+                                          "nl_query": "Identify API endpoints with response time degradation over 3 standard deviations.",
+                                          "sql_query": "WITH stats AS (SELECT endpoint, AVG(response_time) AS mean, STDDEV(response_time) AS sd FROM api_metrics GROUP BY endpoint) SELECT m.* FROM api_metrics m JOIN stats s ON m.endpoint = s.endpoint WHERE m.response_time > s.mean + 3*s.sd;"
+                                        },
+                                        {
+                                          "nl_query": "Find security audit entries matching known attack patterns.",
+                                          "sql_query": "SELECT * FROM security_audits WHERE event_details ~* '(sql injection|xss|csrf)' AND classification = 'suspicious';"
+                                        },
+                                        {
+                                          "nl_query": "Calculate developer productivity score using commit frequency and task completion.",
+                                          "sql_query": "SELECT u.user_id, (COUNT(DISTINCT c.commit_id) * 0.6 + COUNT(DISTINCT t.task_id) * 0.4) AS productivity FROM users u LEFT JOIN code_commits c ON u.user_id = c.developer_id LEFT JOIN tasks t ON u.user_id = t.assigned_to GROUP BY u.user_id;"
+                                        },
+                                        {
+                                          "nl_query": "Identify database tables approaching 1M row threshold.",
+                                          "sql_query": "SELECT relname AS table_name, n_live_tup FROM pg_stat_user_tables WHERE n_live_tup > 900000 ORDER BY n_live_tup DESC;"
+                                        },
+                                        {
+                                          "nl_query": "Find Jira-style ticket dependencies across multiple projects.",
+                                          "sql_query": "SELECT t1.project_id AS source_project, t2.project_id AS target_project, COUNT(*) AS dependency_count FROM task_dependencies td JOIN tasks t1 ON td.task_id = t1.task_id JOIN tasks t2 ON td.dependency_task_id = t2.task_id WHERE t1.project_id != t2.project_id GROUP BY 1,2;"
+                                        },
+                                        {
+                                          "nl_query": "Calculate SLA compliance percentage for critical incidents.",
+                                          "sql_query": "SELECT (COUNT(*) FILTER (WHERE resolved_at - created_at <= SLA_duration) * 100.0 / COUNT(*)) AS compliance_pct FROM incidents WHERE priority = 'critical';"
+                                        },
+                                        {
+                                          "nl_query": "Identify test cases covering multiple requirement versions.",
+                                          "sql_query": "SELECT test_case_id, COUNT(DISTINCT requirement_version) AS versions_covered FROM requirement_coverage GROUP BY test_case_id HAVING COUNT(DISTINCT requirement_version) > 1;"
+                                        },
+                                        {
+                                          "nl_query": "Predict storage growth using 6-month moving average.",
+                                          "sql_query": "SELECT month, storage_usage, AVG(storage_usage) OVER (ORDER BY month ROWS BETWEEN 5 PRECEDING AND CURRENT ROW) AS predicted_usage FROM (SELECT DATE_TRUNC('month', created_at) AS month, SUM(pg_column_size(file_url)) AS storage_usage FROM files GROUP BY 1);"
+                                        },
+                                        {
+                                          "nl_query": "Find documentation pages with broken cross-service links.",
+                                          "sql_query": "SELECT page_id FROM documentation_pages WHERE content ~* 'https?://(?!internal-domain.com)[^\\s]+' AND last_verified < CURRENT_DATE - INTERVAL '30 days';"
+                                        },
+                                        {
+                                          "nl_query": "Calculate customer churn risk score based on support interactions.",
+                                          "sql_query": "SELECT customer_id, (COUNT(*) FILTER (WHERE sentiment < 0.3) * 0.7 + COUNT(*) FILTER (WHERE resolution_time > SLA_duration) * 0.3) AS churn_risk FROM support_tickets GROUP BY customer_id;"
+                                        },
+                                        {
+                                          "nl_query": "Identify microservices with increasing error rates across versions.",
+                                          "sql_query": "WITH version_errors AS (SELECT service_name, version, (COUNT(*) FILTER (WHERE status='error') * 100.0 / COUNT(*)) AS error_rate FROM deployments GROUP BY 1,2) SELECT * FROM version_errors WHERE error_rate > LAG(error_rate) OVER (PARTITION BY service_name ORDER BY version);"
+                                        },
+                                        {
+                                          "nl_query": "Find Kubernetes pods with memory usage exceeding requests.",
+                                          "sql_query": "SELECT pod_name, (memory_usage / memory_request) AS utilization FROM container_metrics WHERE memory_usage > memory_request;"
+                                        },
+                                        {
+                                          "nl_query": "Calculate feature adoption rates using exponential decay.",
+                                          "sql_query": "SELECT feature_id, SUM(usage_count * EXP(-0.1 * (CURRENT_DATE - usage_date))) AS adoption_score FROM feature_usage GROUP BY feature_id;"
+                                        },
+                                        {
+                                          "nl_query": "Identify JWT tokens expiring within 24 hours.",
+                                          "sql_query": "SELECT * FROM auth_tokens WHERE expires_at BETWEEN CURRENT_TIMESTAMP AND CURRENT_TIMESTAMP + INTERVAL '1 day';"
+                                        },
+                                        {
+                                          "nl_query": "Find database queries missing index usage hints.",
+                                          "sql_query": "SELECT query_id FROM slow_queries WHERE execution_plan NOT LIKE '%Index Scan%' AND execution_time > 1000;"
+                                        },
+                                        {
+                                          "nl_query": "Calculate test coverage drift between branches.",
+                                          "sql_query": "SELECT b1.branch_name, b2.branch_name, COUNT(DISTINCT CASE WHEN b1.tests_passed != b2.tests_passed THEN test_id END) AS drift_count FROM branch_coverage b1 JOIN branch_coverage b2 ON b1.test_id = b2.test_id WHERE b1.branch_name < b2.branch_name GROUP BY 1,2;"
+                                        },
+                                        {
+                                          "nl_query": "Identify deprecated API versions still receiving traffic.",
+                                          "sql_query": "SELECT version, COUNT(*) FROM api_logs WHERE version IN (SELECT version FROM api_versions WHERE status = 'deprecated') GROUP BY version;"
+                                        },
+                                        {
+                                          "nl_query": "Calculate cloud cost allocation by microservice.",
+                                          "sql_query": "SELECT service_name, SUM(cost * EXTRACT(EPOCH FROM usage_duration)/3600) AS allocated_cost FROM cloud_usage JOIN deployments USING (deployment_id) GROUP BY service_name;"
+                                        },
+                                        {
+                                          "nl_query": "Find log entries correlating with deployment failures.",
+                                          "sql_query": "SELECT l.* FROM deployment_logs dl JOIN application_logs l ON dl.deployment_time - l.log_time BETWEEN '-5 minutes' AND '5 minutes' WHERE dl.status = 'failed' AND l.severity = 'ERROR';"
+                                        }
+                                        ,
+                                          {
+                                            "nl_query": "Archive files marked 'temp' older than $1 days.",
+                                            "sql_query": "UPDATE files SET status = 'archived' WHERE tag = 'temp' AND created_at < CURRENT_DATE - INTERVAL '$1 days';"
+                                          },
+                                          {
+                                            "nl_query": "Find documents containing 'confidential' without encryption flags.",
+                                            "sql_query": "SELECT * FROM documents WHERE content LIKE '%confidential%' AND is_encrypted = FALSE;"
+                                          },
+                                          {
+                                            "nl_query": "List API integrations exceeding daily rate limits.",
+                                            "sql_query": "SELECT integration_id, COUNT(*) FROM api_calls WHERE created_at::DATE = CURRENT_DATE GROUP BY integration_id HAVING COUNT(*) > (SELECT daily_limit FROM rate_limits WHERE limit_type = 'api');"
+                                          },
+                                          {
+                                            "nl_query": "Identify redundant indexes on large tables (>1M rows).",
+                                            "sql_query": "SELECT tablename, indexname FROM pg_indexes WHERE tablename IN (SELECT relname FROM pg_stat_user_tables WHERE n_live_tup > 1000000) AND indexdef LIKE '%USING btree%' GROUP BY tablename, indexdef HAVING COUNT(*) > 1;"
+                                          },
+                                          {
+                                            "nl_query": "Find backup jobs failing consecutively for 3+ days.",
+                                            "sql_query": "WITH failures AS (SELECT job_id, created_at::DATE AS date, ROW_NUMBER() OVER (PARTITION BY job_id ORDER BY created_at::DATE) - ROW_NUMBER() OVER (PARTITION BY job_id, status ORDER BY created_at::DATE) AS grp FROM backups WHERE status = 'failed') SELECT job_id, MIN(date), MAX(date) FROM failures GROUP BY job_id, grp HAVING MAX(date) - MIN(date) >= 2;"
+                                          },
+                                          {
+                                            "nl_query": "Calculate data sovereignty compliance percentage per region.",
+                                            "sql_query": "SELECT region, (COUNT(*) FILTER (WHERE storage_location = legal_jurisdiction) * 100.0 / COUNT(*)) AS compliance_pct FROM user_data GROUP BY region;"
+                                          },
+                                          {
+                                            "nl_query": "List stale materialized views not refreshed in 24 hours.",
+                                            "sql_query": "SELECT matviewname FROM pg_matviews WHERE last_refresh_time < CURRENT_TIMESTAMP - INTERVAL '24 hours';"
+                                          },
+                                          {
+                                            "nl_query": "Find user sessions exceeding 12-hour inactivity threshold.",
+                                            "sql_query": "SELECT * FROM user_sessions WHERE last_activity < CURRENT_TIMESTAMP - INTERVAL '12 hours' AND status = 'active';"
+                                          },
+                                          {
+                                            "nl_query": "Identify third-party dependencies with expired licenses.",
+                                            "sql_query": "SELECT d.* FROM dependencies d JOIN licenses l ON d.license_id = l.license_id WHERE l.expiry_date < CURRENT_DATE;"
+                                          },
+                                          {
+                                            "nl_query": "Calculate disaster recovery readiness score per service.",
+                                            "sql_query": "SELECT service_name, (CASE WHEN backup_interval <= '1 day' THEN 0.3 ELSE 0 END + CASE WHEN replication_factor >= 3 THEN 0.4 ELSE 0 END + CASE WHEN last_dr_test > CURRENT_DATE - INTERVAL '90 days' THEN 0.3 ELSE 0 END) AS readiness_score FROM services;"
+                                          },
+                                          {
+                                            "nl_query": "Find cross-region database joins in query plans.",
+                                            "sql_query": "SELECT query_id FROM query_plans WHERE plan ~ 'Foreign Scan' AND explain_json @> '[{\"Relation Name\": \"foreign_table\"}]';"
+                                          },
+                                          {
+                                            "nl_query": "List users with weak passwords (length < 12, no special chars).",
+                                            "sql_query": "SELECT user_id FROM user_credentials WHERE LENGTH(password) < 12 OR password !~ '[^a-zA-Z0-9]';"
+                                          },
+                                          {
+                                            "nl_query": "Calculate monthly data egress costs by external API.",
+                                            "sql_query": "SELECT api_name, SUM(data_transferred * cost_per_gb) FROM api_usage GROUP BY api_name, DATE_TRUNC('month', usage_time);"
+                                          },
+                                          {
+                                            "nl_query": "Identify orphaned file attachments without parent records.",
+                                            "sql_query": "SELECT f.* FROM files f LEFT JOIN attachments a ON f.file_id = a.file_id WHERE a.attachment_id IS NULL;"
+                                          },
+                                          {
+                                            "nl_query": "Find log entries missing audit trail metadata.",
+                                            "sql_query": "SELECT * FROM audit_logs WHERE user_id IS NULL OR ip_address IS NULL OR event_type IS NULL;"
+                                          },
+                                          {
+                                            "nl_query": "List feature flags with low activation rates (<5%).",
+                                            "sql_query": "SELECT flag_name, (COUNT(*) FILTER (WHERE is_active = TRUE) * 100.0 / COUNT(*)) AS activation_pct FROM feature_flags GROUP BY flag_name HAVING (COUNT(*) FILTER (WHERE is_active = TRUE) * 100.0 / COUNT(*)) < 5;"
+                                          },
+                                          {
+                                            "nl_query": "Calculate query plan cache hit ratio per database.",
+                                            "sql_query": "SELECT datname, (sum(blks_hit) / nullif(sum(blks_hit + blks_read), 0)) * 100 AS cache_ratio FROM pg_stat_database GROUP BY datname;"
+                                          },
+                                          {
+                                            "nl_query": "Identify deprecated columns still receiving writes.",
+                                            "sql_query": "SELECT table_name, column_name FROM schema_versions WHERE status = 'deprecated' AND column_name IN (SELECT column_name FROM pg_stat_all_tables WHERE n_mod_since_analyze > 0);"
+                                          },
+                                          {
+                                            "nl_query": "List scheduled jobs with overlapping execution windows.",
+                                            "sql_query": "SELECT j1.job_id, j2.job_id FROM scheduled_jobs j1 JOIN scheduled_jobs j2 ON j1.next_run BETWEEN j2.next_run - j2.timeout AND j2.next_run + j2.timeout AND j1.job_id < j2.job_id;"
+                                          },
+                                          {
+                                            "nl_query": "Calculate dark data percentage (unaccessed in 2+ years).",
+                                            "sql_query": "SELECT (COUNT(*) FILTER (WHERE last_accessed < CURRENT_DATE - INTERVAL '2 years') * 100.0 / COUNT(*)) AS dark_data_pct FROM files;"
+                                          }
+                                          ,
+                                            {
+                                                "nl_query": "Find machine learning models with accuracy dropping below 90% in the last 30 days.",
+                                                "sql_query": "SELECT model_id, AVG(accuracy) FROM model_performance WHERE evaluation_date >= CURRENT_DATE - INTERVAL '30 days' GROUP BY model_id HAVING AVG(accuracy) < 90;"
+                                            },
+                                            {
+                                                "nl_query": "List cloud resources not accessed in the past 90 days.",
+                                                "sql_query": "SELECT resource_id, resource_type FROM cloud_resources WHERE last_accessed < CURRENT_DATE - INTERVAL '90 days';"
+                                            },
+                                            {
+                                                "nl_query": "Identify features with statistical distribution drift exceeding 5% in the last week compared to historical data.",
+                                                "sql_query": "WITH historical AS (SELECT feature_id, AVG(value) AS historical_mean FROM feature_stats WHERE measured_date < CURRENT_DATE - INTERVAL '7 days' GROUP BY feature_id), current AS (SELECT feature_id, AVG(value) AS current_mean FROM feature_stats WHERE measured_date >= CURRENT_DATE - INTERVAL '7 days' GROUP BY feature_id) SELECT c.feature_id, ABS(c.current_mean - h.historical_mean) / h.historical_mean AS drift FROM current c JOIN historical h ON c.feature_id = h.feature_id WHERE ABS(c.current_mean - h.historical_mean) / h.historical_mean > 0.05;"
+                                            },
+                                            {
+                                                "nl_query": "List API endpoints still receiving requests after their deprecation date.",
+                                                "sql_query": "SELECT a.endpoint, COUNT(r.request_id) AS recent_requests FROM api_endpoints a JOIN api_requests r ON a.endpoint_id = r.endpoint_id WHERE a.deprecation_date < CURRENT_DATE GROUP BY a.endpoint HAVING COUNT(r.request_id) > 0;"
+                                            },
+                                            {
+                                                "nl_query": "Detect users with login times outside their recorded working hours.",
+                                                "sql_query": "SELECT u.user_id, l.login_time FROM user_logins l JOIN users u ON l.user_id = u.user_id WHERE EXTRACT(HOUR FROM l.login_time) NOT BETWEEN u.work_hour_start AND u.work_hour_end;"
+                                            },
+                                            {
+                                                "nl_query": "Identify services with error rates spiking above 10% in the last hour.",
+                                                "sql_query": "SELECT service_id, (COUNT(*) FILTER (WHERE status = 'error') * 100.0 / COUNT(*)) AS error_rate FROM service_logs WHERE log_time >= CURRENT_TIMESTAMP - INTERVAL '1 hour' GROUP BY service_id HAVING (COUNT(*) FILTER (WHERE status = 'error') * 100.0 / COUNT(*)) > 10;"
+                                            },
+                                            {
+                                                "nl_query": "Find cloud resources missing cost allocation tags.",
+                                                "sql_query": "SELECT resource_id FROM cloud_resources WHERE cost_center_tag IS NULL OR project_tag IS NULL;"
+                                            },
+                                            {
+                                                "nl_query": "Identify ETL jobs with consecutive failure increases over the past week.",
+                                                "sql_query": "WITH run_stats AS (SELECT job_id, run_date, status, LAG(status) OVER (PARTITION BY job_id ORDER BY run_date) AS prev_status FROM etl_jobs WHERE run_date >= CURRENT_DATE - INTERVAL '7 days') SELECT job_id FROM run_stats WHERE status = 'failed' AND prev_status = 'failed' GROUP BY job_id HAVING COUNT(*) >= 2;"
+                                            },
+                                            {
+                                                "nl_query": "List database indexes that have not been used in queries for over 30 days.",
+                                                "sql_query": "SELECT indexname FROM pg_stat_user_indexes WHERE idx_scan = 0 AND idx_tup_read = 0 AND idx_tup_fetch = 0 AND last_scan < CURRENT_DATE - INTERVAL '30 days';"
+                                            },
+                                            {
+                                                "nl_query": "Find SSL certificates expiring within the next 7 days.",
+                                                "sql_query": "SELECT certificate_id, expiry_date FROM ssl_certificates WHERE expiry_date BETWEEN CURRENT_DATE AND CURRENT_DATE + INTERVAL '7 days';"
+                                            },
+                                            {
+                                                "nl_query": "Detect unused feature flags older than 6 months.",
+                                                "sql_query": "SELECT flag_name FROM feature_flags WHERE created_at < CURRENT_DATE - INTERVAL '6 months' AND activation_count = 0;"
+                                            },
+                                            {
+                                                "nl_query": "List user sessions with abnormally high request rates (>1000/min).",
+                                                "sql_query": "SELECT session_id, COUNT(*) AS request_count FROM api_requests WHERE created_at >= CURRENT_TIMESTAMP - INTERVAL '1 minute' GROUP BY session_id HAVING COUNT(*) > 1000;"
+                                            },
+                                            {
+                                                "nl_query": "Identify data pipelines with incomplete runs in the last 24 hours.",
+                                                "sql_query": "SELECT pipeline_id, MAX(run_time) AS last_run FROM etl_jobs WHERE status != 'completed' AND run_time >= CURRENT_TIMESTAMP - INTERVAL '24 hours' GROUP BY pipeline_id;"
+                                            },
+                                            {
+                                                "nl_query": "Find database tables with missing foreign key constraints.",
+                                                "sql_query": "SELECT tc.table_name FROM information_schema.tables tc LEFT JOIN information_schema.key_column_usage kcu ON tc.table_name = kcu.table_name WHERE tc.table_schema = 'public' AND kcu.constraint_name IS NULL;"
+                                            },
+                                            {
+                                                "nl_query": "Calculate median response latency per API endpoint.",
+                                                "sql_query": "SELECT endpoint, PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY latency_ms) AS median_latency FROM api_metrics GROUP BY endpoint;"
+                                            },
+                                            {
+                                                "nl_query": "List users with simultaneous logins from multiple IP addresses.",
+                                                "sql_query": "SELECT user_id, COUNT(DISTINCT ip_address) AS ip_count FROM user_sessions WHERE logged_in = TRUE GROUP BY user_id HAVING COUNT(DISTINCT ip_address) > 1;"
+                                            },
+                                            {
+                                                "nl_query": "Identify Kubernetes nodes with sustained CPU usage over 90%.",
+                                                "sql_query": "SELECT node_name, AVG(cpu_usage) FROM node_metrics WHERE measured_at >= CURRENT_TIMESTAMP - INTERVAL '1 hour' GROUP BY node_name HAVING AVG(cpu_usage) > 90;"
+                                            },
+                                            {
+                                                "nl_query": "Find documents with non-compliant retention periods.",
+                                                "sql_query": "SELECT document_id FROM documents WHERE retention_end_date < CURRENT_DATE + INTERVAL '1 year' AND classification = 'permanent';"
+                                            },
+                                            {
+                                                "nl_query": "Detect orphaned user accounts with no activity for 180 days.",
+                                                "sql_query": "SELECT user_id FROM users WHERE last_active < CURRENT_DATE - INTERVAL '180 days' AND NOT EXISTS (SELECT 1 FROM tasks WHERE assigned_to = user_id);"
+                                            },
+                                            {
+                                                "nl_query": "List microservices with version compatibility mismatches.",
+                                                "sql_query": "SELECT service_name, COUNT(DISTINCT api_version) AS version_count FROM service_dependencies GROUP BY service_name HAVING COUNT(DISTINCT api_version) > 1;"
+                                            }
+                                                         
+  ]

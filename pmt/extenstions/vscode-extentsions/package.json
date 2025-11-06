@@ -1,0 +1,143 @@
+{
+  "name": "project-management-tool",
+  "displayName": "PMT - Advanced Project Management Tool",
+  "description": "A VS Code extension for managing projects, tasks, and documentation",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:todoList",
+    "onView:projectGoals",
+    "onCommand:pmt.addTodo",
+    "onCommand:pmt.completeTodo",
+    "onCommand:pmt.setGoal",
+    "onCommand:pmt.trackProgress",
+    "onCommand:pmt.generateDocumentation",
+    "onCommand:pmt.createTaskAutomation",
+    "onCommand:pmt.continueYesterday"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "project-manager",
+          "title": "Project Manager",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "project-manager": [
+        {
+          "id": "todoList",
+          "name": "Todo List"
+        },
+        {
+          "id": "projectGoals",
+          "name": "Goals & Milestones"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "pmt.addTodo",
+        "title": "Add Todo Item",
+        "icon": "$(add)"
+      },
+      {
+        "command": "pmt.completeTodo",
+        "title": "Toggle Todo Completion"
+      },
+      {
+        "command": "pmt.setGoal",
+        "title": "Set Project Goal",
+        "icon": "$(target)"
+      },
+      {
+        "command": "pmt.trackProgress",
+        "title": "Track Goal Progress"
+      },
+      {
+        "command": "pmt.generateDocumentation",
+        "title": "Generate Project Documentation",
+        "icon": "$(book)"
+      },
+      {
+        "command": "pmt.createTaskAutomation",
+        "title": "Create Task Automation",
+        "icon": "$(play)"
+      },
+      {
+        "command": "pmt.continueYesterday",
+        "title": "Continue Tasks from Yesterday",
+        "icon": "$(history)"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "pmt.addTodo",
+          "when": "view == todoList",
+          "group": "navigation"
+        },
+        {
+          "command": "pmt.continueYesterday",
+          "when": "view == todoList",
+          "group": "navigation"
+        },
+        {
+          "command": "pmt.setGoal",
+          "when": "view == projectGoals",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "pmt.generateDocumentation"
+        },
+        {
+          "command": "pmt.createTaskAutomation"
+        },
+        {
+          "command": "pmt.trackProgress"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/vscode": "^1.60.0",
+    "@types/ws": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.13.0",
+    "typescript": "^4.7.2",
+    "vsce": "^2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pmt-team/project-management-tool.git"
+  },
+  "publisher": "pmt-team",
+  "author": {
+    "name": "PMT Team"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.2"
+  }
+}

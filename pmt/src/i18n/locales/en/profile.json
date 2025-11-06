@@ -1,0 +1,38 @@
+{
+  "title": "My Profile",
+  "editProfile": "Edit Profile",
+  "save": "Save Changes",
+  "cancel": "Cancel",
+  "loading": "Loading profile...",
+  "verified": "Verified Account",
+  "personalDetails": "Personal Details",
+  "security": "Security & Password",
+  "name": "Full Name",
+  "email": "Email Address",
+  "phone": "Phone Number",
+  "location": "Location",
+  "company": "Company",
+  "language": "Preferred Language",
+  "memberSince": "Member Since",
+  "lastPasswordChange": "Last Password Change",
+  "changePassword": "Change Password",
+  "currentPassword": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "notSpecified": "Not Specified",
+  "notProvided": "Not Provided",
+  "notAvailable": "Not Available",
+  "success": {
+    "profileUpdated": "Profile successfully updated",
+    "avatarUpdated": "Profile picture updated successfully",
+    "passwordChanged": "Password changed successfully"
+  },
+  "errors": {
+    "fetchFailed": "Could not load profile data",
+    "updateFailed": "Failed to update profile",
+    "passwordsMismatch": "Passwords do not match",
+    "avatarUploadFailed": "Failed to upload profile picture",
+    "invalidCurrentPassword": "Current password is incorrect",
+    "weakPassword": "Password must be at least 8 characters with letters and numbers"
+  }
+}

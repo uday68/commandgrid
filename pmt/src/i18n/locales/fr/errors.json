@@ -1,0 +1,59 @@
+{
+  "generic_error": "Une erreur s'est produite",
+  "not_found": "Page non trouvée",
+  "unauthorized": "Non autorisé",
+  "validation_error": "Erreur de validation",
+  "server_error": "Erreur du serveur",
+  "general": {
+    "unknown": "Une erreur inconnue s'est produite",
+    "serverError": "Une erreur de serveur s'est produite",
+    "connectionFailed": "Échec de la connexion au serveur",
+    "timeout": "La demande a expiré",
+    "unauthorized": "Accès non autorisé",
+    "forbidden": "Accès interdit",
+    "notFound": "Ressource introuvable",
+    "validationFailed": "La validation a échoué"
+  },
+  "auth": {
+    "invalidCredentials": "Nom d'utilisateur ou mot de passe invalide",
+    "accountLocked": "Votre compte a été verrouillé",
+    "sessionExpired": "Votre session a expiré, veuillez vous reconnecter",
+    "emailInUse": "L'email est déjà utilisé",
+    "weakPassword": "Le mot de passe est trop faible",
+    "loginRequired": "Vous devez être connecté pour accéder à cette fonctionnalité"
+  },
+  "connection": {
+    "offline": "Vous êtes actuellement hors ligne",
+    "reconnecting": "Reconnexion en cours...",
+    "reconnected": "Connexion rétablie",
+    "failed": "Échec de la connexion",
+    "realtimeConnection": "Erreur de connexion en temps réel: {{error}}"
+  },
+  "projects": {
+    "createFailed": "Échec de la création du projet",
+    "updateFailed": "Échec de la mise à jour du projet",
+    "deleteFailed": "Échec de la suppression du projet",
+    "accessDenied": "Vous n'avez pas la permission d'accéder à ce projet"
+  },
+  "tasks": {
+    "createFailed": "Échec de la création de la tâche",
+    "updateFailed": "Échec de la mise à jour de la tâche",
+    "deleteFailed": "Échec de la suppression de la tâche",
+    "assignFailed": "Échec de l'attribution de la tâche",
+    "statusChangeFailed": "Échec du changement de statut de la tâche"
+  },
+  "files": {
+    "uploadFailed": "Échec du téléchargement du fichier",
+    "downloadFailed": "Échec du téléchargement du fichier",
+    "fileTooLarge": "Le fichier est trop volumineux",
+    "invalidFileType": "Type de fichier invalide"
+  },
+  "pageError": "Erreur de page",
+  "unexpectedError": "Une erreur inattendue s'est produite",
+  "goBack": "Retour",
+  "returnHome": "Retourner à l'accueil",
+  "tryAgain": "Réessayer",
+  "somethingWentWrong": "Quelque chose s'est mal passé",
+  "applicationCrashed": "L'application a rencontré une erreur inattendue",
+  "checkConnection": "Veuillez vérifier votre connexion Internet"
+}

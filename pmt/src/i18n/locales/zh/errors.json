@@ -1,0 +1,51 @@
+{
+  "generic_error": "发生错误",
+  "general": {
+    "unknown": "发生未知错误",
+    "serverError": "发生服务器错误",
+    "connectionFailed": "连接服务器失败",
+    "timeout": "请求超时",
+    "unauthorized": "未授权访问",
+    "forbidden": "访问被禁止",
+    "notFound": "未找到资源",
+    "validationFailed": "验证失败"
+  },
+  "auth": {
+    "invalidCredentials": "无效的用户名或密码",
+    "accountLocked": "您的账户已被锁定",
+    "sessionExpired": "您的会话已过期，请重新登录",
+    "emailInUse": "邮箱已被使用",
+    "weakPassword": "密码太弱",
+    "loginRequired": "您必须登录才能访问此功能"
+  },
+  "connection": {
+    "offline": "您当前处于离线状态",
+    "reconnecting": "正在重新连接...",
+    "reconnected": "已恢复连接",
+    "failed": "连接失败",
+    "realtimeConnection": "实时连接错误：{{error}}"
+  },
+  "projects": {
+    "createFailed": "创建项目失败",
+    "updateFailed": "更新项目失败",
+    "deleteFailed": "删除项目失败",
+    "accessDenied": "您没有访问此项目的权限"
+  },
+  "tasks": {
+    "createFailed": "创建任务失败",
+    "updateFailed": "更新任务失败",
+    "deleteFailed": "删除任务失败",
+    "assignFailed": "分配任务失败",
+    "statusChangeFailed": "更改任务状态失败"
+  },
+  "files": {
+    "uploadFailed": "文件上传失败",
+    "downloadFailed": "文件下载失败",
+    "fileTooLarge": "文件太大",
+    "invalidFileType": "无效的文件类型"
+  },
+  "pageError": "页面错误",
+  "unexpectedError": "发生意外错误",
+  "goBack": "返回",
+  "returnHome": "返回首页"
+}

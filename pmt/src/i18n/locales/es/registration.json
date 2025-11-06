@@ -1,0 +1,96 @@
+{
+  "title": "Crea Tu Cuenta",
+  "subtitle": "Únete a miles de equipos y comienza tu camino hacia una mejor gestión de proyectos",
+  "steps": {
+    "account": "Cuenta",
+    "personal": "Personal",
+    "team": "Equipo",
+    "organization": "Organización",
+    "admin": "Administrador",
+    "review": "Revisión"
+  },
+  "registrationType": {
+    "individual": "Individual",
+    "team": "Equipo",
+    "company": "Empresa",
+    "companyAdmin": "Empresa + Admin"
+  },
+  "fields": {
+    "email": "Dirección de correo",
+    "password": "Contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "firstName": "Nombre",
+    "lastName": "Apellido",
+    "phone": "Número de teléfono",
+    "companyName": "Nombre de la empresa",
+    "industry": "Industria",
+    "companySize": "Tamaño de la empresa",
+    "role": "Tu rol",
+    "teamName": "Nombre del equipo",
+    "teamDescription": "Descripción del equipo",
+    "teamSize": "Tamaño del equipo",
+    "address": "Dirección",
+    "city": "Ciudad",
+    "state": "Estado/Provincia",
+    "zipCode": "Código postal",
+    "country": "País",
+    "category": "Categoría de empresa",
+    "sector": "Sector empresarial",
+    "adminFirstName": "Nombre del administrador",
+    "adminLastName": "Apellido del administrador",
+    "adminEmail": "Correo del administrador",
+    "adminPassword": "Contraseña del administrador",
+    "adminConfirmPassword": "Confirmar contraseña del administrador"
+  },
+  "placeholders": {
+    "phone": "Ingrese su número de teléfono (opcional)",
+    "category": "Ingrese la categoría de su empresa (opcional)"
+  },
+  "industries": {
+    "technology": "Tecnología",
+    "finance": "Finanzas",
+    "healthcare": "Salud",
+    "education": "Educación",
+    "retail": "Comercio Minorista"
+  },
+  "roles": {
+    "owner": "Propietario",
+    "manager": "Gerente",
+    "developer": "Desarrollador",
+    "designer": "Diseñador",
+    "analyst": "Analista"
+  },
+  "defaults": {
+    "industry": "Tecnología",
+    "role": "Propietario"
+  },
+  "buttons": {
+    "uploadPhoto": "Subir foto",
+    "completeRegistration": "Completar registro"
+  },
+  "labels": {
+    "preferAgile": "Prefiero la metodología Ágil para la gestión de proyectos",
+    "agilePreference": "Preferencia Ágil"
+  },
+  "passwordRequirement": "Mínimo 8 caracteres requeridos",
+  "review": {
+    "account": "Información de la cuenta",
+    "personal": "Información personal",
+    "organization": "Información de la organización",
+    "team": "Información del equipo",
+    "admin": "Información del administrador"
+  },
+  "terms": {
+    "agree": "Acepto los",
+    "termsService": "Términos de servicio",
+    "and": "y la",
+    "privacyPolicy": "Política de privacidad"
+  },
+  "haveAccount": "¿Ya tienes una cuenta?",
+  "signIn": "Iniciar sesión",
+  "notProvided": "No proporcionado",
+  "adminInfo": "Información de la cuenta de administrador",
+  "errors": {
+    "registrationFailed": "El registro falló. Por favor, inténtelo de nuevo."
+  }
+}

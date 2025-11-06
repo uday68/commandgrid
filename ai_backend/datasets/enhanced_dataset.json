@@ -1,0 +1,2854 @@
+[
+  {
+    "nl": "Add a Project Members record containing role and project id",
+    "sql": "INSERT INTO project_members (role, project_id) VALUES ('capital', '2567dec3-5f04-4dc3-be7e-f43e4d120b04');"
+  },
+  {
+    "nl": "Create a new Security Audits with audit id, event type, user id, description, timestamp, user email and ip address",
+    "sql": "INSERT INTO security_audits (audit_id, event_type, user_id, description, timestamp, user_email, ip_address) VALUES ('131f9d02-d3d2-4880-b78f-9c17296fa25b', 'goal', 'f15a5013-45bb-47e7-ba00-c5c03de7394b', 'Bring security reflect produce paper four. Drive human indicate both. Middle quality to song security return support guess.', '2025-03-12T00:24:18.541504', 'karenhorton@example.org', '1098 Blair Vista Suite 823\nNew Christopher, IN 59056');"
+  },
+  {
+    "nl": "Create a new Tags with created at, tag name and tag id",
+    "sql": "INSERT INTO tags (created_at, tag_name, tag_id) VALUES ('2025-03-12T00:24:18.538505', 'Tony White', 9674);"
+  },
+  {
+    "nl": "Create a new Time Entry with hours, created at, user id, description and time entry id",
+    "sql": "INSERT INTO time_entries (hours, created_at, user_id, description, time_entry_id) VALUES (7058.53, '2025-03-12T00:24:18.534489', '970e1ccd-3030-4ee3-854d-ed7674fd2452', 'Never child treatment address consumer week bar age. Friend else country.', 9821);"
+  },
+  {
+    "nl": "Add a Teams record containing leader id, name, status, project id and team id",
+    "sql": "INSERT INTO teams (leader_id, name, status, project_id, team_id) VALUES ('fdcad5a9-303f-40a1-87b1-0a786d2dc664', 'Susan Martin', 'Any such pressure present it customer whether. Happy dream per similar risk bar few example. Building none reveal win.', 'ea8674af-7f81-4066-9abe-7c7695636ae8', '293b9e7b-750b-4d0e-8269-8ab96dabfe2e');"
+  },
+  {
+    "nl": "Add a Projects record containing name, per complete, description, start date, owner id, project id, budget, created at, end date and status",
+    "sql": "INSERT INTO projects (name, per_complete, description, start_date, owner_id, project_id, budget, created_at, end_date, status) VALUES ('Brian Perkins', 6696.35, 'Thank itself defense support. Property keep ever prevent. Money view memory realize them tough three.', '2022-03-04', 7648, '2432456e-83c9-4223-98a5-c22fcd77170a', 6338.54, '2025-03-12T00:24:18.546504', '2020-09-29', 'Exist difference lawyer sign who mind eat. Exactly perhaps likely then of and agree.');"
+  },
+  {
+    "nl": "Register a Security Vulnerability with vulnerability name, created at, vulnerability id, severity and description",
+    "sql": "INSERT INTO security_vulnerabilities (vulnerability_name, created_at, vulnerability_id, severity, description) VALUES ('Megan Anderson', '2025-03-12T00:24:18.544505', '5131d312-9326-4c9c-8762-58591eaff116', 'night', 'Science debate own without note. Respond grow eight project size old research. Reduce issue music radio child without leg.');"
+  },
+  {
+    "nl": "Register a Security Threats with severity, threat name, created at and description",
+    "sql": "INSERT INTO security_threats (severity, threat_name, created_at, description) VALUES ('full', 'John Avila', '2025-03-12T00:24:18.542504', 'Night sometimes maybe. Boy study hope sister.');"
+  },
+  {
+    "nl": "Create a new Notifications with is read, user id, message, created at and notification id",
+    "sql": "INSERT INTO notifications (is_read, user_id, message, created_at, notification_id) VALUES (FALSE, '6cb74cbc-3361-4f80-a456-bff050587d69', 'Glass far vote administration stop. Factor enter name shoulder coach build. Indeed yes particularly author indicate street nearly.', '2025-03-12T00:24:18.529491', 'a514ac0f-4ae6-401e-a34d-edbca543bfd5');"
+  },
+  {
+    "nl": "Create a new Company with company name, country, address, created at, city, company id, zip code, state and sector",
+    "sql": "INSERT INTO companies (company_name, country, address, created_at, city, company_id, zip_code, state, sector) VALUES ('Heidi Armstrong', 'east', '9376 Chad Isle\nSouth Christineburgh, FL 29623', '2025-03-12T00:24:18.548504', 'during', 8598, 'Democrat', 'maintain', 'education');"
+  },
+  {
+    "nl": "Register a Team Members with user id, role and team id",
+    "sql": "INSERT INTO team_members (user_id, role, team_id) VALUES ('8f8ed7c7-fa3c-4077-899e-c9a7e45e4224', 'figure', '3d81df80-869e-4630-8b7e-84d8aadc3f5c');"
+  },
+  {
+    "nl": "Create a new Sessions with user id, expires at, created at and session id",
+    "sql": "INSERT INTO sessions (user_id, expires_at, created_at, session_id) VALUES ('9d9316d3-8933-415c-abf3-653d9cad87f7', '2025-03-12T00:24:18.528493', '2025-03-12T00:24:18.528493', '4db29a0a-3142-473d-bd80-2e2b3998bd0e');"
+  },
+  {
+    "nl": "Register a Company with category, updated at, city, zip code and created at",
+    "sql": "INSERT INTO companies (category, updated_at, city, zip_code, created_at) VALUES ('act', '2025-03-12T00:24:18.547504', 'professional', 'help', '2025-03-12T00:24:18.547504');"
+  },
+  {
+    "nl": "Register a Security Threats with description, threat id and created at",
+    "sql": "INSERT INTO security_threats (description, threat_id, created_at) VALUES ('Sit bar physical including director raise. Will prove lot state name one.', '14cfe3bb-01dc-4fc7-9dcb-ee87c673fbc6', '2025-03-12T00:24:18.542504');"
+  },
+  {
+    "nl": "Register a Users with agile and updated at",
+    "sql": "INSERT INTO users (agile, updated_at) VALUES (FALSE, '2025-03-12T00:24:18.530489');"
+  },
+  {
+    "nl": "Create a new Task Tags with task id",
+    "sql": "INSERT INTO task_tags (task_id) VALUES ('60728d1e-3c39-43f7-9fc6-73b2b8d32188');"
+  },
+  {
+    "nl": "Create a new Messages with message id and message",
+    "sql": "INSERT INTO messages (message_id, message) VALUES (9267, 'Opportunity threat maintain agree green hospital process back. Line machine trial.');"
+  },
+  {
+    "nl": "Create a new Tasks with project id, status, title, created at, description, priority and assigned to",
+    "sql": "INSERT INTO tasks (project_id, status, title, created_at, description, priority, assigned_to) VALUES ('7b45b3ef-4b0f-48e6-9d17-3a9551c8fe73', 'late', 'partner', '2025-03-12T00:24:18.527497', 'Politics growth ok manager risk take.', 'dream', '841e0153-7575-4256-b1e2-72c766003930');"
+  },
+  {
+    "nl": "Register a Security Audits with user email, description, timestamp, user id, ip address, audit id and event type",
+    "sql": "INSERT INTO security_audits (user_email, description, timestamp, user_id, ip_address, audit_id, event_type) VALUES ('karen03@example.org', 'Military in indicate thus understand. Fear scene activity military. Stay social last enter stop. Movement deal set east.', '2025-03-12T00:24:18.540504', 'f15a5013-45bb-47e7-ba00-c5c03de7394b', '790 Oliver Orchard\nKimberlyfurt, DE 71000', '131f9d02-d3d2-4880-b78f-9c17296fa25b', 'something');"
+  },
+  {
+    "nl": "Create a new User Skills with added at",
+    "sql": "INSERT INTO user_skills (added_at) VALUES ('2025-03-12T00:24:18.552517');"
+  },
+  {
+    "nl": "Add a Available Member record containing updated at",
+    "sql": "INSERT INTO available_member (updated_at) VALUES ('2025-03-12T00:24:18.552517');"
+  },
+  {
+    "nl": "Create a new Meeting Participants with user id and meeting id",
+    "sql": "INSERT INTO meeting_participants (user_id, meeting_id) VALUES ('3009d4ae-ace7-44f8-848a-40b6a31468e2', '4a6d9c23-ca44-4a23-989e-61d6f15479d6');"
+  },
+  {
+    "nl": "Register a Time Entry with hours",
+    "sql": "INSERT INTO time_entries (hours) VALUES (473.1);"
+  },
+  {
+    "nl": "Register a Audit Logs with user id, action, timestamp and audit id",
+    "sql": "INSERT INTO audit_logs (user_id, action, timestamp, audit_id) VALUES ('306268ae-7235-4485-b736-0247d0c483cf', 'fish', '2025-03-12T00:24:18.539504', 7571);"
+  },
+  {
+    "nl": "Create a new Project Members with user id",
+    "sql": "INSERT INTO project_members (user_id) VALUES ('fe756987-e4f7-4f12-8bf5-ae15fa087ad3');"
+  },
+  {
+    "nl": "Add a Milestones record containing description, due date, milestone name and status",
+    "sql": "INSERT INTO milestones (description, due_date, milestone_name, status) VALUES ('Beautiful night happen technology bank. Hair financial attorney daughter yeah.', '2020-04-18', 'Grace Graham', 'radio');"
+  },
+  {
+    "nl": "Add a Team Members record containing team id and role",
+    "sql": "INSERT INTO team_members (team_id, role) VALUES ('3d81df80-869e-4630-8b7e-84d8aadc3f5c', 'store');"
+  },
+  {
+    "nl": "Add a Team Leader record containing assigned by and leader id",
+    "sql": "INSERT INTO team_leader (assigned_by, leader_id) VALUES ('7b4b0eb7-b57f-48a0-b58d-3379851e5553', 'f703f3bb-1d3f-481c-a0f4-2a9c7ea42724');"
+  },
+  {
+    "nl": "Register a Company with updated at and state",
+    "sql": "INSERT INTO companies (updated_at, state) VALUES ('2025-03-12T00:24:18.548504', 'world');"
+  },
+  {
+    "nl": "Register a User Skills with skill name, updated at and added at",
+    "sql": "INSERT INTO user_skills (skill_name, updated_at, added_at) VALUES ('Timothy Clark', '2025-03-12T00:24:18.553516', '2025-03-12T00:24:18.553516');"
+  },
+  {
+    "nl": "Register a Sessions with session id, user id and created at",
+    "sql": "INSERT INTO sessions (session_id, user_id, created_at) VALUES ('4db29a0a-3142-473d-bd80-2e2b3998bd0e', '9d9316d3-8933-415c-abf3-653d9cad87f7', '2025-03-12T00:24:18.528493');"
+  },
+  {
+    "nl": "Add a Project Members record containing role and project id",
+    "sql": "INSERT INTO project_members (role, project_id) VALUES ('ready', '2567dec3-5f04-4dc3-be7e-f43e4d120b04');"
+  },
+  {
+    "nl": "Create a new Time Entry with time entry id",
+    "sql": "INSERT INTO time_entries (time_entry_id) VALUES (3993);"
+  },
+  {
+    "nl": "Register a Task Tags with tag id and task id",
+    "sql": "INSERT INTO task_tags (tag_id, task_id) VALUES (1395, '60728d1e-3c39-43f7-9fc6-73b2b8d32188');"
+  },
+  {
+    "nl": "Create a new Meeting Reports with generated at and meeting id",
+    "sql": "INSERT INTO meeting_reports (generated_at, meeting_id) VALUES ('2025-03-12T00:24:18.553516', 'f53b44d9-3281-41f8-8fc9-550c6b16c72d');"
+  },
+  {
+    "nl": "Add a Milestones record containing created at, milestone name, status, milestone id, description and project id",
+    "sql": "INSERT INTO milestones (created_at, milestone_name, status, milestone_id, description, project_id) VALUES ('2025-03-12T00:24:18.536491', 'Tammy Hill', 'remember', 2858, 'Land recent believe prevent true. Summer himself building follow level under.', '4cf70e0d-2063-481e-ad81-a74e038aefeb');"
+  },
+  {
+    "nl": "Add a Reports record containing author id, file path, status, description, attachment url, recipient id, title, feedback, recipient, content and report id",
+    "sql": "INSERT INTO reports (author_id, file_path, status, description, attachment_url, recipient_id, title, feedback, recipient, content, report_id) VALUES ('de060e5a-caf9-48c8-ba64-c61bdf65ec34', 'actually', 'design', 'focus', 'Federal once detail teacher even million. Evening specific imagine almost mouth writer.', 958, 'political', 'Case ahead help range lead create. Film through step mind how big father exist. Apply could sort follow while woman ever.', 'make', 'Test involve number firm raise none range. Industry education throughout hit range. Result truth office situation plant. They which front treat similar local rather some.', 'bd990ebd-a156-4a3b-b028-3a0aeeefec79');"
+  },
+  {
+    "nl": "Register a Reports with status, author id, attachment url, feedback, file path, content and report id",
+    "sql": "INSERT INTO reports (status, author_id, attachment_url, feedback, file_path, content, report_id) VALUES ('act', 'de060e5a-caf9-48c8-ba64-c61bdf65ec34', 'Maybe me recently many discussion choose audience billion. Back sell seat possible yard. Entire democratic mention.', 'Election exist media service. Future perhaps article course can.', 'like', 'Show find director room growth international senior. Young soon provide movement real four decide. Close free just letter.', 'bd990ebd-a156-4a3b-b028-3a0aeeefec79');"
+  },
+  {
+    "nl": "Create a new Teams with owner id",
+    "sql": "INSERT INTO teams (owner_id) VALUES (438);"
+  },
+  {
+    "nl": "Register a Team Members with role, user id and team id",
+    "sql": "INSERT INTO team_members (role, user_id, team_id) VALUES ('practice', '8f8ed7c7-fa3c-4077-899e-c9a7e45e4224', '3d81df80-869e-4630-8b7e-84d8aadc3f5c');"
+  },
+  {
+    "nl": "Add a Sessions record containing expires at, created at, session id and refresh token",
+    "sql": "INSERT INTO sessions (expires_at, created_at, session_id, refresh_token) VALUES ('2025-03-12T00:24:18.528493', '2025-03-12T00:24:18.528493', '4db29a0a-3142-473d-bd80-2e2b3998bd0e', 'Peace the modern of hotel personal. Toward stage create film your. Amount know live hair side yard my.');"
+  },
+  {
+    "nl": "Register a Meeting Reports with generated at",
+    "sql": "INSERT INTO meeting_reports (generated_at) VALUES ('2025-03-12T00:24:18.553516');"
+  },
+  {
+    "nl": "Create a new Notifications with is read, notification id, message and created at",
+    "sql": "INSERT INTO notifications (is_read, notification_id, message, created_at) VALUES (TRUE, 'a514ac0f-4ae6-401e-a34d-edbca543bfd5', 'Brother before course statement care long whether. Read contain voice wind sign.', '2025-03-12T00:24:18.529491');"
+  },
+  {
+    "nl": "Add a Team Leader record containing leader id and updated at",
+    "sql": "INSERT INTO team_leader (leader_id, updated_at) VALUES ('f703f3bb-1d3f-481c-a0f4-2a9c7ea42724', '2025-03-12T00:24:18.545504');"
+  },
+  {
+    "nl": "Register a Task Comments with comment text",
+    "sql": "INSERT INTO task_comments (comment_text) VALUES ('Rise speak different experience out off from about. Pattern middle attack gun happy.');"
+  },
+  {
+    "nl": "Add a Messages record containing message id, sender id, message and room",
+    "sql": "INSERT INTO messages (message_id, sender_id, message, room) VALUES (174, '428f2d48-f79e-4eca-8507-8060f3e81097', 'Tough improve start career occur. Candidate two girl difficult week. Thing dinner teach challenge option effort.', 'billion');"
+  },
+  {
+    "nl": "Create a new Activity Logs with created at, user id, project id and action",
+    "sql": "INSERT INTO activity_logs (created_at, user_id, project_id, action) VALUES ('2025-03-12T00:24:18.532489', '95abc1d7-b675-40c6-b80c-49c26005e9e8', 'ba6dc90a-ee2b-44b3-a239-1a6878312018', 'Certainly need baby boy wait peace. Recent seven feel news. Within democratic question one leg fear. Type number expert box would anyone.');"
+  },
+  {
+    "nl": "Add a Tasks record containing comment, due date, priority, title, created at, status, assigned to, project id and description",
+    "sql": "INSERT INTO tasks (comment, due_date, priority, title, created_at, status, assigned_to, project_id, description) VALUES ('Civil language quickly hope. Occur prove part represent responsibility save. Federal reduce term cost strong on technology.', '2024-10-11', 'member', 'ball', '2025-03-12T00:24:18.527497', 'bill', '841e0153-7575-4256-b1e2-72c766003930', '7b45b3ef-4b0f-48e6-9d17-3a9551c8fe73', 'Quite establish many deep table group. Investment gas traditional real community better. Us fact course special.');"
+  },
+  {
+    "nl": "Register a Security Audits with user id, audit id, description, timestamp, event type and user email",
+    "sql": "INSERT INTO security_audits (user_id, audit_id, description, timestamp, event_type, user_email) VALUES ('f15a5013-45bb-47e7-ba00-c5c03de7394b', '131f9d02-d3d2-4880-b78f-9c17296fa25b', 'Seven never side visit ready sort. East office finish value mind because.', '2025-03-12T00:24:18.541504', 'represent', 'ymiller@example.org');"
+  },
+  {
+    "nl": "Register a Admins with email, last name, admin id, role, updated at, company id, first name and password",
+    "sql": "INSERT INTO admins (email, last_name, admin_id, role, updated_at, company_id, first_name, password) VALUES ('brandon11@example.com', 'Sydney Williams', 8723, 'side', '2025-03-12T00:24:18.549520', 5591, 'Mark Perry', 'understand');"
+  },
+  {
+    "nl": "Add a Task Comments record containing comment id",
+    "sql": "INSERT INTO task_comments (comment_id) VALUES ('e8f3738c-6083-4599-bdbc-90834a3a4ea5');"
+  },
+  {
+    "nl": "Register a Team Members with team id, user id and role",
+    "sql": "INSERT INTO team_members (team_id, user_id, role) VALUES ('3d81df80-869e-4630-8b7e-84d8aadc3f5c', '8f8ed7c7-fa3c-4077-899e-c9a7e45e4224', 'easy');"
+  },
+  {
+    "nl": "Register a Calendar Events with description",
+    "sql": "INSERT INTO calendar_events (description) VALUES ('Main Mrs let. To hundred safe summer.');"
+  },
+  {
+    "nl": "Register a Task Tags with tag id",
+    "sql": "INSERT INTO task_tags (tag_id) VALUES (1060);"
+  },
+  {
+    "nl": "Create a new Company with sector, state, company name, updated at, created at, company id, zip code and city",
+    "sql": "INSERT INTO companies (sector, state, company_name, updated_at, created_at, company_id, zip_code, city) VALUES ('paper', 'body', 'Katrina White', '2025-03-12T00:24:18.547504', '2025-03-12T00:24:18.547504', 8028, 'candidate', 'mother');"
+  },
+  {
+    "nl": "Add a Security Threats record containing description",
+    "sql": "INSERT INTO security_threats (description) VALUES ('Loss become miss.');"
+  },
+  {
+    "nl": "Add a Meetings record containing meeting time, meeting date, company id, created at, meeting id, created by and title",
+    "sql": "INSERT INTO meetings (meeting_time, meeting_date, company_id, created_at, meeting_id, created_by, title) VALUES (NULL, '2024-01-27', 8993, '2025-03-12T00:24:18.545504', 'e3460050-ed9f-4f7e-a58a-ddaf9cad8918', '1c072de0-d900-491c-86e7-9c8ae44de037', 'care');"
+  },
+  {
+    "nl": "Register a Admins with role, company id, last name and password",
+    "sql": "INSERT INTO admins (role, company_id, last_name, password) VALUES ('stuff', 1723, 'Alexis Wagner', 'state');"
+  },
+  {
+    "nl": "Create a new Tasks with task id, due date, assigned to, team id and description",
+    "sql": "INSERT INTO tasks (task_id, due_date, assigned_to, team_id, description) VALUES ('eba03eb7-3193-4977-a3b7-2f295042bd49', '2024-05-28', '841e0153-7575-4256-b1e2-72c766003930', '75739524-0ebd-45da-a4f7-c8d5e9319ce2', 'Window clear six civil fight would product.');"
+  },
+  {
+    "nl": "Register a Messages with message, sender id and created at",
+    "sql": "INSERT INTO messages (message, sender_id, created_at) VALUES ('Plan far person floor fill federal. Manage evening most table issue certainly best. Computer us style join baby over.', '428f2d48-f79e-4eca-8507-8060f3e81097', '2025-03-12T00:24:18.535489');"
+  },
+  {
+    "nl": "Add a Reports record containing recipient, report id, description, status, feedback, file path, content, author id and title",
+    "sql": "INSERT INTO reports (recipient, report_id, description, status, feedback, file_path, content, author_id, title) VALUES ('whom', 'bd990ebd-a156-4a3b-b028-3a0aeeefec79', 'buy', 'unit', 'Nice miss another admit ahead. Large he thus Mrs.', 'middle', 'Approach nice friend take west professor.', 'de060e5a-caf9-48c8-ba64-c61bdf65ec34', 'receive');"
+  },
+  {
+    "nl": "Add a User Skills record containing updated at, user id and skill name",
+    "sql": "INSERT INTO user_skills (updated_at, user_id, skill_name) VALUES ('2025-03-12T00:24:18.552517', 'c1743862-eaa8-43dd-97e3-26435d485e1d', 'Victoria Campos');"
+  },
+  {
+    "nl": "Add a Settings record containing setting key, created at, setting value, updated at and user id",
+    "sql": "INSERT INTO settings (setting_key, created_at, setting_value, updated_at, user_id) VALUES ('drop', '2025-03-12T00:24:18.535489', 'reach', '2025-03-12T00:24:18.535489', 'fff63af7-b20b-4ee9-b4e9-a918983508ff');"
+  },
+  {
+    "nl": "Add a Settings record containing updated at, created at and user id",
+    "sql": "INSERT INTO settings (updated_at, created_at, user_id) VALUES ('2025-03-12T00:24:18.535489', '2025-03-12T00:24:18.535489', 'fff63af7-b20b-4ee9-b4e9-a918983508ff');"
+  },
+  {
+    "nl": "Add a Team Members record containing role, team id and user id",
+    "sql": "INSERT INTO team_members (role, team_id, user_id) VALUES ('former', '3d81df80-869e-4630-8b7e-84d8aadc3f5c', '8f8ed7c7-fa3c-4077-899e-c9a7e45e4224');"
+  },
+  {
+    "nl": "Add a Admins record containing updated at, refresh token, company id, last name, email, first name and created at",
+    "sql": "INSERT INTO admins (updated_at, refresh_token, company_id, last_name, email, first_name, created_at) VALUES ('2025-03-12T00:24:18.549520', 'Old call student like name get statement.', 7184, 'Martin Bailey', 'clane@example.org', 'Chelsea Fields', '2025-03-12T00:24:18.550522');"
+  },
+  {
+    "nl": "Add a Projects record containing start date, name, description and owner id",
+    "sql": "INSERT INTO projects (start_date, name, description, owner_id) VALUES ('2025-02-20', 'Kayla West', 'Meet wind social similar series doctor accept. General offer manage she six argue why.', 8460);"
+  },
+  {
+    "nl": "Create a new Audit Logs with audit id, user id and details",
+    "sql": "INSERT INTO audit_logs (audit_id, user_id, details) VALUES (7543, '306268ae-7235-4485-b736-0247d0c483cf', 'Product that effort still system. Challenge subject hotel turn be. Go good soon final true collection early.');"
+  },
+  {
+    "nl": "Register a Milestones with project id",
+    "sql": "INSERT INTO milestones (project_id) VALUES ('4cf70e0d-2063-481e-ad81-a74e038aefeb');"
+  },
+  {
+    "nl": "Add a Available Member record containing status, updated at and created at",
+    "sql": "INSERT INTO available_member (status, updated_at, created_at) VALUES ('discover', '2025-03-12T00:24:18.552517', '2025-03-12T00:24:18.552517');"
+  },
+  {
+    "nl": "Register a Files with file url and file id",
+    "sql": "INSERT INTO files (file_url, file_id) VALUES ('Let onto Mrs market cost. Adult language family federal. Kitchen successful history middle mission.', 'ed30e2cb-b899-4b37-9b53-e8b4e9743d31');"
+  },
+  {
+    "nl": "Add a Activity Logs record containing log id, project id and action",
+    "sql": "INSERT INTO activity_logs (log_id, project_id, action) VALUES ('e73e596c-13da-4826-8260-6aca6dc759e2', 'ba6dc90a-ee2b-44b3-a239-1a6878312018', 'People knowledge piece environment live most enough.');"
+  },
+  {
+    "nl": "Register a Calendar Events with created at, description, created by, title and event date",
+    "sql": "INSERT INTO calendar_events (created_at, description, created_by, title, event_date) VALUES ('2025-03-12T00:24:18.539504', 'Kind four forward though send of mention. Choice oil as call.', 'a226aa77-cc7a-4576-a4e9-b3201a67dab0', 'sign', '2021-08-10');"
+  },
+  {
+    "nl": "Create a new Task Comments with user id, comment id and created at",
+    "sql": "INSERT INTO task_comments (user_id, comment_id, created_at) VALUES ('6b08ae74-1c13-4c03-9db7-e346923e82ff', 'e8f3738c-6083-4599-bdbc-90834a3a4ea5', '2025-03-12T00:24:18.529491');"
+  },
+  {
+    "nl": "Add a Tags record containing tag id and tag name",
+    "sql": "INSERT INTO tags (tag_id, tag_name) VALUES (5458, 'Jason Salinas');"
+  },
+  {
+    "nl": "Register a Audit Logs with details and timestamp",
+    "sql": "INSERT INTO audit_logs (details, timestamp) VALUES ('Care democratic realize forward cup. Soldier now five measure talk. Free opportunity attack avoid successful president may toward.', '2025-03-12T00:24:18.539504');"
+  },
+  {
+    "nl": "Create a new Tasks with project id, created at, status, description, task id, priority, comment and assigned to",
+    "sql": "INSERT INTO tasks (project_id, created_at, status, description, task_id, priority, comment, assigned_to) VALUES ('7b45b3ef-4b0f-48e6-9d17-3a9551c8fe73', '2025-03-12T00:24:18.527497', 'today', 'Rock anyone force we be per. Provide huge PM.', 'eba03eb7-3193-4977-a3b7-2f295042bd49', 'level', 'Decision staff present factor them similar. Activity radio reveal audience myself home cell.', '841e0153-7575-4256-b1e2-72c766003930');"
+  },
+  {
+    "nl": "Create a new Calendar Events with project id, created at, title, event id and created by",
+    "sql": "INSERT INTO calendar_events (project_id, created_at, title, event_id, created_by) VALUES ('c6df6199-fd2e-4acf-863a-69128ef1a57a', '2025-03-12T00:24:18.539504', 'personal', '663484f0-4e01-47a1-ab22-3ee1abbc1f34', 'a226aa77-cc7a-4576-a4e9-b3201a67dab0');"
+  },
+  {
+    "nl": "Create a new Users with name",
+    "sql": "INSERT INTO users (name) VALUES ('Kristen Anderson');"
+  },
+  {
+    "nl": "Add a Time Entry record containing description, time entry id, user id, created at and hours",
+    "sql": "INSERT INTO time_entries (description, time_entry_id, user_id, created_at, hours) VALUES ('Adult senior in even finally drive. Page affect ten so may government.', 8964, '970e1ccd-3030-4ee3-854d-ed7674fd2452', '2025-03-12T00:24:18.534489', 5227.42);"
+  },
+  {
+    "nl": "Add a Project Members record containing user id and project id",
+    "sql": "INSERT INTO project_members (user_id, project_id) VALUES ('fe756987-e4f7-4f12-8bf5-ae15fa087ad3', '2567dec3-5f04-4dc3-be7e-f43e4d120b04');"
+  },
+  {
+    "nl": "Register a Milestones with created at",
+    "sql": "INSERT INTO milestones (created_at) VALUES ('2025-03-12T00:24:18.536491');"
+  },
+  {
+    "nl": "Register a Files with uploaded by, created at, file id, project id and file url",
+    "sql": "INSERT INTO files (uploaded_by, created_at, file_id, project_id, file_url) VALUES ('2a558300-5c0c-4aa3-a73b-6ff01e0043f5', '2025-03-12T00:24:18.533489', 'ed30e2cb-b899-4b37-9b53-e8b4e9743d31', '7e28bb04-2014-4819-b6e7-ccb323eb6b35', 'Performance lead cover show rock could picture. Various fall could popular including. Produce think college word.');"
+  },
+  {
+    "nl": "Add a Activity Logs record containing project id",
+    "sql": "INSERT INTO activity_logs (project_id) VALUES ('ba6dc90a-ee2b-44b3-a239-1a6878312018');"
+  },
+  {
+    "nl": "Add a Projects record containing budget, start date and per complete",
+    "sql": "INSERT INTO projects (budget, start_date, per_complete) VALUES (2868.57, '2020-12-08', 5457.94);"
+  },
+  {
+    "nl": "Register a Meeting Reports with generated at, generated by, user id, meeting id and summary",
+    "sql": "INSERT INTO meeting_reports (generated_at, generated_by, user_id, meeting_id, summary) VALUES ('2025-03-12T00:24:18.553516', '6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a', '21c41932-17ea-4080-95e1-9b1ddd495024', 'f53b44d9-3281-41f8-8fc9-550c6b16c72d', 'Into part fire dinner contain threat build clear. Organization authority article official always machine second our. Food become fast bank travel future picture.');"
+  },
+  {
+    "nl": "Register a Reports with title, recipient id, attachment url, description, content, status, feedback, report id, file path, author id, recipient and created at",
+    "sql": "INSERT INTO reports (title, recipient_id, attachment_url, description, content, status, feedback, report_id, file_path, author_id, recipient, created_at) VALUES ('would', 5029, 'Simple possible product worry morning beautiful school. Live gas wish agreement local. Answer size believe trip pressure century. Describe should law always once.', 'generation', 'Traditional blue the mean treatment. Writer almost bag five indeed city. Management wide better impact often picture.', 'body', 'Citizen explain need floor by. Institution other camera unit type what year light.', 'bd990ebd-a156-4a3b-b028-3a0aeeefec79', 'thought', 'de060e5a-caf9-48c8-ba64-c61bdf65ec34', 'thousand', '2025-03-12T00:24:18.551518');"
+  },
+  {
+    "nl": "Create a new Meetings with meeting time, company id, title, created by, meeting date and created at",
+    "sql": "INSERT INTO meetings (meeting_time, company_id, title, created_by, meeting_date, created_at) VALUES (NULL, 3817, 'debate', '1c072de0-d900-491c-86e7-9c8ae44de037', '2023-11-01', '2025-03-12T00:24:18.545504');"
+  },
+  {
+    "nl": "Register a Admins with admin id, password and first name",
+    "sql": "INSERT INTO admins (admin_id, password, first_name) VALUES (4104, 'card', 'Michelle Whitaker');"
+  },
+  {
+    "nl": "Register a Meetings with meeting id, created by, meeting time, title and created at",
+    "sql": "INSERT INTO meetings (meeting_id, created_by, meeting_time, title, created_at) VALUES ('e3460050-ed9f-4f7e-a58a-ddaf9cad8918', '1c072de0-d900-491c-86e7-9c8ae44de037', NULL, 'condition', '2025-03-12T00:24:18.545504');"
+  },
+  {
+    "nl": "Register a Security Vulnerability with vulnerability id, vulnerability name and severity",
+    "sql": "INSERT INTO security_vulnerabilities (vulnerability_id, vulnerability_name, severity) VALUES ('5131d312-9326-4c9c-8762-58591eaff116', 'Patrick Morris', 'measure');"
+  },
+  {
+    "nl": "Create a new Tags with tag name and tag id",
+    "sql": "INSERT INTO tags (tag_name, tag_id) VALUES ('Dominic Anderson', 2855);"
+  },
+  {
+    "nl": "Create a new Meeting Participants with meeting id",
+    "sql": "INSERT INTO meeting_participants (meeting_id) VALUES ('4a6d9c23-ca44-4a23-989e-61d6f15479d6');"
+  },
+  {
+    "nl": "Add a Teams record containing status and project id",
+    "sql": "INSERT INTO teams (status, project_id) VALUES ('Better deal air article day key remain mean. Next method affect station effort. Page wrong big million sign nearly nice.', 'ea8674af-7f81-4066-9abe-7c7695636ae8');"
+  },
+  {
+    "nl": "Add a Meeting Invites record containing meeting id, status, user id and meeting invite id",
+    "sql": "INSERT INTO meeting_invites (meeting_id, status, user_id, meeting_invite_id) VALUES ('52b603a7-95d8-47d7-a194-280289e00789', 'practice', '0384ec24-f836-48a7-8d4d-51afac223ebb', '9391ddca-9770-44c3-9d11-dcf55552941c');"
+  },
+  {
+    "nl": "Create a new Project Members with role",
+    "sql": "INSERT INTO project_members (role) VALUES ('sure');"
+  },
+  {
+    "nl": "Create a new User Skills with user id, skill name, experience level, id, added at and updated at",
+    "sql": "INSERT INTO user_skills (user_id, skill_name, experience_level, id, added_at, updated_at) VALUES ('c1743862-eaa8-43dd-97e3-26435d485e1d', 'Jessica Decker', 'actually', 6848, '2025-03-12T00:24:18.552517', '2025-03-12T00:24:18.552517');"
+  },
+  {
+    "nl": "Add a Task Tags record containing tag id and task id",
+    "sql": "INSERT INTO task_tags (tag_id, task_id) VALUES (5712, '60728d1e-3c39-43f7-9fc6-73b2b8d32188');"
+  },
+  {
+    "nl": "Create a new Security Threats with created at, severity and description",
+    "sql": "INSERT INTO security_threats (created_at, severity, description) VALUES ('2025-03-12T00:24:18.542504', 'watch', 'Myself price red until stand whatever product. Plant leg century oil art. Prevent whether major my.');"
+  },
+  {
+    "nl": "Create a new Audit Logs with audit id, timestamp and action",
+    "sql": "INSERT INTO audit_logs (audit_id, timestamp, action) VALUES (1209, '2025-03-12T00:24:18.539504', 'play');"
+  },
+  {
+    "nl": "Create a new Files with created at, task id, project id, file id and uploaded by",
+    "sql": "INSERT INTO files (created_at, task_id, project_id, file_id, uploaded_by) VALUES ('2025-03-12T00:24:18.533489', 'e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c', '7e28bb04-2014-4819-b6e7-ccb323eb6b35', 'ed30e2cb-b899-4b37-9b53-e8b4e9743d31', '2a558300-5c0c-4aa3-a73b-6ff01e0043f5');"
+  },
+  {
+    "nl": "Create a new Settings with updated at, user id, created at, setting id, setting value and setting key",
+    "sql": "INSERT INTO settings (updated_at, user_id, created_at, setting_id, setting_value, setting_key) VALUES ('2025-03-12T00:24:18.535489', 'fff63af7-b20b-4ee9-b4e9-a918983508ff', '2025-03-12T00:24:18.535489', 4766, 'wrong', 'impact');"
+  },
+  {
+    "nl": "Register a Reports with content, feedback, recipient and author id",
+    "sql": "INSERT INTO reports (content, feedback, recipient, author_id) VALUES ('Decision law free left.', 'Claim wish second. General whether wish become this. Physical law entire manage interview hit.', 'will', 'de060e5a-caf9-48c8-ba64-c61bdf65ec34');"
+  },
+  {
+    "nl": "Create a new Security Threats with severity",
+    "sql": "INSERT INTO security_threats (severity) VALUES ('message');"
+  },
+  {
+    "nl": "Create a new Security Vulnerability with description, vulnerability name, vulnerability id, created at and severity",
+    "sql": "INSERT INTO security_vulnerabilities (description, vulnerability_name, vulnerability_id, created_at, severity) VALUES ('Recent now control reduce set bed. Capital budget whether miss perhaps media market.', 'Arthur Watson', '5131d312-9326-4c9c-8762-58591eaff116', '2025-03-12T00:24:18.544505', 'possible');"
+  },
+  {
+    "nl": "Add a Meeting Invites record containing user id",
+    "sql": "INSERT INTO meeting_invites (user_id) VALUES ('0384ec24-f836-48a7-8d4d-51afac223ebb');"
+  },
+  {
+    "nl": "Add a Meetings record containing meeting time, meeting date, company id and meeting id",
+    "sql": "INSERT INTO meetings (meeting_time, meeting_date, company_id, meeting_id) VALUES (NULL, '2024-09-13', 6491, 'e3460050-ed9f-4f7e-a58a-ddaf9cad8918');"
+  },
+  {
+    "nl": "Create a new User Skills with id and added at",
+    "sql": "INSERT INTO user_skills (id, added_at) VALUES (9328, '2025-03-12T00:24:18.552517');"
+  },
+  {
+    "nl": "Add a Activity Logs record containing user id and created at",
+    "sql": "INSERT INTO activity_logs (user_id, created_at) VALUES ('95abc1d7-b675-40c6-b80c-49c26005e9e8', '2025-03-12T00:24:18.532489');"
+  },
+  {
+    "nl": "Create a new Meeting Reports with meeting id, summary, generated by, user id and generated at",
+    "sql": "INSERT INTO meeting_reports (meeting_id, summary, generated_by, user_id, generated_at) VALUES ('f53b44d9-3281-41f8-8fc9-550c6b16c72d', 'Seek foot surface upon certainly throughout. Section need we deal. Employee what day president television start.', '6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a', '21c41932-17ea-4080-95e1-9b1ddd495024', '2025-03-12T00:24:18.553516');"
+  },
+  {
+    "nl": "Create a new Security Vulnerability with created at",
+    "sql": "INSERT INTO security_vulnerabilities (created_at) VALUES ('2025-03-12T00:24:18.544505');"
+  },
+  {
+    "nl": "Add a Admins record containing role, email, refresh token, password, updated at and first name",
+    "sql": "INSERT INTO admins (role, email, refresh_token, password, updated_at, first_name) VALUES ('add', 'davidgentry@example.net', 'Receive agreement difficult stand call camera another on. Degree someone amount day support huge of. Budget radio determine old.', 'campaign', '2025-03-12T00:24:18.549520', 'Cynthia Walker');"
+  },
+  {
+    "nl": "Add a Meetings record containing created at, title, created by, meeting time, meeting date, meeting id and company id",
+    "sql": "INSERT INTO meetings (created_at, title, created_by, meeting_time, meeting_date, meeting_id, company_id) VALUES ('2025-03-12T00:24:18.545504', 'she', '1c072de0-d900-491c-86e7-9c8ae44de037', NULL, '2023-07-14', 'e3460050-ed9f-4f7e-a58a-ddaf9cad8918', 7330);"
+  },
+  {
+    "nl": "Add a Tags record containing tag id and tag name",
+    "sql": "INSERT INTO tags (tag_id, tag_name) VALUES (6753, 'Meghan Kelly');"
+  },
+  {
+    "nl": "Add a Meeting Invites record containing meeting id",
+    "sql": "INSERT INTO meeting_invites (meeting_id) VALUES ('52b603a7-95d8-47d7-a194-280289e00789');"
+  },
+  {
+    "nl": "Register a Files with uploaded by and file id",
+    "sql": "INSERT INTO files (uploaded_by, file_id) VALUES ('2a558300-5c0c-4aa3-a73b-6ff01e0043f5', 'ed30e2cb-b899-4b37-9b53-e8b4e9743d31');"
+  },
+  {
+    "nl": "Add a Messages record containing message",
+    "sql": "INSERT INTO messages (message) VALUES ('World now begin college analysis. Everything benefit near guy. Process our this generation probably technology.');"
+  },
+  {
+    "nl": "Add a Teams record containing owner id",
+    "sql": "INSERT INTO teams (owner_id) VALUES (7367);"
+  },
+  {
+    "nl": "Add a Available Member record containing user id and updated at",
+    "sql": "INSERT INTO available_member (user_id, updated_at) VALUES ('e65d7314-f90b-4d28-8800-2c171a805387', '2025-03-12T00:24:18.552517');"
+  },
+  {
+    "nl": "Create a new Time Entry with time entry id, hours and created at",
+    "sql": "INSERT INTO time_entries (time_entry_id, hours, created_at) VALUES (4769, 2041.67, '2025-03-12T00:24:18.534489');"
+  },
+  {
+    "nl": "Create a new Projects with status, project id, name, per complete, created at, start date, budget and owner id",
+    "sql": "INSERT INTO projects (status, project_id, name, per_complete, created_at, start_date, budget, owner_id) VALUES ('Model scientist which suffer whatever. Foot eye class hand floor up society throughout.', '2432456e-83c9-4223-98a5-c22fcd77170a', 'Charles Villarreal', 808.34, '2025-03-12T00:24:18.546504', '2023-12-24', 9379.46, 8453);"
+  },
+  {
+    "nl": "Register a Available Member with status, updated at, created at and user id",
+    "sql": "INSERT INTO available_member (status, updated_at, created_at, user_id) VALUES ('huge', '2025-03-12T00:24:18.552517', '2025-03-12T00:24:18.552517', 'e65d7314-f90b-4d28-8800-2c171a805387');"
+  },
+  {
+    "nl": "Create a new Tasks with assigned to, created at, team id and comment",
+    "sql": "INSERT INTO tasks (assigned_to, created_at, team_id, comment) VALUES ('841e0153-7575-4256-b1e2-72c766003930', '2025-03-12T00:24:18.527497', '75739524-0ebd-45da-a4f7-c8d5e9319ce2', 'Lay drive pass. Near well chair sport professional seek development.');"
+  },
+  {
+    "nl": "Add a Calendar Events record containing event id and project id",
+    "sql": "INSERT INTO calendar_events (event_id, project_id) VALUES ('663484f0-4e01-47a1-ab22-3ee1abbc1f34', 'c6df6199-fd2e-4acf-863a-69128ef1a57a');"
+  },
+  {
+    "nl": "Register a Sessions with refresh token, user id, session id and created at",
+    "sql": "INSERT INTO sessions (refresh_token, user_id, session_id, created_at) VALUES ('Church must arm cultural window I test. Much film reflect tough store wrong. But theory film situation ever environment site. Simply near city lay company commercial beautiful production.', '9d9316d3-8933-415c-abf3-653d9cad87f7', '4db29a0a-3142-473d-bd80-2e2b3998bd0e', '2025-03-12T00:24:18.528493');"
+  },
+  {
+    "nl": "Add a Users record containing created at, company id and last active",
+    "sql": "INSERT INTO users (created_at, company_id, last_active) VALUES ('2025-03-12T00:24:18.530489', 8616, '2025-03-12T00:24:18.530489');"
+  },
+  {
+    "nl": "Add a Notifications record containing message and created at",
+    "sql": "INSERT INTO notifications (message, created_at) VALUES ('On want teacher city woman. Hold soon dream country.', '2025-03-12T00:24:18.529491');"
+  },
+  {
+    "nl": "Create a new Company with updated at, created at, sector, state, city and country",
+    "sql": "INSERT INTO companies (updated_at, created_at, sector, state, city, country) VALUES ('2025-03-12T00:24:18.548504', '2025-03-12T00:24:18.548504', 'current', 'how', 'test', 'war');"
+  },
+  {
+    "nl": "Create a new Settings with setting value, user id, created at, setting id, updated at and setting key",
+    "sql": "INSERT INTO settings (setting_value, user_id, created_at, setting_id, updated_at, setting_key) VALUES ('I', 'fff63af7-b20b-4ee9-b4e9-a918983508ff', '2025-03-12T00:24:18.535489', 4996, '2025-03-12T00:24:18.535489', 'sign');"
+  },
+  {
+    "nl": "Create a new Meeting Participants with user id",
+    "sql": "INSERT INTO meeting_participants (user_id) VALUES ('3009d4ae-ace7-44f8-848a-40b6a31468e2');"
+  },
+  {
+    "nl": "Add a Security Audits record containing ip address, user id, audit id, user email and description",
+    "sql": "INSERT INTO security_audits (ip_address, user_id, audit_id, user_email, description) VALUES ('Unit 8881 Box 4894\nDPO AA 91068', 'f15a5013-45bb-47e7-ba00-c5c03de7394b', '131f9d02-d3d2-4880-b78f-9c17296fa25b', 'nicole37@example.org', 'Door gun key organization buy. Prevent compare affect morning always prove.');"
+  },
+  {
+    "nl": "Register a Files with file url, file id, project id, uploaded by, created at and task id",
+    "sql": "INSERT INTO files (file_url, file_id, project_id, uploaded_by, created_at, task_id) VALUES ('Decade charge small office ahead into challenge decade. Air yes too various story that. Unit tree control soldier instead forget.', 'ed30e2cb-b899-4b37-9b53-e8b4e9743d31', '7e28bb04-2014-4819-b6e7-ccb323eb6b35', '2a558300-5c0c-4aa3-a73b-6ff01e0043f5', '2025-03-12T00:24:18.533489', 'e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c');"
+  },
+  {
+    "nl": "Register a Settings with updated at and setting key",
+    "sql": "INSERT INTO settings (updated_at, setting_key) VALUES ('2025-03-12T00:24:18.536491', 'form');"
+  },
+  {
+    "nl": "Create a new Task Comments with created at, task id, comment id and user id",
+    "sql": "INSERT INTO task_comments (created_at, task_id, comment_id, user_id) VALUES ('2025-03-12T00:24:18.529491', '25d10525-31b6-40e7-b301-248f4790837f', 'e8f3738c-6083-4599-bdbc-90834a3a4ea5', '6b08ae74-1c13-4c03-9db7-e346923e82ff');"
+  },
+  {
+    "nl": "Create a new Tags with tag name",
+    "sql": "INSERT INTO tags (tag_name) VALUES ('Jonathan Willis');"
+  },
+  {
+    "nl": "Create a new Projects with budget, project id and end date",
+    "sql": "INSERT INTO projects (budget, project_id, end_date) VALUES (9376.19, '2432456e-83c9-4223-98a5-c22fcd77170a', '2021-06-14');"
+  },
+  {
+    "nl": "Create a new Task Comments with comment id and created at",
+    "sql": "INSERT INTO task_comments (comment_id, created_at) VALUES ('e8f3738c-6083-4599-bdbc-90834a3a4ea5', '2025-03-12T00:24:18.529491');"
+  },
+  {
+    "nl": "Add a Users record containing username",
+    "sql": "INSERT INTO users (username) VALUES ('Jason Lutz');"
+  },
+  {
+    "nl": "Add a Activity Logs record containing user id and project id",
+    "sql": "INSERT INTO activity_logs (user_id, project_id) VALUES ('95abc1d7-b675-40c6-b80c-49c26005e9e8', 'ba6dc90a-ee2b-44b3-a239-1a6878312018');"
+  },
+  {
+    "nl": "Register a Available Member with status, created at, updated at and user id",
+    "sql": "INSERT INTO available_member (status, created_at, updated_at, user_id) VALUES ('fight', '2025-03-12T00:24:18.552517', '2025-03-12T00:24:18.552517', 'e65d7314-f90b-4d28-8800-2c171a805387');"
+  },
+  {
+    "nl": "Add a Meeting Reports record containing user id, generated by and generated at",
+    "sql": "INSERT INTO meeting_reports (user_id, generated_by, generated_at) VALUES ('21c41932-17ea-4080-95e1-9b1ddd495024', '6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a', '2025-03-12T00:24:18.553516');"
+  },
+  {
+    "nl": "Add a Team Leader record containing created at",
+    "sql": "INSERT INTO team_leader (created_at) VALUES ('2025-03-12T00:24:18.545504');"
+  },
+  {
+    "nl": "Create a new Notifications with notification id",
+    "sql": "INSERT INTO notifications (notification_id) VALUES ('a514ac0f-4ae6-401e-a34d-edbca543bfd5');"
+  },
+  {
+    "nl": "Add a Team Leader record containing created at, leader id and updated at",
+    "sql": "INSERT INTO team_leader (created_at, leader_id, updated_at) VALUES ('2025-03-12T00:24:18.545504', 'f703f3bb-1d3f-481c-a0f4-2a9c7ea42724', '2025-03-12T00:24:18.545504');"
+  },
+  {
+    "nl": "Create a new Teams with team id and owner id",
+    "sql": "INSERT INTO teams (team_id, owner_id) VALUES ('293b9e7b-750b-4d0e-8269-8ab96dabfe2e', 5635);"
+  },
+  {
+    "nl": "Add a Audit Logs record containing timestamp, user id, details and audit id",
+    "sql": "INSERT INTO audit_logs (timestamp, user_id, details, audit_id) VALUES ('2025-03-12T00:24:18.539504', '306268ae-7235-4485-b736-0247d0c483cf', 'Forget someone while material discussion institution skill any. Choose that not yeah parent smile scene. Different choice first bag. Word market though ground federal story.', 8880);"
+  },
+  {
+    "nl": "Register a Messages with message id and room",
+    "sql": "INSERT INTO messages (message_id, room) VALUES (477, 'do');"
+  },
+  {
+    "nl": "Add a Notifications record containing notification id, is read and message",
+    "sql": "INSERT INTO notifications (notification_id, is_read, message) VALUES ('a514ac0f-4ae6-401e-a34d-edbca543bfd5', TRUE, 'Maintain answer voice class box term maintain. Camera significant fire produce whole weight bad.');"
+  },
+  {
+    "nl": "Create a new Security Vulnerability with vulnerability name, created at and description",
+    "sql": "INSERT INTO security_vulnerabilities (vulnerability_name, created_at, description) VALUES ('Melanie Schmidt', '2025-03-12T00:24:18.544505', 'Charge third region same. Agreement parent media everything parent nice. Part media try call low floor as investment.');"
+  },
+  {
+    "nl": "Create a new Team Leader with created at and assigned by",
+    "sql": "INSERT INTO team_leader (created_at, assigned_by) VALUES ('2025-03-12T00:24:18.545504', '7b4b0eb7-b57f-48a0-b58d-3379851e5553');"
+  },
+  {
+    "nl": "Add a Users record containing role, email, profile picture, updated at and created at",
+    "sql": "INSERT INTO users (role, email, profile_picture, updated_at, created_at) VALUES ('collection', 'shughes@example.net', 'Against social fact thing. Mention line change direction. Could education authority such figure bad manage.', '2025-03-12T00:24:18.530489', '2025-03-12T00:24:18.530489');"
+  },
+  {
+    "nl": "Add a Security Audits record containing event type, user email, audit id, user id and description",
+    "sql": "INSERT INTO security_audits (event_type, user_email, audit_id, user_id, description) VALUES ('full', 'gonzalezmary@example.com', '131f9d02-d3d2-4880-b78f-9c17296fa25b', 'f15a5013-45bb-47e7-ba00-c5c03de7394b', 'Own look human oil. How worker marriage less cultural method.');"
+  },
+  {
+    "nl": "Create a new Calendar Events with description, event id, title and project id",
+    "sql": "INSERT INTO calendar_events (description, event_id, title, project_id) VALUES ('Treat price ever smile add consider protect. Win tax affect vote effect.', '663484f0-4e01-47a1-ab22-3ee1abbc1f34', 'decide', 'c6df6199-fd2e-4acf-863a-69128ef1a57a');"
+  },
+  {
+    "nl": "Register a Meeting Invites with user id and meeting id",
+    "sql": "INSERT INTO meeting_invites (user_id, meeting_id) VALUES ('0384ec24-f836-48a7-8d4d-51afac223ebb', '52b603a7-95d8-47d7-a194-280289e00789');"
+  },
+  {
+    "nl": "Create a new Sessions with user id, refresh token, session id and created at",
+    "sql": "INSERT INTO sessions (user_id, refresh_token, session_id, created_at) VALUES ('9d9316d3-8933-415c-abf3-653d9cad87f7', 'Baby try away make friend chair media. Figure record hit glass.', '4db29a0a-3142-473d-bd80-2e2b3998bd0e', '2025-03-12T00:24:18.528493');"
+  },
+  {
+    "nl": "Create a new Meeting Invites with meeting invite id, meeting id, user id and status",
+    "sql": "INSERT INTO meeting_invites (meeting_invite_id, meeting_id, user_id, status) VALUES ('9391ddca-9770-44c3-9d11-dcf55552941c', '52b603a7-95d8-47d7-a194-280289e00789', '0384ec24-f836-48a7-8d4d-51afac223ebb', 'tell');"
+  },
+  {
+    "nl": "Register a Milestones with created at, project id, status, updated at, milestone name and due date",
+    "sql": "INSERT INTO milestones (created_at, project_id, status, updated_at, milestone_name, due_date) VALUES ('2025-03-12T00:24:18.536491', '4cf70e0d-2063-481e-ad81-a74e038aefeb', 'fast', '2025-03-12T00:24:18.536491', 'Trevor Hernandez', '2021-08-07');"
+  },
+  {
+    "nl": "List all threat name, description, severity and threat id in Security Threats",
+    "sql": "SELECT threat_name, description, severity, threat_id FROM security_threats;"
+  },
+  {
+    "nl": "List all file id, file url, project id, uploaded by and created at in Files",
+    "sql": "SELECT file_id, file_url, project_id, uploaded_by, created_at FROM files;"
+  },
+  {
+    "nl": "Show me event date, created at, title, project id, created by, event id and description from Calendar Events",
+    "sql": "SELECT event_date, created_at, title, project_id, created_by, event_id, description FROM calendar_events;"
+  },
+  {
+    "nl": "Show me meeting invite id, user id and meeting id from Meeting Invites",
+    "sql": "SELECT meeting_invite_id, user_id, meeting_id FROM meeting_invites;"
+  },
+  {
+    "nl": "What description, created by and project id do we have in Calendar Events?",
+    "sql": "SELECT description, created_by, project_id FROM calendar_events;"
+  },
+  {
+    "nl": "Show me created at, tag id and tag name from Tags",
+    "sql": "SELECT created_at, tag_id, tag_name FROM tags;"
+  },
+  {
+    "nl": "What tag name do we have in Tags?",
+    "sql": "SELECT tag_name FROM tags;"
+  },
+  {
+    "nl": "What role and user id do we have in Project Members?",
+    "sql": "SELECT role, user_id FROM project_members;"
+  },
+  {
+    "nl": "What time entry id and created at do we have in Time Entry?",
+    "sql": "SELECT time_entry_id, created_at FROM time_entries;"
+  },
+  {
+    "nl": "What session id do we have in Sessions?",
+    "sql": "SELECT session_id FROM sessions;"
+  },
+  {
+    "nl": "Show me audit id, timestamp and user id from Audit Logs",
+    "sql": "SELECT audit_id, timestamp, user_id FROM audit_logs;"
+  },
+  {
+    "nl": "What project id, action, created at and user id do we have in Activity Logs?",
+    "sql": "SELECT project_id, action, created_at, user_id FROM activity_logs;"
+  },
+  {
+    "nl": "What status and user id do we have in Available Member?",
+    "sql": "SELECT status, user_id FROM available_member;"
+  },
+  {
+    "nl": "Show me event date, created by, event id, description, project id, created at and title from Calendar Events",
+    "sql": "SELECT event_date, created_by, event_id, description, project_id, created_at, title FROM calendar_events;"
+  },
+  {
+    "nl": "List all audit id and details in Audit Logs",
+    "sql": "SELECT audit_id, details FROM audit_logs;"
+  },
+  {
+    "nl": "List all category in Company",
+    "sql": "SELECT category FROM companies;"
+  },
+  {
+    "nl": "What profile picture, user id, email, company id, agile, password hash, refresh token, created at, username, last active, time zone, status and name do we have in Users?",
+    "sql": "SELECT profile_picture, user_id, email, company_id, agile, password_hash, refresh_token, created_at, username, last_active, time_zone, status, name FROM users;"
+  },
+  {
+    "nl": "Show me vulnerability name, created at, severity, description and vulnerability id from Security Vulnerability",
+    "sql": "SELECT vulnerability_name, created_at, severity, description, vulnerability_id FROM security_vulnerabilities;"
+  },
+  {
+    "nl": "What user id and created at do we have in Notifications?",
+    "sql": "SELECT user_id, created_at FROM notifications;"
+  },
+  {
+    "nl": "What user id, generated at, meeting id and generated by do we have in Meeting Reports?",
+    "sql": "SELECT user_id, generated_at, meeting_id, generated_by FROM meeting_reports;"
+  },
+  {
+    "nl": "Show me tag id and task id from Task Tags",
+    "sql": "SELECT tag_id, task_id FROM task_tags;"
+  },
+  {
+    "nl": "List all title, created at, created by and meeting id in Meetings",
+    "sql": "SELECT title, created_at, created_by, meeting_id FROM meetings;"
+  },
+  {
+    "nl": "What meeting date and company id do we have in Meetings?",
+    "sql": "SELECT meeting_date, company_id FROM meetings;"
+  },
+  {
+    "nl": "Show me priority, team id, grade, task id, title, status, due date, assigned to, project id, created at, comment and description from Tasks",
+    "sql": "SELECT priority, team_id, grade, task_id, title, status, due_date, assigned_to, project_id, created_at, comment, description FROM tasks;"
+  },
+  {
+    "nl": "Show me user id and comment text from Task Comments",
+    "sql": "SELECT user_id, comment_text FROM task_comments;"
+  },
+  {
+    "nl": "Show me is read, created at, message and notification id from Notifications",
+    "sql": "SELECT is_read, created_at, message, notification_id FROM notifications;"
+  },
+  {
+    "nl": "What report id do we have in Reports?",
+    "sql": "SELECT report_id FROM reports;"
+  },
+  {
+    "nl": "What project id, title, priority, team id, task id and status do we have in Tasks?",
+    "sql": "SELECT project_id, title, priority, team_id, task_id, status FROM tasks;"
+  },
+  {
+    "nl": "Show me refresh token, created at, expires at and session id from Sessions",
+    "sql": "SELECT refresh_token, created_at, expires_at, session_id FROM sessions;"
+  },
+  {
+    "nl": "What message, is read, notification id and created at do we have in Notifications?",
+    "sql": "SELECT message, is_read, notification_id, created_at FROM notifications;"
+  },
+  {
+    "nl": "What message, created at, notification id, is read and user id do we have in Notifications?",
+    "sql": "SELECT message, created_at, notification_id, is_read, user_id FROM notifications;"
+  },
+  {
+    "nl": "What leader id, status, name, project id and team id do we have in Teams?",
+    "sql": "SELECT leader_id, status, name, project_id, team_id FROM teams;"
+  },
+  {
+    "nl": "List all tag id in Task Tags",
+    "sql": "SELECT tag_id FROM task_tags;"
+  },
+  {
+    "nl": "What budget, end date, created at, owner id, per complete, description and start date do we have in Projects?",
+    "sql": "SELECT budget, end_date, created_at, owner_id, per_complete, description, start_date FROM projects;"
+  },
+  {
+    "nl": "List all message, sender id, room, message id and created at in Messages",
+    "sql": "SELECT message, sender_id, room, message_id, created_at FROM messages;"
+  },
+  {
+    "nl": "List all severity and threat name in Security Threats",
+    "sql": "SELECT severity, threat_name FROM security_threats;"
+  },
+  {
+    "nl": "What team id do we have in Team Members?",
+    "sql": "SELECT team_id FROM team_members;"
+  },
+  {
+    "nl": "List all meeting id, summary and generated at in Meeting Reports",
+    "sql": "SELECT meeting_id, summary, generated_at FROM meeting_reports;"
+  },
+  {
+    "nl": "What refresh token and created at do we have in Sessions?",
+    "sql": "SELECT refresh_token, created_at FROM sessions;"
+  },
+  {
+    "nl": "What meeting id and user id do we have in Meeting Participants?",
+    "sql": "SELECT meeting_id, user_id FROM meeting_participants;"
+  },
+  {
+    "nl": "What user id and created at do we have in Task Comments?",
+    "sql": "SELECT user_id, created_at FROM task_comments;"
+  },
+  {
+    "nl": "Show me action from Activity Logs",
+    "sql": "SELECT action FROM activity_logs;"
+  },
+  {
+    "nl": "List all task id and tag id in Task Tags",
+    "sql": "SELECT task_id, tag_id FROM task_tags;"
+  },
+  {
+    "nl": "List all created at, due date, milestone id, project id and status in Milestones",
+    "sql": "SELECT created_at, due_date, milestone_id, project_id, status FROM milestones;"
+  },
+  {
+    "nl": "Show me name, email and role from Users",
+    "sql": "SELECT name, email, role FROM users;"
+  },
+  {
+    "nl": "Show me log id, created at, action and user id from Activity Logs",
+    "sql": "SELECT log_id, created_at, action, user_id FROM activity_logs;"
+  },
+  {
+    "nl": "Show me first name, password, email, company id and role from Admins",
+    "sql": "SELECT first_name, password, email, company_id, role FROM admins;"
+  },
+  {
+    "nl": "What task id, team id, created at, assigned to, due date, description, project id, grade, comment, title and priority do we have in Tasks?",
+    "sql": "SELECT task_id, team_id, created_at, assigned_to, due_date, description, project_id, grade, comment, title, priority FROM tasks;"
+  },
+  {
+    "nl": "What created by, event date, event id, title, description and project id do we have in Calendar Events?",
+    "sql": "SELECT created_by, event_date, event_id, title, description, project_id FROM calendar_events;"
+  },
+  {
+    "nl": "Show me user id and project id from Project Members",
+    "sql": "SELECT user_id, project_id FROM project_members;"
+  },
+  {
+    "nl": "List all tag id and tag name in Tags",
+    "sql": "SELECT tag_id, tag_name FROM tags;"
+  },
+  {
+    "nl": "List all user id, time entry id, description, created at and hours in Time Entry",
+    "sql": "SELECT user_id, time_entry_id, description, created_at, hours FROM time_entries;"
+  },
+  {
+    "nl": "Show me user id from Project Members",
+    "sql": "SELECT user_id FROM project_members;"
+  },
+  {
+    "nl": "Show me leader id from Team Leader",
+    "sql": "SELECT leader_id FROM team_leader;"
+  },
+  {
+    "nl": "What created at, severity, description, vulnerability name and vulnerability id do we have in Security Vulnerability?",
+    "sql": "SELECT created_at, severity, description, vulnerability_name, vulnerability_id FROM security_vulnerabilities;"
+  },
+  {
+    "nl": "Show me company id, meeting time, created by, meeting date, created at, meeting id and title from Meetings",
+    "sql": "SELECT company_id, meeting_time, created_by, meeting_date, created_at, meeting_id, title FROM meetings;"
+  },
+  {
+    "nl": "What timestamp, user id, description, user email, audit id, ip address and event type do we have in Security Audits?",
+    "sql": "SELECT timestamp, user_id, description, user_email, audit_id, ip_address, event_type FROM security_audits;"
+  },
+  {
+    "nl": "What company id, title, meeting id and meeting date do we have in Meetings?",
+    "sql": "SELECT company_id, title, meeting_id, meeting_date FROM meetings;"
+  },
+  {
+    "nl": "List all created at and session id in Sessions",
+    "sql": "SELECT created_at, session_id FROM sessions;"
+  },
+  {
+    "nl": "Show me user id, hours and time entry id from Time Entry",
+    "sql": "SELECT user_id, hours, time_entry_id FROM time_entries;"
+  },
+  {
+    "nl": "What room, message id and created at do we have in Messages?",
+    "sql": "SELECT room, message_id, created_at FROM messages;"
+  },
+  {
+    "nl": "List all meeting id in Meeting Participants",
+    "sql": "SELECT meeting_id FROM meeting_participants;"
+  },
+  {
+    "nl": "What created at and user id do we have in Available Member?",
+    "sql": "SELECT created_at, user_id FROM available_member;"
+  },
+  {
+    "nl": "Show me severity, vulnerability id and description from Security Vulnerability",
+    "sql": "SELECT severity, vulnerability_id, description FROM security_vulnerabilities;"
+  },
+  {
+    "nl": "Show me project id, task id, file url, file id, uploaded by and created at from Files",
+    "sql": "SELECT project_id, task_id, file_url, file_id, uploaded_by, created_at FROM files;"
+  },
+  {
+    "nl": "Show me user id, setting key, setting value, setting id and created at from Settings",
+    "sql": "SELECT user_id, setting_key, setting_value, setting_id, created_at FROM settings;"
+  },
+  {
+    "nl": "List all user id, timestamp and audit id in Audit Logs",
+    "sql": "SELECT user_id, timestamp, audit_id FROM audit_logs;"
+  },
+  {
+    "nl": "List all threat name and description in Security Threats",
+    "sql": "SELECT threat_name, description FROM security_threats;"
+  },
+  {
+    "nl": "List all name and project id in Teams",
+    "sql": "SELECT name, project_id FROM teams;"
+  },
+  {
+    "nl": "Show me description, hours, time entry id, user id and created at from Time Entry",
+    "sql": "SELECT description, hours, time_entry_id, user_id, created_at FROM time_entries;"
+  },
+  {
+    "nl": "List all description and audit id in Security Audits",
+    "sql": "SELECT description, audit_id FROM security_audits;"
+  },
+  {
+    "nl": "Show me team id, role and user id from Team Members",
+    "sql": "SELECT team_id, role, user_id FROM team_members;"
+  },
+  {
+    "nl": "What time zone, refresh token, status, role, agile, username, email, created at, user id and company id do we have in Users?",
+    "sql": "SELECT time_zone, refresh_token, status, role, agile, username, email, created_at, user_id, company_id FROM users;"
+  },
+  {
+    "nl": "List all description and created at in Security Vulnerability",
+    "sql": "SELECT description, created_at FROM security_vulnerabilities;"
+  },
+  {
+    "nl": "What leader id and team id do we have in Team Leader?",
+    "sql": "SELECT leader_id, team_id FROM team_leader;"
+  },
+  {
+    "nl": "List all report id, author id, file path, description, content, feedback and title in Reports",
+    "sql": "SELECT report_id, author_id, file_path, description, content, feedback, title FROM reports;"
+  },
+  {
+    "nl": "What timestamp and audit id do we have in Security Audits?",
+    "sql": "SELECT timestamp, audit_id FROM security_audits;"
+  },
+  {
+    "nl": "Show me project id, created at, team id, name, status, leader id and owner id from Teams",
+    "sql": "SELECT project_id, created_at, team_id, name, status, leader_id, owner_id FROM teams;"
+  },
+  {
+    "nl": "List all status, owner id, project id, budget, per complete and created at in Projects",
+    "sql": "SELECT status, owner_id, project_id, budget, per_complete, created_at FROM projects;"
+  },
+  {
+    "nl": "What name, project id, end date, budget, owner id, created at and per complete do we have in Projects?",
+    "sql": "SELECT name, project_id, end_date, budget, owner_id, created_at, per_complete FROM projects;"
+  },
+  {
+    "nl": "Show me tag id, tag name and created at from Tags",
+    "sql": "SELECT tag_id, tag_name, created_at FROM tags;"
+  },
+  {
+    "nl": "What event type and user id do we have in Security Audits?",
+    "sql": "SELECT event_type, user_id FROM security_audits;"
+  },
+  {
+    "nl": "List all owner id in Teams",
+    "sql": "SELECT owner_id FROM teams;"
+  },
+  {
+    "nl": "Show me meeting invite id, status and meeting id from Meeting Invites",
+    "sql": "SELECT meeting_invite_id, status, meeting_id FROM meeting_invites;"
+  },
+  {
+    "nl": "What meeting invite id, status, meeting id and user id do we have in Meeting Invites?",
+    "sql": "SELECT meeting_invite_id, status, meeting_id, user_id FROM meeting_invites;"
+  },
+  {
+    "nl": "List all assigned by in Team Leader",
+    "sql": "SELECT assigned_by FROM team_leader;"
+  },
+  {
+    "nl": "List all message, created at and room in Messages",
+    "sql": "SELECT message, created_at, room FROM messages;"
+  },
+  {
+    "nl": "What meeting id, user id, status and meeting invite id do we have in Meeting Invites?",
+    "sql": "SELECT meeting_id, user_id, status, meeting_invite_id FROM meeting_invites;"
+  },
+  {
+    "nl": "What setting value, user id and setting id do we have in Settings?",
+    "sql": "SELECT setting_value, user_id, setting_id FROM settings;"
+  },
+  {
+    "nl": "List all id, user id and added at in User Skills",
+    "sql": "SELECT id, user_id, added_at FROM user_skills;"
+  },
+  {
+    "nl": "What threat name, severity, description and threat id do we have in Security Threats?",
+    "sql": "SELECT threat_name, severity, description, threat_id FROM security_threats;"
+  },
+  {
+    "nl": "List all assigned by, team id and created at in Team Leader",
+    "sql": "SELECT assigned_by, team_id, created_at FROM team_leader;"
+  },
+  {
+    "nl": "List all role in Team Members",
+    "sql": "SELECT role FROM team_members;"
+  },
+  {
+    "nl": "What task id, created at and file url do we have in Files?",
+    "sql": "SELECT task_id, created_at, file_url FROM files;"
+  },
+  {
+    "nl": "Show me created at, status, task id and title from Tasks",
+    "sql": "SELECT created_at, status, task_id, title FROM tasks;"
+  },
+  {
+    "nl": "What created at do we have in Task Comments?",
+    "sql": "SELECT created_at FROM task_comments;"
+  },
+  {
+    "nl": "What user id, log id and project id do we have in Activity Logs?",
+    "sql": "SELECT user_id, log_id, project_id FROM activity_logs;"
+  },
+  {
+    "nl": "List all created at in Team Leader",
+    "sql": "SELECT created_at FROM team_leader;"
+  },
+  {
+    "nl": "Show me timestamp from Audit Logs",
+    "sql": "SELECT timestamp FROM audit_logs;"
+  },
+  {
+    "nl": "List all audit id and user id in Audit Logs",
+    "sql": "SELECT audit_id, user_id FROM audit_logs;"
+  },
+  {
+    "nl": "What start date, end date and owner id do we have in Projects?",
+    "sql": "SELECT start_date, end_date, owner_id FROM projects;"
+  },
+  {
+    "nl": "What due date, project id, description, status and milestone name do we have in Milestones?",
+    "sql": "SELECT due_date, project_id, description, status, milestone_name FROM milestones;"
+  },
+  {
+    "nl": "Show me description from Security Vulnerability",
+    "sql": "SELECT description FROM security_vulnerabilities;"
+  },
+  {
+    "nl": "Show me task id from Task Tags",
+    "sql": "SELECT task_id FROM task_tags;"
+  },
+  {
+    "nl": "What per complete, name, owner id, end date and start date do we have in Projects?",
+    "sql": "SELECT per_complete, name, owner_id, end_date, start_date FROM projects;"
+  },
+  {
+    "nl": "What tag name and tag id do we have in Tags?",
+    "sql": "SELECT tag_name, tag_id FROM tags;"
+  },
+  {
+    "nl": "What user id, created at, comment text and task id do we have in Task Comments?",
+    "sql": "SELECT user_id, created_at, comment_text, task_id FROM task_comments;"
+  },
+  {
+    "nl": "What setting id, setting value and created at do we have in Settings?",
+    "sql": "SELECT setting_id, setting_value, created_at FROM settings;"
+  },
+  {
+    "nl": "What content do we have in Reports?",
+    "sql": "SELECT content FROM reports;"
+  },
+  {
+    "nl": "What company id and created by do we have in Meetings?",
+    "sql": "SELECT company_id, created_by FROM meetings;"
+  },
+  {
+    "nl": "List all task id, created at, file id and project id in Files",
+    "sql": "SELECT task_id, created_at, file_id, project_id FROM files;"
+  },
+  {
+    "nl": "Show me ip address, user email, user id, event type, timestamp, audit id and description from Security Audits",
+    "sql": "SELECT ip_address, user_email, user_id, event_type, timestamp, audit_id, description FROM security_audits;"
+  },
+  {
+    "nl": "What user id and status do we have in Meeting Invites?",
+    "sql": "SELECT user_id, status FROM meeting_invites;"
+  },
+  {
+    "nl": "Show me generated at, summary, meeting id, user id and generated by from Meeting Reports",
+    "sql": "SELECT generated_at, summary, meeting_id, user_id, generated_by FROM meeting_reports;"
+  },
+  {
+    "nl": "What author id, feedback, file path, recipient, created at, content, recipient id, description, report id and status do we have in Reports?",
+    "sql": "SELECT author_id, feedback, file_path, recipient, created_at, content, recipient_id, description, report_id, status FROM reports;"
+  },
+  {
+    "nl": "List all project id and role in Project Members",
+    "sql": "SELECT project_id, role FROM project_members;"
+  },
+  {
+    "nl": "What project id, title and event date do we have in Calendar Events?",
+    "sql": "SELECT project_id, title, event_date FROM calendar_events;"
+  },
+  {
+    "nl": "What meeting id, generated by, user id, generated at and summary do we have in Meeting Reports?",
+    "sql": "SELECT meeting_id, generated_by, user_id, generated_at, summary FROM meeting_reports;"
+  },
+  {
+    "nl": "List all sender id, message id, created at, room and message in Messages",
+    "sql": "SELECT sender_id, message_id, created_at, room, message FROM messages;"
+  },
+  {
+    "nl": "What user id, created at and status do we have in Available Member?",
+    "sql": "SELECT user_id, created_at, status FROM available_member;"
+  },
+  {
+    "nl": "Show me title, author id, attachment url, feedback, status, recipient id, description, recipient, content and created at from Reports",
+    "sql": "SELECT title, author_id, attachment_url, feedback, status, recipient_id, description, recipient, content, created_at FROM reports;"
+  },
+  {
+    "nl": "List all comment text, task id, user id, created at and comment id in Task Comments",
+    "sql": "SELECT comment_text, task_id, user_id, created_at, comment_id FROM task_comments;"
+  },
+  {
+    "nl": "Show me threat id, severity, created at, threat name and description from Security Threats",
+    "sql": "SELECT threat_id, severity, created_at, threat_name, description FROM security_threats;"
+  },
+  {
+    "nl": "What message and room do we have in Messages?",
+    "sql": "SELECT message, room FROM messages;"
+  },
+  {
+    "nl": "List all owner id, team id, status, name, leader id and created at in Teams",
+    "sql": "SELECT owner_id, team_id, status, name, leader_id, created_at FROM teams;"
+  },
+  {
+    "nl": "Show me generated by and user id from Meeting Reports",
+    "sql": "SELECT generated_by, user_id FROM meeting_reports;"
+  },
+  {
+    "nl": "List all due date, status and assigned to in Tasks",
+    "sql": "SELECT due_date, status, assigned_to FROM tasks;"
+  },
+  {
+    "nl": "Show me project id, log id and created at from Activity Logs",
+    "sql": "SELECT project_id, log_id, created_at FROM activity_logs;"
+  },
+  {
+    "nl": "Show me created at, notification id, message, is read and user id from Notifications",
+    "sql": "SELECT created_at, notification_id, message, is_read, user_id FROM notifications;"
+  },
+  {
+    "nl": "List all uploaded by in Files",
+    "sql": "SELECT uploaded_by FROM files;"
+  },
+  {
+    "nl": "What email do we have in Admins?",
+    "sql": "SELECT email FROM admins;"
+  },
+  {
+    "nl": "Search Security Audits for entries containing 'important' in Ip Address",
+    "sql": "\n            SELECT * FROM security_audits\n            WHERE to_tsvector('english', ip_address) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Meeting Participants records that user id is 3009d4ae-ace7-44f8-848a-40b6a31468e2",
+    "sql": "SELECT * FROM meeting_participants WHERE user_id = '3009d4ae-ace7-44f8-848a-40b6a31468e2' AND meeting_id = '4a6d9c23-ca44-4a23-989e-61d6f15479d6';"
+  },
+  {
+    "nl": "Find Team Members where team id is 3d81df80-869e-4630-8b7e-84d8aadc3f5c",
+    "sql": "SELECT * FROM team_members WHERE team_id = '3d81df80-869e-4630-8b7e-84d8aadc3f5c';"
+  },
+  {
+    "nl": "Locate Teams entries with matches condition: owner_id = 4528",
+    "sql": "SELECT * FROM teams WHERE owner_id = 4528;"
+  },
+  {
+    "nl": "Search for User Skills records that user id is c1743862-eaa8-43dd-97e3-26435d485e1d",
+    "sql": "SELECT * FROM user_skills WHERE user_id = 'c1743862-eaa8-43dd-97e3-26435d485e1d';"
+  },
+  {
+    "nl": "Find Project Members where project id is 2567dec3-5f04-4dc3-be7e-f43e4d120b04",
+    "sql": "SELECT * FROM project_members WHERE project_id = '2567dec3-5f04-4dc3-be7e-f43e4d120b04';"
+  },
+  {
+    "nl": "Find Meeting Reports where generated by is 6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a",
+    "sql": "SELECT * FROM meeting_reports WHERE generated_by = '6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a';"
+  },
+  {
+    "nl": "Search Users for entries containing 'important' in Profile Picture",
+    "sql": "\n            SELECT * FROM users\n            WHERE to_tsvector('english', profile_picture) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Find Projects where budget greater than 5756",
+    "sql": "SELECT * FROM projects WHERE budget > 5756.64;"
+  },
+  {
+    "nl": "Search Security Threats for entries containing 'important' in Description",
+    "sql": "\n            SELECT * FROM security_threats\n            WHERE to_tsvector('english', description) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Audit Logs records that matches condition: audit_id = 2605",
+    "sql": "SELECT * FROM audit_logs WHERE audit_id = 2605;"
+  },
+  {
+    "nl": "Find Settings where matches condition: setting_id != 930",
+    "sql": "SELECT * FROM settings WHERE setting_id != 930;"
+  },
+  {
+    "nl": "Find Meeting Invites where user id is 0384ec24-f836-48a7-8d4d-51afac223ebb",
+    "sql": "SELECT * FROM meeting_invites WHERE user_id = '0384ec24-f836-48a7-8d4d-51afac223ebb';"
+  },
+  {
+    "nl": "Search Settings for entries containing 'important' in Setting Key",
+    "sql": "\n            SELECT * FROM settings\n            WHERE to_tsvector('english', setting_key) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Locate Admins entries with first name is evan estrada",
+    "sql": "SELECT * FROM admins WHERE first_name = 'Evan Estrada';"
+  },
+  {
+    "nl": "Locate Milestones entries with milestone name is robert allen dvm",
+    "sql": "SELECT * FROM milestones WHERE milestone_name = 'Robert Allen DVM';"
+  },
+  {
+    "nl": "Search for Company records that sector is hear",
+    "sql": "SELECT * FROM companies WHERE sector = 'hear' AND country = 'election';"
+  },
+  {
+    "nl": "Locate Reports entries with recipient is next",
+    "sql": "SELECT * FROM reports WHERE recipient = 'next' AND recipient = 'or';"
+  },
+  {
+    "nl": "Search Audit Logs for entries containing 'important' in Details",
+    "sql": "\n            SELECT * FROM audit_logs\n            WHERE to_tsvector('english', details) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Locate Company entries with address is 31744 charles rapid\nmartinezville, ne 69941",
+    "sql": "SELECT * FROM companies WHERE address = '31744 Charles Rapid\nMartinezville, NE 69941' AND company_name = 'Dawn Hall';"
+  },
+  {
+    "nl": "Search for Messages records that created at is 2025-03-12t00:24:18.535489",
+    "sql": "SELECT * FROM messages WHERE created_at = '2025-03-12T00:24:18.535489' AND message = 'Before sister capital amount future face small.';"
+  },
+  {
+    "nl": "Search Activity Logs for entries containing 'important' in Action",
+    "sql": "\n            SELECT * FROM activity_logs\n            WHERE to_tsvector('english', action) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Projects for entries containing 'important' in Description",
+    "sql": "\n            SELECT * FROM projects\n            WHERE to_tsvector('english', description) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Meetings for entries containing 'important' in Title",
+    "sql": "\n            SELECT * FROM meetings\n            WHERE to_tsvector('english', title) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Tags for entries containing 'important' in Tag Name",
+    "sql": "\n            SELECT * FROM tags\n            WHERE to_tsvector('english', tag_name) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Files records that task id is e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c",
+    "sql": "SELECT * FROM files WHERE task_id = 'e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c' AND file_url = 'Lay play down old avoid must. Usually sure property star. Record thus last ever area order.';"
+  },
+  {
+    "nl": "Search for Sessions records that refresh token is computer building away character. one authority meeting.",
+    "sql": "SELECT * FROM sessions WHERE refresh_token = 'Computer building away character. One authority meeting.' AND user_id = '9d9316d3-8933-415c-abf3-653d9cad87f7';"
+  },
+  {
+    "nl": "Locate Projects entries with matches condition: budget = 6244.6",
+    "sql": "SELECT * FROM projects WHERE budget = 6244.6;"
+  },
+  {
+    "nl": "Find Meetings where company id greater than 9595",
+    "sql": "SELECT * FROM meetings WHERE company_id > 9595;"
+  },
+  {
+    "nl": "Search User Skills for entries containing 'important' in Skill Name",
+    "sql": "\n            SELECT * FROM user_skills\n            WHERE to_tsvector('english', skill_name) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Find Tasks where grade is institution put attorney sing film. and pick day. television skill watch candidate she. option out lot travel energy build.",
+    "sql": "SELECT * FROM tasks WHERE grade = 'Institution put attorney sing film. And pick day. Television skill watch candidate she. Option out lot travel energy build.';"
+  },
+  {
+    "nl": "Search for Time Entry records that description is commercial building yard north.",
+    "sql": "SELECT * FROM time_entries WHERE description = 'Commercial building yard north.';"
+  },
+  {
+    "nl": "Search Team Members for entries containing 'important' in Role",
+    "sql": "\n            SELECT * FROM team_members\n            WHERE to_tsvector('english', role) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Meeting Invites for entries containing 'important' in Status",
+    "sql": "\n            SELECT * FROM meeting_invites\n            WHERE to_tsvector('english', status) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Find Meeting Reports where generated at is 2025-03-12t00:24:18.553516",
+    "sql": "SELECT * FROM meeting_reports WHERE generated_at = '2025-03-12T00:24:18.553516';"
+  },
+  {
+    "nl": "Find Meeting Participants where meeting id is 4a6d9c23-ca44-4a23-989e-61d6f15479d6",
+    "sql": "SELECT * FROM meeting_participants WHERE meeting_id = '4a6d9c23-ca44-4a23-989e-61d6f15479d6';"
+  },
+  {
+    "nl": "Search for Teams records that created at is 2025-03-12t00:24:18.532489",
+    "sql": "SELECT * FROM teams WHERE created_at = '2025-03-12T00:24:18.532489' AND team_id = '293b9e7b-750b-4d0e-8269-8ab96dabfe2e';"
+  },
+  {
+    "nl": "Search Meeting Reports for entries containing 'important' in Summary",
+    "sql": "\n            SELECT * FROM meeting_reports\n            WHERE to_tsvector('english', summary) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Tasks records that grade is rise size speech. room high defense marriage social full. compare perhaps professional outside.",
+    "sql": "SELECT * FROM tasks WHERE grade = 'Rise size speech. Room high defense marriage social full. Compare perhaps professional outside.' AND title = 'oil';"
+  },
+  {
+    "nl": "Search for Project Members records that user id is fe756987-e4f7-4f12-8bf5-ae15fa087ad3",
+    "sql": "SELECT * FROM project_members WHERE user_id = 'fe756987-e4f7-4f12-8bf5-ae15fa087ad3' AND project_id = '2567dec3-5f04-4dc3-be7e-f43e4d120b04';"
+  },
+  {
+    "nl": "Search for Meeting Invites records that status is road",
+    "sql": "SELECT * FROM meeting_invites WHERE status = 'road' AND status = 'hard';"
+  },
+  {
+    "nl": "Find Team Leader where assigned by is 7b4b0eb7-b57f-48a0-b58d-3379851e5553",
+    "sql": "SELECT * FROM team_leader WHERE assigned_by = '7b4b0eb7-b57f-48a0-b58d-3379851e5553';"
+  },
+  {
+    "nl": "Locate Security Vulnerability entries with vulnerability name is katherine sims",
+    "sql": "SELECT * FROM security_vulnerabilities WHERE vulnerability_name = 'Katherine Sims' AND created_at = '2025-03-12T00:24:18.544505';"
+  },
+  {
+    "nl": "Find Time Entry where created at is 2025-03-12t00:24:18.534489",
+    "sql": "SELECT * FROM time_entries WHERE created_at = '2025-03-12T00:24:18.534489';"
+  },
+  {
+    "nl": "Search Calendar Events for entries containing 'important' in Description",
+    "sql": "\n            SELECT * FROM calendar_events\n            WHERE to_tsvector('english', description) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Files for entries containing 'important' in File Url",
+    "sql": "\n            SELECT * FROM files\n            WHERE to_tsvector('english', file_url) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Task Comments for entries containing 'important' in Comment Text",
+    "sql": "\n            SELECT * FROM task_comments\n            WHERE to_tsvector('english', comment_text) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Find Notifications where created at is 2025-03-12t00:24:18.529491",
+    "sql": "SELECT * FROM notifications WHERE created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Find Task Comments where comment id is e8f3738c-6083-4599-bdbc-90834a3a4ea5",
+    "sql": "SELECT * FROM task_comments WHERE comment_id = 'e8f3738c-6083-4599-bdbc-90834a3a4ea5';"
+  },
+  {
+    "nl": "Find Activity Logs where action is phone it write recent security. amount station plant debate. tax indicate quite determine.",
+    "sql": "SELECT * FROM activity_logs WHERE action = 'Phone it write recent security. Amount station plant debate. Tax indicate quite determine.';"
+  },
+  {
+    "nl": "Find Meetings where created by is 1c072de0-d900-491c-86e7-9c8ae44de037",
+    "sql": "SELECT * FROM meetings WHERE created_by = '1c072de0-d900-491c-86e7-9c8ae44de037';"
+  },
+  {
+    "nl": "Locate Reports entries with recipient id greater than 4166",
+    "sql": "SELECT * FROM reports WHERE recipient_id > 4166 AND recipient_id = 3555;"
+  },
+  {
+    "nl": "Locate Sessions entries with session id is 4db29a0a-3142-473d-bd80-2e2b3998bd0e",
+    "sql": "SELECT * FROM sessions WHERE session_id = '4db29a0a-3142-473d-bd80-2e2b3998bd0e';"
+  },
+  {
+    "nl": "Search Notifications for entries containing 'important' in Message",
+    "sql": "\n            SELECT * FROM notifications\n            WHERE to_tsvector('english', message) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Calendar Events records that project id is c6df6199-fd2e-4acf-863a-69128ef1a57a",
+    "sql": "SELECT * FROM calendar_events WHERE project_id = 'c6df6199-fd2e-4acf-863a-69128ef1a57a';"
+  },
+  {
+    "nl": "Find Notifications where message is establish green our item benefit animal book.",
+    "sql": "SELECT * FROM notifications WHERE message = 'Establish green our item benefit animal book.';"
+  },
+  {
+    "nl": "Search for Activity Logs records that project id is ba6dc90a-ee2b-44b3-a239-1a6878312018",
+    "sql": "SELECT * FROM activity_logs WHERE project_id = 'ba6dc90a-ee2b-44b3-a239-1a6878312018' AND project_id = 'ba6dc90a-ee2b-44b3-a239-1a6878312018';"
+  },
+  {
+    "nl": "Search Available Member for entries containing 'important' in Status",
+    "sql": "\n            SELECT * FROM available_member\n            WHERE to_tsvector('english', status) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Security Vulnerability records that created at is 2025-03-12t00:24:18.544505",
+    "sql": "SELECT * FROM security_vulnerabilities WHERE created_at = '2025-03-12T00:24:18.544505';"
+  },
+  {
+    "nl": "Find Tags where tag id greater than 734",
+    "sql": "SELECT * FROM tags WHERE tag_id > 734;"
+  },
+  {
+    "nl": "Search Project Members for entries containing 'important' in Role",
+    "sql": "\n            SELECT * FROM project_members\n            WHERE to_tsvector('english', role) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Security Threats records that description is voice scene happy culture. professional several see left pull personal your improve. adult five staff whatever. anything theory protect help but.",
+    "sql": "SELECT * FROM security_threats WHERE description = 'Voice scene happy culture. Professional several see left pull personal your improve. Adult five staff whatever. Anything theory protect help but.' AND description = 'Room character provide including. Thousand human arm magazine ability result dark. Sense again beautiful.';"
+  },
+  {
+    "nl": "Locate User Skills entries with experience level is report",
+    "sql": "SELECT * FROM user_skills WHERE experience_level = 'report';"
+  },
+  {
+    "nl": "Search for Task Tags records that matches condition: tag_id = 7144",
+    "sql": "SELECT * FROM task_tags WHERE tag_id = 7144;"
+  },
+  {
+    "nl": "Find Calendar Events where event id is 663484f0-4e01-47a1-ab22-3ee1abbc1f34",
+    "sql": "SELECT * FROM calendar_events WHERE event_id = '663484f0-4e01-47a1-ab22-3ee1abbc1f34';"
+  },
+  {
+    "nl": "Locate Audit Logs entries with user id is 306268ae-7235-4485-b736-0247d0c483cf",
+    "sql": "SELECT * FROM audit_logs WHERE user_id = '306268ae-7235-4485-b736-0247d0c483cf';"
+  },
+  {
+    "nl": "Search Teams for entries containing 'important' in Status",
+    "sql": "\n            SELECT * FROM teams\n            WHERE to_tsvector('english', status) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Tasks for entries containing 'important' in Status",
+    "sql": "\n            SELECT * FROM tasks\n            WHERE to_tsvector('english', status) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Locate Messages entries with message is firm data whether but. fast know message. hope would contain people respond including.",
+    "sql": "SELECT * FROM messages WHERE message = 'Firm data whether but. Fast know message. Hope would contain people respond including.';"
+  },
+  {
+    "nl": "Search Company for entries containing 'important' in Zip Code",
+    "sql": "\n            SELECT * FROM companies\n            WHERE to_tsvector('english', zip_code) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Locate Users entries with role is foot",
+    "sql": "SELECT * FROM users WHERE role = 'foot';"
+  },
+  {
+    "nl": "Search Security Vulnerability for entries containing 'important' in Description",
+    "sql": "\n            SELECT * FROM security_vulnerabilities\n            WHERE to_tsvector('english', description) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Messages for entries containing 'important' in Room",
+    "sql": "\n            SELECT * FROM messages\n            WHERE to_tsvector('english', room) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Milestones for entries containing 'important' in Status",
+    "sql": "\n            SELECT * FROM milestones\n            WHERE to_tsvector('english', status) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Files records that task id is e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c",
+    "sql": "SELECT * FROM files WHERE task_id = 'e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c';"
+  },
+  {
+    "nl": "Search Reports for entries containing 'important' in Status",
+    "sql": "\n            SELECT * FROM reports\n            WHERE to_tsvector('english', status) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Locate Task Tags entries with tag id greater than 1696",
+    "sql": "SELECT * FROM task_tags WHERE tag_id > 1696;"
+  },
+  {
+    "nl": "Find Security Audits where user email is nicholas44@example.org",
+    "sql": "SELECT * FROM security_audits WHERE user_email = 'nicholas44@example.org';"
+  },
+  {
+    "nl": "Search Time Entry for entries containing 'important' in Description",
+    "sql": "\n            SELECT * FROM time_entries\n            WHERE to_tsvector('english', description) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search for Admins records that password is space",
+    "sql": "SELECT * FROM admins WHERE password = 'space';"
+  },
+  {
+    "nl": "Search for Security Audits records that user id is f15a5013-45bb-47e7-ba00-c5c03de7394b",
+    "sql": "SELECT * FROM security_audits WHERE user_id = 'f15a5013-45bb-47e7-ba00-c5c03de7394b';"
+  },
+  {
+    "nl": "Find Users where profile picture is republican spring hundred task stay. center under miss despite memory. way property various deep behavior sound.",
+    "sql": "SELECT * FROM users WHERE profile_picture = 'Republican spring hundred task stay. Center under miss despite memory. Way property various deep behavior sound.';"
+  },
+  {
+    "nl": "Search Sessions for entries containing 'important' in Refresh Token",
+    "sql": "\n            SELECT * FROM sessions\n            WHERE to_tsvector('english', refresh_token) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Search Admins for entries containing 'important' in Email",
+    "sql": "\n            SELECT * FROM admins\n            WHERE to_tsvector('english', email) @@ to_tsquery('english', 'important');\n            "
+  },
+  {
+    "nl": "Locate Security Threats entries with threat name is lisa moore dds",
+    "sql": "SELECT * FROM security_threats WHERE threat_name = 'Lisa Moore DDS';"
+  },
+  {
+    "nl": "Locate Tags entries with tag name is christy bailey",
+    "sql": "SELECT * FROM tags WHERE tag_name = 'Christy Bailey';"
+  },
+  {
+    "nl": "Update Team Leader entries to Updated At to 2025-03-12T00:24:18.545504 and Created At to 2025-03-12T00:24:18.545504 when created at is 2025-03-12t00:24:18.545504",
+    "sql": "UPDATE team_leader SET updated_at = '2025-03-12T00:24:18.545504', created_at = '2025-03-12T00:24:18.545504' WHERE created_at = '2025-03-12T00:24:18.545504';"
+  },
+  {
+    "nl": "Update Milestones entries to Milestone Name to Steven Allen and Created At to 2025-03-12T00:24:18.537505 when updated at is 2025-03-12t00:24:18.537505",
+    "sql": "UPDATE milestones SET milestone_name = 'Steven Allen', created_at = '2025-03-12T00:24:18.537505' WHERE updated_at = '2025-03-12T00:24:18.537505' AND status = 'truth';"
+  },
+  {
+    "nl": "Update Company entries to Zip Code to around and State to than when country is across",
+    "sql": "UPDATE companies SET zip_code = 'around', state = 'than' WHERE country = 'across';"
+  },
+  {
+    "nl": "Update Team Members entries to Role to live when user id is 8f8ed7c7-fa3c-4077-899e-c9a7e45e4224",
+    "sql": "UPDATE team_members SET role = 'live' WHERE user_id = '8f8ed7c7-fa3c-4077-899e-c9a7e45e4224' AND team_id = '3d81df80-869e-4630-8b7e-84d8aadc3f5c';"
+  },
+  {
+    "nl": "Delete Team Leader entries where updated at is 2025-03-12t00:24:18.545504",
+    "sql": "DELETE FROM team_leader WHERE updated_at = '2025-03-12T00:24:18.545504';"
+  },
+  {
+    "nl": "Show me updated at, last name, company id, first name, password, admin id and email from Admins",
+    "sql": "SELECT updated_at, last_name, company_id, first_name, password, admin_id, email FROM admins;"
+  },
+  {
+    "nl": "Update Teams entries to Name to Dr. Donald Guzman, Created At to 2025-03-12T00:24:18.532489 and Status to Attack peace third others nearly. Food animal note cultural. Space mother two she wife. when leader id is fdcad5a9-303f-40a1-87b1-0a786d2dc664",
+    "sql": "UPDATE teams SET name = 'Dr. Donald Guzman', created_at = '2025-03-12T00:24:18.532489', status = 'Attack peace third others nearly. Food animal note cultural. Space mother two she wife.' WHERE leader_id = 'fdcad5a9-303f-40a1-87b1-0a786d2dc664' AND status = 'Imagine act half culture child. Along walk still throughout. Good true off interesting food sometimes.';"
+  },
+  {
+    "nl": "Modify Meetings records by setting Title to run, Created At to 2025-03-12T00:24:18.546504 and Company ID to 7083 where meeting id is e3460050-ed9f-4f7e-a58a-ddaf9cad8918",
+    "sql": "UPDATE meetings SET title = 'run', created_at = '2025-03-12T00:24:18.546504', company_id = 7083 WHERE meeting_id = 'e3460050-ed9f-4f7e-a58a-ddaf9cad8918' AND company_id != 3213;"
+  },
+  {
+    "nl": "Delete Admins entries where updated at is 2025-03-12t00:24:18.551518",
+    "sql": "DELETE FROM admins WHERE updated_at = '2025-03-12T00:24:18.551518' AND password = 'less';"
+  },
+  {
+    "nl": "Modify Meeting Invites records by setting Status to camera where meeting invite id is 9391ddca-9770-44c3-9d11-dcf55552941c",
+    "sql": "UPDATE meeting_invites SET status = 'camera' WHERE meeting_invite_id = '9391ddca-9770-44c3-9d11-dcf55552941c';"
+  },
+  {
+    "nl": "Remove User Skills records matching updated at is 2025-03-12t00:24:18.553516",
+    "sql": "DELETE FROM user_skills WHERE updated_at = '2025-03-12T00:24:18.553516' AND added_at = '2025-03-12T00:24:18.553516';"
+  },
+  {
+    "nl": "Modify Company records by setting Zip Code to prove and Company Name to Caleb Jensen where state is anything",
+    "sql": "UPDATE companies SET zip_code = 'prove', company_name = 'Caleb Jensen' WHERE state = 'anything';"
+  },
+  {
+    "nl": "Modify Meetings records by setting Title to court and Meeting Date to 2022-05-06 where meeting id is e3460050-ed9f-4f7e-a58a-ddaf9cad8918",
+    "sql": "UPDATE meetings SET title = 'court', meeting_date = '2022-05-06' WHERE meeting_id = 'e3460050-ed9f-4f7e-a58a-ddaf9cad8918' AND created_by = '1c072de0-d900-491c-86e7-9c8ae44de037';"
+  },
+  {
+    "nl": "Modify Security Vulnerability records by setting Vulnerability Name to Juan Hall, Severity to thank and Created At to 2025-03-12T00:24:18.544505 where description is specific board east view. indicate side at phone room up.",
+    "sql": "UPDATE security_vulnerabilities SET vulnerability_name = 'Juan Hall', severity = 'thank', created_at = '2025-03-12T00:24:18.544505' WHERE description = 'Specific board east view. Indicate side at phone room up.';"
+  },
+  {
+    "nl": "Modify Audit Logs records by setting Action to minute and Details to Past still ground science theory both. where user id is 306268ae-7235-4485-b736-0247d0c483cf",
+    "sql": "UPDATE audit_logs SET action = 'minute', details = 'Past still ground science theory both.' WHERE user_id = '306268ae-7235-4485-b736-0247d0c483cf' AND user_id = '306268ae-7235-4485-b736-0247d0c483cf';"
+  },
+  {
+    "nl": "Update Notifications entries to Created At to 2025-03-12T00:24:18.530489, Message to Their common example road although certain impact. Sound necessary see machine. and Is Read to True when notification id is a514ac0f-4ae6-401e-a34d-edbca543bfd5",
+    "sql": "UPDATE notifications SET created_at = '2025-03-12T00:24:18.530489', message = 'Their common example road although certain impact. Sound necessary see machine.', is_read = TRUE WHERE notification_id = 'a514ac0f-4ae6-401e-a34d-edbca543bfd5' AND message = 'Free son camera into. Stock child dream major.';"
+  },
+  {
+    "nl": "Update Reports entries to Feedback to Whole under wait. Power learn no. Year run specific. Include city each western. and Recipient ID to 4036 when created at is 2025-03-12t00:24:18.552517",
+    "sql": "UPDATE reports SET feedback = 'Whole under wait. Power learn no. Year run specific. Include city each western.', recipient_id = 4036 WHERE created_at = '2025-03-12T00:24:18.552517';"
+  },
+  {
+    "nl": "Update Settings entries to Updated At to 2025-03-12T00:24:18.536491, Setting Value to forget and Setting Key to listen when setting id greater than 8780",
+    "sql": "UPDATE settings SET updated_at = '2025-03-12T00:24:18.536491', setting_value = 'forget', setting_key = 'listen' WHERE setting_id > 8780 AND setting_value = 'will';"
+  },
+  {
+    "nl": "Modify Activity Logs records by setting Created At to 2025-03-12T00:24:18.532489 where project id is ba6dc90a-ee2b-44b3-a239-1a6878312018",
+    "sql": "UPDATE activity_logs SET created_at = '2025-03-12T00:24:18.532489' WHERE project_id = 'ba6dc90a-ee2b-44b3-a239-1a6878312018';"
+  },
+  {
+    "nl": "Modify Projects records by setting Budget to 5335.78 and Created At to 2025-03-12T00:24:18.547504 where owner id greater than 5263",
+    "sql": "UPDATE projects SET budget = 5335.78, created_at = '2025-03-12T00:24:18.547504' WHERE owner_id > 5263;"
+  },
+  {
+    "nl": "Modify Settings records by setting Setting Value to not where user id is fff63af7-b20b-4ee9-b4e9-a918983508ff",
+    "sql": "UPDATE settings SET setting_value = 'not' WHERE user_id = 'fff63af7-b20b-4ee9-b4e9-a918983508ff';"
+  },
+  {
+    "nl": "Modify Calendar Events records by setting Created At to 2025-03-12T00:24:18.540504 where project id is c6df6199-fd2e-4acf-863a-69128ef1a57a",
+    "sql": "UPDATE calendar_events SET created_at = '2025-03-12T00:24:18.540504' WHERE project_id = 'c6df6199-fd2e-4acf-863a-69128ef1a57a' AND event_id = '663484f0-4e01-47a1-ab22-3ee1abbc1f34';"
+  },
+  {
+    "nl": "Update Teams entries to Status to Task relationship civil race fact. Toward before attention history third. Region trip just officer various., Name to Sandra Compton and Owner ID to 205 when created at is 2025-03-12t00:24:18.533489",
+    "sql": "UPDATE teams SET status = 'Task relationship civil race fact. Toward before attention history third. Region trip just officer various.', name = 'Sandra Compton', owner_id = 205 WHERE created_at = '2025-03-12T00:24:18.533489';"
+  },
+  {
+    "nl": "Modify Files records by setting File Url to Leg service between theory stop risk. Put avoid teach whether skill her capital thus. Myself same computer including speech memory. where created at is 2025-03-12t00:24:18.534489",
+    "sql": "UPDATE files SET file_url = 'Leg service between theory stop risk. Put avoid teach whether skill her capital thus. Myself same computer including speech memory.' WHERE created_at = '2025-03-12T00:24:18.534489' AND created_at = '2025-03-12T00:24:18.534489';"
+  },
+  {
+    "nl": "Update User Skills entries to Updated At to 2025-03-12T00:24:18.553516, Experience Level to cold and Added At to 2025-03-12T00:24:18.553516 when user id is c1743862-eaa8-43dd-97e3-26435d485e1d",
+    "sql": "UPDATE user_skills SET updated_at = '2025-03-12T00:24:18.553516', experience_level = 'cold', added_at = '2025-03-12T00:24:18.553516' WHERE user_id = 'c1743862-eaa8-43dd-97e3-26435d485e1d';"
+  },
+  {
+    "nl": "Update Tags entries to Created At to 2025-03-12T00:24:18.538505 when created at is 2025-03-12t00:24:18.538505",
+    "sql": "UPDATE tags SET created_at = '2025-03-12T00:24:18.538505' WHERE created_at = '2025-03-12T00:24:18.538505' AND created_at = '2025-03-12T00:24:18.538505';"
+  },
+  {
+    "nl": "Modify Security Audits records by setting Timestamp to 2025-03-12T00:24:18.542504, Ip Address to 254 Baird Lane Suite 893\nLake Jessicachester, MP 57795 and Event Type to improve where event type is total",
+    "sql": "UPDATE security_audits SET timestamp = '2025-03-12T00:24:18.542504', ip_address = '254 Baird Lane Suite 893\nLake Jessicachester, MP 57795', event_type = 'improve' WHERE event_type = 'total';"
+  },
+  {
+    "nl": "Update Meetings entries to Meeting Date to 2021-08-07 and Title to bed when matches condition: meeting_time = NULL AND created_by = '1c072de0-d900-491c-86e7-9c8ae44de037'",
+    "sql": "UPDATE meetings SET meeting_date = '2021-08-07', title = 'bed' WHERE meeting_time = NULL AND created_by = '1c072de0-d900-491c-86e7-9c8ae44de037';"
+  },
+  {
+    "nl": "Modify Reports records by setting Recipient to growth where file path is tax",
+    "sql": "UPDATE reports SET recipient = 'growth' WHERE file_path = 'tax' AND status = 'science';"
+  },
+  {
+    "nl": "Locate Milestones entries with updated at is 2025-03-12t00:24:18.536491",
+    "sql": "SELECT * FROM milestones WHERE updated_at = '2025-03-12T00:24:18.536491';"
+  },
+  {
+    "nl": "Update Security Vulnerability entries to Created At to 2025-03-12T00:24:18.545504, Vulnerability Name to Joshua Jones and Severity to after when vulnerability name is bobby hester",
+    "sql": "UPDATE security_vulnerabilities SET created_at = '2025-03-12T00:24:18.545504', vulnerability_name = 'Joshua Jones', severity = 'after' WHERE vulnerability_name = 'Bobby Hester';"
+  },
+  {
+    "nl": "Modify Security Audits records by setting Timestamp to 2025-03-12T00:24:18.542504 and Event Type to three where timestamp is 2025-03-12t00:24:18.542504",
+    "sql": "UPDATE security_audits SET timestamp = '2025-03-12T00:24:18.542504', event_type = 'three' WHERE timestamp = '2025-03-12T00:24:18.542504';"
+  },
+  {
+    "nl": "Modify Project Members records by setting Role to week where project id is 2567dec3-5f04-4dc3-be7e-f43e4d120b04",
+    "sql": "UPDATE project_members SET role = 'week' WHERE project_id = '2567dec3-5f04-4dc3-be7e-f43e4d120b04' AND project_id = '2567dec3-5f04-4dc3-be7e-f43e4d120b04';"
+  },
+  {
+    "nl": "Modify Files records by setting Created At to 2025-03-12T00:24:18.533489 where created at is 2025-03-12t00:24:18.533489",
+    "sql": "UPDATE files SET created_at = '2025-03-12T00:24:18.533489' WHERE created_at = '2025-03-12T00:24:18.533489' AND task_id = 'e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c';"
+  },
+  {
+    "nl": "Modify Project Members records by setting Role to usually where project id is 2567dec3-5f04-4dc3-be7e-f43e4d120b04",
+    "sql": "UPDATE project_members SET role = 'usually' WHERE project_id = '2567dec3-5f04-4dc3-be7e-f43e4d120b04';"
+  },
+  {
+    "nl": "Modify Meetings records by setting Created At to 2025-03-12T00:24:18.546504 and Title to three where company id greater than 6252",
+    "sql": "UPDATE meetings SET created_at = '2025-03-12T00:24:18.546504', title = 'three' WHERE company_id > 6252;"
+  },
+  {
+    "nl": "List all added at, user id, updated at, skill name and id in User Skills",
+    "sql": "SELECT added_at, user_id, updated_at, skill_name, id FROM user_skills;"
+  },
+  {
+    "nl": "Modify Team Members records by setting Role to hit where role is since",
+    "sql": "UPDATE team_members SET role = 'hit' WHERE role = 'since';"
+  },
+  {
+    "nl": "Modify Calendar Events records by setting Title to effect and Event Date to 2021-08-14 where project id is c6df6199-fd2e-4acf-863a-69128ef1a57a",
+    "sql": "UPDATE calendar_events SET title = 'effect', event_date = '2021-08-14' WHERE project_id = 'c6df6199-fd2e-4acf-863a-69128ef1a57a';"
+  },
+  {
+    "nl": "Modify Tasks records by setting Priority to party and Comment to Wish coach hotel thus. Hour important nearly. First night parent teacher mind everyone model. where project id is 7b45b3ef-4b0f-48e6-9d17-3a9551c8fe73",
+    "sql": "UPDATE tasks SET priority = 'party', comment = 'Wish coach hotel thus. Hour important nearly. First night parent teacher mind everyone model.' WHERE project_id = '7b45b3ef-4b0f-48e6-9d17-3a9551c8fe73';"
+  },
+  {
+    "nl": "List all updated at, due date and milestone id in Milestones",
+    "sql": "SELECT updated_at, due_date, milestone_id FROM milestones;"
+  },
+  {
+    "nl": "Update Tasks entries to Description to Perhaps foreign admit one world. Red increase prevent head front actually. when due date is 2020-04-01",
+    "sql": "UPDATE tasks SET description = 'Perhaps foreign admit one world. Red increase prevent head front actually.' WHERE due_date = '2020-04-01';"
+  },
+  {
+    "nl": "Modify Project Members records by setting Role to tax where role is it",
+    "sql": "UPDATE project_members SET role = 'tax' WHERE role = 'it' AND role = 'despite';"
+  },
+  {
+    "nl": "List all company id, role, updated at, email, admin id, first name and last name in Admins",
+    "sql": "SELECT company_id, role, updated_at, email, admin_id, first_name, last_name FROM admins;"
+  },
+  {
+    "nl": "Modify Projects records by setting Start Date to 2022-11-27 where matches condition: budget != 8050.63 AND owner_id = 1404",
+    "sql": "UPDATE projects SET start_date = '2022-11-27' WHERE budget != 8050.63 AND owner_id = 1404;"
+  },
+  {
+    "nl": "Update Security Vulnerability entries to Vulnerability Name to Carolyn Alvarez, Created At to 2025-03-12T00:24:18.544505 and Description to Bank manager attorney bill line. The happen study conference country. Book American stop feeling other image. when severity is might",
+    "sql": "UPDATE security_vulnerabilities SET vulnerability_name = 'Carolyn Alvarez', created_at = '2025-03-12T00:24:18.544505', description = 'Bank manager attorney bill line. The happen study conference country. Book American stop feeling other image.' WHERE severity = 'might';"
+  },
+  {
+    "nl": "Modify Task Comments records by setting Created At to 2025-03-12T00:24:18.529491 where created at is 2025-03-12t00:24:18.529491",
+    "sql": "UPDATE task_comments SET created_at = '2025-03-12T00:24:18.529491' WHERE created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Modify Company records by setting City to morning, State to house and Company Name to Manuel Cooper where zip code is behavior",
+    "sql": "UPDATE companies SET city = 'morning', state = 'house', company_name = 'Manuel Cooper' WHERE zip_code = 'behavior';"
+  },
+  {
+    "nl": "Modify Security Threats records by setting Description to Together general share public guess job move. and Severity to bed where threat name is charlotte higgins",
+    "sql": "UPDATE security_threats SET description = 'Together general share public guess job move.', severity = 'bed' WHERE threat_name = 'Charlotte Higgins' AND created_at = '2025-03-12T00:24:18.543493';"
+  },
+  {
+    "nl": "Modify Files records by setting Created At to 2025-03-12T00:24:18.533489 and File Url to Maintain provide able give. Democrat spring hair late road thing. where task id is e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c",
+    "sql": "UPDATE files SET created_at = '2025-03-12T00:24:18.533489', file_url = 'Maintain provide able give. Democrat spring hair late road thing.' WHERE task_id = 'e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c';"
+  },
+  {
+    "nl": "List all user id, id, skill name and updated at in User Skills",
+    "sql": "SELECT user_id, id, skill_name, updated_at FROM user_skills;"
+  },
+  {
+    "nl": "Update Team Leader entries to Created At to 2025-03-12T00:24:18.545504 when updated at is 2025-03-12t00:24:18.545504",
+    "sql": "UPDATE team_leader SET created_at = '2025-03-12T00:24:18.545504' WHERE updated_at = '2025-03-12T00:24:18.545504' AND updated_at = '2025-03-12T00:24:18.545504';"
+  },
+  {
+    "nl": "Update Users entries to Phone to 001-249-894-9513x924 when status is buy",
+    "sql": "UPDATE users SET phone = '001-249-894-9513x924' WHERE status = 'buy';"
+  },
+  {
+    "nl": "Update Milestones entries to Milestone Name to Alexander Young, Updated At to 2025-03-12T00:24:18.537505 and Due Date to 2024-08-17 when status is anyone",
+    "sql": "UPDATE milestones SET milestone_name = 'Alexander Young', updated_at = '2025-03-12T00:24:18.537505', due_date = '2024-08-17' WHERE status = 'anyone';"
+  },
+  {
+    "nl": "Modify Meeting Reports records by setting Summary to Threat teacher civil ability. Explain bring girl. Real world difference. Against century beat business happy. where generated by is 6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a",
+    "sql": "UPDATE meeting_reports SET summary = 'Threat teacher civil ability. Explain bring girl. Real world difference. Against century beat business happy.' WHERE generated_by = '6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a';"
+  },
+  {
+    "nl": "Modify Calendar Events records by setting Event Date to 2020-01-09, Description to Star watch security. and Title to brother where event date is 2022-09-30",
+    "sql": "UPDATE calendar_events SET event_date = '2020-01-09', description = 'Star watch security.', title = 'brother' WHERE event_date = '2022-09-30';"
+  },
+  {
+    "nl": "Modify Teams records by setting Owner ID to 5180, Created At to 2025-03-12T00:24:18.533489 and Name to Michael Mendez where project id is ea8674af-7f81-4066-9abe-7c7695636ae8",
+    "sql": "UPDATE teams SET owner_id = 5180, created_at = '2025-03-12T00:24:18.533489', name = 'Michael Mendez' WHERE project_id = 'ea8674af-7f81-4066-9abe-7c7695636ae8';"
+  },
+  {
+    "nl": "Modify Tags records by setting Created At to 2025-03-12T00:24:18.538505 where tag name is robert robertson",
+    "sql": "UPDATE tags SET created_at = '2025-03-12T00:24:18.538505' WHERE tag_name = 'Robert Robertson';"
+  },
+  {
+    "nl": "Show me status, user id and updated at from Available Member",
+    "sql": "SELECT status, user_id, updated_at FROM available_member;"
+  },
+  {
+    "nl": "Modify Meeting Invites records by setting Status to window where status is commercial",
+    "sql": "UPDATE meeting_invites SET status = 'window' WHERE status = 'commercial' AND meeting_invite_id = '9391ddca-9770-44c3-9d11-dcf55552941c';"
+  },
+  {
+    "nl": "List all setting id, created at and updated at in Settings",
+    "sql": "SELECT setting_id, created_at, updated_at FROM settings;"
+  },
+  {
+    "nl": "Find Available Member where status is another",
+    "sql": "SELECT * FROM available_member WHERE status = 'another' AND updated_at = '2025-03-12T00:24:18.552517';"
+  },
+  {
+    "nl": "What setting value, user id, setting id, created at, setting key and updated at do we have in Settings?",
+    "sql": "SELECT setting_value, user_id, setting_id, created_at, setting_key, updated_at FROM settings;"
+  },
+  {
+    "nl": "Modify Messages records by setting Created At to 2025-03-12T00:24:18.535489, Message to Edge possible public. Receive discussion strong. Former report reason production. Paper road Congress beyond thing age heart. and Room to paper where message is what four study power quality. too lay physical score. receive member including.",
+    "sql": "UPDATE messages SET created_at = '2025-03-12T00:24:18.535489', message = 'Edge possible public. Receive discussion strong. Former report reason production. Paper road Congress beyond thing age heart.', room = 'paper' WHERE message = 'What four study power quality. Too lay physical score. Receive member including.';"
+  },
+  {
+    "nl": "Modify Security Threats records by setting Severity to relate, Description to Agency follow stock discover center. Wish different hit we so people leader. General beyond who expect left statement career. and Threat Name to Robin Silva where description is nation up side significant hold conference himself. put against american organization wall teacher. measure discussion type them beyond reason wall.",
+    "sql": "UPDATE security_threats SET severity = 'relate', description = 'Agency follow stock discover center. Wish different hit we so people leader. General beyond who expect left statement career.', threat_name = 'Robin Silva' WHERE description = 'Nation up side significant hold conference himself. Put against American organization wall teacher. Measure discussion type them beyond reason wall.';"
+  },
+  {
+    "nl": "Update Time Entry entries to Created At to 2025-03-12T00:24:18.535489 and Hours to 513.93 when user id is 970e1ccd-3030-4ee3-854d-ed7674fd2452",
+    "sql": "UPDATE time_entries SET created_at = '2025-03-12T00:24:18.535489', hours = 513.93 WHERE user_id = '970e1ccd-3030-4ee3-854d-ed7674fd2452' AND created_at = '2025-03-12T00:24:18.535489';"
+  },
+  {
+    "nl": "Update Files entries to File Url to Large simple realize mind hold key such. Key black strong case medical admit important. Over weight service discuss. and Created At to 2025-03-12T00:24:18.533489 when project id is 7e28bb04-2014-4819-b6e7-ccb323eb6b35",
+    "sql": "UPDATE files SET file_url = 'Large simple realize mind hold key such. Key black strong case medical admit important. Over weight service discuss.', created_at = '2025-03-12T00:24:18.533489' WHERE project_id = '7e28bb04-2014-4819-b6e7-ccb323eb6b35';"
+  },
+  {
+    "nl": "Update Audit Logs entries to Action to edge and Details to Cold minute including particularly power. Paper company media away bed worker. Put want red meet foreign ten boy animal. Allow customer firm someone lead sit culture you. when details is agree trip whole financial. table congress throw professor learn apply.",
+    "sql": "UPDATE audit_logs SET action = 'edge', details = 'Cold minute including particularly power. Paper company media away bed worker. Put want red meet foreign ten boy animal. Allow customer firm someone lead sit culture you.' WHERE details = 'Agree trip whole financial. Table Congress throw professor learn apply.';"
+  },
+  {
+    "nl": "What milestone name, milestone id, due date, updated at and description do we have in Milestones?",
+    "sql": "SELECT milestone_name, milestone_id, due_date, updated_at, description FROM milestones;"
+  },
+  {
+    "nl": "Update Available Member entries to Created At to 2025-03-12T00:24:18.552517 when status is both",
+    "sql": "UPDATE available_member SET created_at = '2025-03-12T00:24:18.552517' WHERE status = 'both';"
+  },
+  {
+    "nl": "Modify Activity Logs records by setting Created At to 2025-03-12T00:24:18.532489 and Action to Often box leave share kind. Talk program range drug participant. where log id is e73e596c-13da-4826-8260-6aca6dc759e2",
+    "sql": "UPDATE activity_logs SET created_at = '2025-03-12T00:24:18.532489', action = 'Often box leave share kind. Talk program range drug participant.' WHERE log_id = 'e73e596c-13da-4826-8260-6aca6dc759e2';"
+  },
+  {
+    "nl": "Update Time Entry entries to Created At to 2025-03-12T00:24:18.534489 when description is similar human degree third official. floor fight church method he second instead.",
+    "sql": "UPDATE time_entries SET created_at = '2025-03-12T00:24:18.534489' WHERE description = 'Similar human degree third official. Floor fight church method he second instead.';"
+  },
+  {
+    "nl": "Modify Team Members records by setting Role to bank where role is per",
+    "sql": "UPDATE team_members SET role = 'bank' WHERE role = 'per';"
+  },
+  {
+    "nl": "Modify Milestones records by setting Description to Office tell capital poor serious course for quickly. Matter same significant group owner. Phone us capital second eye culture want., Created At to 2025-03-12T00:24:18.537505 and Updated At to 2025-03-12T00:24:18.537505 where milestone name is tyler thompson",
+    "sql": "UPDATE milestones SET description = 'Office tell capital poor serious course for quickly. Matter same significant group owner. Phone us capital second eye culture want.', created_at = '2025-03-12T00:24:18.537505', updated_at = '2025-03-12T00:24:18.537505' WHERE milestone_name = 'Tyler Thompson';"
+  },
+  {
+    "nl": "Update Projects entries to Status to Close show show information. Guy hot kitchen hotel know., Created At to 2025-03-12T00:24:18.547504 and Start Date to 2024-09-13 when per complete greater than 9630",
+    "sql": "UPDATE projects SET status = 'Close show show information. Guy hot kitchen hotel know.', created_at = '2025-03-12T00:24:18.547504', start_date = '2024-09-13' WHERE per_complete > 9630.73;"
+  },
+  {
+    "nl": "Search for Settings records that updated at is 2025-03-12t00:24:18.536491",
+    "sql": "SELECT * FROM settings WHERE updated_at = '2025-03-12T00:24:18.536491';"
+  },
+  {
+    "nl": "Update Team Leader entries to Created At to 2025-03-12T00:24:18.545504 and Updated At to 2025-03-12T00:24:18.545504 when created at is 2025-03-12t00:24:18.545504",
+    "sql": "UPDATE team_leader SET created_at = '2025-03-12T00:24:18.545504', updated_at = '2025-03-12T00:24:18.545504' WHERE created_at = '2025-03-12T00:24:18.545504';"
+  },
+  {
+    "nl": "Update Notifications entries to Is Read to True, Message to Sport quickly live near type. Attention truth study country. Follow money move protect around responsibility. and Created At to 2025-03-12T00:24:18.530489 when matches condition: is_read = True",
+    "sql": "UPDATE notifications SET is_read = TRUE, message = 'Sport quickly live near type. Attention truth study country. Follow money move protect around responsibility.', created_at = '2025-03-12T00:24:18.530489' WHERE is_read = True;"
+  },
+  {
+    "nl": "Update Calendar Events entries to Created At to 2025-03-12T00:24:18.540504 when project id is c6df6199-fd2e-4acf-863a-69128ef1a57a",
+    "sql": "UPDATE calendar_events SET created_at = '2025-03-12T00:24:18.540504' WHERE project_id = 'c6df6199-fd2e-4acf-863a-69128ef1a57a' AND created_at = '2025-03-12T00:24:18.540504';"
+  },
+  {
+    "nl": "Modify Security Audits records by setting User Email to paul18@example.net and Description to Level network project. Manage improve news range American child successful. Figure then character answer sound sea since. where user id is f15a5013-45bb-47e7-ba00-c5c03de7394b",
+    "sql": "UPDATE security_audits SET user_email = 'paul18@example.net', description = 'Level network project. Manage improve news range American child successful. Figure then character answer sound sea since.' WHERE user_id = 'f15a5013-45bb-47e7-ba00-c5c03de7394b';"
+  },
+  {
+    "nl": "Modify Sessions records by setting Refresh Token to Hotel major marriage animal. Water item production hot question chance college. and Expires At to 2025-03-12T00:24:18.529491 where session id is 4db29a0a-3142-473d-bd80-2e2b3998bd0e",
+    "sql": "UPDATE sessions SET refresh_token = 'Hotel major marriage animal. Water item production hot question chance college.', expires_at = '2025-03-12T00:24:18.529491' WHERE session_id = '4db29a0a-3142-473d-bd80-2e2b3998bd0e' AND created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "List all experience level, user id, id, added at, skill name and updated at in User Skills",
+    "sql": "SELECT experience_level, user_id, id, added_at, skill_name, updated_at FROM user_skills;"
+  },
+  {
+    "nl": "List all updated at and status in Available Member",
+    "sql": "SELECT updated_at, status FROM available_member;"
+  },
+  {
+    "nl": "Modify Calendar Events records by setting Event Date to 2023-04-19 where title is spring",
+    "sql": "UPDATE calendar_events SET event_date = '2023-04-19' WHERE title = 'spring' AND event_id = '663484f0-4e01-47a1-ab22-3ee1abbc1f34';"
+  },
+  {
+    "nl": "Update Tasks entries to Created At to 2025-03-12T00:24:18.528493 when team id is 75739524-0ebd-45da-a4f7-c8d5e9319ce2",
+    "sql": "UPDATE tasks SET created_at = '2025-03-12T00:24:18.528493' WHERE team_id = '75739524-0ebd-45da-a4f7-c8d5e9319ce2';"
+  },
+  {
+    "nl": "Update User Skills entries to Experience Level to not when id less than 232",
+    "sql": "UPDATE user_skills SET experience_level = 'not' WHERE id < 232;"
+  },
+  {
+    "nl": "Update Project Members entries to Role to carry when role is goal",
+    "sql": "UPDATE project_members SET role = 'carry' WHERE role = 'goal';"
+  },
+  {
+    "nl": "Update Settings entries to Created At to 2025-03-12T00:24:18.536491 and Setting Value to career when updated at is 2025-03-12t00:24:18.536491",
+    "sql": "UPDATE settings SET created_at = '2025-03-12T00:24:18.536491', setting_value = 'career' WHERE updated_at = '2025-03-12T00:24:18.536491' AND user_id = 'fff63af7-b20b-4ee9-b4e9-a918983508ff';"
+  },
+  {
+    "nl": "Modify Sessions records by setting Expires At to 2025-03-12T00:24:18.529491, Refresh Token to Treatment young line whose ever. Quickly official close education method. and Created At to 2025-03-12T00:24:18.529491 where user id is 9d9316d3-8933-415c-abf3-653d9cad87f7",
+    "sql": "UPDATE sessions SET expires_at = '2025-03-12T00:24:18.529491', refresh_token = 'Treatment young line whose ever. Quickly official close education method.', created_at = '2025-03-12T00:24:18.529491' WHERE user_id = '9d9316d3-8933-415c-abf3-653d9cad87f7';"
+  },
+  {
+    "nl": "Update Admins entries to Company ID to 6960 when admin id less than 3754",
+    "sql": "UPDATE admins SET company_id = 6960 WHERE admin_id < 3754;"
+  },
+  {
+    "nl": "Show me updated at, country, created at, state, sector, company name, address, city, company id, zip code and category from Company",
+    "sql": "SELECT updated_at, country, created_at, state, sector, company_name, address, city, company_id, zip_code, category FROM companies;"
+  },
+  {
+    "nl": "List all updated at, last active, time zone, company id, refresh token and status in Users",
+    "sql": "SELECT updated_at, last_active, time_zone, company_id, refresh_token, status FROM users;"
+  },
+  {
+    "nl": "Update Meeting Invites entries to Status to fall when user id is 0384ec24-f836-48a7-8d4d-51afac223ebb",
+    "sql": "UPDATE meeting_invites SET status = 'fall' WHERE user_id = '0384ec24-f836-48a7-8d4d-51afac223ebb' AND user_id = '0384ec24-f836-48a7-8d4d-51afac223ebb';"
+  },
+  {
+    "nl": "Modify Users records by setting Agile to True and Username to Adam Allison where profile picture is ever gun new tough bed let whether teach. evidence laugh sport medical kind. power foreign many buy may rich hold.",
+    "sql": "UPDATE users SET agile = TRUE, username = 'Adam Allison' WHERE profile_picture = 'Ever gun new tough bed let whether teach. Evidence laugh sport medical kind. Power foreign many buy may rich hold.';"
+  },
+  {
+    "nl": "Update Tags entries to Created At to 2025-03-12T00:24:18.538505 when created at is 2025-03-12t00:24:18.538505",
+    "sql": "UPDATE tags SET created_at = '2025-03-12T00:24:18.538505' WHERE created_at = '2025-03-12T00:24:18.538505';"
+  },
+  {
+    "nl": "Modify Task Comments records by setting Created At to 2025-03-12T00:24:18.529491 and Comment Text to Machine beyond hand reflect. Trade commercial sure. where user id is 6b08ae74-1c13-4c03-9db7-e346923e82ff",
+    "sql": "UPDATE task_comments SET created_at = '2025-03-12T00:24:18.529491', comment_text = 'Machine beyond hand reflect. Trade commercial sure.' WHERE user_id = '6b08ae74-1c13-4c03-9db7-e346923e82ff';"
+  },
+  {
+    "nl": "Update Notifications entries to Created At to 2025-03-12T00:24:18.530489 when matches condition: is_read = True",
+    "sql": "UPDATE notifications SET created_at = '2025-03-12T00:24:18.530489' WHERE is_read = True;"
+  },
+  {
+    "nl": "Modify Company records by setting Zip Code to behavior where city is specific",
+    "sql": "UPDATE companies SET zip_code = 'behavior' WHERE city = 'specific';"
+  },
+  {
+    "nl": "What country, created at, company id, city, updated at, address and company name do we have in Company?",
+    "sql": "SELECT country, created_at, company_id, city, updated_at, address, company_name FROM companies;"
+  },
+  {
+    "nl": "Update Tasks entries to Description to Black from support can. Check case force about full. Soon skill third face next., Due Date to 2020-11-04 and Grade to Act soon wish per increase despite. Pretty general administration both. when grade is establish growth lay arrive religious method thus look. example if common record with key for. guess stock ground.",
+    "sql": "UPDATE tasks SET description = 'Black from support can. Check case force about full. Soon skill third face next.', due_date = '2020-11-04', grade = 'Act soon wish per increase despite. Pretty general administration both.' WHERE grade = 'Establish growth lay arrive religious method thus look. Example if common record with key for. Guess stock ground.' AND status = 'scene';"
+  },
+  {
+    "nl": "List all updated at, admin id, company id, last name and email in Admins",
+    "sql": "SELECT updated_at, admin_id, company_id, last_name, email FROM admins;"
+  },
+  {
+    "nl": "Update Sessions entries to Expires At to 2025-03-12T00:24:18.529491 when created at is 2025-03-12t00:24:18.529491",
+    "sql": "UPDATE sessions SET expires_at = '2025-03-12T00:24:18.529491' WHERE created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Modify Activity Logs records by setting Created At to 2025-03-12T00:24:18.532489 and Action to Purpose remember take college support light store. Really camera could foot chair religious look. Former recognize mention hope administration long her south. where action is drug smile thousand section half. discover carry choice officer. director center would agent woman life.",
+    "sql": "UPDATE activity_logs SET created_at = '2025-03-12T00:24:18.532489', action = 'Purpose remember take college support light store. Really camera could foot chair religious look. Former recognize mention hope administration long her south.' WHERE action = 'Drug smile thousand section half. Discover carry choice officer. Director center would agent woman life.' AND action = 'Year money statement half. Research last leader seek little such few.';"
+  },
+  {
+    "nl": "Modify Settings records by setting Created At to 2025-03-12T00:24:18.536491 and Setting Value to way where setting id greater than 2509",
+    "sql": "UPDATE settings SET created_at = '2025-03-12T00:24:18.536491', setting_value = 'way' WHERE setting_id > 2509;"
+  },
+  {
+    "nl": "Find Team Leader where updated at is 2025-03-12t00:24:18.545504",
+    "sql": "SELECT * FROM team_leader WHERE updated_at = '2025-03-12T00:24:18.545504';"
+  },
+  {
+    "nl": "Modify Messages records by setting Created At to 2025-03-12T00:24:18.535489, Message to Success into than building capital. Line teacher group power study realize plan possible. and Room to claim where sender id is 428f2d48-f79e-4eca-8507-8060f3e81097",
+    "sql": "UPDATE messages SET created_at = '2025-03-12T00:24:18.535489', message = 'Success into than building capital. Line teacher group power study realize plan possible.', room = 'claim' WHERE sender_id = '428f2d48-f79e-4eca-8507-8060f3e81097';"
+  },
+  {
+    "nl": "Update Tasks entries to Grade to Determine nearly its door find. Common stay air personal player draw., Status to strong and Title to guess when grade is growth hope offer. security participant pretty hot plant win answer to. instead camera anyone war itself article hospital hard.",
+    "sql": "UPDATE tasks SET grade = 'Determine nearly its door find. Common stay air personal player draw.', status = 'strong', title = 'guess' WHERE grade = 'Growth hope offer. Security participant pretty hot plant win answer to. Instead camera anyone war itself article hospital hard.';"
+  },
+  {
+    "nl": "Update Meeting Reports entries to Summary to Back if rate lead author also. Stop individual allow. Could trouble production successful nation choice. and Generated At to 2025-03-12T00:24:18.553516 when generated by is 6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a",
+    "sql": "UPDATE meeting_reports SET summary = 'Back if rate lead author also. Stop individual allow. Could trouble production successful nation choice.', generated_at = '2025-03-12T00:24:18.553516' WHERE generated_by = '6bd0c480-8cfd-4e1b-a76d-c8d34ba7869a' AND user_id = '21c41932-17ea-4080-95e1-9b1ddd495024';"
+  },
+  {
+    "nl": "Update Audit Logs entries to Timestamp to 2025-03-12T00:24:18.539504, Action to gun and Details to Room else party charge. Fact mouth life part discussion. when action is this",
+    "sql": "UPDATE audit_logs SET timestamp = '2025-03-12T00:24:18.539504', action = 'gun', details = 'Room else party charge. Fact mouth life part discussion.' WHERE action = 'this' AND timestamp = '2025-03-12T00:24:18.539504';"
+  },
+  {
+    "nl": "Modify Security Threats records by setting Threat Name to Shawn Carrillo where severity is republican",
+    "sql": "UPDATE security_threats SET threat_name = 'Shawn Carrillo' WHERE severity = 'Republican';"
+  },
+  {
+    "nl": "Update Audit Logs entries to Timestamp to 2025-03-12T00:24:18.539504 when user id is 306268ae-7235-4485-b736-0247d0c483cf",
+    "sql": "UPDATE audit_logs SET timestamp = '2025-03-12T00:24:18.539504' WHERE user_id = '306268ae-7235-4485-b736-0247d0c483cf';"
+  },
+  {
+    "nl": "Update Meeting Reports entries to Generated At to 2025-03-12T00:24:18.553516 when summary is media raise single spend make star. space everything kid prepare perform. various ahead popular rich deep image black. apply play traditional determine later.",
+    "sql": "UPDATE meeting_reports SET generated_at = '2025-03-12T00:24:18.553516' WHERE summary = 'Media raise single spend make star. Space everything kid prepare perform. Various ahead popular rich deep image black. Apply play traditional determine later.';"
+  },
+  {
+    "nl": "Modify Projects records by setting Start Date to 2020-11-24 where status is church set move nor suffer close assume. arrive recent yard end reduce someone.",
+    "sql": "UPDATE projects SET start_date = '2020-11-24' WHERE status = 'Church set move nor suffer close assume. Arrive recent yard end reduce someone.';"
+  },
+  {
+    "nl": "Modify Admins records by setting Password to loss and First Name to Caroline Curry MD where password is game",
+    "sql": "UPDATE admins SET password = 'loss', first_name = 'Caroline Curry MD' WHERE password = 'game' AND company_id < 9286;"
+  },
+  {
+    "nl": "Update Messages entries to Room to teach when message id greater than 8207",
+    "sql": "UPDATE messages SET room = 'teach' WHERE message_id > 8207;"
+  },
+  {
+    "nl": "Update User Skills entries to Updated At to 2025-03-12T00:24:18.553516 and Added At to 2025-03-12T00:24:18.553516 when matches condition: id = 4188",
+    "sql": "UPDATE user_skills SET updated_at = '2025-03-12T00:24:18.553516', added_at = '2025-03-12T00:24:18.553516' WHERE id = 4188;"
+  },
+  {
+    "nl": "Update Meetings entries to Meeting Time to None and Meeting Date to 2023-03-22 when created at is 2025-03-12t00:24:18.546504",
+    "sql": "UPDATE meetings SET meeting_time = NULL, meeting_date = '2023-03-22' WHERE created_at = '2025-03-12T00:24:18.546504';"
+  },
+  {
+    "nl": "Update Team Leader entries to Created At to 2025-03-12T00:24:18.545504 when created at is 2025-03-12t00:24:18.545504",
+    "sql": "UPDATE team_leader SET created_at = '2025-03-12T00:24:18.545504' WHERE created_at = '2025-03-12T00:24:18.545504';"
+  },
+  {
+    "nl": "Modify Task Comments records by setting Created At to 2025-03-12T00:24:18.529491 and Comment Text to Condition treatment participant mouth. Measure act go social college top. where comment id is e8f3738c-6083-4599-bdbc-90834a3a4ea5",
+    "sql": "UPDATE task_comments SET created_at = '2025-03-12T00:24:18.529491', comment_text = 'Condition treatment participant mouth. Measure act go social college top.' WHERE comment_id = 'e8f3738c-6083-4599-bdbc-90834a3a4ea5';"
+  },
+  {
+    "nl": "Modify User Skills records by setting Skill Name to Kevin Malone, Updated At to 2025-03-12T00:24:18.553516 and Experience Level to culture where added at is 2025-03-12t00:24:18.553516",
+    "sql": "UPDATE user_skills SET skill_name = 'Kevin Malone', updated_at = '2025-03-12T00:24:18.553516', experience_level = 'culture' WHERE added_at = '2025-03-12T00:24:18.553516' AND updated_at = '2025-03-12T00:24:18.553516';"
+  },
+  {
+    "nl": "Update Audit Logs entries to Action to since when user id is 306268ae-7235-4485-b736-0247d0c483cf",
+    "sql": "UPDATE audit_logs SET action = 'since' WHERE user_id = '306268ae-7235-4485-b736-0247d0c483cf';"
+  },
+  {
+    "nl": "Update Security Audits entries to Description to Industry bar daughter seat his provide. Cause leave morning likely parent them. True much head conference environment image fire., Ip Address to PSC 0911, Box 8123\nAPO AE 15892 and User Email to zhodges@example.net when audit id is 131f9d02-d3d2-4880-b78f-9c17296fa25b",
+    "sql": "UPDATE security_audits SET description = 'Industry bar daughter seat his provide. Cause leave morning likely parent them. True much head conference environment image fire.', ip_address = 'PSC 0911, Box 8123\nAPO AE 15892', user_email = 'zhodges@example.net' WHERE audit_id = '131f9d02-d3d2-4880-b78f-9c17296fa25b';"
+  },
+  {
+    "nl": "Modify Security Vulnerability records by setting Vulnerability Name to Raymond Christian, Severity to color and Description to Edge front four peace help. where vulnerability id is 5131d312-9326-4c9c-8762-58591eaff116",
+    "sql": "UPDATE security_vulnerabilities SET vulnerability_name = 'Raymond Christian', severity = 'color', description = 'Edge front four peace help.' WHERE vulnerability_id = '5131d312-9326-4c9c-8762-58591eaff116';"
+  },
+  {
+    "nl": "Update Time Entry entries to Description to Late college others activity require family. Card marriage rise thus current evening again. Able executive commercial record., Created At to 2025-03-12T00:24:18.535489 and Hours to 1031.62 when time entry id less than 9380",
+    "sql": "UPDATE time_entries SET description = 'Late college others activity require family. Card marriage rise thus current evening again. Able executive commercial record.', created_at = '2025-03-12T00:24:18.535489', hours = 1031.62 WHERE time_entry_id < 9380 AND created_at = '2025-03-12T00:24:18.535489';"
+  },
+  {
+    "nl": "Modify Sessions records by setting Created At to 2025-03-12T00:24:18.529491 and Refresh Token to Up society stage radio trade weight. Represent interest style picture most once treat. where refresh token is offer happen threat herself us feeling history.",
+    "sql": "UPDATE sessions SET created_at = '2025-03-12T00:24:18.529491', refresh_token = 'Up society stage radio trade weight. Represent interest style picture most once treat.' WHERE refresh_token = 'Offer happen threat herself us feeling history.' AND created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Update Tags entries to Created At to 2025-03-12T00:24:18.538505 when matches condition: tag_id = 9238",
+    "sql": "UPDATE tags SET created_at = '2025-03-12T00:24:18.538505' WHERE tag_id = 9238;"
+  },
+  {
+    "nl": "Update Available Member entries to Created At to 2025-03-12T00:24:18.552517 and Updated At to 2025-03-12T00:24:18.552517 when user id is e65d7314-f90b-4d28-8800-2c171a805387",
+    "sql": "UPDATE available_member SET created_at = '2025-03-12T00:24:18.552517', updated_at = '2025-03-12T00:24:18.552517' WHERE user_id = 'e65d7314-f90b-4d28-8800-2c171a805387' AND updated_at = '2025-03-12T00:24:18.552517';"
+  },
+  {
+    "nl": "Modify Milestones records by setting Milestone Name to George Patrick, Updated At to 2025-03-12T00:24:18.537505 and Status to hear where status is but",
+    "sql": "UPDATE milestones SET milestone_name = 'George Patrick', updated_at = '2025-03-12T00:24:18.537505', status = 'hear' WHERE status = 'but';"
+  },
+  {
+    "nl": "Remove Settings records matching updated at is 2025-03-12t00:24:18.536491",
+    "sql": "DELETE FROM settings WHERE updated_at = '2025-03-12T00:24:18.536491';"
+  },
+  {
+    "nl": "Modify Meeting Reports records by setting Generated At to 2025-03-12T00:24:18.553516 and Summary to Hospital sound sell center travel team sometimes. Could the white throughout recently difficult. Sing same much serve organization class film. Magazine day produce finish hundred name. where meeting id is f53b44d9-3281-41f8-8fc9-550c6b16c72d",
+    "sql": "UPDATE meeting_reports SET generated_at = '2025-03-12T00:24:18.553516', summary = 'Hospital sound sell center travel team sometimes. Could the white throughout recently difficult. Sing same much serve organization class film. Magazine day produce finish hundred name.' WHERE meeting_id = 'f53b44d9-3281-41f8-8fc9-550c6b16c72d';"
+  },
+  {
+    "nl": "Modify Files records by setting Created At to 2025-03-12T00:24:18.533489 and File Url to Late yes onto whether tonight. Determine would light. Kind whose maybe TV war continue. where file url is investment yet in build tv affect probably. news order truth. various life do.",
+    "sql": "UPDATE files SET created_at = '2025-03-12T00:24:18.533489', file_url = 'Late yes onto whether tonight. Determine would light. Kind whose maybe TV war continue.' WHERE file_url = 'Investment yet in build TV affect probably. News order truth. Various life do.';"
+  },
+  {
+    "nl": "Modify Available Member records by setting Created At to 2025-03-12T00:24:18.552517 where created at is 2025-03-12t00:24:18.552517",
+    "sql": "UPDATE available_member SET created_at = '2025-03-12T00:24:18.552517' WHERE created_at = '2025-03-12T00:24:18.552517';"
+  },
+  {
+    "nl": "Update Users entries to Agile to False, Password Hash to Stuff focus foot strategy. and Time Zone to memory when profile picture is wrong statement list stand newspaper exactly last. card go sign act different box interview maybe.",
+    "sql": "UPDATE users SET agile = FALSE, password_hash = 'Stuff focus foot strategy.', time_zone = 'memory' WHERE profile_picture = 'Wrong statement list stand newspaper exactly last. Card go sign act different box interview maybe.' AND status = 'his';"
+  },
+  {
+    "nl": "Modify Security Threats records by setting Description to Society charge effect care start by receive. Officer recognize black probably exactly picture. Responsibility local for join a fight organization. and Severity to cause where created at is 2025-03-12t00:24:18.543493",
+    "sql": "UPDATE security_threats SET description = 'Society charge effect care start by receive. Officer recognize black probably exactly picture. Responsibility local for join a fight organization.', severity = 'cause' WHERE created_at = '2025-03-12T00:24:18.543493';"
+  },
+  {
+    "nl": "Modify Project Members records by setting Role to treatment where user id is fe756987-e4f7-4f12-8bf5-ae15fa087ad3",
+    "sql": "UPDATE project_members SET role = 'treatment' WHERE user_id = 'fe756987-e4f7-4f12-8bf5-ae15fa087ad3' AND user_id = 'fe756987-e4f7-4f12-8bf5-ae15fa087ad3';"
+  },
+  {
+    "nl": "Modify Available Member records by setting Status to American where status is cut",
+    "sql": "UPDATE available_member SET status = 'American' WHERE status = 'cut';"
+  },
+  {
+    "nl": "Modify Tags records by setting Tag Name to Nancy Mcgee and Created At to 2025-03-12T00:24:18.538505 where tag name is richard gregory",
+    "sql": "UPDATE tags SET tag_name = 'Nancy Mcgee', created_at = '2025-03-12T00:24:18.538505' WHERE tag_name = 'Richard Gregory';"
+  },
+  {
+    "nl": "Show me updated at, id, experience level and added at from User Skills",
+    "sql": "SELECT updated_at, id, experience_level, added_at FROM user_skills;"
+  },
+  {
+    "nl": "Update Security Threats entries to Threat Name to Nicole Ruiz and Description to Population exist bring performance. Theory brother old democratic. Picture police watch it all. when threat name is kimberly deleon",
+    "sql": "UPDATE security_threats SET threat_name = 'Nicole Ruiz', description = 'Population exist bring performance. Theory brother old democratic. Picture police watch it all.' WHERE threat_name = 'Kimberly Deleon';"
+  },
+  {
+    "nl": "Modify Meeting Invites records by setting Status to international where meeting invite id is 9391ddca-9770-44c3-9d11-dcf55552941c",
+    "sql": "UPDATE meeting_invites SET status = 'international' WHERE meeting_invite_id = '9391ddca-9770-44c3-9d11-dcf55552941c';"
+  },
+  {
+    "nl": "Update Company entries to Sector to back and Zip Code to Democrat when created at is 2025-03-12t00:24:18.548504",
+    "sql": "UPDATE companies SET sector = 'back', zip_code = 'Democrat' WHERE created_at = '2025-03-12T00:24:18.548504' AND sector = 'sport';"
+  },
+  {
+    "nl": "Update Teams entries to Name to Brian Sharp, Owner ID to 8798 and Created At to 2025-03-12T00:24:18.533489 when created at is 2025-03-12t00:24:18.533489",
+    "sql": "UPDATE teams SET name = 'Brian Sharp', owner_id = 8798, created_at = '2025-03-12T00:24:18.533489' WHERE created_at = '2025-03-12T00:24:18.533489' AND name = 'Erica Simon';"
+  },
+  {
+    "nl": "Update Admins entries to Role to foreign and Password to risk when password is like",
+    "sql": "UPDATE admins SET role = 'foreign', password = 'risk' WHERE password = 'like' AND email = 'benjamin23@example.com';"
+  },
+  {
+    "nl": "Modify Meeting Invites records by setting Status to apply where meeting id is 52b603a7-95d8-47d7-a194-280289e00789",
+    "sql": "UPDATE meeting_invites SET status = 'apply' WHERE meeting_id = '52b603a7-95d8-47d7-a194-280289e00789';"
+  },
+  {
+    "nl": "Modify Users records by setting Phone to 559.307.9252x5356, Last Active to 2025-03-12T00:24:18.531489 and Status to enter where status is choice",
+    "sql": "UPDATE users SET phone = '559.307.9252x5356', last_active = '2025-03-12T00:24:18.531489', status = 'enter' WHERE status = 'choice' AND role = 'entire';"
+  },
+  {
+    "nl": "Update Notifications entries to Is Read to False, Created At to 2025-03-12T00:24:18.530489 and Message to Improve star situation against group good mouth. when created at is 2025-03-12t00:24:18.530489",
+    "sql": "UPDATE notifications SET is_read = FALSE, created_at = '2025-03-12T00:24:18.530489', message = 'Improve star situation against group good mouth.' WHERE created_at = '2025-03-12T00:24:18.530489';"
+  },
+  {
+    "nl": "Modify Admins records by setting Company ID to 6610 where email is whiteapril@example.org",
+    "sql": "UPDATE admins SET company_id = 6610 WHERE email = 'whiteapril@example.org';"
+  },
+  {
+    "nl": "Modify Task Comments records by setting Created At to 2025-03-12T00:24:18.529491 where comment text is bring baby thousand why. them only mention rather. production candidate human song drop recently focus.",
+    "sql": "UPDATE task_comments SET created_at = '2025-03-12T00:24:18.529491' WHERE comment_text = 'Bring baby thousand why. Them only mention rather. Production candidate human song drop recently focus.' AND comment_text = 'Process discussion gun imagine she. Them himself glass lot next various product interesting.';"
+  },
+  {
+    "nl": "Modify Teams records by setting Name to Juan Steele and Status to Between son stage new wear southern impact. Throughout this gas believe test green. where project id is ea8674af-7f81-4066-9abe-7c7695636ae8",
+    "sql": "UPDATE teams SET name = 'Juan Steele', status = 'Between son stage new wear southern impact. Throughout this gas believe test green.' WHERE project_id = 'ea8674af-7f81-4066-9abe-7c7695636ae8';"
+  },
+  {
+    "nl": "Show me username, created at, time zone, phone, status, agile, last active, user id, refresh token, updated at, company id, email, password hash, role and profile picture from Users",
+    "sql": "SELECT username, created_at, time_zone, phone, status, agile, last_active, user_id, refresh_token, updated_at, company_id, email, password_hash, role, profile_picture FROM users;"
+  },
+  {
+    "nl": "Update Activity Logs entries to Created At to 2025-03-12T00:24:18.532489 when user id is 95abc1d7-b675-40c6-b80c-49c26005e9e8",
+    "sql": "UPDATE activity_logs SET created_at = '2025-03-12T00:24:18.532489' WHERE user_id = '95abc1d7-b675-40c6-b80c-49c26005e9e8' AND project_id = 'ba6dc90a-ee2b-44b3-a239-1a6878312018';"
+  },
+  {
+    "nl": "Modify Team Members records by setting Role to offer where role is decision",
+    "sql": "UPDATE team_members SET role = 'offer' WHERE role = 'decision';"
+  },
+  {
+    "nl": "Modify Task Comments records by setting Comment Text to Arrive recent really. Risk out through minute pattern marriage it. Culture life dinner race describe company film. and Created At to 2025-03-12T00:24:18.529491 where created at is 2025-03-12t00:24:18.529491",
+    "sql": "UPDATE task_comments SET comment_text = 'Arrive recent really. Risk out through minute pattern marriage it. Culture life dinner race describe company film.', created_at = '2025-03-12T00:24:18.529491' WHERE created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Update Time Entry entries to Created At to 2025-03-12T00:24:18.535489 and Description to Bag not continue and whether reach even. If hold drop consumer group program. when time entry id between 2565 and 2580",
+    "sql": "UPDATE time_entries SET created_at = '2025-03-12T00:24:18.535489', description = 'Bag not continue and whether reach even. If hold drop consumer group program.' WHERE time_entry_id BETWEEN 2565 AND 2580 AND hours = 2077.78;"
+  },
+  {
+    "nl": "List all project id, due date, milestone name, created at, milestone id, status and updated at in Milestones",
+    "sql": "SELECT project_id, due_date, milestone_name, created_at, milestone_id, status, updated_at FROM milestones;"
+  },
+  {
+    "nl": "Show me created at, city, state, country, category, updated at and address from Company",
+    "sql": "SELECT created_at, city, state, country, category, updated_at, address FROM companies;"
+  },
+  {
+    "nl": "Modify Meeting Reports records by setting Generated At to 2025-03-12T00:24:18.553516 and Summary to Sell better according develop participant between drop appear. If sing never protect world. Test foot care east company really any. where meeting id is f53b44d9-3281-41f8-8fc9-550c6b16c72d",
+    "sql": "UPDATE meeting_reports SET generated_at = '2025-03-12T00:24:18.553516', summary = 'Sell better according develop participant between drop appear. If sing never protect world. Test foot care east company really any.' WHERE meeting_id = 'f53b44d9-3281-41f8-8fc9-550c6b16c72d' AND summary = 'Never management these stand subject city.';"
+  },
+  {
+    "nl": "Show me company id, category, zip code, created at, sector, country, address, company name, city, state and updated at from Company",
+    "sql": "SELECT company_id, category, zip_code, created_at, sector, country, address, company_name, city, state, updated_at FROM companies;"
+  },
+  {
+    "nl": "Modify Security Audits records by setting Description to Heavy boy ball. Discuss whatever partner trouble lawyer air no. and Ip Address to 026 Miller Turnpike\nLake April, CT 40058 where description is perform important one talk pick. recently here least reason. man month yeah dinner open.",
+    "sql": "UPDATE security_audits SET description = 'Heavy boy ball. Discuss whatever partner trouble lawyer air no.', ip_address = '026 Miller Turnpike\nLake April, CT 40058' WHERE description = 'Perform important one talk pick. Recently here least reason. Man month yeah dinner open.';"
+  },
+  {
+    "nl": "Locate Available Member entries with updated at is 2025-03-12t00:24:18.552517",
+    "sql": "SELECT * FROM available_member WHERE updated_at = '2025-03-12T00:24:18.552517';"
+  },
+  {
+    "nl": "Modify Activity Logs records by setting Created At to 2025-03-12T00:24:18.532489 where user id is 95abc1d7-b675-40c6-b80c-49c26005e9e8",
+    "sql": "UPDATE activity_logs SET created_at = '2025-03-12T00:24:18.532489' WHERE user_id = '95abc1d7-b675-40c6-b80c-49c26005e9e8';"
+  },
+  {
+    "nl": "Delete User Skills entries where updated at is 2025-03-12t00:24:18.553516",
+    "sql": "DELETE FROM user_skills WHERE updated_at = '2025-03-12T00:24:18.553516';"
+  },
+  {
+    "nl": "Update Admins entries to Role to his and First Name to Monique Long when refresh token is authority her fish eye character reality.",
+    "sql": "UPDATE admins SET role = 'his', first_name = 'Monique Long' WHERE refresh_token = 'Authority her fish eye character reality.';"
+  },
+  {
+    "nl": "Modify Projects records by setting End Date to 2022-04-09 and Per Complete to 1091.29 where end date is 2023-02-24",
+    "sql": "UPDATE projects SET end_date = '2022-04-09', per_complete = 1091.29 WHERE end_date = '2023-02-24' AND per_complete BETWEEN 7040.03 AND 7077.03;"
+  },
+  {
+    "nl": "Modify Messages records by setting Room to both, Message to Return black drive. Low interest whole. and Created At to 2025-03-12T00:24:18.535489 where room is single",
+    "sql": "UPDATE messages SET room = 'both', message = 'Return black drive. Low interest whole.', created_at = '2025-03-12T00:24:18.535489' WHERE room = 'single';"
+  },
+  {
+    "nl": "Modify Team Members records by setting Role to ready where user id is 8f8ed7c7-fa3c-4077-899e-c9a7e45e4224",
+    "sql": "UPDATE team_members SET role = 'ready' WHERE user_id = '8f8ed7c7-fa3c-4077-899e-c9a7e45e4224';"
+  },
+  {
+    "nl": "Update Users entries to Password Hash to Throw simply effort him. Information Mr office mother or director get. Nearly safe wish ok better white majority. and Refresh Token to East network control. Condition full never. Station line body beat fight agent hit. when name is kyle fischer",
+    "sql": "UPDATE users SET password_hash = 'Throw simply effort him. Information Mr office mother or director get. Nearly safe wish ok better white majority.', refresh_token = 'East network control. Condition full never. Station line body beat fight agent hit.' WHERE name = 'Kyle Fischer';"
+  },
+  {
+    "nl": "Update Time Entry entries to Description to Personal never school indeed left never. Production one view car student try support audience. Them you instead her push. when created at is 2025-03-12t00:24:18.534489",
+    "sql": "UPDATE time_entries SET description = 'Personal never school indeed left never. Production one view car student try support audience. Them you instead her push.' WHERE created_at = '2025-03-12T00:24:18.534489' AND hours > 8148.44;"
+  },
+  {
+    "nl": "Update Notifications entries to Created At to 2025-03-12T00:24:18.530489 and Is Read to False when user id is 6cb74cbc-3361-4f80-a456-bff050587d69",
+    "sql": "UPDATE notifications SET created_at = '2025-03-12T00:24:18.530489', is_read = FALSE WHERE user_id = '6cb74cbc-3361-4f80-a456-bff050587d69';"
+  },
+  {
+    "nl": "Update Team Leader entries to Created At to 2025-03-12T00:24:18.545504 and Updated At to 2025-03-12T00:24:18.545504 when assigned by is 7b4b0eb7-b57f-48a0-b58d-3379851e5553",
+    "sql": "UPDATE team_leader SET created_at = '2025-03-12T00:24:18.545504', updated_at = '2025-03-12T00:24:18.545504' WHERE assigned_by = '7b4b0eb7-b57f-48a0-b58d-3379851e5553';"
+  },
+  {
+    "nl": "Update Settings entries to Setting Value to listen, Created At to 2025-03-12T00:24:18.536491 and Updated At to 2025-03-12T00:24:18.536491 when updated at is 2025-03-12t00:24:18.536491",
+    "sql": "UPDATE settings SET setting_value = 'listen', created_at = '2025-03-12T00:24:18.536491', updated_at = '2025-03-12T00:24:18.536491' WHERE updated_at = '2025-03-12T00:24:18.536491';"
+  },
+  {
+    "nl": "Modify User Skills records by setting Skill Name to Victoria Patterson, Updated At to 2025-03-12T00:24:18.553516 and Experience Level to serious where experience level is force",
+    "sql": "UPDATE user_skills SET skill_name = 'Victoria Patterson', updated_at = '2025-03-12T00:24:18.553516', experience_level = 'serious' WHERE experience_level = 'force' AND user_id = 'c1743862-eaa8-43dd-97e3-26435d485e1d';"
+  },
+  {
+    "nl": "Update Security Vulnerability entries to Vulnerability Name to Todd King and Severity to ever when severity is kind",
+    "sql": "UPDATE security_vulnerabilities SET vulnerability_name = 'Todd King', severity = 'ever' WHERE severity = 'kind';"
+  },
+  {
+    "nl": "Modify Messages records by setting Message to Often nothing full consider eye everything authority by. Condition difficult cultural check western. Tv receive price event. where message id greater than 3331",
+    "sql": "UPDATE messages SET message = 'Often nothing full consider eye everything authority by. Condition difficult cultural check western. Tv receive price event.' WHERE message_id > 3331;"
+  },
+  {
+    "nl": "Update Reports entries to Attachment Url to Option rich house hope. Job listen behind mouth should soon mean. Believe main list just include six. and Recipient ID to 5696 when feedback is fact cup tough bag. possible per form control some within social. including pass put tonight skin knowledge.",
+    "sql": "UPDATE reports SET attachment_url = 'Option rich house hope. Job listen behind mouth should soon mean. Believe main list just include six.', recipient_id = 5696 WHERE feedback = 'Fact cup tough bag. Possible per form control some within social. Including pass put tonight skin knowledge.';"
+  },
+  {
+    "nl": "Update Sessions entries to Expires At to 2025-03-12T00:24:18.529491 and Created At to 2025-03-12T00:24:18.529491 when created at is 2025-03-12t00:24:18.529491",
+    "sql": "UPDATE sessions SET expires_at = '2025-03-12T00:24:18.529491', created_at = '2025-03-12T00:24:18.529491' WHERE created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Modify Milestones records by setting Description to Save operation either us. Rich top outside democratic yes they. and Due Date to 2023-04-28 where milestone name is jay hall",
+    "sql": "UPDATE milestones SET description = 'Save operation either us. Rich top outside democratic yes they.', due_date = '2023-04-28' WHERE milestone_name = 'Jay Hall';"
+  },
+  {
+    "nl": "Update Reports entries to Feedback to Try early agent modern citizen cut. Like sister turn couple dinner offer attack service. when status is other",
+    "sql": "UPDATE reports SET feedback = 'Try early agent modern citizen cut. Like sister turn couple dinner offer attack service.' WHERE status = 'other';"
+  },
+  {
+    "nl": "Update Available Member entries to Status to read when status is north",
+    "sql": "UPDATE available_member SET status = 'read' WHERE status = 'north' AND created_at = '2025-03-12T00:24:18.552517';"
+  },
+  {
+    "nl": "Modify Reports records by setting Feedback to Produce soldier we local. Television lose save eight experience pressure. and Description to the where attachment url is way already issue usually. meeting guy wear loss story than.",
+    "sql": "UPDATE reports SET feedback = 'Produce soldier we local. Television lose save eight experience pressure.', description = 'the' WHERE attachment_url = 'Way already issue usually. Meeting guy wear loss story than.';"
+  },
+  {
+    "nl": "Remove Team Members records matching role is someone",
+    "sql": "DELETE FROM team_members WHERE role = 'someone';"
+  },
+  {
+    "nl": "Delete Reports entries where recipient id less than 8700",
+    "sql": "DELETE FROM reports WHERE recipient_id < 8700 AND author_id = 'de060e5a-caf9-48c8-ba64-c61bdf65ec34';"
+  },
+  {
+    "nl": "Delete Meeting Invites entries where user id is 0384ec24-f836-48a7-8d4d-51afac223ebb",
+    "sql": "DELETE FROM meeting_invites WHERE user_id = '0384ec24-f836-48a7-8d4d-51afac223ebb';"
+  },
+  {
+    "nl": "Delete Notifications entries where created at is 2025-03-12t00:24:18.530489",
+    "sql": "DELETE FROM notifications WHERE created_at = '2025-03-12T00:24:18.530489' AND is_read = True;"
+  },
+  {
+    "nl": "Delete Activity Logs entries where project id is ba6dc90a-ee2b-44b3-a239-1a6878312018",
+    "sql": "DELETE FROM activity_logs WHERE project_id = 'ba6dc90a-ee2b-44b3-a239-1a6878312018';"
+  },
+  {
+    "nl": "Delete Available Member entries where status is person",
+    "sql": "DELETE FROM available_member WHERE status = 'person';"
+  },
+  {
+    "nl": "Remove Task Comments records matching comment text is claim each should news thank once do wind. answer why where seven arrive save capital.",
+    "sql": "DELETE FROM task_comments WHERE comment_text = 'Claim each should news thank once do wind. Answer why where seven arrive save capital.';"
+  },
+  {
+    "nl": "Remove Calendar Events records matching project id is c6df6199-fd2e-4acf-863a-69128ef1a57a",
+    "sql": "DELETE FROM calendar_events WHERE project_id = 'c6df6199-fd2e-4acf-863a-69128ef1a57a' AND created_at = '2025-03-12T00:24:18.540504';"
+  },
+  {
+    "nl": "Delete Teams entries where leader id is fdcad5a9-303f-40a1-87b1-0a786d2dc664",
+    "sql": "DELETE FROM teams WHERE leader_id = 'fdcad5a9-303f-40a1-87b1-0a786d2dc664' AND status = 'According sit heavy enter street. Center training analysis when. Street across civil many blood.';"
+  },
+  {
+    "nl": "Remove Task Tags records matching tag id less than 9576",
+    "sql": "DELETE FROM task_tags WHERE tag_id < 9576;"
+  },
+  {
+    "nl": "Delete Projects entries where created at is 2025-03-12t00:24:18.547504",
+    "sql": "DELETE FROM projects WHERE created_at = '2025-03-12T00:24:18.547504' AND project_id = '2432456e-83c9-4223-98a5-c22fcd77170a';"
+  },
+  {
+    "nl": "Remove Calendar Events records matching project id is c6df6199-fd2e-4acf-863a-69128ef1a57a",
+    "sql": "DELETE FROM calendar_events WHERE project_id = 'c6df6199-fd2e-4acf-863a-69128ef1a57a' AND event_date = '2020-07-02';"
+  },
+  {
+    "nl": "Delete Reports entries where title is tend",
+    "sql": "DELETE FROM reports WHERE title = 'tend' AND content = 'Politics research not in write impact choose final. Loss purpose note respond difficult.';"
+  },
+  {
+    "nl": "Delete Activity Logs entries where log id is e73e596c-13da-4826-8260-6aca6dc759e2",
+    "sql": "DELETE FROM activity_logs WHERE log_id = 'e73e596c-13da-4826-8260-6aca6dc759e2' AND project_id = 'ba6dc90a-ee2b-44b3-a239-1a6878312018';"
+  },
+  {
+    "nl": "Delete Project Members entries where user id is fe756987-e4f7-4f12-8bf5-ae15fa087ad3",
+    "sql": "DELETE FROM project_members WHERE user_id = 'fe756987-e4f7-4f12-8bf5-ae15fa087ad3' AND role = 'evening';"
+  },
+  {
+    "nl": "Remove Time Entry records matching user id is 970e1ccd-3030-4ee3-854d-ed7674fd2452",
+    "sql": "DELETE FROM time_entries WHERE user_id = '970e1ccd-3030-4ee3-854d-ed7674fd2452';"
+  },
+  {
+    "nl": "Remove Team Leader records matching created at is 2025-03-12t00:24:18.545504",
+    "sql": "DELETE FROM team_leader WHERE created_at = '2025-03-12T00:24:18.545504';"
+  },
+  {
+    "nl": "Remove Projects records matching status is buy southern rock down sometimes. task couple according too.",
+    "sql": "DELETE FROM projects WHERE status = 'Buy southern rock down sometimes. Task couple according too.';"
+  },
+  {
+    "nl": "Delete Team Leader entries where created at is 2025-03-12t00:24:18.545504",
+    "sql": "DELETE FROM team_leader WHERE created_at = '2025-03-12T00:24:18.545504' AND created_at = '2025-03-12T00:24:18.545504';"
+  },
+  {
+    "nl": "Remove Company records matching country is environment",
+    "sql": "DELETE FROM companies WHERE country = 'environment';"
+  },
+  {
+    "nl": "Delete Task Tags entries where matches condition: tag_id = 5241",
+    "sql": "DELETE FROM task_tags WHERE tag_id = 5241;"
+  },
+  {
+    "nl": "Delete User Skills entries where experience level is brother",
+    "sql": "DELETE FROM user_skills WHERE experience_level = 'brother';"
+  },
+  {
+    "nl": "Remove Audit Logs records matching audit id greater than 6913",
+    "sql": "DELETE FROM audit_logs WHERE audit_id > 6913;"
+  },
+  {
+    "nl": "Delete Messages entries where matches condition: message_id != 5671",
+    "sql": "DELETE FROM messages WHERE message_id != 5671;"
+  },
+  {
+    "nl": "Delete Security Vulnerability entries where vulnerability name is rachel brown",
+    "sql": "DELETE FROM security_vulnerabilities WHERE vulnerability_name = 'Rachel Brown';"
+  },
+  {
+    "nl": "Remove Messages records matching room is by",
+    "sql": "DELETE FROM messages WHERE room = 'by';"
+  },
+  {
+    "nl": "Remove Milestones records matching project id is 4cf70e0d-2063-481e-ad81-a74e038aefeb",
+    "sql": "DELETE FROM milestones WHERE project_id = '4cf70e0d-2063-481e-ad81-a74e038aefeb';"
+  },
+  {
+    "nl": "Remove Settings records matching setting value is picture",
+    "sql": "DELETE FROM settings WHERE setting_value = 'picture' AND user_id = 'fff63af7-b20b-4ee9-b4e9-a918983508ff';"
+  },
+  {
+    "nl": "Remove Teams records matching team id is 293b9e7b-750b-4d0e-8269-8ab96dabfe2e",
+    "sql": "DELETE FROM teams WHERE team_id = '293b9e7b-750b-4d0e-8269-8ab96dabfe2e';"
+  },
+  {
+    "nl": "Remove Tags records matching tag id between 6912 and 6939",
+    "sql": "DELETE FROM tags WHERE tag_id BETWEEN 6912 AND 6939 AND tag_id != 6142;"
+  },
+  {
+    "nl": "Delete Tags entries where created at is 2025-03-12t00:24:18.539504",
+    "sql": "DELETE FROM tags WHERE created_at = '2025-03-12T00:24:18.539504' AND tag_name = 'Benjamin Hall';"
+  },
+  {
+    "nl": "Remove Security Threats records matching severity is sort",
+    "sql": "DELETE FROM security_threats WHERE severity = 'sort';"
+  },
+  {
+    "nl": "Remove User Skills records matching skill name is mandy lindsey",
+    "sql": "DELETE FROM user_skills WHERE skill_name = 'Mandy Lindsey';"
+  },
+  {
+    "nl": "Remove Security Audits records matching description is reach buy rich some side get partner. general hard thus station. wall economic table teach success attention add.",
+    "sql": "DELETE FROM security_audits WHERE description = 'Reach buy rich some side get partner. General hard thus station. Wall economic table teach success attention add.';"
+  },
+  {
+    "nl": "Remove Milestones records matching project id is 4cf70e0d-2063-481e-ad81-a74e038aefeb",
+    "sql": "DELETE FROM milestones WHERE project_id = '4cf70e0d-2063-481e-ad81-a74e038aefeb' AND milestone_name = 'Sean Diaz';"
+  },
+  {
+    "nl": "Remove Security Audits records matching user id is f15a5013-45bb-47e7-ba00-c5c03de7394b",
+    "sql": "DELETE FROM security_audits WHERE user_id = 'f15a5013-45bb-47e7-ba00-c5c03de7394b' AND user_email = 'aprildavis@example.org';"
+  },
+  {
+    "nl": "Delete Project Members entries where user id is fe756987-e4f7-4f12-8bf5-ae15fa087ad3",
+    "sql": "DELETE FROM project_members WHERE user_id = 'fe756987-e4f7-4f12-8bf5-ae15fa087ad3';"
+  },
+  {
+    "nl": "Delete Settings entries where created at is 2025-03-12t00:24:18.536491",
+    "sql": "DELETE FROM settings WHERE created_at = '2025-03-12T00:24:18.536491';"
+  },
+  {
+    "nl": "Delete Admins entries where created at is 2025-03-12t00:24:18.551518",
+    "sql": "DELETE FROM admins WHERE created_at = '2025-03-12T00:24:18.551518';"
+  },
+  {
+    "nl": "Delete Tasks entries where priority is generation",
+    "sql": "DELETE FROM tasks WHERE priority = 'generation' AND description = 'Yard anyone her age yard area attack. Trial information suffer let central throw wall.';"
+  },
+  {
+    "nl": "Remove Users records matching user id is f7da9e95-0cbf-4900-b10e-95d3c1a0c29d",
+    "sql": "DELETE FROM users WHERE user_id = 'f7da9e95-0cbf-4900-b10e-95d3c1a0c29d' AND company_id > 5694;"
+  },
+  {
+    "nl": "Delete Milestones entries where due date is 2022-11-06",
+    "sql": "DELETE FROM milestones WHERE due_date = '2022-11-06';"
+  },
+  {
+    "nl": "Delete Security Audits entries where audit id is 131f9d02-d3d2-4880-b78f-9c17296fa25b",
+    "sql": "DELETE FROM security_audits WHERE audit_id = '131f9d02-d3d2-4880-b78f-9c17296fa25b' AND audit_id = '131f9d02-d3d2-4880-b78f-9c17296fa25b';"
+  },
+  {
+    "nl": "Remove Tasks records matching assigned to is 841e0153-7575-4256-b1e2-72c766003930",
+    "sql": "DELETE FROM tasks WHERE assigned_to = '841e0153-7575-4256-b1e2-72c766003930';"
+  },
+  {
+    "nl": "Delete Teams entries where created at is 2025-03-12t00:24:18.533489",
+    "sql": "DELETE FROM teams WHERE created_at = '2025-03-12T00:24:18.533489';"
+  },
+  {
+    "nl": "Delete Meeting Reports entries where generated at is 2025-03-12t00:24:18.554516",
+    "sql": "DELETE FROM meeting_reports WHERE generated_at = '2025-03-12T00:24:18.554516';"
+  },
+  {
+    "nl": "Delete Security Threats entries where threat name is anne graham phd",
+    "sql": "DELETE FROM security_threats WHERE threat_name = 'Anne Graham PhD';"
+  },
+  {
+    "nl": "Remove Team Members records matching user id is 8f8ed7c7-fa3c-4077-899e-c9a7e45e4224",
+    "sql": "DELETE FROM team_members WHERE user_id = '8f8ed7c7-fa3c-4077-899e-c9a7e45e4224' AND team_id = '3d81df80-869e-4630-8b7e-84d8aadc3f5c';"
+  },
+  {
+    "nl": "Remove Time Entry records matching time entry id less than 7880",
+    "sql": "DELETE FROM time_entries WHERE time_entry_id < 7880;"
+  },
+  {
+    "nl": "Delete Files entries where task id is e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c",
+    "sql": "DELETE FROM files WHERE task_id = 'e7dfc051-6e2a-4588-a6dc-ea2ccc744a1c' AND created_at = '2025-03-12T00:24:18.534489';"
+  },
+  {
+    "nl": "Remove Meeting Participants records matching meeting id is 4a6d9c23-ca44-4a23-989e-61d6f15479d6",
+    "sql": "DELETE FROM meeting_participants WHERE meeting_id = '4a6d9c23-ca44-4a23-989e-61d6f15479d6' AND meeting_id = '4a6d9c23-ca44-4a23-989e-61d6f15479d6';"
+  },
+  {
+    "nl": "Delete Tags entries where tag id greater than 7383",
+    "sql": "DELETE FROM tags WHERE tag_id > 7383 AND tag_id BETWEEN 5436 AND 5451;"
+  },
+  {
+    "nl": "Delete Audit Logs entries where audit id less than 3030",
+    "sql": "DELETE FROM audit_logs WHERE audit_id < 3030;"
+  },
+  {
+    "nl": "Remove Meeting Participants records matching user id is 3009d4ae-ace7-44f8-848a-40b6a31468e2",
+    "sql": "DELETE FROM meeting_participants WHERE user_id = '3009d4ae-ace7-44f8-848a-40b6a31468e2';"
+  },
+  {
+    "nl": "Delete Sessions entries where created at is 2025-03-12t00:24:18.529491",
+    "sql": "DELETE FROM sessions WHERE created_at = '2025-03-12T00:24:18.529491' AND expires_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Delete User Skills entries where added at is 2025-03-12t00:24:18.553516",
+    "sql": "DELETE FROM user_skills WHERE added_at = '2025-03-12T00:24:18.553516';"
+  },
+  {
+    "nl": "Remove Milestones records matching milestone id less than 6247",
+    "sql": "DELETE FROM milestones WHERE milestone_id < 6247 AND milestone_name = 'Benjamin Anderson';"
+  },
+  {
+    "nl": "Remove Users records matching company id less than 7734",
+    "sql": "DELETE FROM users WHERE company_id < 7734;"
+  },
+  {
+    "nl": "Remove Notifications records matching message is so land choose herself executive bit politics. section policy member wide degree bit.",
+    "sql": "DELETE FROM notifications WHERE message = 'So land choose herself executive bit politics. Section policy member wide degree bit.';"
+  },
+  {
+    "nl": "Delete Calendar Events entries where event date is 2024-02-13",
+    "sql": "DELETE FROM calendar_events WHERE event_date = '2024-02-13';"
+  },
+  {
+    "nl": "Remove Task Comments records matching created at is 2025-03-12t00:24:18.529491",
+    "sql": "DELETE FROM task_comments WHERE created_at = '2025-03-12T00:24:18.529491' AND created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Delete Tasks entries where due date is 2020-02-05",
+    "sql": "DELETE FROM tasks WHERE due_date = '2020-02-05';"
+  },
+  {
+    "nl": "Remove Security Vulnerability records matching vulnerability id is 5131d312-9326-4c9c-8762-58591eaff116",
+    "sql": "DELETE FROM security_vulnerabilities WHERE vulnerability_id = '5131d312-9326-4c9c-8762-58591eaff116' AND vulnerability_id = '5131d312-9326-4c9c-8762-58591eaff116';"
+  },
+  {
+    "nl": "Delete Sessions entries where user id is 9d9316d3-8933-415c-abf3-653d9cad87f7",
+    "sql": "DELETE FROM sessions WHERE user_id = '9d9316d3-8933-415c-abf3-653d9cad87f7';"
+  },
+  {
+    "nl": "Remove Time Entry records matching created at is 2025-03-12t00:24:18.535489",
+    "sql": "DELETE FROM time_entries WHERE created_at = '2025-03-12T00:24:18.535489' AND time_entry_id = 8744;"
+  },
+  {
+    "nl": "Remove Available Member records matching status is film",
+    "sql": "DELETE FROM available_member WHERE status = 'film' AND user_id = 'e65d7314-f90b-4d28-8800-2c171a805387';"
+  },
+  {
+    "nl": "Remove Users records matching username is mary elliott",
+    "sql": "DELETE FROM users WHERE username = 'Mary Elliott';"
+  },
+  {
+    "nl": "Delete Task Comments entries where task id is 25d10525-31b6-40e7-b301-248f4790837f",
+    "sql": "DELETE FROM task_comments WHERE task_id = '25d10525-31b6-40e7-b301-248f4790837f';"
+  },
+  {
+    "nl": "Delete Reports entries where title is sit",
+    "sql": "DELETE FROM reports WHERE title = 'sit';"
+  },
+  {
+    "nl": "Remove Files records matching file url is do offer be crime amount increase usually. capital group environmental leader modern manage. ball church similar technology tend.",
+    "sql": "DELETE FROM files WHERE file_url = 'Do offer be crime amount increase usually. Capital group environmental leader modern manage. Ball church similar technology tend.' AND uploaded_by = '2a558300-5c0c-4aa3-a73b-6ff01e0043f5';"
+  },
+  {
+    "nl": "Delete Company entries where country is attack",
+    "sql": "DELETE FROM companies WHERE country = 'attack';"
+  },
+  {
+    "nl": "Remove Admins records matching password is attorney",
+    "sql": "DELETE FROM admins WHERE password = 'attorney';"
+  },
+  {
+    "nl": "Remove Projects records matching description is inside cut security shake. tonight together gas where certain which house. nation realize and.",
+    "sql": "DELETE FROM projects WHERE description = 'Inside cut security shake. Tonight together gas where certain which house. Nation realize and.';"
+  },
+  {
+    "nl": "Remove Meetings records matching created by is 1c072de0-d900-491c-86e7-9c8ae44de037",
+    "sql": "DELETE FROM meetings WHERE created_by = '1c072de0-d900-491c-86e7-9c8ae44de037';"
+  },
+  {
+    "nl": "Remove Reports records matching description is often",
+    "sql": "DELETE FROM reports WHERE description = 'often';"
+  },
+  {
+    "nl": "Delete Security Threats entries where description is certainly at science still war off until those. late identify hit section another protect cold. ago reveal analysis civil outside song study.",
+    "sql": "DELETE FROM security_threats WHERE description = 'Certainly at science still war off until those. Late identify hit section another protect cold. Ago reveal analysis civil outside song study.';"
+  },
+  {
+    "nl": "Remove Activity Logs records matching log id is e73e596c-13da-4826-8260-6aca6dc759e2",
+    "sql": "DELETE FROM activity_logs WHERE log_id = 'e73e596c-13da-4826-8260-6aca6dc759e2' AND user_id = '95abc1d7-b675-40c6-b80c-49c26005e9e8';"
+  },
+  {
+    "nl": "Delete Team Leader entries where leader id is f703f3bb-1d3f-481c-a0f4-2a9c7ea42724",
+    "sql": "DELETE FROM team_leader WHERE leader_id = 'f703f3bb-1d3f-481c-a0f4-2a9c7ea42724';"
+  },
+  {
+    "nl": "Remove Calendar Events records matching project id is c6df6199-fd2e-4acf-863a-69128ef1a57a",
+    "sql": "DELETE FROM calendar_events WHERE project_id = 'c6df6199-fd2e-4acf-863a-69128ef1a57a';"
+  },
+  {
+    "nl": "Delete Messages entries where sender id is 428f2d48-f79e-4eca-8507-8060f3e81097",
+    "sql": "DELETE FROM messages WHERE sender_id = '428f2d48-f79e-4eca-8507-8060f3e81097';"
+  },
+  {
+    "nl": "Delete Tasks entries where project id is 7b45b3ef-4b0f-48e6-9d17-3a9551c8fe73",
+    "sql": "DELETE FROM tasks WHERE project_id = '7b45b3ef-4b0f-48e6-9d17-3a9551c8fe73' AND comment = 'Middle management little on least study note. Half magazine billion though order citizen look. Environment issue picture bed goal impact industry sort.';"
+  },
+  {
+    "nl": "Delete Teams entries where created at is 2025-03-12t00:24:18.533489",
+    "sql": "DELETE FROM teams WHERE created_at = '2025-03-12T00:24:18.533489' AND status = 'Reach thus meeting reduce. Any opportunity pick.';"
+  },
+  {
+    "nl": "Remove Notifications records matching message is surface mention street benefit answer son also price. suffer sort health career brother who its score.",
+    "sql": "DELETE FROM notifications WHERE message = 'Surface mention street benefit answer son also price. Suffer sort health career brother who its score.';"
+  },
+  {
+    "nl": "Delete Files entries where created at is 2025-03-12t00:24:18.534489",
+    "sql": "DELETE FROM files WHERE created_at = '2025-03-12T00:24:18.534489';"
+  },
+  {
+    "nl": "Delete Team Members entries where role is condition",
+    "sql": "DELETE FROM team_members WHERE role = 'condition';"
+  },
+  {
+    "nl": "Remove Meetings records matching title is unit",
+    "sql": "DELETE FROM meetings WHERE title = 'unit';"
+  },
+  {
+    "nl": "Remove Settings records matching setting key is let",
+    "sql": "DELETE FROM settings WHERE setting_key = 'let' AND setting_value = 'report';"
+  },
+  {
+    "nl": "Delete Time Entry entries where user id is 970e1ccd-3030-4ee3-854d-ed7674fd2452",
+    "sql": "DELETE FROM time_entries WHERE user_id = '970e1ccd-3030-4ee3-854d-ed7674fd2452' AND created_at = '2025-03-12T00:24:18.535489';"
+  },
+  {
+    "nl": "Delete Tasks entries where grade is dog oil crime risk.",
+    "sql": "DELETE FROM tasks WHERE grade = 'Dog oil crime risk.' AND title = 'country';"
+  },
+  {
+    "nl": "Delete Files entries where created at is 2025-03-12t00:24:18.534489",
+    "sql": "DELETE FROM files WHERE created_at = '2025-03-12T00:24:18.534489' AND created_at = '2025-03-12T00:24:18.534489';"
+  },
+  {
+    "nl": "Remove Meetings records matching meeting date is 2022-04-12",
+    "sql": "DELETE FROM meetings WHERE meeting_date = '2022-04-12' AND created_by = '1c072de0-d900-491c-86e7-9c8ae44de037';"
+  },
+  {
+    "nl": "Remove Meeting Invites records matching meeting id is 52b603a7-95d8-47d7-a194-280289e00789",
+    "sql": "DELETE FROM meeting_invites WHERE meeting_id = '52b603a7-95d8-47d7-a194-280289e00789' AND meeting_invite_id = '9391ddca-9770-44c3-9d11-dcf55552941c';"
+  },
+  {
+    "nl": "Delete Reports entries where report id is bd990ebd-a156-4a3b-b028-3a0aeeefec79",
+    "sql": "DELETE FROM reports WHERE report_id = 'bd990ebd-a156-4a3b-b028-3a0aeeefec79';"
+  },
+  {
+    "nl": "Delete Team Members entries where team id is 3d81df80-869e-4630-8b7e-84d8aadc3f5c",
+    "sql": "DELETE FROM team_members WHERE team_id = '3d81df80-869e-4630-8b7e-84d8aadc3f5c' AND role = 'push';"
+  },
+  {
+    "nl": "Delete Sessions entries where refresh token is full every although civil every green. live employee institution style music stuff international. next agent month mouth which should interesting hope.",
+    "sql": "DELETE FROM sessions WHERE refresh_token = 'Full every although civil every green. Live employee institution style music stuff international. Next agent month mouth which should interesting hope.';"
+  },
+  {
+    "nl": "Delete Security Vulnerability entries where vulnerability id is 5131d312-9326-4c9c-8762-58591eaff116",
+    "sql": "DELETE FROM security_vulnerabilities WHERE vulnerability_id = '5131d312-9326-4c9c-8762-58591eaff116';"
+  },
+  {
+    "nl": "Delete Meeting Invites entries where meeting invite id is 9391ddca-9770-44c3-9d11-dcf55552941c",
+    "sql": "DELETE FROM meeting_invites WHERE meeting_invite_id = '9391ddca-9770-44c3-9d11-dcf55552941c';"
+  },
+  {
+    "nl": "Remove Users records matching user id is f7da9e95-0cbf-4900-b10e-95d3c1a0c29d",
+    "sql": "DELETE FROM users WHERE user_id = 'f7da9e95-0cbf-4900-b10e-95d3c1a0c29d';"
+  },
+  {
+    "nl": "Remove Security Vulnerability records matching severity is mr",
+    "sql": "DELETE FROM security_vulnerabilities WHERE severity = 'Mr';"
+  },
+  {
+    "nl": "Delete Messages entries where message id greater than 1453",
+    "sql": "DELETE FROM messages WHERE message_id > 1453;"
+  },
+  {
+    "nl": "Remove Milestones records matching matches condition: milestone_id = 8102",
+    "sql": "DELETE FROM milestones WHERE milestone_id = 8102;"
+  },
+  {
+    "nl": "Delete Files entries where file url is most fear who already body spend. weight memory help audience.",
+    "sql": "DELETE FROM files WHERE file_url = 'Most fear who already body spend. Weight memory help audience.';"
+  },
+  {
+    "nl": "Delete Security Audits entries where user id is f15a5013-45bb-47e7-ba00-c5c03de7394b",
+    "sql": "DELETE FROM security_audits WHERE user_id = 'f15a5013-45bb-47e7-ba00-c5c03de7394b';"
+  },
+  {
+    "nl": "Delete Teams entries where leader id is fdcad5a9-303f-40a1-87b1-0a786d2dc664",
+    "sql": "DELETE FROM teams WHERE leader_id = 'fdcad5a9-303f-40a1-87b1-0a786d2dc664';"
+  },
+  {
+    "nl": "Delete Task Comments entries where comment text is pattern base other nature. today chance beyond among country. edge human late.",
+    "sql": "DELETE FROM task_comments WHERE comment_text = 'Pattern base other nature. Today chance beyond among country. Edge human late.';"
+  },
+  {
+    "nl": "Delete Task Tags entries where tag id greater than 7041",
+    "sql": "DELETE FROM task_tags WHERE tag_id > 7041;"
+  },
+  {
+    "nl": "Remove Tags records matching tag id less than 6034",
+    "sql": "DELETE FROM tags WHERE tag_id < 6034 AND tag_id BETWEEN 6778 AND 6806;"
+  },
+  {
+    "nl": "Remove Time Entry records matching description is continue third answer though say inside improve.",
+    "sql": "DELETE FROM time_entries WHERE description = 'Continue third answer though say inside improve.';"
+  },
+  {
+    "nl": "Remove Task Tags records matching tag id less than 8045",
+    "sql": "DELETE FROM task_tags WHERE tag_id < 8045;"
+  },
+  {
+    "nl": "Remove Security Threats records matching threat name is chad daniels",
+    "sql": "DELETE FROM security_threats WHERE threat_name = 'Chad Daniels';"
+  },
+  {
+    "nl": "Delete Task Tags entries where task id is 60728d1e-3c39-43f7-9fc6-73b2b8d32188",
+    "sql": "DELETE FROM task_tags WHERE task_id = '60728d1e-3c39-43f7-9fc6-73b2b8d32188' AND task_id = '60728d1e-3c39-43f7-9fc6-73b2b8d32188';"
+  },
+  {
+    "nl": "Remove Audit Logs records matching action is decide",
+    "sql": "DELETE FROM audit_logs WHERE action = 'decide' AND audit_id > 7753;"
+  },
+  {
+    "nl": "Delete Notifications entries where matches condition: is_read = True",
+    "sql": "DELETE FROM notifications WHERE is_read = True;"
+  },
+  {
+    "nl": "Remove Notifications records matching message is wide walk season able thus determine. teach collection night might kind. again network mother five.",
+    "sql": "DELETE FROM notifications WHERE message = 'Wide walk season able thus determine. Teach collection night might kind. Again network mother five.';"
+  },
+  {
+    "nl": "Remove Meetings records matching company id between 5837 and 5870",
+    "sql": "DELETE FROM meetings WHERE company_id BETWEEN 5837 AND 5870 AND meeting_time = NULL;"
+  },
+  {
+    "nl": "Remove Project Members records matching project id is 2567dec3-5f04-4dc3-be7e-f43e4d120b04",
+    "sql": "DELETE FROM project_members WHERE project_id = '2567dec3-5f04-4dc3-be7e-f43e4d120b04' AND project_id = '2567dec3-5f04-4dc3-be7e-f43e4d120b04';"
+  },
+  {
+    "nl": "Delete Available Member entries where status is write",
+    "sql": "DELETE FROM available_member WHERE status = 'write';"
+  },
+  {
+    "nl": "Delete Available Member entries where user id is e65d7314-f90b-4d28-8800-2c171a805387",
+    "sql": "DELETE FROM available_member WHERE user_id = 'e65d7314-f90b-4d28-8800-2c171a805387';"
+  },
+  {
+    "nl": "Remove Company records matching created at is 2025-03-12t00:24:18.548504",
+    "sql": "DELETE FROM companies WHERE created_at = '2025-03-12T00:24:18.548504';"
+  },
+  {
+    "nl": "Remove Activity Logs records matching created at is 2025-03-12t00:24:18.532489",
+    "sql": "DELETE FROM activity_logs WHERE created_at = '2025-03-12T00:24:18.532489';"
+  },
+  {
+    "nl": "Remove Projects records matching budget less than 2537",
+    "sql": "DELETE FROM projects WHERE budget < 2537.04;"
+  },
+  {
+    "nl": "Delete Activity Logs entries where action is food possible conference occur idea nothing national. approach mr boy forget order majority.",
+    "sql": "DELETE FROM activity_logs WHERE action = 'Food possible conference occur idea nothing national. Approach Mr boy forget order majority.';"
+  },
+  {
+    "nl": "Delete Audit Logs entries where details is near sound wait early worry. morning employee would against within develop expect.",
+    "sql": "DELETE FROM audit_logs WHERE details = 'Near sound wait early worry. Morning employee would against within develop expect.' AND user_id = '306268ae-7235-4485-b736-0247d0c483cf';"
+  },
+  {
+    "nl": "Delete Meeting Reports entries where summary is recent space go spring pretty management. sound positive practice responsibility others able. dinner only table follow ago best our bring.",
+    "sql": "DELETE FROM meeting_reports WHERE summary = 'Recent space go spring pretty management. Sound positive practice responsibility others able. Dinner only table follow ago best our bring.' AND user_id = '21c41932-17ea-4080-95e1-9b1ddd495024';"
+  },
+  {
+    "nl": "Remove Messages records matching created at is 2025-03-12t00:24:18.535489",
+    "sql": "DELETE FROM messages WHERE created_at = '2025-03-12T00:24:18.535489';"
+  },
+  {
+    "nl": "Remove Meeting Participants records matching meeting id is 4a6d9c23-ca44-4a23-989e-61d6f15479d6",
+    "sql": "DELETE FROM meeting_participants WHERE meeting_id = '4a6d9c23-ca44-4a23-989e-61d6f15479d6' AND user_id = '3009d4ae-ace7-44f8-848a-40b6a31468e2';"
+  },
+  {
+    "nl": "Remove Meeting Reports records matching summary is approach crime their religious effect red wide. outside option media recently east other.",
+    "sql": "DELETE FROM meeting_reports WHERE summary = 'Approach crime their religious effect red wide. Outside option media recently east other.';"
+  },
+  {
+    "nl": "Delete Company entries where country is test",
+    "sql": "DELETE FROM companies WHERE country = 'test' AND address = '245 Olivia Ports\nNew Amanda, CA 23539';"
+  },
+  {
+    "nl": "Delete Admins entries where created at is 2025-03-12t00:24:18.551518",
+    "sql": "DELETE FROM admins WHERE created_at = '2025-03-12T00:24:18.551518' AND admin_id = 3792;"
+  },
+  {
+    "nl": "Delete Calendar Events entries where created at is 2025-03-12t00:24:18.540504",
+    "sql": "DELETE FROM calendar_events WHERE created_at = '2025-03-12T00:24:18.540504' AND created_at = '2025-03-12T00:24:18.540504';"
+  },
+  {
+    "nl": "Delete Meeting Invites entries where meeting invite id is 9391ddca-9770-44c3-9d11-dcf55552941c",
+    "sql": "DELETE FROM meeting_invites WHERE meeting_invite_id = '9391ddca-9770-44c3-9d11-dcf55552941c' AND meeting_id = '52b603a7-95d8-47d7-a194-280289e00789';"
+  },
+  {
+    "nl": "Delete Task Comments entries where created at is 2025-03-12t00:24:18.529491",
+    "sql": "DELETE FROM task_comments WHERE created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Delete Settings entries where setting id greater than 1098",
+    "sql": "DELETE FROM settings WHERE setting_id > 1098;"
+  },
+  {
+    "nl": "Remove Tags records matching tag name is micheal hayes",
+    "sql": "DELETE FROM tags WHERE tag_name = 'Micheal Hayes';"
+  },
+  {
+    "nl": "Delete Admins entries where email is scotttyler@example.com",
+    "sql": "DELETE FROM admins WHERE email = 'scotttyler@example.com';"
+  },
+  {
+    "nl": "Remove Projects records matching end date is 2020-06-16",
+    "sql": "DELETE FROM projects WHERE end_date = '2020-06-16';"
+  },
+  {
+    "nl": "Remove Sessions records matching created at is 2025-03-12t00:24:18.529491",
+    "sql": "DELETE FROM sessions WHERE created_at = '2025-03-12T00:24:18.529491';"
+  },
+  {
+    "nl": "Remove Company records matching category is too",
+    "sql": "DELETE FROM companies WHERE category = 'too' AND state = 'available';"
+  },
+  {
+    "nl": "Remove Security Threats records matching threat id is 14cfe3bb-01dc-4fc7-9dcb-ee87c673fbc6",
+    "sql": "DELETE FROM security_threats WHERE threat_id = '14cfe3bb-01dc-4fc7-9dcb-ee87c673fbc6' AND threat_name = 'Katrina Cox';"
+  },
+  {
+    "nl": "Delete Team Members entries where user id is 8f8ed7c7-fa3c-4077-899e-c9a7e45e4224",
+    "sql": "DELETE FROM team_members WHERE user_id = '8f8ed7c7-fa3c-4077-899e-c9a7e45e4224';"
+  },
+  {
+    "nl": "Remove Audit Logs records matching timestamp is 2025-03-12t00:24:18.539504",
+    "sql": "DELETE FROM audit_logs WHERE timestamp = '2025-03-12T00:24:18.539504';"
+  },
+  {
+    "nl": "Delete Meeting Reports entries where user id is 21c41932-17ea-4080-95e1-9b1ddd495024",
+    "sql": "DELETE FROM meeting_reports WHERE user_id = '21c41932-17ea-4080-95e1-9b1ddd495024';"
+  },
+  {
+    "nl": "Remove Security Audits records matching ip address is 877 joshua oval\naliciachester, ne 57116",
+    "sql": "DELETE FROM security_audits WHERE ip_address = '877 Joshua Oval\nAliciachester, NE 57116' AND audit_id = '131f9d02-d3d2-4880-b78f-9c17296fa25b';"
+  },
+  {
+    "nl": "Delete Users entries where password hash is owner her message positive. prove answer now adult address her.",
+    "sql": "DELETE FROM users WHERE password_hash = 'Owner her message positive. Prove answer now adult address her.' AND created_at = '2025-03-12T00:24:18.531489';"
+  },
+  {
+    "nl": "Show Task Tags with running total of Tag ID",
+    "sql": "\n            SELECT *, SUM(tag_id) OVER (ORDER BY task_id) \n            FROM task_tags;\n            "
+  },
+  {
+    "nl": "Show Teams with running total of Owner ID",
+    "sql": "\n            SELECT *, SUM(owner_id) OVER (ORDER BY team_id) \n            FROM teams;\n            "
+  },
+  {
+    "nl": "Show Tags with running total of Tag ID",
+    "sql": "\n            SELECT *, SUM(tag_id) OVER (ORDER BY tag_id) \n            FROM tags;\n            "
+  },
+  {
+    "nl": "Show Audit Logs with running total of Audit ID",
+    "sql": "\n            SELECT *, SUM(audit_id) OVER (ORDER BY audit_id) \n            FROM audit_logs;\n            "
+  },
+  {
+    "nl": "Show Admins with running total of Company ID",
+    "sql": "\n            SELECT *, SUM(company_id) OVER (ORDER BY admin_id) \n            FROM admins;\n            "
+  },
+  {
+    "nl": "Show Users with running total of Company ID",
+    "sql": "\n            SELECT *, SUM(company_id) OVER (ORDER BY user_id) \n            FROM users;\n            "
+  },
+  {
+    "nl": "Show Reports with running total of Recipient ID",
+    "sql": "\n            SELECT *, SUM(recipient_id) OVER (ORDER BY report_id) \n            FROM reports;\n            "
+  },
+  {
+    "nl": "Show Projects with running total of Per Complete",
+    "sql": "\n            SELECT *, SUM(per_complete) OVER (ORDER BY project_id) \n            FROM projects;\n            "
+  },
+  {
+    "nl": "Show Settings with running total of Setting ID",
+    "sql": "\n            SELECT *, SUM(setting_id) OVER (ORDER BY setting_id) \n            FROM settings;\n            "
+  },
+  {
+    "nl": "Show Meetings with running total of Company ID",
+    "sql": "\n            SELECT *, SUM(company_id) OVER (ORDER BY meeting_id) \n            FROM meetings;\n            "
+  },
+  {
+    "nl": "Show Company with running total of Company ID",
+    "sql": "\n            SELECT *, SUM(company_id) OVER (ORDER BY company_id) \n            FROM companies;\n            "
+  },
+  {
+    "nl": "Show Messages with running total of Message ID",
+    "sql": "\n            SELECT *, SUM(message_id) OVER (ORDER BY message_id) \n            FROM messages;\n            "
+  },
+  {
+    "nl": "Show Time Entry with running total of Time Entry ID",
+    "sql": "\n            SELECT *, SUM(time_entry_id) OVER (ORDER BY time_entry_id) \n            FROM time_entries;\n            "
+  },
+  {
+    "nl": "Show Milestones with running total of Milestone ID",
+    "sql": "\n            SELECT *, SUM(milestone_id) OVER (ORDER BY milestone_id) \n            FROM milestones;\n            "
+  },
+  {
+    "nl": "Show User Skills with running total of ID",
+    "sql": "\n            SELECT *, SUM(id) OVER (ORDER BY id) \n            FROM user_skills;\n            "
+  }
+]

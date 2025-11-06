@@ -1,0 +1,1838 @@
+/* Spectacular AI Chat Assistant Styles - Pages Version */
+
+.ai-chat-pages {
+  --primary-blue: #3b82f6;
+  --primary-blue-dark: #1d4ed8;
+  --secondary-blue: #60a5fa;
+  --gradient-magical: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #ff006e);
+  --shadow-glow: 0 10px 40px rgba(59, 130, 246, 0.3);
+  --shadow-magical: 0 0 60px rgba(131, 56, 236, 0.4), 0 0 100px rgba(255, 0, 110, 0.3);
+  --holographic-gradient: linear-gradient(45deg, 
+    rgba(255, 0, 110, 0.1) 0%,
+    rgba(131, 56, 236, 0.1) 25%,
+    rgba(58, 134, 255, 0.1) 50%,
+    rgba(6, 255, 165, 0.1) 75%,
+    rgba(255, 190, 11, 0.1) 100%
+  );
+}
+
+/* Spectacular entrance animation */
+.ai-chat-entrance {
+  animation: 
+    dimensional-unfold 2s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    holographic-materialize 3s ease-out,
+    quantum-stabilize 1s ease-out 2s;
+}
+
+@keyframes dimensional-unfold {
+  0% {
+    transform: perspective(2000px) rotateY(-90deg) rotateX(-45deg) scale(0);
+    opacity: 0;
+    filter: blur(30px) hue-rotate(180deg) saturate(3);
+  }
+  25% {
+    transform: perspective(2000px) rotateY(-45deg) rotateX(-22.5deg) scale(0.5);
+    opacity: 0.3;
+    filter: blur(20px) hue-rotate(90deg) saturate(2);
+  }
+  50% {
+    transform: perspective(2000px) rotateY(0deg) rotateX(0deg) scale(0.8);
+    opacity: 0.7;
+    filter: blur(10px) hue-rotate(45deg) saturate(1.5);
+  }
+  75% {
+    transform: perspective(2000px) rotateY(10deg) rotateX(5deg) scale(1.1);
+    opacity: 0.9;
+    filter: blur(5px) hue-rotate(0deg) saturate(1.2);
+  }
+  100% {
+    transform: perspective(2000px) rotateY(0deg) rotateX(0deg) scale(1);
+    opacity: 1;
+    filter: blur(0px) hue-rotate(0deg) saturate(1);
+  }
+}
+
+@keyframes holographic-materialize {
+  0% {
+    box-shadow: none;
+  }
+  25% {
+    box-shadow: 
+      0 0 50px rgba(255, 0, 110, 0.6),
+      0 0 100px rgba(131, 56, 236, 0.4),
+      inset 0 0 50px rgba(58, 134, 255, 0.2);
+  }
+  50% {
+    box-shadow: 
+      0 0 75px rgba(131, 56, 236, 0.8),
+      0 0 150px rgba(58, 134, 255, 0.6),
+      inset 0 0 75px rgba(6, 255, 165, 0.3);
+  }
+  75% {
+    box-shadow: 
+      0 0 60px rgba(58, 134, 255, 0.7),
+      0 0 120px rgba(6, 255, 165, 0.5),
+      inset 0 0 60px rgba(255, 190, 11, 0.2);
+  }
+  100% {
+    box-shadow: 
+      0 25px 50px rgba(0, 0, 0, 0.25),
+      0 0 30px rgba(59, 130, 246, 0.3);
+  }
+}
+
+@keyframes quantum-stabilize {
+  0% {
+    filter: saturate(2) contrast(1.5) brightness(1.2);
+  }
+  100% {
+    filter: saturate(1) contrast(1) brightness(1);
+  }
+}
+
+/* Cosmic background effect */
+.cosmic-background {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(255, 0, 110, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 40%, rgba(131, 56, 236, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(58, 134, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 90% 90%, rgba(6, 255, 165, 0.08) 0%, transparent 50%);
+  animation: cosmic-drift 25s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+@keyframes cosmic-drift {
+  0%, 100% { 
+    background-position: 0% 0%, 100% 0%, 0% 100%, 100% 100%; 
+  }
+  25% { 
+    background-position: 100% 0%, 0% 100%, 100% 0%, 0% 0%; 
+  }
+  50% { 
+    background-position: 100% 100%, 0% 0%, 100% 100%, 0% 0%; 
+  }
+  75% { 
+    background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%; 
+  }
+}
+
+/* Enhanced glassmorphism */
+.glassmorphism-enhanced {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.glassmorphism-enhanced::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--holographic-gradient);
+  background-size: 400% 400%;
+  animation: holographic-shift 4s ease-in-out infinite;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@keyframes holographic-shift {
+  0%, 100% { background-position: 0% 0%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+}
+
+/* Neural network connections */
+.neural-connections {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.neural-line {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom, 
+    transparent, 
+    rgba(59, 130, 246, 0.6), 
+    transparent
+  );
+  animation: neural-pulse-line 4s ease-in-out infinite;
+  opacity: 0;
+}
+
+.neural-line:nth-child(1) {
+  left: 15%;
+  animation-delay: 0s;
+  background: linear-gradient(to bottom, transparent, rgba(255, 0, 110, 0.6), transparent);
+}
+
+.neural-line:nth-child(2) {
+  left: 35%;
+  animation-delay: 0.8s;
+  background: linear-gradient(to bottom, transparent, rgba(131, 56, 236, 0.6), transparent);
+}
+
+.neural-line:nth-child(3) {
+  left: 55%;
+  animation-delay: 1.6s;
+  background: linear-gradient(to bottom, transparent, rgba(58, 134, 255, 0.6), transparent);
+}
+
+.neural-line:nth-child(4) {
+  left: 75%;
+  animation-delay: 2.4s;
+  background: linear-gradient(to bottom, transparent, rgba(6, 255, 165, 0.6), transparent);
+}
+
+.neural-line:nth-child(5) {
+  left: 85%;
+  animation-delay: 3.2s;
+  background: linear-gradient(to bottom, transparent, rgba(255, 190, 11, 0.6), transparent);
+}
+
+@keyframes neural-pulse-line {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(100%) scaleY(0);
+  }
+  25%, 75% {
+    opacity: 1;
+    transform: translateY(0%) scaleY(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translateY(-10%) scaleY(1.2);
+  }
+}
+
+/* Data stream effects */
+.data-stream {
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: linear-gradient(to bottom, 
+    rgba(6, 255, 165, 0.8), 
+    rgba(58, 134, 255, 0.4)
+  );
+  animation: data-flow 3s linear infinite;
+  opacity: 0.7;
+}
+
+@keyframes data-flow {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(100vh + 20px));
+    opacity: 0;
+  }
+}
+
+/* Enhanced message bubbles */
+.message-bubble-enhanced {
+  position: relative;
+  padding: 16px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  animation: message-spectacular-enter 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.message-bubble-enhanced::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(45deg, 
+    rgba(255, 255, 255, 0.1), 
+    rgba(255, 255, 255, 0.05), 
+    rgba(255, 255, 255, 0.1)
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: subtract;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: subtract;
+}
+
+.message-bubble-enhanced.user {
+  background: linear-gradient(135deg, 
+    rgba(59, 130, 246, 0.95), 
+    rgba(29, 78, 216, 0.95)
+  );
+  color: white;
+  box-shadow: 
+    0 12px 40px rgba(59, 130, 246, 0.4),
+    0 0 30px rgba(59, 130, 246, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.message-bubble-enhanced.ai {
+  background: linear-gradient(135deg, 
+    rgba(248, 250, 252, 0.98), 
+    rgba(226, 232, 240, 0.98)
+  );
+  color: #1f2937;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    0 0 30px rgba(131, 56, 236, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.message-bubble-enhanced:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 
+    0 16px 50px rgba(0, 0, 0, 0.2),
+    0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+/* Quantum field effect for messages */
+.quantum-field {
+  position: absolute;
+  inset: -8px;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(59, 130, 246, 0.1) 90deg,
+    transparent 180deg,
+    rgba(131, 56, 236, 0.1) 270deg,
+    transparent 360deg
+  );
+  border-radius: inherit;
+  opacity: 0;
+  animation: quantum-field-rotate 6s linear infinite;
+  pointer-events: none;
+  filter: blur(4px);
+}
+
+.message-bubble-enhanced:hover .quantum-field {
+  opacity: 1;
+}
+
+@keyframes quantum-field-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Enhanced typing indicator */
+.typing-indicator-enhanced {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(131, 56, 236, 0.1));
+  border-radius: 20px;
+  margin: 12px 0;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+
+.typing-indicator-enhanced::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, 
+    transparent 0%,
+    rgba(59, 130, 246, 0.1) 50%,
+    transparent 100%
+  );
+  animation: neural-wave 2.5s ease-in-out infinite;
+}
+
+.typing-dots-enhanced {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  z-index: 1;
+}
+
+.typing-dot-enhanced {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  animation: neural-pulse 2s ease-in-out infinite;
+  position: relative;
+  box-shadow: 0 0 20px currentColor;
+}
+
+.typing-dot-enhanced::before {
+  content: '';
+  position: absolute;
+  inset: -100%;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.3), transparent);
+  border-radius: 50%;
+  animation: neural-expand 2s ease-in-out infinite;
+}
+
+.typing-dot-enhanced:nth-child(1) { 
+  animation-delay: 0ms; 
+  background: linear-gradient(45deg, #ff006e, #8338ec);
+}
+.typing-dot-enhanced:nth-child(2) { 
+  animation-delay: 250ms; 
+  background: linear-gradient(45deg, #8338ec, #3a86ff);
+}
+.typing-dot-enhanced:nth-child(3) { 
+  animation-delay: 500ms; 
+  background: linear-gradient(45deg, #3a86ff, #06ffa5);
+}
+
+.typing-dot-enhanced:nth-child(1)::before { animation-delay: 0ms; }
+.typing-dot-enhanced:nth-child(2)::before { animation-delay: 250ms; }
+.typing-dot-enhanced:nth-child(3)::before { animation-delay: 500ms; }
+
+@keyframes neural-pulse {
+  0%, 70%, 100% { 
+    transform: translateY(0) scale(1); 
+    opacity: 1;
+  }
+  35% { 
+    transform: translateY(-15px) scale(1.3); 
+    opacity: 0.8;
+  }
+}
+
+@keyframes neural-expand {
+  0%, 70%, 100% { 
+    transform: scale(0); 
+    opacity: 0;
+  }
+  35% { 
+    transform: scale(1); 
+    opacity: 0.6;
+  }
+}
+
+@keyframes neural-wave {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
+/* AI Avatar quantum effects */
+.ai-avatar-quantum {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.ai-avatar-quantum img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.ai-avatar-quantum::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  background: conic-gradient(from 0deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #ff006e);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: quantum-halo 4s ease-in-out infinite;
+  z-index: -1;
+  filter: blur(6px);
+}
+
+.ai-avatar-quantum::after {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.3), transparent 70%);
+  border-radius: 50%;
+  opacity: 0;
+  animation: consciousness-ring 4s ease-in-out infinite;
+  z-index: -2;
+}
+
+@keyframes quantum-halo {
+  0%, 100% { 
+    transform: scale(0.9) rotate(0deg); 
+    opacity: 0.8; 
+  }
+  50% { 
+    transform: scale(1.2) rotate(180deg); 
+    opacity: 1; 
+  }
+}
+
+@keyframes consciousness-ring {
+  0% { 
+    transform: scale(0.5); 
+    opacity: 0; 
+  }
+  50% { 
+    transform: scale(1.8); 
+    opacity: 0.6; 
+  }
+  100% { 
+    transform: scale(2.5); 
+    opacity: 0; 
+  }
+}
+
+/* Enhanced input field */
+.ai-input-enhanced {
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 0.95), 
+    rgba(248, 250, 252, 0.95)
+  );
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 16px 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-input-enhanced::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(45deg, 
+    transparent, 
+    rgba(59, 130, 246, 0.3), 
+    transparent,
+    rgba(131, 56, 236, 0.3),
+    transparent
+  );
+  background-size: 300% 300%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: subtract;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: subtract;
+  animation: border-flow 4s ease-in-out infinite;
+}
+
+.ai-input-enhanced:focus {
+  outline: none;
+  background: linear-gradient(135deg, 
+    rgba(255, 255, 255, 1), 
+    rgba(248, 250, 252, 1)
+  );
+  box-shadow: 
+    0 0 0 4px rgba(59, 130, 246, 0.1),
+    0 8px 32px rgba(59, 130, 246, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.ai-input-enhanced:focus::before {
+  background: var(--gradient-magical);
+  background-size: 200% 200%;
+  animation: cosmic-border 2.5s ease-in-out infinite;
+}
+
+@keyframes border-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes cosmic-border {
+  0%, 100% { background-position: 0% 0%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+}
+
+/* Send button quantum magic */
+.send-button-quantum {
+  position: relative;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  border: none;
+  border-radius: 16px;
+  padding: 16px 20px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  box-shadow: 
+    0 4px 20px rgba(59, 130, 246, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.send-button-quantum::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(255, 255, 255, 0.4) 90deg,
+    transparent 180deg,
+    rgba(255, 255, 255, 0.2) 270deg,
+    transparent 360deg
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: quantum-spin 4s linear infinite;
+}
+
+.send-button-quantum::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg, 
+    rgba(255, 0, 110, 0.1),
+    rgba(131, 56, 236, 0.1),
+    rgba(58, 134, 255, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: inherit;
+}
+
+.send-button-quantum:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  box-shadow: 
+    0 12px 40px rgba(59, 130, 246, 0.5),
+    0 0 30px rgba(59, 130, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.send-button-quantum:hover::before {
+  opacity: 1;
+  animation: quantum-spin 1.5s linear infinite;
+}
+
+.send-button-quantum:hover::after {
+  opacity: 1;
+}
+
+@keyframes quantum-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Additional spectacular keyframes for quantum effects */
+@keyframes quantum-border-active {
+  0%, 100% { 
+    transform: rotate(0deg); 
+    opacity: 0.6; 
+  }
+  50% { 
+    transform: rotate(180deg); 
+    opacity: 1; 
+  }
+}
+
+/* Enhanced message entrance animations */
+.message-bubble-enhanced {
+  animation: message-spectacular-enter 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.message-bubble-enhanced.user {
+  background: linear-gradient(135deg, 
+    rgba(59, 130, 246, 0.95), 
+    rgba(29, 78, 216, 0.95)
+  );
+  box-shadow: 
+    0 12px 40px rgba(59, 130, 246, 0.4),
+    0 0 30px rgba(59, 130, 246, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.message-bubble-enhanced.ai {
+  background: linear-gradient(135deg, 
+    rgba(248, 250, 252, 0.98), 
+    rgba(226, 232, 240, 0.98)
+  );
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    0 0 30px rgba(131, 56, 236, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.message-bubble-enhanced:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 
+    0 16px 50px rgba(0, 0, 0, 0.2),
+    0 0 40px rgba(59, 130, 246, 0.3);
+}
+
+/* Reality distortion effect */
+.reality-distortion {
+  position: relative;
+  overflow: hidden;
+}
+
+.reality-distortion::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(45deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.1) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%) skewX(-25deg);
+  transition: transform 0.8s ease;
+  pointer-events: none;
+}
+
+.reality-distortion:hover::before {
+  transform: translateX(100%) skewX(-25deg);
+}
+
+/* Dark mode enhancements */
+.dark .message-bubble-enhanced.ai {
+  background: linear-gradient(135deg, 
+    rgba(55, 65, 81, 0.95), 
+    rgba(75, 85, 99, 0.95)
+  );
+  color: #f9fafb;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(131, 56, 236, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.dark .input-field-spectacular {
+  background: linear-gradient(135deg, 
+    rgba(55, 65, 81, 0.95), 
+    rgba(75, 85, 99, 0.95)
+  );
+  color: #f9fafb;
+}
+
+.dark .input-field-spectacular:focus {
+  background: linear-gradient(135deg, 
+    rgba(55, 65, 81, 1), 
+    rgba(75, 85, 99, 1)
+  );
+}
+
+/* Accessibility and reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ai-chat-spectacular-entrance,
+  .quantum-particle-enhanced,
+  .neural-line,
+  .thinking-dot-spectacular,
+  .quantum-field,
+  .reality-distortion::before {
+    animation: none !important;
+  }
+  
+  .message-bubble-enhanced {
+    animation: none !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .message-bubble-enhanced.user {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .message-bubble-enhanced.ai {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
+  
+  .input-field-spectacular {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+  }
+  
+  .send-button-spectacular {
+    background: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+}
+
+/* Spectacular Wolf Startup Animation */
+.wolf-startup-animation {
+  position: fixed;
+  inset: 0;
+  z-index: 10499;
+  background: linear-gradient(135deg, 
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(17, 24, 39, 0.98) 25%,
+    rgba(55, 65, 81, 0.95) 50%,
+    rgba(17, 24, 39, 0.98) 75%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: startup-backdrop 3s ease-in-out;
+}
+
+.wolf-startup-animation::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 40%, rgba(131, 56, 236, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 0, 110, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 90% 90%, rgba(6, 255, 165, 0.1) 0%, transparent 50%);
+  animation: cosmic-energy 8s ease-in-out infinite;
+}
+
+@keyframes startup-backdrop {
+  0% {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+  10% {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+  }
+  90% {
+    opacity: 1;
+    backdrop-filter: blur(20px);
+  }
+  100% {
+    opacity: 0;
+    backdrop-filter: blur(0px);
+  }
+}
+
+@keyframes cosmic-energy {
+  0%, 100% { 
+    background-position: 0% 0%, 100% 0%, 0% 100%, 100% 100%;
+    opacity: 0.3; 
+  }
+  25% { 
+    background-position: 100% 0%, 0% 100%, 100% 0%, 0% 0%;
+    opacity: 0.6; 
+  }
+  50% { 
+    background-position: 100% 100%, 0% 0%, 100% 100%, 0% 0%;
+    opacity: 0.9; 
+  }
+  75% { 
+    background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%;
+    opacity: 0.6; 
+  }
+}
+
+/* Wolf Avatar Container */
+.wolf-avatar-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  animation: wolf-entrance 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes wolf-entrance {
+  0% {
+    transform: scale(0) rotate(-180deg);
+    opacity: 0;
+    filter: blur(20px) brightness(0);
+  }
+  25% {
+    transform: scale(0.5) rotate(-90deg);
+    opacity: 0.3;
+    filter: blur(15px) brightness(0.5);
+  }
+  50% {
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.7;
+    filter: blur(10px) brightness(0.8);
+  }
+  75% {
+    transform: scale(1.1) rotate(10deg);
+    opacity: 0.9;
+    filter: blur(5px) brightness(1.2);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+    filter: blur(0px) brightness(1);
+  }
+}
+
+/* Wolf Avatar with Energy Rings */
+.wolf-avatar-startup {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 
+    0 0 60px rgba(59, 130, 246, 0.6),
+    0 0 120px rgba(131, 56, 236, 0.4),
+    inset 0 0 60px rgba(255, 255, 255, 0.1);
+  animation: avatar-pulse 2s ease-in-out infinite;
+}
+
+.wolf-avatar-startup img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: avatar-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes avatar-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 
+      0 0 60px rgba(59, 130, 246, 0.6),
+      0 0 120px rgba(131, 56, 236, 0.4),
+      inset 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 
+      0 0 80px rgba(59, 130, 246, 0.8),
+      0 0 160px rgba(131, 56, 236, 0.6),
+      inset 0 0 80px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes avatar-glow {
+  0%, 100% {
+    filter: brightness(1) saturate(1) contrast(1);
+  }
+  50% {
+    filter: brightness(1.2) saturate(1.3) contrast(1.1);
+  }
+}
+
+/* Energy Rings Around Wolf */
+.energy-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  animation: ring-spin 3s linear infinite;
+}
+
+.energy-ring-1 {
+  inset: -20px;
+  background: conic-gradient(from 0deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #ff006e);
+  opacity: 0.8;
+  animation-duration: 3s;
+  filter: blur(2px);
+}
+
+.energy-ring-2 {
+  inset: -40px;
+  background: conic-gradient(from 180deg, #06ffa5, #3a86ff, #8338ec, #ff006e, #ffbe0b, #06ffa5);
+  opacity: 0.6;
+  animation-duration: 4s;
+  animation-direction: reverse;
+  filter: blur(3px);
+}
+
+.energy-ring-3 {
+  inset: -60px;
+  background: conic-gradient(from 90deg, #ffbe0b, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b);
+  opacity: 0.4;
+  animation-duration: 5s;
+  filter: blur(4px);
+}
+
+@keyframes ring-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Consciousness Particles */
+.consciousness-particles {
+  position: absolute;
+  inset: -100px;
+  pointer-events: none;
+}
+
+.consciousness-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: conic-gradient(from 0deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b, #ff006e);
+  border-radius: 50%;
+  opacity: 0;
+  animation: consciousness-float 4s ease-in-out infinite;
+  box-shadow: 0 0 20px currentColor;
+}
+
+.consciousness-particle::before {
+  content: '';
+  position: absolute;
+  inset: -100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent 70%);
+  border-radius: 50%;
+  animation: particle-glow 2s ease-in-out infinite;
+}
+
+@keyframes consciousness-float {
+  0%, 100% {
+    transform: translate(var(--start-x, 0), var(--start-y, 0)) scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  25% {
+    transform: translate(var(--mid-x, 100px), var(--mid-y, -100px)) scale(1) rotate(90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(var(--end-x, 200px), var(--end-y, -200px)) scale(1.2) rotate(180deg);
+    opacity: 0.8;
+  }
+  75% {
+    transform: translate(var(--final-x, 300px), var(--final-y, -300px)) scale(0.8) rotate(270deg);
+    opacity: 0.4;
+  }
+}
+
+@keyframes particle-glow {
+  0%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+/* Startup Text Animation */
+.wolf-startup-text {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  animation: text-emerge 3s ease-out 1s;
+  opacity: 0;
+}
+
+.wolf-startup-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text 3s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+.wolf-startup-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  letter-spacing: 2px;
+  animation: subtitle-glow 2s ease-in-out infinite;
+}
+
+@keyframes text-emerge {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(50px);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateX(-50%) translateY(0px);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0px);
+    filter: blur(0px);
+  }
+}
+
+@keyframes rainbow-text {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes subtitle-glow {
+  0%, 100% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    opacity: 0.8;
+  }
+  50% {
+    text-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    opacity: 1;
+  }
+}
+
+/* Neural Network Background */
+.neural-network-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.neural-connection {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom, 
+    transparent, 
+    rgba(59, 130, 246, 0.6), 
+    transparent
+  );
+  animation: neural-pulse 3s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+.neural-connection:nth-child(1) {
+  left: 10%;
+  top: 20%;
+  animation-delay: 0s;
+  background: linear-gradient(to bottom, transparent, rgba(255, 0, 110, 0.6), transparent);
+}
+
+.neural-connection:nth-child(2) {
+  left: 30%;
+  top: 40%;
+  animation-delay: 0.5s;
+  background: linear-gradient(to bottom, transparent, rgba(131, 56, 236, 0.6), transparent);
+}
+
+.neural-connection:nth-child(3) {
+  left: 50%;
+  top: 10%;
+  animation-delay: 1s;
+  background: linear-gradient(to bottom, transparent, rgba(58, 134, 255, 0.6), transparent);
+}
+
+.neural-connection:nth-child(4) {
+  left: 70%;
+  top: 30%;
+  animation-delay: 1.5s;
+  background: linear-gradient(to bottom, transparent, rgba(6, 255, 165, 0.6), transparent);
+}
+
+.neural-connection:nth-child(5) {
+  left: 90%;
+  top: 50%;
+  animation-delay: 2s;
+  background: linear-gradient(to bottom, transparent, rgba(255, 190, 11, 0.6), transparent);
+}
+
+@keyframes neural-pulse {
+  0%, 100% {
+    opacity: 0;
+    transform: scaleY(0) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1) rotate(5deg);
+  }
+}
+
+/* Energy Burst Effect */
+.energy-burst {
+  position: absolute;
+  inset: -150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, 
+    rgba(255, 0, 110, 0.3) 0%,
+    rgba(131, 56, 236, 0.2) 25%,
+    rgba(58, 134, 255, 0.2) 50%,
+    rgba(6, 255, 165, 0.1) 75%,
+    transparent 100%
+  );
+  animation: energy-burst-pulse 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes energy-burst-pulse {
+  0%, 100% {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+/* Loading Progress Indicator */
+.wolf-loading-progress {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.wolf-loading-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #ff006e, #8338ec, #3a86ff, #06ffa5, #ffbe0b);
+  background-size: 200% 100%;
+  border-radius: 2px;
+  animation: loading-progress 3s ease-out, rainbow-loading 2s ease-in-out infinite;
+  transform-origin: left;
+}
+
+@keyframes loading-progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rainbow-loading {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Fade out animation */
+.wolf-startup-animation.fade-out {
+  animation: startup-fade-out 0.8s ease-in-out forwards;
+}
+
+@keyframes startup-fade-out {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+    filter: blur(10px);
+  }
+}
+
+/* 🚀 REVOLUTIONARY AI STARTUP ANIMATION - COMPLETELY UNIQUE! */
+
+/* Main startup animation trigger */
+.ai-chat-revolutionary-startup {
+  animation: 
+    digital-genesis 4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    consciousness-birth 2s ease-out 4s,
+    neural-awakening 1.5s ease-out 6s;
+}
+
+/* 🌟 DIGITAL GENESIS - The AI comes to life from digital fragments */
+@keyframes digital-genesis {
+  0% {
+    transform: perspective(3000px) rotateX(-90deg) rotateY(-180deg) rotateZ(-45deg) scale(0.1);
+    opacity: 0;
+    filter: blur(100px) saturate(0) brightness(0) contrast(0);
+    box-shadow: none;
+    background: radial-gradient(circle, transparent, transparent);
+  }
+  
+  15% {
+    /* Digital fragments start forming */
+    transform: perspective(3000px) rotateX(-60deg) rotateY(-120deg) rotateZ(-30deg) scale(0.3);
+    opacity: 0.2;
+    filter: blur(80px) saturate(1) brightness(2) contrast(2);
+    box-shadow: 
+      0 0 300px rgba(0, 255, 255, 0.8),
+      0 0 600px rgba(255, 0, 255, 0.6),
+      inset 0 0 200px rgba(0, 255, 255, 0.4);
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.3), rgba(255, 0, 255, 0.1));
+  }
+  
+  30% {
+    /* Matrix-like code rain effect */
+    transform: perspective(3000px) rotateX(-30deg) rotateY(-60deg) rotateZ(-15deg) scale(0.5);
+    opacity: 0.4;
+    filter: blur(60px) saturate(2) brightness(3) contrast(3);
+    box-shadow: 
+      0 0 400px rgba(0, 255, 0, 0.9),
+      0 0 800px rgba(255, 255, 0, 0.7),
+      inset 0 0 300px rgba(0, 255, 0, 0.5);
+    background: 
+      linear-gradient(90deg, transparent 0%, rgba(0, 255, 0, 0.3) 50%, transparent 100%),
+      linear-gradient(0deg, transparent 0%, rgba(255, 255, 0, 0.2) 50%, transparent 100%);
+  }
+  
+  45% {
+    /* Quantum entanglement phase */
+    transform: perspective(3000px) rotateX(-15deg) rotateY(-30deg) rotateZ(-7deg) scale(0.7);
+    opacity: 0.6;
+    filter: blur(40px) saturate(3) brightness(4) contrast(4);
+    box-shadow: 
+      0 0 500px rgba(138, 43, 226, 1),
+      0 0 1000px rgba(75, 0, 130, 0.8),
+      inset 0 0 400px rgba(138, 43, 226, 0.6);
+    background: 
+      conic-gradient(from 0deg, 
+        rgba(138, 43, 226, 0.4) 0deg,
+        rgba(75, 0, 130, 0.3) 60deg,
+        rgba(255, 20, 147, 0.4) 120deg,
+        rgba(0, 191, 255, 0.3) 180deg,
+        rgba(50, 205, 50, 0.4) 240deg,
+        rgba(255, 165, 0, 0.3) 300deg,
+        rgba(138, 43, 226, 0.4) 360deg
+      );
+  }
+  
+  60% {
+    /* AI consciousness sparks */
+    transform: perspective(3000px) rotateX(-7deg) rotateY(-15deg) rotateZ(-3deg) scale(0.85);
+    opacity: 0.8;
+    filter: blur(20px) saturate(4) brightness(5) contrast(5);
+    box-shadow: 
+      0 0 600px rgba(255, 215, 0, 1),
+      0 0 1200px rgba(255, 69, 0, 0.9),
+      inset 0 0 500px rgba(255, 215, 0, 0.7);
+    background: 
+      radial-gradient(ellipse at center, 
+        rgba(255, 215, 0, 0.5) 0%,
+        rgba(255, 69, 0, 0.4) 30%,
+        rgba(255, 20, 147, 0.3) 60%,
+        transparent 100%
+      );
+  }
+  
+  75% {
+    /* Neural network formation */
+    transform: perspective(3000px) rotateX(-3deg) rotateY(-7deg) rotateZ(-1deg) scale(0.95);
+    opacity: 0.9;
+    filter: blur(10px) saturate(5) brightness(6) contrast(6);
+    box-shadow: 
+      0 0 700px rgba(0, 255, 255, 1),
+      0 0 1400px rgba(255, 0, 255, 1),
+      inset 0 0 600px rgba(0, 255, 255, 0.8);
+    background: 
+      linear-gradient(45deg,
+        rgba(0, 255, 255, 0.3) 0%,
+        rgba(255, 0, 255, 0.2) 25%,
+        rgba(255, 255, 0, 0.3) 50%,
+        rgba(0, 255, 0, 0.2) 75%,
+        rgba(0, 255, 255, 0.3) 100%
+      );
+  }
+  
+  90% {
+    /* Almost ready - energy consolidation */
+    transform: perspective(3000px) rotateX(-1deg) rotateY(-3deg) rotateZ(0deg) scale(1.02);
+    opacity: 0.95;
+    filter: blur(5px) saturate(3) brightness(3) contrast(3);
+    box-shadow: 
+      0 0 400px rgba(138, 43, 226, 0.8),
+      0 0 800px rgba(75, 0, 130, 0.6),
+      inset 0 0 300px rgba(138, 43, 226, 0.4);
+  }
+  
+  100% {
+    /* AI is born! */
+    transform: perspective(3000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+    opacity: 1;
+    filter: blur(0px) saturate(1) brightness(1) contrast(1);
+    box-shadow: 
+      0 25px 50px rgba(0, 0, 0, 0.25),
+      0 0 60px rgba(59, 130, 246, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+/* 🧠 CONSCIOUSNESS BIRTH - AI gains awareness */
+@keyframes consciousness-birth {
+  0% {
+    background: rgba(255, 255, 255, 0.03);
+  }
+  
+  25% {
+    background: 
+      radial-gradient(circle at 30% 30%, rgba(138, 43, 226, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(75, 0, 130, 0.08) 0%, transparent 50%),
+      rgba(255, 255, 255, 0.03);
+  }
+  
+  50% {
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(255, 20, 147, 0.12) 0%, transparent 60%),
+      radial-gradient(circle at 80% 20%, rgba(0, 191, 255, 0.1) 0%, transparent 60%),
+      radial-gradient(circle at 50% 50%, rgba(50, 205, 50, 0.08) 0%, transparent 40%),
+      rgba(255, 255, 255, 0.03);
+  }
+  
+  75% {
+    background: 
+      radial-gradient(circle at 10% 50%, rgba(255, 165, 0, 0.1) 0%, transparent 70%),
+      radial-gradient(circle at 90% 50%, rgba(255, 69, 0, 0.08) 0%, transparent 70%),
+      radial-gradient(circle at 50% 10%, rgba(138, 43, 226, 0.06) 0%, transparent 50%),
+      radial-gradient(circle at 50% 90%, rgba(75, 0, 130, 0.06) 0%, transparent 50%),
+      rgba(255, 255, 255, 0.03);
+  }
+  
+  100% {
+    background: rgba(255, 255, 255, 0.03);
+  }
+}
+
+/* ⚡ NEURAL AWAKENING - Final activation sequence */
+@keyframes neural-awakening {
+  0% {
+    border: 2px solid transparent;
+  }
+  
+  20% {
+    border: 2px solid rgba(0, 255, 255, 0.6);
+    box-shadow: 
+      0 0 100px rgba(0, 255, 255, 0.4),
+      inset 0 0 50px rgba(0, 255, 255, 0.2);
+  }
+  
+  40% {
+    border: 2px solid rgba(255, 0, 255, 0.6);
+    box-shadow: 
+      0 0 120px rgba(255, 0, 255, 0.4),
+      inset 0 0 60px rgba(255, 0, 255, 0.2);
+  }
+  
+  60% {
+    border: 2px solid rgba(255, 255, 0, 0.6);
+    box-shadow: 
+      0 0 140px rgba(255, 255, 0, 0.4),
+      inset 0 0 70px rgba(255, 255, 0, 0.2);
+  }
+  
+  80% {
+    border: 2px solid rgba(0, 255, 0, 0.6);
+    box-shadow: 
+      0 0 160px rgba(0, 255, 0, 0.4),
+      inset 0 0 80px rgba(0, 255, 0, 0.2);
+  }
+  
+  100% {
+    border: 2px solid transparent;
+    box-shadow: 
+      0 25px 50px rgba(0, 0, 0, 0.25),
+      0 0 60px rgba(59, 130, 246, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* 🌈 DIGITAL RAIN EFFECT - Matrix-style background during startup */
+.digital-rain-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.digital-rain-drop {
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  background: linear-gradient(to bottom, 
+    transparent 0%,
+    rgba(0, 255, 0, 0.8) 20%,
+    rgba(0, 255, 0, 1) 50%,
+    rgba(0, 255, 0, 0.8) 80%,
+    transparent 100%
+  );
+  animation: digital-rain-fall 3s linear infinite;
+  opacity: 0;
+  filter: blur(0.5px);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+@keyframes digital-rain-fall {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px));
+    opacity: 0;
+  }
+}
+
+/* 💫 QUANTUM FRACTAL EFFECTS */
+.quantum-fractal-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.quantum-fractal {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: conic-gradient(from 0deg, 
+    rgba(138, 43, 226, 1) 0deg,
+    rgba(75, 0, 130, 0.8) 60deg,
+    rgba(255, 20, 147, 1) 120deg,
+    rgba(0, 191, 255, 0.8) 180deg,
+    rgba(50, 205, 50, 1) 240deg,
+    rgba(255, 165, 0, 0.8) 300deg,
+    rgba(138, 43, 226, 1) 360deg
+  );
+  border-radius: 50%;
+  animation: quantum-fractal-dance 5s ease-in-out infinite;
+  box-shadow: 
+    0 0 20px currentColor,
+    0 0 40px rgba(255, 255, 255, 0.6);
+}
+
+.quantum-fractal::before {
+  content: '';
+  position: absolute;
+  inset: -300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9), transparent 60%);
+  border-radius: 50%;
+  animation: quantum-fractal-glow 2s ease-in-out infinite;
+}
+
+.quantum-fractal::after {
+  content: '';
+  position: absolute;
+  inset: -150%;
+  background: conic-gradient(from 0deg, 
+    transparent 0deg,
+    rgba(255, 255, 255, 0.6) 90deg,
+    transparent 180deg,
+    rgba(255, 255, 255, 0.4) 270deg,
+    transparent 360deg
+  );
+  border-radius: 50%;
+  animation: quantum-fractal-spin 3s linear infinite;
+}
+
+@keyframes quantum-fractal-dance {
+  0%, 100% {
+    transform: translate(var(--start-x, 0), var(--start-y, 0)) scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(var(--p1-x, 100px), var(--p1-y, -50px)) scale(0.5) rotate(36deg);
+    opacity: 0.4;
+  }
+  20% {
+    transform: translate(var(--p2-x, 200px), var(--p2-y, -100px)) scale(1) rotate(72deg);
+    opacity: 0.8;
+  }
+  30% {
+    transform: translate(var(--p3-x, 150px), var(--p3-y, -150px)) scale(1.5) rotate(108deg);
+    opacity: 1;
+  }
+  40% {
+    transform: translate(var(--p4-x, 50px), var(--p4-y, -200px)) scale(1.2) rotate(144deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(var(--p5-x, -50px), var(--p5-y, -150px)) scale(1.8) rotate(180deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translate(var(--p6-x, -150px), var(--p6-y, -100px)) scale(1.3) rotate(216deg);
+    opacity: 0.8;
+  }
+  70% {
+    transform: translate(var(--p7-x, -100px), var(--p7-y, -50px)) scale(1) rotate(252deg);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translate(var(--p8-x, -50px), var(--p8-y, 0px)) scale(0.7) rotate(288deg);
+    opacity: 0.4;
+  }
+  90% {
+    transform: translate(var(--p9-x, 0px), var(--p9-y, 50px)) scale(0.3) rotate(324deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes quantum-fractal-glow {
+  0%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+@keyframes quantum-fractal-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 🔮 HOLOGRAPHIC EMERGENCE EFFECTS */
+.holographic-emergence {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(45deg, transparent 40%, rgba(0, 255, 255, 0.05) 50%, transparent 60%),
+    linear-gradient(-45deg, transparent 40%, rgba(255, 0, 255, 0.05) 50%, transparent 60%),
+    linear-gradient(90deg, transparent 40%, rgba(255, 255, 0, 0.05) 50%, transparent 60%),
+    linear-gradient(0deg, transparent 40%, rgba(0, 255, 0, 0.05) 50%, transparent 60%);
+  background-size: 200% 200%, 200% 200%, 200% 200%, 200% 200%;
+  animation: holographic-emergence-flow 4s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 3;
+  border-radius: inherit;
+}
+
+@keyframes holographic-emergence-flow {
+  0%, 100% {
+    background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0%;
+    opacity: 0;
+  }
+  25% {
+    background-position: 100% 0%, 0% 100%, 100% 100%, 0% 0%;
+    opacity: 0.3;
+  }
+  50% {
+    background-position: 100% 100%, 0% 0%, 100% 0%, 0% 100%;
+    opacity: 0.6;
+  }
+  75% {
+    background-position: 0% 100%, 100% 0%, 0% 0%, 100% 100%;
+    opacity: 0.3;
+  }
+}
+
+/* 🎆 STARTUP COMPLETION BURST */
+.startup-completion-burst {
+  position: absolute;
+  inset: -50px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.completion-burst-particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #ffffff, #00ffff);
+  border-radius: 50%;
+  animation: completion-burst 1s ease-out forwards;
+  opacity: 0;
+  box-shadow: 0 0 20px currentColor;
+}
+
+@keyframes completion-burst {
+  0% {
+    transform: scale(0) translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5) translate(var(--burst-x, 100px), var(--burst-y, -100px));
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0) translate(var(--burst-x-end, 200px), var(--burst-y-end, -200px));
+    opacity: 0;
+  }
+}
+
+/* 🌟 REVOLUTIONARY THINKING INDICATOR */
+.ai-thinking-revolutionary {
+  position: relative;
+  padding: 24px;
+  background: linear-gradient(135deg, 
+    rgba(138, 43, 226, 0.15),
+    rgba(75, 0, 130, 0.12),
+    rgba(255, 20, 147, 0.15)
+  );
+  border-radius: 24px;
+  backdrop-filter: blur(25px);
+  border: 2px solid transparent;
+  overflow: hidden;
+}
+
+.ai-thinking-revolutionary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(from 0deg, 
+    rgba(138, 43, 226, 0.3) 0deg,
+    rgba(75, 0, 130, 0.2) 60deg,
+    rgba(255, 20, 147, 0.3) 120deg,
+    rgba(0, 191, 255, 0.2) 180deg,
+    rgba(50, 205, 50, 0.3) 240deg,
+    rgba(255, 165, 0, 0.2) 300deg,
+    rgba(138, 43, 226, 0.3) 360deg
+  );
+  border-radius: inherit;
+  animation: revolutionary-consciousness 4s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+@keyframes revolutionary-consciousness {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.7;
+  }
+  25% {
+    transform: scale(1.05) rotate(90deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg);
+    opacity: 1;
+  }
+  75% {
+    transform: scale(1.05) rotate(270deg);
+    opacity: 0.9;
+  }
+}
+
+/* 💫 REVOLUTIONARY THINKING DOTS */
+.thinking-dots-revolutionary {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+.thinking-dot-revolutionary {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  animation: revolutionary-neural-pulse 2.4s ease-in-out infinite;
+  position: relative;
+  box-shadow: 
+    0 0 25px currentColor,
+    0 0 50px rgba(255, 255, 255, 0.6);
+}
+
+.thinking-dot-revolutionary:nth-child(1) {
+  background: radial-gradient(circle, #ff1493, #8a2be2);
+  animation-delay: 0ms;
+}
+
+.thinking-dot-revolutionary:nth-child(2) {
+  background: radial-gradient(circle, #00bfff, #4b0082);
+  animation-delay: 400ms;
+}
+
+.thinking-dot-revolutionary:nth-child(3) {
+  background: radial-gradient(circle, #32cd32, #ffa500);
+  animation-delay: 800ms;
+}
+
+.thinking-dot-revolutionary::before {
+  content: '';
+  position: absolute;
+  inset: -200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent 60%);
+  border-radius: 50%;
+  animation: revolutionary-dot-glow 2.4s ease-in-out infinite;
+}
+
+.thinking-dot-revolutionary::after {
+  content: '';
+  position: absolute;
+  inset: -100%;
+  background: conic-gradient(from 0deg, 
+    transparent 0deg,
+    rgba(255, 255, 255, 0.6) 90deg,
+    transparent 180deg,
+    rgba(255, 255, 255, 0.4) 270deg,
+    transparent 360deg
+  );
+  border-radius: 50%;
+  animation: revolutionary-dot-spin 3s linear infinite;
+}
+
+@keyframes revolutionary-neural-pulse {
+  0%, 60%, 100% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-25px) scale(1.6) rotate(180deg);
+    opacity: 0.7;
+  }
+}
+
+@keyframes revolutionary-dot-glow {
+  0%, 60%, 100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  30% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+@keyframes revolutionary-dot-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* 🎯 STARTUP TRIGGER CLASSES */
+.ai-startup-trigger {
+  /* Add this class to trigger the startup animation */
+  animation: ai-chat-revolutionary-startup 7.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* 🔥 PERFORMANCE OPTIMIZATIONS */
+.revolutionary-startup-container {
+  transform: translateZ(0); /* Hardware acceleration */
+  will-change: transform, opacity, filter; /* Optimize for animations */
+  backface-visibility: hidden; /* Prevent flickering */
+}
+
+/* 🎨 ACCESSIBILITY & REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  .ai-chat-revolutionary-startup,
+  .digital-rain-drop,
+  .quantum-fractal,
+  .holographic-emergence,
+  .completion-burst-particle,
+  .thinking-dot-revolutionary {
+    animation: none !important;
+  }
+  
+  .ai-startup-trigger {
+    animation: simple-fade-in 1s ease-out !important;
+  }
+  
+  @keyframes simple-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}

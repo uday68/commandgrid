@@ -1,0 +1,27 @@
+{
+  "general": {
+    "unknown": "Ein unbekannter Fehler ist aufgetreten",
+    "serverError": "Serverfehler aufgetreten",
+    "connectionFailed": "Verbindung zum Server fehlgeschlagen",
+    "timeout": "Zeitüberschreitung der Anfrage",
+    "unauthorized": "Nicht autorisierter Zugriff",
+    "forbidden": "Zugriff verboten",
+    "notFound": "Ressource nicht gefunden",
+    "validationFailed": "Validierung fehlgeschlagen"
+  },
+  "auth": {
+    "invalidCredentials": "Ungültiger Benutzername oder Passwort",
+    "accountLocked": "Ihr Konto wurde gesperrt",
+    "sessionExpired": "Ihre Sitzung ist abgelaufen, bitte melden Sie sich erneut an",
+    "emailInUse": "E-Mail wird bereits verwendet",
+    "weakPassword": "Passwort ist zu schwach",
+    "loginRequired": "Sie müssen angemeldet sein, um diese Funktion zu nutzen"
+  },
+  "connection": {
+    "offline": "Sie sind derzeit offline",
+    "reconnecting": "Verbindung wird wiederhergestellt...",
+    "reconnected": "Verbindung wiederhergestellt",
+    "failed": "Verbindung fehlgeschlagen",
+    "realtimeConnection": "Echtzeit-Verbindungsfehler: {{error}}"
+  }
+}

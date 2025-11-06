@@ -1,0 +1,116 @@
+{
+  "errors": {
+    "somethingWentWrong": "कुछ गलत हो गया",
+    "projectCreationError": "प्रोजेक्ट बनाने में त्रुटि",
+    "taskCreationError": "टास्क बनाने में त्रुटि"
+  },
+  "stats": {
+    "totalUsers": "कुल उपयोगकर्ता",
+    "totalProjects": "कुल प्रोजेक्ट्स",
+    "totalTasks": "कुल टास्क",
+    "pendingTasks": "लंबित टास्क"
+  },
+  "projects": {
+    "title": "प्रोजेक्ट्स",
+    "new": "नया प्रोजेक्ट",
+    "team": "टीम",
+    "progress": "प्रगति",
+    "actions": "कार्य",
+    "members": "सदस्य",
+    "noProjects": "कोई प्रोजेक्ट उपलब्ध नहीं",
+    "noProjectsAvailable": "कोई प्रोजेक्ट उपलब्ध नहीं"
+  },
+  "tasks": {
+    "recentTasks": "हाल के टास्क",
+    "new": "नया टास्क",
+    "title": "शीर्षक",
+    "project": "प्रोजेक्ट",
+    "assignedTo": "असाइन किया गया",
+    "dueDate": "नियत तिथि",
+    "startDate": "प्रारंभ तिथि",
+    "noTasks": "कोई हाल का टास्क उपलब्ध नहीं",
+    "createNewTask": "नया टास्क बनाएं",
+    "priority": {
+      "low": "कम",
+      "medium": "मध्यम",
+      "high": "उच्च"
+    }
+  },
+  "tools": {
+    "title": "प्रशासनिक उपकरण",
+    "databaseBackup": "डेटाबेस बैकअप",
+    "exportData": "डेटा निर्यात करें",
+    "bulkImport": "थोक आयात",
+    "securityScan": "सुरक्षा स्कैन",
+    "printAllData": "सभी डेटा प्रिंट करें",
+    "processing": "प्रक्रिया जारी है...",
+    "backupFolderPath": "बैकअप फोल्डर पाथ",
+    "confirmBackup": "बैकअप की पुष्टि करें",
+    "output": "आउटपुट",
+    "usingCachedData": "पिछले सत्र से कैश किए गए डेटा का उपयोग"
+  },
+  "actionFailed": "क्रिया विफल",
+  "usingCachedData": "कैश डेटा का उपयोग",
+  "dashboard": {
+    "title": "व्यवस्थापक डैशबोर्ड",
+    "summary": "व्यवस्थापक अवलोकन",
+    "cards": {
+      "users": "उपयोगकर्ता",
+      "projects": "परियोजनाएँ",
+      "tasks": "कार्य",
+      "security": "सुरक्षा स्थिति"
+    },
+    "metrics": {
+      "active": "सक्रिय",
+      "completed": "पूर्ण",
+      "new": "नया",
+      "overdue": "अतिदेय",
+      "threats": "खतरे",
+      "vulnerabilities": "कमज़ोरियां"
+    },
+    "sections": {
+      "keyMetrics": "प्रमुख मापदंड",
+      "activityCharts": "गतिविधि चार्ट",
+      "systemHealth": "सिस्टम स्वास्थ्य",
+      "recentActivity": "हाल की गतिविधि",
+      "teamAndEvents": "टीम और घटनाएँ"
+    },
+    "charts": {
+      "active": "सक्रिय",
+      "completed": "पूर्ण",
+      "pending": "लंबित",
+      "projectStatusDistribution": "परियोजना स्थिति वितरण",
+      "taskCompletion": "कार्य पूर्णता",
+      "userActivity": "उपयोगकर्ता गतिविधि",
+      "taskTrend": "कार्य पूर्णता प्रवृत्ति",
+      "tasksCreated": "बनाए गए कार्य",
+      "tasksCompleted": "पूर्ण किए गए कार्य",
+      "activeUsers": "सक्रिय उपयोगकर्ता"
+    },
+    "system": {
+      "cpu": "CPU उपयोग",
+      "memory": "मेमोरी उपयोग",
+      "disk": "डिस्क स्पेस",
+      "uptime": "अपटाइम",
+      "days": "दिन",
+      "temperature": "तापमान",
+      "services": "सेवाएँ",
+      "lastReboot": "अंतिम रीबूट",
+      "networkIn": "नेटवर्क इन",
+      "networkOut": "नेटवर्क आउट"
+    },
+    "noActivity": "कोई हालिया गतिविधि नहीं",
+    "view": "देखें",
+    "viewAll": "सभी देखें",
+    "loadError": "डैशबोर्ड डेटा लोड करने में विफल",
+    "retry": "पुनः प्रयास करें",
+    "teamStatus": "टीम स्थिति",
+    "activeMembers": "सक्रिय सदस्य",
+    "projectProgress": "परियोजना प्रगति",
+    "manageTeam": "टीम प्रबंधित करें",
+    "upcomingEvents": "आगामी घटनाएँ",
+    "attendees": "प्रतिभागी",
+    "viewDetails": "विवरण देखें",
+    "viewCalendar": "कैलेंडर देखें"
+  }
+}

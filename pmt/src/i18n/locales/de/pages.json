@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "Projektmanagement-Tool"
+  },
+  "home": {
+    "title": "Startseite",
+    "welcome": "Willkommen beim Projektmanagement-Tool",
+    "getStarted": "Loslegen"
+  },
+  "login": {
+    "title": "Anmeldung - Projektmanagement-Tool",
+    "username": "Benutzername",
+    "password": "Passwort",
+    "submit": "Anmelden",
+    "forgotPassword": "Passwort vergessen?",
+    "registerPrompt": "Noch kein Konto? Registrieren"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Willkommen, {{name}}",
+    "projects": "Projekte",
+    "tasks": "Aufgaben",
+    "meetings": "Meetings",
+    "reports": "Berichte",
+    "teams": "Teams"
+  },
+  "projects": {
+    "title": "Projekte",
+    "addProject": "Projekt hinzufügen",
+    "editProject": "Projekt bearbeiten",
+    "deleteProject": "Projekt löschen"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Mi Perfil",
+  "editProfile": "Editar Perfil",
+  "save": "Guardar Cambios",
+  "cancel": "Cancelar",
+  "loading": "Cargando perfil...",
+  "verified": "Cuenta Verificada",
+  "personalDetails": "Datos Personales",
+  "security": "Seguridad y Contraseña",
+  "name": "Nombre Completo",
+  "email": "Correo Electrónico",
+  "phone": "Número de Teléfono",
+  "location": "Ubicación",
+  "company": "Empresa",
+  "language": "Idioma Preferido",
+  "memberSince": "Miembro Desde",
+  "lastPasswordChange": "Último Cambio de Contraseña",
+  "changePassword": "Cambiar Contraseña",
+  "currentPassword": "Contraseña Actual",
+  "newPassword": "Nueva Contraseña",
+  "confirmPassword": "Confirmar Contraseña",
+  "notSpecified": "No Especificado",
+  "notProvided": "No Proporcionado",
+  "notAvailable": "No Disponible",
+  "success": {
+    "profileUpdated": "Perfil actualizado exitosamente",
+    "avatarUpdated": "Foto de perfil actualizada exitosamente",
+    "passwordChanged": "Contraseña cambiada exitosamente"
+  },
+  "errors": {
+    "fetchFailed": "No se pudieron cargar los datos del perfil",
+    "updateFailed": "Error al actualizar el perfil",
+    "passwordsMismatch": "Las contraseñas no coinciden",
+    "avatarUploadFailed": "Error al subir la foto de perfil",
+    "invalidCurrentPassword": "La contraseña actual es incorrecta",
+    "weakPassword": "La contraseña debe tener al menos 8 caracteres con letras y números"
+  }
+}

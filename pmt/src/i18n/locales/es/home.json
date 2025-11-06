@@ -1,0 +1,178 @@
+{
+  "hero": {
+    "title": "Gestión de Proyectos Impulsada por IA para Equipos de Alto Rendimiento",
+    "subtitle": "La plataforma inteligente que ayuda a los equipos a automatizar tareas rutinarias, predecir obstáculos y completar proyectos más rápida y eficientemente.",
+    "getStarted": "Comenzar",
+    "bookDemo": "Reservar una Demo",
+    "tryAI": "Probar Asistente IA",
+    "joinCommunity": "Unirse a nuestra Comunidad",
+    "kanban": "Kanban",
+    "table": "Tabla",
+    "timeline": "Línea de Tiempo",
+    "kanbanPreview": "Visualice su Flujo de Trabajo",
+    "tablePreview": "Rastree Todos los Detalles del Proyecto",
+    "timelinePreview": "Monitoree la Línea de Tiempo del Proyecto"
+  },
+  "features": {
+    "title": "Características Principales",
+    "subtitle": "Construido para equipos modernos con herramientas potentes para mejorar la colaboración y productividad",
+    "showDetails": "Mostrar Detalles",
+    "hideDetails": "Ocultar Detalles",
+    "ai": {
+      "title": "Asistente de IA",
+      "desc": "Orientación inteligente sobre tareas, plazos y recursos",
+      "details": {
+        "1": "Recomendaciones inteligentes de tareas basadas en la carga de trabajo actual",
+        "2": "Estimación automática de tiempo utilizando datos históricos",
+        "3": "Identificación de riesgos antes de que surjan problemas",
+        "4": "Resumen de reuniones y extracción de elementos de acción"
+      },
+      "enhancedTitle": "Capacidades Avanzadas de IA",
+      "enhancedSubtitle": "Funcionalidades completas de IA para transformar tu experiencia de gestión de proyectos",
+      "allFeatures": "Todas las Características",
+      "projectManagement": "Gestión de Proyectos",
+      "teamCollaboration": "Colaboración de Equipo",
+      "intelligentAnalytics": "Análisis Inteligente",
+      "systemIntegrations": "Integraciones",
+      "exploreFeatures": "Explorar Todas las Características de IA"
+    },
+    "workflows": {
+      "title": "Flujos de Trabajo Inteligentes",
+      "desc": "Automatiza tareas rutinarias y garantiza la consistencia del proyecto",
+      "details": {
+        "1": "Plantillas de flujo de trabajo personalizadas para diferentes tipos de proyectos",
+        "2": "Asignaciones automáticas de tareas basadas en habilidades del equipo",
+        "3": "Dependencias de tareas secuenciales y paralelas"
+      }
+    },
+    "military": {
+      "title": "Seguridad de Nivel Militar",
+      "desc": "Protección de nivel empresarial para tus datos de proyecto sensibles",
+      "details": {
+        "1": "Encriptación de extremo a extremo para todos los datos del proyecto",
+        "2": "Control de acceso basado en roles con registros de auditoría detallados",
+        "3": "Cumplimiento con los principales estándares de seguridad incluyendo GDPR y HIPAA"
+      }
+    },
+    "integrations": {
+      "title": "Integraciones Perfectas",
+      "desc": "Conéctate con tus herramientas y flujos de trabajo favoritos",
+      "details": {
+        "1": "Integración nativa con GitHub, Slack y Google Workspace",
+        "2": "API robusta para integraciones personalizadas",
+        "3": "Capacidades de importación/exportación para migración de proyectos"
+      }
+    }
+  },
+  "results": {
+    "title": "Resultados Reales para Equipos Como el Tuyo",
+    "faster": "Finalización de Proyectos 35% Más Rápida",
+    "saved": "Reducción de Costos del 28%",
+    "earlyWarning": "87% de Problemas Identificados Tempranamente"
+  },
+  "technical": {
+    "title": "Excelencia Técnica",
+    "cognitive": "Asistente de IA Cognitivo",
+    "multiagent": "Colaboración Multi-Agente",
+    "realtime": "Análisis en Tiempo Real",
+    "predictive": "Evaluación Predictiva de Riesgos",
+    "enterprise": "Seguridad de Nivel Empresarial"
+  },
+  "usecases": {
+    "title": "Historias de Éxito",
+    "executives": "Liderazgo Ejecutivo",
+    "executivesCase": "\"Necesitábamos una manera de entender rápidamente el estado del proyecto en 12 equipos\"",
+    "executivesResult": "Los paneles ejecutivos proporcionan visibilidad instantánea de las métricas de salud del proyecto y posibles cuellos de botella, ahorrando 5 horas semanales en reuniones de estado.",
+    "engineers": "Equipos de Ingeniería",
+    "engineersCase": "\"La gestión de tareas en múltiples repositorios se estaba volviendo caótica\"",
+    "engineersResult": "La integración con sistemas de control de versiones crea actualizaciones automáticas de tareas, reduciendo el seguimiento manual en un 40% y mejorando el tiempo de entrega de código.",
+    "pms": "Gerentes de Proyecto",
+    "pmsCase": "\"Pronosticar cronogramas con precisión era nuestro mayor desafío\"",
+    "pmsResult": "La estimación impulsada por IA mejoró la precisión de predicción en un 65%, permitiendo compromisos más confiables con los clientes y mejor asignación de recursos."
+  },
+  "roi": {
+    "title": "El Valor que Entregamos",
+    "standups": {
+      "before": "15 minutos por persona diariamente",
+      "after": "5 minutos por persona diariamente"
+    },
+    "risk": {
+      "before": "Encontrado en etapas tardías",
+      "after": "Predicho antes del impacto"
+    },
+    "reports": {
+      "before": "4 horas para preparar semanalmente",
+      "after": "Generado automáticamente"
+    },
+    "enhancedTitle": "Impacto en el Mundo Real",
+    "enhancedSubtitle": "Resultados medibles que nuestra plataforma impulsada por IA entrega",
+    "downloadReport": "Descargar Informe Completo de ROI",
+    "enhancedProductivity": {
+      "metric": "68%",
+      "desc": "de aumento en la productividad del equipo con orientación de tareas por IA"
+    },
+    "costSavings": {
+      "metric": "42%",
+      "desc": "de reducción en costos de proyecto a través de la optimización de recursos por IA"
+    },
+    "riskReduction": {
+      "metric": "76%",
+      "desc": "de riesgos potenciales de proyecto identificados antes de que impacten el cronograma"
+    },
+    "timeToMarket": {
+      "metric": "55%",
+      "desc": "más rápido tiempo de salida al mercado con automatización de flujo de trabajo por IA"
+    }
+  },
+  "perfectFor": {
+    "title": "Perfecto Para",
+    "scaleups": "Startups en Crecimiento",
+    "distributed": "Equipos Distribuidos",
+    "gov": "Proyectos Gubernamentales",
+    "vc": "Gestión de Portafolio de VC"
+  },
+  "difference": {
+    "title": "La Diferencia IntelliFlow",
+    "quote": "A diferencia de las herramientas tradicionales de gestión de proyectos, aprovechamos la inteligencia artificial para no solo rastrear el trabajo sino guiarlo activamente hacia una finalización exitosa."
+  },
+  "cta": {
+    "title": "¿Listo para transformar tu gestión de proyectos?",
+    "demo": "Reservar una Demo",
+    "playground": "Probar el Playground de IA"
+  },
+  "pricing": {
+    "title": "Precios Simples y Transparentes",
+    "subtitle": "Elige el plan adecuado para tu equipo",
+    "starter": {
+      "title": "Inicial"
+    },
+    "pro": {
+      "title": "Profesional"
+    },
+    "enterprise": {
+      "title": "Empresarial"
+    },
+    "mostPopular": "Más Popular",
+    "contactSales": "Contactar Ventas",
+    "getStarted": "Comenzar",
+    "getTrial": "Iniciar Prueba Gratuita",
+    "compareFeatures": "Comparar Características",
+    "roiCalculator": {
+      "title": "Calcula Tu ROI",
+      "subtitle": "Mira cuánto tiempo y dinero podrías ahorrar usando nuestra plataforma. Nuestros clientes típicos ven ROI en semanas, no en meses.",
+      "cta": "Calcula Tus Ahorros"
+    },
+    "testimonials": {
+      "title": "Lo que Dicen Nuestros Clientes"
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes"
+    },
+    "finalCta": {
+      "title": "¿Listo para Comenzar?",
+      "subtitle": "Únete a miles de equipos que han transformado su enfoque de gestión de proyectos y han visto un ROI increíble.",
+      "trial": "Inicia Tu Prueba Gratuita",
+      "sales": "Hablar con Ventas"
+    }
+  }
+}

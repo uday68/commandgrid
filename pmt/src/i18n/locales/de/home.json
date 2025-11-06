@@ -1,0 +1,172 @@
+{
+  "home": {
+    "hero": {
+      "title": "KI-gestützte Projektmanagement für Hochleistungsteams",
+      "subtitle": "Die intelligente Plattform, die Teams hilft, Routineaufgaben zu automatisieren, Hindernisse vorherzusagen und Projekte schneller und effizienter abzuschließen.",
+      "getStarted": "Loslegen",
+      "bookDemo": "Demo buchen",
+      "tryAI": "KI-Assistent testen",
+      "joinCommunity": "Unserer Community beitreten",
+      "kanban": "Kanban",
+      "table": "Tabelle",
+      "timeline": "Zeitlinie",
+      "kanbanPreview": "Visualisieren Sie Ihren Arbeitsablauf",
+      "tablePreview": "Verfolgen Sie alle Projektdetails",
+      "timelinePreview": "Überwachen Sie die Projektzeitlinie"
+    }
+  },
+  "features": {
+    "title": "Kernfunktionen",
+    "subtitle": "Entwickelt für moderne Teams mit leistungsstarken Tools zur Verbesserung der Zusammenarbeit und Produktivität",
+    "showDetails": "Details anzeigen",
+    "hideDetails": "Details ausblenden",
+    "ai": {
+      "title": "KI-Assistent",
+      "desc": "Intelligente Anleitung zu Aufgaben, Zeitplänen und Ressourcen",
+      "details": {
+        "1": "Intelligente Aufgabenempfehlungen basierend auf der aktuellen Arbeitsbelastung",
+        "2": "Automatische Zeitschätzung anhand historischer Daten",
+        "3": "Risikoidentifizierung bevor Probleme auftreten",
+        "4": "Zusammenfassung von Besprechungen und Extrahierung von Aktionspunkten"
+      }
+    },
+    "workflows": {
+      "title": "Intelligente Workflows",
+      "desc": "Automatisieren Sie Routineaufgaben und gewährleisten Sie Projektkonsistenz",
+      "details": {
+        "1": "Benutzerdefinierte Workflow-Vorlagen für verschiedene Projektarten",
+        "2": "Automatische Aufgabenzuweisungen basierend auf Teamfähigkeiten",
+        "3": "Sequentielle und parallele Aufgabenabhängigkeiten"
+      }
+    },
+    "military": {
+      "title": "Militärische Sicherheit",
+      "desc": "Unternehmensweiter Schutz für Ihre sensiblen Projektdaten",
+      "details": {
+        "1": "Ende-zu-Ende-Verschlüsselung für alle Projektdaten",
+        "2": "Rollenbasierte Zugriffskontrolle mit detaillierten Audit-Logs",
+        "3": "Einhaltung wichtiger Sicherheitsstandards, einschließlich DSGVO und HIPAA"
+      }
+    },
+    "integrations": {
+      "title": "Nahtlose Integrationen",
+      "desc": "Verbinden Sie sich mit Ihren bevorzugten Tools und Workflows",
+      "details": {
+        "1": "Native Integration mit GitHub, Slack und Google Workspace",
+        "2": "Robuste API für benutzerdefinierte Integrationen",
+        "3": "Import-/Export-Funktionen für Projektmigration"
+      }
+    }
+  },
+  "results": {
+    "title": "Echte Ergebnisse für Teams wie Ihres",
+    "faster": "35% schnellerer Projektabschluss",
+    "saved": "28% Kostenreduzierung",
+    "earlyWarning": "87% der Probleme frühzeitig identifiziert"
+  },
+  "technical": {
+    "title": "Technische Exzellenz",
+    "cognitive": "Kognitiver KI-Assistent",
+    "multiagent": "Multi-Agenten-Zusammenarbeit",
+    "realtime": "Echtzeit-Analytik",
+    "predictive": "Prädiktive Risikobewertung",
+    "enterprise": "Unternehmenssicherheit"
+  },
+  "usecases": {
+    "title": "Erfolgsgeschichten",
+    "executives": "Führungskräfte",
+    "executivesCase": "\"Wir brauchten eine Möglichkeit, den Projektstatus über 12 Teams hinweg schnell zu verstehen\"",
+    "executivesResult": "Executive-Dashboards bieten sofortige Einblicke in Projektgesundheitsmetriken und potenzielle Engpässe und sparen wöchentlich 5 Stunden in Statusbesprechungen.",
+    "engineers": "Entwicklerteams",
+    "engineersCase": "\"Die Verwaltung von Aufgaben über mehrere Repositories wurde chaotisch\"",
+    "engineersResult": "Die Integration mit Versionskontrollsystemen erstellt automatische Aufgabenaktualisierungen, reduziert die manuelle Nachverfolgung um 40% und verbessert die Code-Lieferzeit.",
+    "pms": "Projektmanager",
+    "pmsCase": "\"Die genaue Vorhersage von Zeitplänen war unsere größte Herausforderung\"",
+    "pmsResult": "KI-gestützte Schätzung verbesserte die Prognosegenauigkeit um 65%, ermöglichte zuverlässigere Kundenverpflichtungen und bessere Ressourcenzuweisung."
+  },
+  "roi": {
+    "title": "Der Wert, den wir liefern",
+    "standups": {
+      "before": "15 Minuten pro Person täglich",
+      "after": "5 Minuten pro Person täglich"
+    },
+    "risk": {
+      "before": "In späten Phasen gefunden",
+      "after": "Vor Auswirkung vorhergesagt"
+    },
+    "reports": {
+      "before": "4 Stunden wöchentliche Vorbereitung",
+      "after": "Automatisch generiert"
+    },
+    "enhancedTitle": "Reale Auswirkungen",
+    "enhancedSubtitle": "Messbare Ergebnisse, die unsere KI-gestützte Plattform liefert",
+    "downloadReport": "Vollständigen ROI-Bericht herunterladen",
+    "enhancedProductivity": {
+      "metric": "68%",
+      "desc": "Steigerung der Teamproduktivität mit KI-Aufgabenführung"
+    },
+    "costSavings": {
+      "metric": "42%",
+      "desc": "Reduzierung der Projektkosten durch KI-Ressourcenoptimierung"
+    },
+    "riskReduction": {
+      "metric": "76%",
+      "desc": "der potenziellen Projektrisiken identifiziert, bevor sie sich auf den Zeitplan auswirken"
+    },
+    "timeToMarket": {
+      "metric": "55%",
+      "desc": "schnellere Markteinführung mit KI-Workflow-Automatisierung"
+    }
+  },
+  "perfectFor": {
+    "title": "Perfekt für",
+    "scaleups": "Wachsende Startups",
+    "distributed": "Verteilte Teams",
+    "gov": "Regierungsprojekte",
+    "vc": "VC-Portfoliomanagement"
+  },
+  "difference": {
+    "title": "Der IntelliFlow-Unterschied",
+    "quote": "Im Gegensatz zu herkömmlichen Projektmanagement-Tools nutzen wir künstliche Intelligenz, um Arbeit nicht nur zu verfolgen, sondern aktiv zu einem erfolgreichen Abschluss zu führen."
+  },
+  "cta": {
+    "title": "Bereit, Ihr Projektmanagement zu transformieren?",
+    "demo": "Demo buchen",
+    "playground": "KI-Playground testen"
+  },
+  "pricing": {
+    "title": "Einfache, transparente Preisgestaltung",
+    "subtitle": "Wählen Sie den Plan, der für Ihr Team richtig ist",
+    "starter": {
+      "title": "Starter"
+    },
+    "pro": {
+      "title": "Professional"
+    },
+    "enterprise": {
+      "title": "Enterprise"
+    },
+    "mostPopular": "Am beliebtesten",
+    "contactSales": "Vertrieb kontaktieren",
+    "getStarted": "Jetzt starten",
+    "getTrial": "Kostenlose Testversion starten",
+    "compareFeatures": "Funktionen vergleichen",
+    "roiCalculator": {
+      "title": "Berechnen Sie Ihren ROI",
+      "subtitle": "Sehen Sie, wie viel Zeit und Geld Sie mit unserer Plattform sparen könnten. Unsere typischen Kunden sehen ROI innerhalb von Wochen, nicht Monaten.",
+      "cta": "Berechnen Sie Ihre Einsparungen"
+    },
+    "testimonials": {
+      "title": "Was unsere Kunden sagen"
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen"
+    },
+    "finalCta": {
+      "title": "Bereit loszulegen?",
+      "subtitle": "Schließen Sie sich Tausenden von Teams an, die ihren Projektmanagement-Ansatz transformiert und unglaublichen ROI gesehen haben.",
+      "trial": "Starten Sie Ihre kostenlose Testversion",
+      "sales": "Sprechen Sie mit dem Vertrieb"
+    }
+  }
+}

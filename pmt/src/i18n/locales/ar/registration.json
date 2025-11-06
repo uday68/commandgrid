@@ -1,0 +1,78 @@
+{
+  "title": "إنشاء حسابك",
+  "subtitle": "انضم إلى آلاف الفرق وابدأ رحلتك نحو إدارة مشاريع أفضل",
+  "steps": {
+    "account": "الحساب",
+    "personal": "شخصي",
+    "team": "الفريق",
+    "organization": "المؤسسة",
+    "admin": "المسؤول",
+    "review": "مراجعة"
+  },
+  "registrationType": {
+    "individual": "فردي",
+    "team": "فريق",
+    "company": "شركة",
+    "companyAdmin": "شركة + مسؤول"
+  },
+  "fields": {
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "phone": "رقم الهاتف",
+    "companyName": "اسم الشركة",
+    "industry": "الصناعة",
+    "companySize": "حجم الشركة",
+    "role": "دورك",
+    "teamName": "اسم الفريق",
+    "teamDescription": "وصف الفريق",
+    "teamSize": "حجم الفريق",
+    "address": "العنوان",
+    "city": "المدينة",
+    "state": "المحافظة/الولاية",
+    "zipCode": "الرمز البريدي",
+    "country": "الدولة",
+    "category": "فئة الشركة",
+    "sector": "القطاع",
+    "adminFirstName": "الاسم الأول للمسؤول",
+    "adminLastName": "الاسم الأخير للمسؤول",
+    "adminEmail": "بريد المسؤول الإلكتروني",
+    "adminPassword": "كلمة مرور المسؤول",
+    "adminConfirmPassword": "تأكيد كلمة مرور المسؤول"
+  },
+  "placeholders": {
+    "phone": "أدخل رقم هاتفك (اختياري)",
+    "category": "أدخل فئة شركتك (اختياري)"
+  },
+  "buttons": {
+    "uploadPhoto": "تحميل صورة",
+    "completeRegistration": "إكمال التسجيل"
+  },
+  "labels": {
+    "preferAgile": "أفضل منهجية أجايل لإدارة المشاريع",
+    "agilePreference": "تفضيل أجايل"
+  },
+  "passwordRequirement": "مطلوب 8 أحرف على الأقل",
+  "review": {
+    "account": "معلومات الحساب",
+    "personal": "المعلومات الشخصية",
+    "organization": "معلومات المؤسسة",
+    "team": "معلومات الفريق",
+    "admin": "معلومات المسؤول"
+  },
+  "terms": {
+    "agree": "أوافق على",
+    "termsService": "شروط الخدمة",
+    "and": "و",
+    "privacyPolicy": "سياسة الخصوصية"
+  },
+  "haveAccount": "هل لديك حساب بالفعل؟",
+  "signIn": "تسجيل الدخول",
+  "notProvided": "غير متوفر",
+  "adminInfo": "معلومات حساب المسؤول",
+  "errors": {
+    "registrationFailed": "فشل التسجيل. يرجى المحاولة مرة أخرى."
+  }
+}

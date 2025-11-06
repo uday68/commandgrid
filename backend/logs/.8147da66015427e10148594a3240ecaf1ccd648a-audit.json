@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\project_management_tool\\backend\\logs\\.8147da66015427e10148594a3240ecaf1ccd648a-audit.json",
+    "files": [
+        {
+            "date": 1749418172068,
+            "name": "D:\\project_management_tool\\backend\\logs\\combined-2025-06-09.log",
+            "hash": "5be3098b307f5cf4792331a5f93ab40f9d24ded08b2d3c0ede289b5cbca25f21"
+        },
+        {
+            "date": 1749494286456,
+            "name": "D:\\project_management_tool\\backend\\logs\\combined-2025-06-10.log",
+            "hash": "c245384b523066b3c167cea1a2cce9d82ba76393b14963306659aff2e58f5404"
+        },
+        {
+            "date": 1749580259360,
+            "name": "D:\\project_management_tool\\backend\\logs\\combined-2025-06-11.log",
+            "hash": "6ee5c4ed710af61a4f43ac6462f802420934b6e175bf592c4a33c122439e675c"
+        },
+        {
+            "date": 1749727232344,
+            "name": "D:\\project_management_tool\\backend\\logs\\combined-2025-06-12.log",
+            "hash": "181024e5811bf29eebf6c67b7037016426b9a0e3587bade5a236e98a6503f8d2"
+        },
+        {
+            "date": 1749814089418,
+            "name": "D:\\project_management_tool\\backend\\logs\\combined-2025-06-13.log",
+            "hash": "482c97c2ad64b40954d12e648130162abcc043a1e9d003af7e890b93daad567a"
+        },
+        {
+            "date": 1749902368765,
+            "name": "D:\\project_management_tool\\backend\\logs\\combined-2025-06-14.log",
+            "hash": "fcab5d1e5d867cd520bbc509ae51d523e928e103010d71c99d752d453571285d"
+        },
+        {
+            "date": 1749925800276,
+            "name": "D:\\project_management_tool\\backend\\logs\\combined-2025-06-15.log",
+            "hash": "66ddf9c007d91a7d2f55d21a3df028b15b26b44a8bbd1fb8616bc997d707bd7d"
+        },
+        {
+            "date": 1750012200025,
+            "name": "D:\\project_management_tool\\backend\\logs\\combined-2025-06-16.log",
+            "hash": "3c7354cff559b49a9d5751d6c84ed797e0df3f7dd3ad4ab176757d1d73fdd5b6"
+        }
+    ],
+    "hashType": "sha256"
+}

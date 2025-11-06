@@ -1,0 +1,33 @@
+{
+    "name": "project_management_tool",
+    "description": "A tool for managing projects",
+    "version": "1.0.0",
+    "author": "V Uday",
+    "license": "MIT",
+    "type": "module",
+    "dependencies": {
+        "axios": "^1.7.9",
+        "bcrypt": "^5.1.1",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "framer-motion": "^12.4.7",
+        "http": "^0.0.1-security",
+        "jsonwebtoken": "^9.0.2",
+        "multer": "^1.4.5-lts.1",
+        "os": "^0.1.2",
+        "pdfkit": "^0.16.0",
+        "pg": "^8.13.3",
+        "pidusage": "^4.0.0",
+        "react-datepicker": "^8.1.0",
+        "socket.io": "^4.8.1",
+        "zustand": "^5.0.3"
+    },
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon src/index.js"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.0"
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "languageSelector": {
+    "tooltip": "Sprache ändern",
+    "language": "{{language}}"
+  },
+  "loadingSpinner": {
+    "loading": "Wird geladen..."
+  },
+  "profile": {
+    "title": "Profil",
+    "editProfile": "Profil bearbeiten",
+    "currentPassword": "Aktuelles Passwort",
+    "newPassword": "Neues Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "saving": "Speichern...",
+    "successMessage": "Profil erfolgreich aktualisiert",
+    "errorMessage": "Fehler beim Aktualisieren des Profils",
+    "verified": "Verifiziertes Konto",
+    "personalDetails": "Persönliche Daten",
+    "security": "Sicherheit & Passwort",
+    "name": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefonnummer",
+    "location": "Standort",
+    "company": "Unternehmen",
+    "language": "Bevorzugte Sprache",
+    "memberSince": "Mitglied seit",
+    "lastPasswordChange": "Letzte Passwortänderung",
+    "changePassword": "Passwort ändern",
+    "notSpecified": "Nicht angegeben",
+    "notProvided": "Nicht bereitgestellt",
+    "notAvailable": "Nicht verfügbar",
+    "loading": "Profil wird geladen..."
+  },
+  "chatRoom": {
+    "title": "Chat",
+    "typing": "{{user}} schreibt...",
+    "send": "Senden",
+    "typeMessage": "Nachricht eingeben...",
+    "pinnedMessages": "Angeheftete Nachrichten",
+    "unpin": "Loslösen",
+    "pin": "Anheften",
+    "you": "Du",
+    "minimize": "Minimieren",
+    "maximize": "Maximieren",
+    "restore": "Wiederherstellen",
+    "teamChat": "Team-Chat",
+    "projectChat": "Projekt-Chat - {projectId}",
+    "severalTyping": "Mehrere Personen schreiben..."
+  }
+}

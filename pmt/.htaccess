@@ -1,0 +1,11 @@
+# Ensure HTML files are served with the correct MIME type
+AddType text/html .html
+AddType text/html .htm
+
+# Enable CORS
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# Set default document
+DirectoryIndex index.html

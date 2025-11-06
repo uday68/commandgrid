@@ -1,0 +1,134 @@
+{
+  "app": {
+    "title": "Project Management Tool"
+  },
+  "home": {
+    "title": "Home"
+  },
+  "login": {
+    "title": "Login - Project Management Tool"
+  },
+  "register": {
+    "title": "Register",
+    "fullName": "Full Name",
+    "email": "Email",
+    "username": "Username",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "submit": "Register",
+    "loginPrompt": "Already have an account? Login",
+    "termsAgreement": "I agree to the terms & conditions"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome, {{name}}",
+    "projects": "Projects",
+    "tasks": "Tasks",
+    "meetings": "Meetings",
+    "reports": "Reports",
+    "teams": "Teams"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "addTask": "Add Task",
+    "editTask": "Edit Task",
+    "deleteTask": "Delete Task",
+    "status": "Status",
+    "priority": "Priority",
+    "dueDate": "Due Date",
+    "assignedTo": "Assigned To",
+    "description": "Description"
+  },
+  "projects": {
+    "title": "Projects",
+    "addProject": "Add Project",
+    "editProject": "Edit Project",
+    "deleteProject": "Delete Project",
+    "projectName": "Project Name",
+    "description": "Description",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "status": "Status"
+  },
+  "teams": {
+    "title": "Teams",
+    "addTeam": "Add Team",
+    "editTeam": "Edit Team",
+    "deleteTeam": "Delete Team",
+    "teamName": "Team Name",
+    "members": "Members",
+    "addMember": "Add Member"
+  },
+  "reports": {
+    "title": "Reports",
+    "generateReport": "Generate Report",
+    "reportType": "Report Type",
+    "dateRange": "Date Range",
+    "project": "Project",
+    "export": "Export"
+  },
+  "meeting": {
+    "title": "Video Call",
+    "scheduleMeeting": "Schedule Meeting",
+    "joinMeeting": "Join Meeting",
+    "endMeeting": "End Meeting",
+    "participants": "Participants",
+    "date": "Date",
+    "time": "Time"
+  },
+  "community": {
+    "title": "Community",
+    "posts": "Posts",
+    "createPost": "Create Post",
+    "helpRequests": "Help Requests",
+    "askForHelp": "Ask for Help"
+  },
+  "adminDashboard": {
+    "title": "Admin Dashboard",
+    "users": "Users",
+    "projects": "Projects",
+    "security": "Security",
+    "settings": "Settings"
+  },
+  "userDashboard": {
+    "title": "User Dashboard",
+    "overview": "Overview",
+    "files": "Files",
+    "integrations": "Integrations",
+    "settings": "Settings"
+  },
+  "teamMemberDashboard": {
+    "title": "Team Member Dashboard",
+    "tasks": "Tasks",
+    "files": "Files",
+    "chat": "Chat"
+  },
+  "landing": {
+    "title": "Welcome to Project Management Tool",
+    "subtitle": "Streamline your workflow with AI-powered project management",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "registration": {
+    "title": "Registration",
+    "welcomeMessage": "Create your account to get started"
+  },
+  "projectPoster": {
+    "title": "Project Poster"
+  },
+  "meetings": {
+    "title": "Meetings"
+  },
+  "meetingReports": {
+    "title": "Meeting Reports"
+  },
+  "viewTeam": {
+    "title": "Team Details"
+  },
+  "chat": {
+    "title": "Chat"
+  },
+  "resetPassword": {
+    "title": "Reset Password"
+  }
+}

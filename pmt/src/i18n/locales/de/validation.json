@@ -1,0 +1,18 @@
+{
+  "required": "Dieses Feld ist erforderlich",
+  "minLength": "Muss mindestens {{count}} Zeichen enthalten",
+  "maxLength": "Darf nicht mehr als {{count}} Zeichen enthalten",
+  "email": "Ungültige E-Mail-Adresse",
+  "passwordMatch": "Passwörter stimmen nicht überein",
+  "date": "Ungültiges Datumsformat",
+  "number": "Muss eine Zahl sein",
+  "invalidDateRange": "Enddatum muss nach dem Startdatum liegen",
+  "termsRequired": "Sie müssen die Bedingungen akzeptieren",
+  "passwordRequirements": {
+    "minLength": "Mindestens 8 Zeichen",
+    "uppercase": "Mindestens ein Großbuchstabe",
+    "lowercase": "Mindestens ein Kleinbuchstabe",
+    "number": "Mindestens eine Zahl",
+    "special": "Mindestens ein Sonderzeichen"
+  }
+}

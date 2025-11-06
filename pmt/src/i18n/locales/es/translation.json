@@ -1,0 +1,252 @@
+{
+  "app": {
+    "title": "Herramienta de Gestión de Proyectos",
+    "welcome": "Bienvenido a la Herramienta de Gestión de Proyectos",
+    "tagline": "Optimice su flujo de trabajo con nuestra solución integral de gestión de proyectos",
+    "loading": "Cargando aplicación...",
+    "footer": "© {{year}} Herramienta de Gestión de Proyectos - Todos los derechos reservados"
+  },
+  "nav": {
+    "dashboard": "Tablero",
+    "projects": "Proyectos",
+    "tasks": "Tareas",
+    "team": "Equipo",
+    "settings": "Ajustes"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "create": "Crear Proyecto",
+    "edit": "Editar Proyecto",
+    "delete": "Eliminar Proyecto",
+    "name": "Nombre",
+    "description": "Descripción",
+    "startDate": "Fecha de Inicio",
+    "endDate": "Fecha de Finalización",
+    "status": "Estado",
+    "assignManager": "Asignar Gerente de Proyecto",
+    "enterManagerId": "Introducir ID del Gerente",
+    "managerAssignSuccess": "¡Gerente de Proyecto asignado con éxito!",
+    "managerAssignError": "Error al asignar el gerente de proyecto."
+  },
+  "tasks": {
+    "title": "Tareas",
+    "create": "Crear Tarea",
+    "edit": "Editar Tarea",
+    "delete": "Eliminar Tarea",
+    "name": "Nombre",
+    "description": "Descripción",
+    "assignee": "Asignado a",
+    "dueDate": "Fecha de Vencimiento",
+    "status": "Estado"
+  },
+  "common": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "search": "Buscar",
+    "assign": "Asignar Gerente",
+    "close": "Cerrar",
+    "na": "N/D",
+    "yes": "Sí",
+    "no": "No",
+    "unknown": "Desconocido",
+    "genericError": "Ocurrió un error",
+    "none": "Ninguno",
+    "logout": "Cerrar Sesión"
+  },
+  "hero": {
+    "title": "El Sistema Operativo de Productividad Impulsado por IA",
+    "subtitle": "Transforme el rendimiento del equipo con la primera plataforma de inteligencia de proyectos de autoaprendizaje del mundo que anticipa obstáculos, automatiza flujos de trabajo y proporciona información estratégica en tiempo real, incluso antes de que sepa que la necesita.",
+    "getStarted": "Comenzar",
+    "bookDemo": "Reservar Demo de 7 min",
+    "tryAI": "Probar IA Playground",
+    "joinCommunity": "Unirse a nuestra Comunidad",
+    "kanban": "Vista Sala de Guerra",
+    "table": "Vista Analítica",
+    "timeline": "Vista Cronológica",
+    "kanbanPreview": "Kanban potenciado por IA con perspectivas predictivas",
+    "tablePreview": "Decisiones basadas en datos con métricas en tiempo real",
+    "timelinePreview": "Cronograma inteligente con mapeo automático de dependencias"
+  },
+  "features": {
+    "title": "Por Qué los Equipos Eligen IntelliFlow Sobre los Gestores de Tareas Básicos",
+    "subtitle": "Experimente la diferencia con nuestra plataforma potenciada por IA diseñada para equipos modernos",
+    "ai": {
+      "title": "Copiloto de IA",
+      "desc": "No solo automatización—sus proyectos obtienen un estratega autónomo",
+      "details": {
+        "1": "Predice riesgos de plazos 72 horas antes que el seguimiento manual",
+        "2": "Asigna automáticamente tareas basándose en el mapeo de habilidades en tiempo real",
+        "3": "Genera informes listos para sala de juntas con un solo comando en lenguaje natural",
+        "4": "Proporciona sugerencias de optimización continuas a medida que avanza el trabajo"
+      }
+    },
+    "workflows": {
+      "title": "Flujos de trabajo personalizados",
+      "desc": "Cree flujos de trabajo adaptados para diferentes tipos de proyectos y equipos",
+      "details": {
+        "1": "Diseñador de flujo de trabajo con arrastrar y soltar",
+        "2": "Transiciones de tareas y notificaciones automatizadas",
+        "3": "Procesos de aprobación personalizados y reglas de validación"
+      }
+    },
+    "military": {
+      "title": "Seguridad de nivel militar",
+      "desc": "Seguridad de nivel empresarial con cifrado avanzado y cumplimiento",
+      "details": {
+        "1": "Cifrado de extremo a extremo para todos los datos",
+        "2": "Controles de acceso basados en roles y registros de auditoría",
+        "3": "Cumplimiento con GDPR, HIPAA y estándares ISO"
+      }
+    },
+    "integrations": {
+      "title": "Integraciones perfectas",
+      "desc": "Conéctese con sus herramientas y plataformas favoritas para un flujo de trabajo unificado",
+      "details": {
+        "1": "Más de 100 integraciones prediseñadas con herramientas populares",
+        "2": "Acceso API personalizado para conexiones especializadas",
+        "3": "Sincronización de datos bidireccional con sistemas externos"
+      },
+      "hideDetails": "Ocultar Detalles"
+    }
+  },
+  "results": {
+    "title": "Resultados Probados en Batalla",
+    "faster": "Inicios de proyectos 227% más rápidos con plantillas generadas por IA",
+    "saved": "41 horas/mes ahorradas por miembro del equipo en actualizaciones de estado",
+    "earlyWarning": "Sistema de alerta temprana detecta el 83% de los riesgos antes de que escalen"
+  },
+  "technical": {
+    "title": "Superpoderes Técnicos",
+    "cognitive": "Arquitectura Cognitiva",
+    "multiagent": "Sistema IA Multi-Agente (FLAN-T5 + GPT-4 Turbo + NLP Personalizado)",
+    "realtime": "Motor de Sincronización en Tiempo Real - 10ms de latencia en más de 10K+ tareas",
+    "predictive": "Análisis Predictivo - Fechas de finalización de proyectos con 92% de precisión",
+    "enterprise": "Stack Listo para Empresas"
+  },
+  "usecases": {
+    "title": "Casos de uso",
+    "executives": "Ejecutivos",
+    "executivesCase": "Necesitan visibilidad en tiempo real del progreso del proyecto, asignación de recursos y rendimiento financiero.",
+    "executivesResult": "Obtienen paneles completos con KPIs, seguimiento de presupuesto y métricas de utilización de recursos.",
+    "engineers": "Ingenieros",
+    "engineersCase": "Necesitan colaborar en tareas técnicas, seguimiento de problemas y gestión de integración de código.",
+    "engineersResult": "Acceden a un sistema de tickets optimizado con integración Git y flujos de trabajo automatizados.",
+    "pms": "Gerentes de Proyecto",
+    "pmsCase": "Necesitan planificar proyectos, asignar recursos, seguir el progreso e informar sobre hitos.",
+    "pmsResult": "Utilizan gráficos de Gantt interactivos, herramientas de asignación de recursos e informes automatizados."
+  },
+  "roi": {
+    "title": "Calculadora de ROI",
+    "standups": {
+      "before": "5 hrs/equipo",
+      "after": "22 mins (minutos por IA)"
+    },
+    "risk": {
+      "before": "Post-mortem",
+      "after": "Preventivo (promedio 9 días antes)"
+    },
+    "reports": {
+      "before": "8 hrs/manual",
+      "after": "12 seg/generado por IA"
+    }
+  },
+  "perfectFor": {
+    "title": "Perfecto Para",
+    "scaleups": "Empresas en crecimiento donde los procesos fallan con 50+ empleados",
+    "distributed": "Equipos distribuidos ahogándose en caos asincrónico",
+    "gov": "Gobierno/Salud que necesitan pistas de auditoría herméticas",
+    "vc": "Startups financiadas por capital de riesgo que requieren informes de nivel inversor"
+  },
+  "difference": {
+    "title": "La Diferencia IntelliFlow",
+    "quote": "Otras herramientas le muestran dónde están sus proyectos; nosotros le mostramos hacia dónde van, por qué es importante y exactamente cómo optimizar el camino a seguir."
+  },
+  "cta": {
+    "title": "Vea la plataforma en acción",
+    "demo": "Reservar Demo de 7-min",
+    "playground": "Probar IA Playground"
+  },
+  "pricing": {
+    "title": "Precios Simples y Transparentes",
+    "subtitle": "Elija el plan que se adapte a las necesidades de su equipo",
+    "starter": {
+      "title": "Inicial"
+    },
+    "pro": {
+      "title": "Pro"
+    },
+    "enterprise": {
+      "title": "Empresarial"
+    },
+    "mostPopular": "Más Popular",
+    "contactSales": "Contactar con Ventas"
+  },
+  "admin": {
+    "tools": {
+      "title": "Herramientas de Administración",
+      "databaseBackup": "Copia de Seguridad de Base de Datos",
+      "exportData": "Exportar Datos",
+      "bulkImport": "Importación Masiva",
+      "securityScan": "Escaneo de Seguridad",
+      "printAllData": "Imprimir Todos los Datos",
+      "processing": "Procesando...",
+      "backupFolderPath": "Ruta de Carpeta de Respaldo",
+      "confirmBackup": "Confirmar Respaldo",
+      "output": "Salida",
+      "usingCachedData": "Usando datos almacenados en caché de la sesión anterior"
+    },
+    "dashboard": {
+      "viewDetails": "Ver Detalles",
+      "attendees": "Asistentes",
+      "taskCompletion": "Finalización de Tareas"
+    },
+    "actionFailed": "La acción falló",
+    "usingCachedData": "Usando datos en caché"
+  },
+  "auditLogs": {
+    "title": "Registros de Auditoría",
+    "timestamp": "Fecha y Hora",
+    "action": "Acción",
+    "user": "Usuario",
+    "project": "Proyecto",
+    "system": "Sistema",
+    "searchPlaceholder": "Buscar registros...",
+    "noLogsFound": "No se encontraron registros",
+    "timeframe": {
+      "last24Hours": "Últimas 24 horas",
+      "last7Days": "Últimos 7 días",
+      "allTime": "Todo el tiempo"
+    }
+  },
+  "integrations": {
+    "slack": {
+      "name": "Slack",
+      "description": "Conectar su espacio de trabajo Slack"
+    },
+    "jira": {
+      "name": "Jira",
+      "description": "Integrar con problemas y proyectos de Jira"
+    },
+    "github": {
+      "name": "GitHub",
+      "description": "Conectar a repositorios de GitHub"
+    }
+  },
+  "auth": {
+    "login": {
+      "invalidCredentials": "Correo electrónico o contraseña inválidos"
+    }
+  },
+  "login": {
+    "logoAlt": "Logo de la empresa",
+    "welcomeBack": "Bienvenido de nuevo",
+    "signInPrompt": "Inicie sesión en su cuenta",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "forgotPassword": "¿Olvidó su contraseña?",
+    "signIn": "Iniciar sesión",
+    "signingIn": "Iniciando sesión...",
+    "noAccount": "¿No tiene una cuenta?",
+    "signUp": "Regístrese"  }
+}

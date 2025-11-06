@@ -1,0 +1,324 @@
+{
+  "common": {
+    "submit": "जमा करें",
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "delete": "हटाएं",
+    "edit": "संपादित करें",
+    "search": "खोजें",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफल",
+    "role": "भूमिका",
+    "count": "संख्या",
+    "you": "आप",
+    "none": "कोई नहीं",
+    "noMetricsAvailable": "कोई मेट्रिक्स उपलब्ध नहीं हैं",
+    "searchMessages": "संदेश खोजें",
+    "searchMessagesPlaceholder": "बातचीत में खोजें...",
+    "emojiPicker": "इमोजी चयनकर्ता",
+    "gifPicker": "GIF चयनकर्ता",
+    "primaryColor": "प्राथमिक रंग",
+    "secondaryColor": "द्वितीयक रंग",
+    "backgroundColor": "पृष्ठभूमि का रंग",
+    "typeMessagePlaceholder": "संदेश लिखें...",
+    "pinnedMessages": "पिन किए गए संदेश",
+    "pinMessage": "संदेश पिन करें",
+    "unpinMessage": "संदेश अनपिन करें",
+    "searchGifsPlaceholder": "GIF खोजें...",
+    "reset": "रीसेट करें"
+  },
+  "auth": {
+    "login": "लॉग इन",
+    "register": "पंजीकरण",
+    "logout": "लॉग आउट",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "username": "उपयोगकर्ता नाम"
+  },
+  "navigation": {
+    "dashboard": "डैशबोर्ड",
+    "projects": "परियोजनाएं",
+    "teams": "टीमें",
+    "tasks": "कार्य",
+    "meetings": "बैठकें",
+    "reports": "रिपोर्ट",
+    "settings": "सेटिंग्स"
+  },
+  "dashboard": {
+    "welcome": "स्वागत है",
+    "recentActivity": "हाल की गतिविधि",
+    "statistics": "आंकड़े",
+    "tasks": "कार्य",
+    "upcomingMeetings": "आगामी बैठकें",
+    "summary": "डैशबोर्ड सारांश",
+    "upcomingDeadlines": "आगामी समय सीमाएँ"
+  },
+  "roles": {
+    "admin": "प्रशासक",
+    "manager": "प्रबंधक",
+    "developer": "डेवलपर",
+    "designer": "डिज़ाइनर",
+    "tester": "परीक्षक",
+    "user": "उपयोगकर्ता"
+  },
+  "tasks": {
+    "title": "कार्य",
+    "createTask": "कार्य बनाएँ",
+    "taskName": "कार्य का नाम",
+    "description": "विवरण",
+    "dueDate": "नियत तारीख",
+    "assignee": "निर्दिष्ट व्यक्ति",
+    "status": "स्थिति",
+    "priority": "प्राथमिकता"
+  },
+  "metrics": {
+    "systemMetrics": "सिस्टम मेट्रिक्स",
+    "systemDescription": "सिस्टम मेट्रिक्स और प्रदर्शन डेटा देखें",
+    "totalUsers": "कुल उपयोगकर्ता",
+    "totalProjects": "कुल परियोजनाएं",
+    "totalTasks": "कुल कार्य", 
+    "totalActivities": "कुल गतिविधियां",
+    "budgetOverview": "बजट अवलोकन",
+    "budget": "बजट",
+    "roleDistribution": "भूमिका वितरण"
+  },
+  "calendar": {
+    "today": "आज",
+    "previous": "पिछला",
+    "next": "अगला",
+    "month": "महीना",
+    "week": "सप्ताह",
+    "day": "दिन",
+    "agenda": "एजेंडा",
+    "date": "दिनांक",
+    "time": "समय",
+    "event": "कार्यक्रम",
+    "allDay": "पूरा दिन",
+    "showMore": "{count} और देखें",
+    "importSuccess": "{count} कार्यक्रम सफलतापूर्वक आयात किए गए",
+    "importFailed": "कैलेंडर आयात करने में विफल"
+  },
+  "fileViewer": {
+    "documentRepository": "दस्तावेज़ रिपॉजिटरी",
+    "listView": "सूची दृश्य",
+    "gridView": "ग्रिड दृश्य",
+    "download": "डाउनलोड",
+    "actions": "क्रियाएँ",
+    "folders": {
+      "all_files": "सभी फ़ाइलें",
+      "documents": "दस्तावेज़",
+      "images": "छवियाँ",
+      "videos": "वीडियो",
+      "audios": "ऑडियो"
+    },
+    "tabs": {
+      "content": "सामग्री",
+      "summary": "सारांश",
+      "enhance": "बढ़ाएं",
+      "chat": "चैट",
+      "archive": "अभिलेख",
+      "history": "इतिहास",
+      "send": "भेजें"
+    }
+  },
+  "admin": {
+    "projectManagement": "परियोजना प्रबंधन",
+    "tools": {
+      "title": "व्यवस्थापक उपकरण",
+      "databaseBackup": "डेटाबेस बैकअप",
+      "exportData": "डेटा निर्यात करें",
+      "bulkImport": "थोक आयात",
+      "securityScan": "सुरक्षा स्कैन",
+      "printAllData": "सभी डेटा प्रिंट करें"
+    },
+    "reports": {
+      "title": "रिपोर्ट"
+    }
+  },
+  "auditLogs": {
+    "title": "ऑडिट लॉग्स"
+  },
+  "chatRoom": {
+    "projectChat": "परियोजना चैट - {projectId}",
+    "teamChat": "टीम चैट",
+    "restore": "पुनर्स्थापित करें",
+    "minimize": "छोटा करें",
+    "maximize": "बड़ा करें"
+  },
+  "events": {
+    "edit": "कार्यक्रम संपादित करें",
+    "create": "कार्यक्रम बनाएँ",
+    "updated": "कार्यक्रम सफलतापूर्वक अपडेट किया गया",
+    "created": "कार्यक्रम सफलतापूर्वक बनाया गया",
+    "deleted": "कार्यक्रम सफलतापूर्वक हटाया गया",
+    "failedSave": "कार्यक्रम सहेजने में विफल",
+    "failedDelete": "कार्यक्रम हटाने में विफल",
+    "title": "शीर्षक",
+    "description": "विवरण",
+    "start": "प्रारंभ",
+    "end": "समाप्त",
+    "allDay": "पूरा दिन",
+    "project": "परियोजना",
+    "location": "स्थान",
+    "attendees": "प्रतिभागी",
+    "priority": "प्राथमिकता",
+    "private": "निजी कार्यक्रम",
+    "reminders": "रिमाइंडर",
+    "minutesBefore": "मिनट पहले",
+    "reminder5": "5 मिनट पहले",
+    "reminder15": "15 मिनट पहले",
+    "reminder30": "30 मिनट पहले",
+    "reminder60": "1 घंटा पहले",
+    "reminder1440": "1 दिन पहले"
+  },
+  "priority": {
+    "critical": "महत्वपूर्ण",
+    "high": "उच्च",
+    "medium": "मध्यम",
+    "low": "निम्न"
+  },
+  "profile": {
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "saving": "सहेज रहा है..."
+  },
+  "components": {
+    "languageSelector": {
+      "tooltip": "भाषा बदलें"
+    },
+    "profile": {
+      "editProfile": "प्रोफ़ाइल संपादित करें",
+      "successMessage": "प्रोफाइल सफलतापूर्वक अपडेट की गई",
+      "errorMessage": "प्रोफाइल अपडेट करने में विफल",
+      "updatePassword": "पासवर्ड अपडेट करें",
+      "currentPassword": "वर्तमान पासवर्ड",
+      "newPassword": "नया पासवर्ड",
+      "confirmPassword": "पासवर्ड की पुष्टि करें",
+      "cancel": "रद्द करें",
+      "save": "सहेजें",
+      "saving": "सहेज रहा है...",
+      "title": "मेरी प्रोफाइल",
+      "verified": "सत्यापित खाता",
+      "personalDetails": "व्यक्तिगत विवरण",
+      "security": "सुरक्षा और पासवर्ड",
+      "name": "पूरा नाम",
+      "email": "ईमेल पता",
+      "phone": "फ़ोन नंबर",
+      "location": "स्थान",
+      "company": "कंपनी",
+      "language": "पसंदीदा भाषा",
+      "memberSince": "सदस्यता तिथि",
+      "lastPasswordChange": "अंतिम पासवर्ड परिवर्तन",
+      "notSpecified": "निर्दिष्ट नहीं",
+      "notProvided": "प्रदान नहीं किया गया",
+      "notAvailable": "उपलब्ध नहीं",
+      "loading": "प्रोफ़ाइल लोड हो रही है..."
+    }
+  },
+  "features": {
+    "ai": {
+      "title": "AI सहायता",
+      "desc": "उत्पादकता बढ़ाने के लिए स्मार्ट AI सुविधाएँ",
+      "details": {
+        "1": "स्वचालित कार्य प्राथमिकता",
+        "2": "स्मार्ट समय ट्रैकिंग",
+        "3": "सामग्री सारांश",
+        "4": "कोड समीक्षा सुझाव"
+      }
+    },
+    "wellbeing": {
+      "title": "टीम कल्याण",
+      "desc": "टीम के स्वास्थ्य को बनाए रखने और बर्नआउट को रोकने के लिए उपकरण",
+      "details": {
+        "1": "वर्क-लाइफ बैलेंस संकेतक",
+        "2": "ब्रेक टाइम रिमाइंडर",
+        "3": "कार्यभार विश्लेषण",
+        "4": "कल्याण संसाधन"
+      }
+    },
+    "community": {
+      "title": "समुदाय सहयोग",
+      "desc": "टीमवर्क को बढ़ावा देने के लिए अंतर्निर्मित समुदाय सुविधाएँ",
+      "details": {
+        "1": "टीम मंच और चर्चाएँ",
+        "2": "ज्ञान साझाकरण हब",
+        "3": "पीयर मान्यता प्रणाली",
+        "4": "अभ्यास समुदाय"
+      }
+    },
+    "integrations": {
+      "title": "शक्तिशाली एकीकरण",
+      "desc": "अपने पसंदीदा टूल्स के साथ निर्बाध रूप से कनेक्ट करें",
+      "details": {
+        "1": "GitHub और GitLab एकीकरण",
+        "2": "Slack और Microsoft Teams",
+        "3": "Google Workspace और Office 365",
+        "4": "Zoom और Google Meet"
+      }
+    }
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "language": "भाषा",
+    "languageDescription": "अपनी पसंदीदा भाषा चुनें। एप्लिकेशन चुनी गई भाषा में सामग्री प्रदर्शित करने के लिए तुरंत अपडेट हो जाएगा।",
+    "notifications": "सूचनाएँ",
+    "notificationsDescription": "कॉन्फ़िगर करें कि आप सिस्टम से सूचनाएँ और अलर्ट कैसे प्राप्त करते हैं।",
+    "theme": {
+      "title": "थीम सेटिंग्स",
+      "description": "अपनी प्राथमिकताओं के अनुसार एप्लिकेशन की उपस्थिति को अनुकूलित करें।",
+      "saveChanges": "अपने थीम परिवर्तनों को सहेजें",
+      "resetDefaults": "डिफ़ॉल्ट थीम सेटिंग्स पर रीसेट करें",
+      "reset": "रीसेट करें",
+      "mode": "थीम मोड",
+      "modes": {
+        "light": "लाइट",
+        "dark": "डार्क",
+        "system": "सिस्टम"
+      },
+      "typography": "टाइपोग्राफी",
+      "fontFamily": "फ़ॉन्ट परिवार",
+      "fontSize": "फ़ॉन्ट आकार",
+      "appearance": "उपस्थिति और कंट्रास्ट",
+      "contrastLevel": "कंट्रास्ट स्तर",
+      "contrast": {
+        "normal": "सामान्य",
+        "high": "उच्च कंट्रास्ट",
+        "veryHigh": "बहुत उच्च कंट्रास्ट"
+      },
+      "spacing": "एलिमेंट स्पेसिंग",
+      "spacingOptions": {
+        "compact": "कॉम्पैक्ट",
+        "comfortable": "आरामदायक",
+        "spacious": "विस्तृत"
+      },
+      "density": "इंटरफेस घनत्व",
+      "densityOptions": {
+        "compact": "कॉम्पैक्ट",
+        "standard": "स्टैंडर्ड",
+        "comfortable": "आरामदायक"
+      },
+      "roundedCorners": "गोल कोने का उपयोग करें",
+      "enableAnimations": "एनिमेशन सक्षम करें",
+      "colors": "रंग",
+      "primaryColor": "प्राथमिक रंग",
+      "secondaryColor": "द्वितीयक रंग",
+      "buttonStyle": "बटन स्टाइल",
+      "buttonStyles": {
+        "text": "टेक्स्ट",
+        "contained": "कंटेंड",
+        "outlined": "आउटलाइन्ड"
+      },
+      "customBackground": "कस्टम बैकग्राउंड",
+      "customBackgroundHelp": "URL या CSS ग्रेडिएंट परिभाषा दर्ज करें",
+      "preview": "पूर्वावलोकन",
+      "previewText": "यह आपकी थीम सेटिंग्स कैसी दिखेंगी, इसका पूर्वावलोकन है।",
+      "saveSuccess": "थीम सेटिंग्स सफलतापूर्वक सहेजी गईं"
+    }
+  },
+  "errors": {
+    "passwordsMismatch": "पासवर्ड मेल नहीं खाते"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "languageSelector": {
+    "tooltip": "Changer de langue",
+    "language": "{{language}}"
+  },
+  "loadingSpinner": {
+    "loading": "Chargement..."
+  },
+  "button": {
+    "submit": "Soumettre",
+    "cancel": "Annuler",
+    "save": "Enregistrer"
+  },
+  "form": {
+    "required": "Obligatoire",
+    "invalid": "Invalid"
+  },
+  "profile": {
+    "title": "Mon Profil",
+    "editProfile": "Modifier le profil",
+    "currentPassword": "Mot de passe actuel",
+    "newPassword": "Nouveau mot de passe",
+    "confirmPassword": "Confirmer le mot de passe",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "saving": "Enregistrement...",
+    "successMessage": "Profil mis à jour avec succès",
+    "errorMessage": "Échec de la mise à jour du profil",
+    "verified": "Compte vérifié",
+    "personalDetails": "Informations personnelles",
+    "security": "Sécurité et mot de passe",
+    "name": "Nom complet",
+    "email": "Adresse e-mail",
+    "phone": "Numéro de téléphone",
+    "location": "Emplacement",
+    "company": "Entreprise",
+    "language": "Langue préférée",
+    "memberSince": "Membre depuis",
+    "lastPasswordChange": "Dernier changement de mot de passe",
+    "notSpecified": "Non spécifié",
+    "notProvided": "Non fourni",
+    "notAvailable": "Non disponible",
+    "loading": "Chargement du profil..."
+  }
+}

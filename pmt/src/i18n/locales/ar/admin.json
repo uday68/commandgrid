@@ -1,0 +1,64 @@
+{
+  "dashboard": {
+    "title": "لوحة تحكم المسؤول",
+    "summary": "نظرة عامة للمسؤول",
+    "cards": {
+      "users": "المستخدمون",
+      "projects": "المشاريع",
+      "tasks": "المهام",
+      "security": "حالة الأمان"
+    },
+    "metrics": {
+      "active": "نشط",
+      "completed": "مكتمل",
+      "new": "جديد",
+      "overdue": "متأخر",
+      "threats": "تهديدات",
+      "vulnerabilities": "نقاط ضعف"
+    },
+    "sections": {
+      "keyMetrics": "المقاييس الرئيسية",
+      "activityCharts": "مخططات النشاط",
+      "systemHealth": "صحة النظام",
+      "recentActivity": "النشاط الأخير",
+      "teamAndEvents": "الفريق والفعاليات"
+    },
+    "charts": {
+      "active": "نشط",
+      "completed": "مكتمل",
+      "pending": "قيد الانتظار",
+      "projectStatusDistribution": "توزيع حالة المشروع",
+      "taskCompletion": "إكمال المهام",
+      "userActivity": "نشاط المستخدم",
+      "taskTrend": "اتجاه إكمال المهام",
+      "tasksCreated": "المهام التي تم إنشاؤها",
+      "tasksCompleted": "المهام المكتملة",
+      "activeUsers": "المستخدمون النشطون"
+    },
+    "system": {
+      "cpu": "استخدام وحدة المعالجة المركزية",
+      "memory": "استخدام الذاكرة",
+      "disk": "مساحة القرص",
+      "uptime": "مدة التشغيل",
+      "days": "أيام",
+      "temperature": "درجة الحرارة",
+      "services": "الخدمات",
+      "lastReboot": "آخر إعادة تشغيل",
+      "networkIn": "الشبكة الواردة",
+      "networkOut": "الشبكة الصادرة"
+    },
+    "noActivity": "لا يوجد نشاط حديث",
+    "view": "عرض",
+    "viewAll": "عرض الكل",
+    "loadError": "فشل في تحميل بيانات لوحة التحكم",
+    "retry": "إعادة المحاولة",
+    "teamStatus": "حالة الفريق",
+    "activeMembers": "الأعضاء النشطون",
+    "projectProgress": "تقدم المشروع",
+    "manageTeam": "إدارة الفريق",
+    "upcomingEvents": "الفعاليات القادمة",
+    "attendees": "الحضور",
+    "viewDetails": "عرض التفاصيل",
+    "viewCalendar": "عرض التقويم"
+  }
+}

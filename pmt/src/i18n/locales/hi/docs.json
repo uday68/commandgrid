@@ -1,0 +1,17 @@
+{
+  "translation": {
+    "title": "अनुवाद दस्तावेज़ीकरण",
+    "page_title": "अनुवाद दस्तावेज़ीकरण - प्रोजेक्ट मैनेजमेंट टूल",
+    "current_config": "वर्तमान कॉन्फ़िगरेशन",
+    "current_language": "वर्तमान भाषा",
+    "text_direction": "टेक्स्ट दिशा",
+    "namespaces": "उपलब्ध नेमस्पेस",
+    "supported_languages": "समर्थित भाषाएँ",
+    "usage_examples": "उपयोग उदाहरण",
+    "resources": "अतिरिक्त संसाधन",
+    "resources_intro": "अंतर्राष्ट्रीयकरण प्रणाली के बारे में अधिक जानकारी के लिए, कृपया निम्नलिखित संसाधनों की जाँच करें:",
+    "resources_docs": "/docs/translation-guide.md में प्रोजेक्ट अनुवाद दस्तावेज़ीकरण",
+    "resources_i18next": "i18next दस्तावेज़ीकरण: https://www.i18next.com/",
+    "resources_reacti18next": "React i18next: https://react.i18next.com/"
+  }
+}

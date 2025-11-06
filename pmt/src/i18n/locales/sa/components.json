@@ -1,0 +1,51 @@
+{
+  "languageSelector": {
+    "tooltip": "भाषा परिवर्तयतु",
+    "language": "{{language}}"
+  },
+  "loadingSpinner": {
+    "loading": "लोड भवति..."
+  },
+  "profile": {
+    "title": "प्रोफाइल",
+    "editProfile": "प्रोफाइल सम्पादयतु",
+    "currentPassword": "वर्तमान गुप्तशब्दः",
+    "newPassword": "नूतन गुप्तशब्दः",
+    "confirmPassword": "गुप्तशब्दः पुष्टीकरोतु",
+    "save": "रक्षतु",
+    "cancel": "निरस्यताम्",
+    "saving": "रक्षति...",
+    "successMessage": "प्रोफाइल सफलतया अद्यतनम्",
+    "errorMessage": "प्रोफाइल अद्यतने त्रुटिः",
+    "verified": "प्रमाणीकृतं खातम्",
+    "personalDetails": "वैयक्तिक विवरणानि",
+    "security": "सुरक्षा एवं गुप्तशब्दः",
+    "name": "पूर्णं नाम",
+    "email": "ईमेल-पत्ता",
+    "phone": "दूरभाष संख्या",
+    "location": "स्थानम्",
+    "company": "संस्था",
+    "language": "प्राथमिकी भाषा",
+    "memberSince": "सदस्यता आरम्भः",
+    "lastPasswordChange": "अन्तिम गुप्तशब्द परिवर्तनम्",
+    "notSpecified": "निर्दिष्टं नास्ति",
+    "notProvided": "प्रदत्तं नास्ति",
+    "notAvailable": "उपलब्धं नास्ति"
+  },
+  "chatRoom": {
+    "title": "सम्भाषणम्",
+    "typing": "{{user}} टङ्कयति...",
+    "send": "प्रेषयतु",
+    "typeMessage": "सन्देशं टङ्कयतु...",
+    "pinnedMessages": "आसक्त सन्देशाः",
+    "unpin": "विमुञ्चतु",
+    "pin": "आसज्यतु",
+    "you": "भवान्",
+    "minimize": "न्यूनीकरोतु",
+    "maximize": "विस्तारयतु",
+    "restore": "पुनः स्थापयतु",
+    "teamChat": "दलसंवादः",
+    "projectChat": "परियोजना संवादः - {projectId}",
+    "severalTyping": "बहवः जनाः टङ्कयन्ति..."
+  }
+}

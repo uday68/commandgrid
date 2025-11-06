@@ -1,0 +1,78 @@
+{
+  "title": "צור את החשבון שלך",
+  "subtitle": "הצטרף לאלפי צוותים והתחל את המסע שלך לניהול פרויקטים טוב יותר",
+  "steps": {
+    "account": "חשבון",
+    "personal": "אישי",
+    "team": "צוות",
+    "organization": "ארגון",
+    "admin": "מנהל",
+    "review": "סקירה"
+  },
+  "registrationType": {
+    "individual": "יחיד",
+    "team": "צוות",
+    "company": "חברה",
+    "companyAdmin": "חברה + מנהל"
+  },
+  "fields": {
+    "email": "כתובת אימייל",
+    "password": "סיסמה",
+    "confirmPassword": "אימות סיסמה",
+    "firstName": "שם פרטי",
+    "lastName": "שם משפחה",
+    "phone": "מספר טלפון",
+    "companyName": "שם החברה",
+    "industry": "תעשייה",
+    "companySize": "גודל החברה",
+    "role": "התפקיד שלך",
+    "teamName": "שם הצוות",
+    "teamDescription": "תיאור הצוות",
+    "teamSize": "גודל הצוות",
+    "address": "כתובת",
+    "city": "עיר",
+    "state": "מדינה/מחוז",
+    "zipCode": "מיקוד",
+    "country": "מדינה",
+    "category": "קטגוריית חברה",
+    "sector": "מגזר עסקי",
+    "adminFirstName": "שם פרטי של המנהל",
+    "adminLastName": "שם משפחה של המנהל",
+    "adminEmail": "אימייל של המנהל",
+    "adminPassword": "סיסמת המנהל",
+    "adminConfirmPassword": "אימות סיסמת המנהל"
+  },
+  "placeholders": {
+    "phone": "הזן את מספר הטלפון שלך (אופציונלי)",
+    "category": "הזן את קטגוריית החברה שלך (אופציונלי)"
+  },
+  "buttons": {
+    "uploadPhoto": "העלה תמונה",
+    "completeRegistration": "השלם הרשמה"
+  },
+  "labels": {
+    "preferAgile": "אני מעדיף מתודולוגיית אג'ייל לניהול פרויקטים",
+    "agilePreference": "העדפת אג'ייל"
+  },
+  "passwordRequirement": "נדרשות לפחות 8 תווים",
+  "review": {
+    "account": "פרטי חשבון",
+    "personal": "מידע אישי",
+    "organization": "מידע ארגוני",
+    "team": "מידע על הצוות",
+    "admin": "מידע על המנהל"
+  },
+  "terms": {
+    "agree": "אני מסכים ל",
+    "termsService": "תנאי השירות",
+    "and": "ו",
+    "privacyPolicy": "מדיניות הפרטיות"
+  },
+  "haveAccount": "כבר יש לך חשבון?",
+  "signIn": "התחבר",
+  "notProvided": "לא סופק",
+  "adminInfo": "פרטי חשבון מנהל",
+  "errors": {
+    "registrationFailed": "ההרשמה נכשלה. אנא נסה שוב."
+  }
+}

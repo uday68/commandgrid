@@ -1,0 +1,52 @@
+{
+  "general": {
+    "unknown": "एक अज्ञात त्रुटि हुई",
+    "serverError": "सर्वर त्रुटि हुई",
+    "connectionFailed": "सर्वर से कनेक्ट करने में विफल",
+    "timeout": "अनुरोध का समय समाप्त हो गया",
+    "unauthorized": "अनधिकृत पहुंच",
+    "forbidden": "पहुंच निषिद्ध",
+    "notFound": "संसाधन नहीं मिला",
+    "validationFailed": "सत्यापन विफल रहा"
+  },
+  "auth": {
+    "invalidCredentials": "अमान्य उपयोगकर्ता नाम या पासवर्ड",
+    "accountLocked": "आपका खाता लॉक कर दिया गया है",
+    "sessionExpired": "आपका सत्र समाप्त हो गया है, कृपया फिर से लॉगिन करें",
+    "emailInUse": "ईमेल पहले से उपयोग में है",
+    "weakPassword": "पासवर्ड बहुत कमजोर है",
+    "loginRequired": "इस सुविधा तक पहुंचने के लिए आपको लॉग इन करना होगा"
+  },
+  "connection": {
+    "offline": "आप वर्तमान में ऑफलाइन हैं",
+    "reconnecting": "पुनः कनेक्ट हो रहा है...",
+    "reconnected": "कनेक्शन बहाल हो गया",
+    "failed": "कनेक्शन विफल",
+    "realtimeConnection": "रीयल-टाइम कनेक्शन त्रुटि: {{error}}"
+  },
+  "projects": {
+    "createFailed": "परियोजना बनाने में विफल",
+    "updateFailed": "परियोजना अपडेट करने में विफल",
+    "deleteFailed": "परियोजना हटाने में विफल",
+    "accessDenied": "आपके पास इस परियोजना तक पहुंचने की अनुमति नहीं है"
+  },
+  "tasks": {
+    "createFailed": "कार्य बनाने में विफल",
+    "updateFailed": "कार्य अपडेट करने में विफल",
+    "deleteFailed": "कार्य हटाने में विफल",
+    "assignFailed": "कार्य असाइन करने में विफल",
+    "statusChangeFailed": "कार्य स्थिति बदलने में विफल"
+  },
+  "files": {
+    "uploadFailed": "फ़ाइल अपलोड विफल",
+    "downloadFailed": "फ़ाइल डाउनलोड विफल",
+    "fileTooLarge": "फ़ाइल बहुत बड़ी है",
+    "invalidFileType": "अमान्य फ़ाइल प्रकार"
+  },
+  "errors": {
+    "tryAgain": "फिर से कोशिश करें",
+    "returnHome": "होम पेज पर वापस जाएं",
+    "somethingWentWrong": "कुछ गलत हो गया है",
+    "applicationCrashed": "एप्लिकेशन क्रैश हो गया है"
+  }
+}

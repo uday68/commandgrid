@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "title": "AI-Powered Project Management for High-Performance Teams",
+    "subtitle": "The intelligent platform that helps teams automate routine tasks, predict obstacles, and complete projects faster and more efficiently.",
+    "getStarted": "Get Started",
+    "bookDemo": "Book a Demo",
+    "tryAI": "Try AI Assistant",
+    "joinCommunity": "Join our Community",
+    "kanban": "Kanban",
+    "table": "Table",
+    "timeline": "Timeline",
+    "kanbanPreview": "Visualize Your Workflow",
+    "tablePreview": "Track All Project Details",
+    "timelinePreview": "Monitor Project Timeline"
+  },
+  "features": {
+    "title": "Core Features",
+    "subtitle": "Built for modern teams with powerful tools to enhance collaboration and productivity",
+    "showDetails": "Show Details",
+    "hideDetails": "Hide Details",
+    "ai": {
+      "title": "AI Assistant",
+      "desc": "Intelligent guidance on tasks, timelines, and resources",
+      "details": {
+        "1": "Smart task recommendations based on current workload",
+        "2": "Automatic time estimation using historical data",
+        "3": "Risk identification before issues arise",
+        "4": "Meeting summarization and action item extraction"
+      }
+    }
+  },
+  "results": {
+    "title": "Real Results for Teams Like Yours",
+    "faster": "35% Faster Project Completion",
+    "saved": "28% Cost Reduction",
+    "earlyWarning": "87% of Issues Identified Early"
+  },
+  "technical": {
+    "title": "Technical Excellence",
+    "cognitive": "Cognitive AI Assistant",
+    "multiagent": "Multi-Agent Collaboration",
+    "realtime": "Real-time Analytics",
+    "predictive": "Predictive Risk Assessment",
+    "enterprise": "Enterprise-grade Security"
+  },
+  "usecases": {
+    "title": "Success Stories",
+    "executives": "Executive Leadership",
+    "executivesCase": "\"We needed a way to quickly understand project status across 12 teams\"",
+    "executivesResult": "Executive dashboards provide instant visibility into project health metrics and potential bottlenecks, saving 5 hours weekly in status meetings.",
+    "engineers": "Engineering Teams",
+    "engineersCase": "\"Managing tasks across multiple repositories was becoming chaotic\"",
+    "engineersResult": "Integration with version control systems creates automatic task updates, reducing manual tracking by 40% and improving code delivery time.",
+    "pms": "Project Managers",
+    "pmsCase": "\"Forecasting timelines accurately was our biggest challenge\"",
+    "pmsResult": "AI-powered estimation improved prediction accuracy by 65%, enabling more reliable client commitments and better resource allocation."
+  },
+  "roi": {
+    "title": "The Value We Deliver",
+    "standups": {
+      "before": "15 minutes per person daily",
+      "after": "5 minutes per person daily"
+    },
+    "risk": {
+      "before": "Found in late stages",
+      "after": "Predicted before impact"
+    },
+    "reports": {
+      "before": "4 hours to prepare weekly",
+      "after": "Generated automatically"
+    },
+    "enhancedTitle": "Real-World Impact",
+    "enhancedSubtitle": "Measurable outcomes that our AI-powered platform delivers",
+    "downloadReport": "Download Full ROI Report",
+    "enhancedProductivity": {
+      "metric": "68%",
+      "desc": "increase in team productivity with AI task guidance"
+    },
+    "costSavings": {
+      "metric": "42%",
+      "desc": "reduction in project costs through AI resource optimization"
+    },
+    "riskReduction": {
+      "metric": "76%",
+      "desc": "of potential project risks identified before they impact timeline"
+    },
+    "timeToMarket": {
+      "metric": "55%",
+      "desc": "faster time-to-market with AI workflow automation"
+    }
+  },
+  "perfectFor": {
+    "title": "Perfect For",
+    "scaleups": "Scaling Startups",
+    "distributed": "Distributed Teams",
+    "gov": "Government Projects",
+    "vc": "VC Portfolio Management"
+  },
+  "difference": {
+    "title": "The IntelliFlow Difference",
+    "quote": "Unlike traditional project management tools, we leverage artificial intelligence to not just track work but actively guide it to successful completion."
+  },
+  "cta": {
+    "title": "Ready to transform your project management?",
+    "demo": "Book a Demo",
+    "playground": "Try the AI Playground"
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that's right for your team",
+    "starter": {
+      "title": "Starter"
+    },
+    "pro": {
+      "title": "Professional"
+    },
+    "enterprise": {
+      "title": "Enterprise"
+    },
+    "mostPopular": "Most Popular",
+    "contactSales": "Contact Sales",
+    "getStarted": "Get Started",
+    "getTrial": "Start Free Trial",
+    "compareFeatures": "Compare Features",
+    "roiCalculator": {
+      "title": "Calculate Your ROI",
+      "subtitle": "See how much time and money you could save by using our platform. Our typical customers see ROI within weeks, not months.",
+      "cta": "Calculate Your Savings"
+    },
+    "testimonials": {
+      "title": "What Our Customers Say"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    },
+    "finalCta": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Join thousands of teams that have transformed their project management approach and seen incredible ROI.",
+      "trial": "Start Your Free Trial",
+      "sales": "Talk to Sales"
+    }
+  }
+}

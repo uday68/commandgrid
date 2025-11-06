@@ -1,0 +1,59 @@
+{
+  "languageSelector": {
+    "tooltip": "Cambiar idioma",
+    "language": "{{language}}"
+  },
+  "loadingSpinner": {
+    "loading": "Cargando..."
+  },
+  "button_label": "Botón",
+  "profile": {
+    "title": "Mi Perfil",
+    "editProfile": "Editar Perfil",
+    "currentPassword": "Contraseña Actual",
+    "newPassword": "Nueva Contraseña",
+    "confirmPassword": "Confirmar Contraseña",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "saving": "Guardando...",
+    "successMessage": "Perfil actualizado exitosamente",
+    "errorMessage": "Error al actualizar el perfil",
+    "verified": "Cuenta Verificada",
+    "personalDetails": "Datos Personales",
+    "security": "Seguridad y Contraseña",
+    "name": "Nombre Completo",
+    "email": "Correo Electrónico",
+    "phone": "Número de Teléfono",
+    "location": "Ubicación",
+    "company": "Empresa",
+    "language": "Idioma Preferido",
+    "memberSince": "Miembro Desde",
+    "lastPasswordChange": "Último Cambio de Contraseña",
+    "notSpecified": "No Especificado",
+    "notProvided": "No Proporcionado",
+    "notAvailable": "No Disponible",
+    "loading": "Cargando perfil..."
+  },
+  "chatRoom": {
+    "title": "Chat",
+    "typing": "{{user}} está escribiendo...",
+    "send": "Enviar",
+    "typeMessage": "Escribe un mensaje...",
+    "pinnedMessages": "Mensajes Fijados",
+    "unpin": "Desfijar mensaje",
+    "pin": "Fijar mensaje",
+    "you": "Tú",
+    "minimize": "Minimizar",
+    "maximize": "Maximizar",
+    "restore": "Restaurar",
+    "teamChat": "Chat de Equipo",
+    "projectChat": "Chat de Proyecto - {projectId}",
+    "severalTyping": "Varias personas están escribiendo..."
+  },
+  "validation": {
+    "required": "{{field}} es requerido",
+    "minLength": "Debe tener al menos {{count}} caracteres",
+    "passwordRequirement": "Mínimo 8 caracteres",
+    "termsRequired": "Debes aceptar los términos"
+  }
+}

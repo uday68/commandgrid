@@ -1,0 +1,17 @@
+{
+  "translation": {
+    "title": "Documentación de Traducción",
+    "page_title": "Documentación de Traducción - Herramienta de Gestión de Proyectos",
+    "current_config": "Configuración Actual",
+    "current_language": "Idioma Actual",
+    "text_direction": "Dirección del Texto",
+    "namespaces": "Espacios de Nombres Disponibles",
+    "supported_languages": "Idiomas Soportados",
+    "usage_examples": "Ejemplos de Uso",
+    "resources": "Recursos Adicionales",
+    "resources_intro": "Para más información sobre el sistema de internacionalización, consulte los siguientes recursos:",
+    "resources_docs": "Documentación de traducción del proyecto en /docs/translation-guide.md",
+    "resources_i18next": "Documentación de i18next: https://www.i18next.com/",
+    "resources_reacti18next": "React i18next: https://react.i18next.com/"
+  }
+}

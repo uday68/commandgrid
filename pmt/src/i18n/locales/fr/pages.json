@@ -1,0 +1,38 @@
+{
+  "app": {
+    "title": "Outil de Gestion de Projet"
+  },
+  "home": {
+    "title": "Accueil"
+  },
+  "login": {
+    "title": "Connexion - Outil de gestion de projet",
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "forgotPassword": "Mot de passe oublié ?",
+    "registerPrompt": "Pas de compte ? S'inscrire"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "welcome": "Bienvenue, {{name}}",
+    "projects": "Projets",
+    "tasks": "Tâches",
+    "meetings": "Réunions",
+    "reports": "Rapports",
+    "teams": "Équipes"
+  },
+  "projects": {
+    "title": "Projets",
+    "addProject": "Ajouter un projet",
+    "editProject": "Modifier le projet",
+    "deleteProject": "Supprimer le projet"
+  },
+  "errors": {
+    "typeError": "Erreur de type: Impossible de convertir la valeur",
+    "fileSystem": "Erreur du système de fichiers",
+    "unexpectedError": "Une erreur inattendue s'est produite",
+    "retry": "Réessayer",
+    "contact": "Contacter le support"
+  }
+}

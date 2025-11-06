@@ -1,0 +1,38 @@
+{
+  "title": "Mon Profil",
+  "editProfile": "Modifier le Profil",
+  "save": "Enregistrer les Modifications",
+  "cancel": "Annuler",
+  "loading": "Chargement du profil...",
+  "verified": "Compte Vérifié",
+  "personalDetails": "Informations Personnelles",
+  "security": "Sécurité & Mot de Passe",
+  "name": "Nom Complet",
+  "email": "Adresse E-mail",
+  "phone": "Numéro de Téléphone",
+  "location": "Emplacement",
+  "company": "Entreprise",
+  "language": "Langue Préférée",
+  "memberSince": "Membre Depuis",
+  "lastPasswordChange": "Dernier Changement de Mot de Passe",
+  "changePassword": "Changer le Mot de Passe",
+  "currentPassword": "Mot de Passe Actuel",
+  "newPassword": "Nouveau Mot de Passe",
+  "confirmPassword": "Confirmer le Mot de Passe",
+  "notSpecified": "Non Spécifié",
+  "notProvided": "Non Fourni",
+  "notAvailable": "Non Disponible",
+  "success": {
+    "profileUpdated": "Profil mis à jour avec succès",
+    "avatarUpdated": "Photo de profil mise à jour avec succès",
+    "passwordChanged": "Mot de passe changé avec succès"
+  },
+  "errors": {
+    "fetchFailed": "Impossible de charger les données du profil",
+    "updateFailed": "Échec de la mise à jour du profil",
+    "passwordsMismatch": "Les mots de passe ne correspondent pas",
+    "avatarUploadFailed": "Échec du téléchargement de la photo de profil",
+    "invalidCurrentPassword": "Le mot de passe actuel est incorrect",
+    "weakPassword": "Le mot de passe doit contenir au moins 8 caractères avec des lettres et des chiffres"
+  }
+}

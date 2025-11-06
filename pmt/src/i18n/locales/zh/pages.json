@@ -1,0 +1,80 @@
+{
+  "app": {
+    "title": "项目管理工具"
+  },
+  "home": {
+    "title": "首页",
+    "welcome": "欢迎使用项目管理工具",
+    "getStarted": "开始使用"
+  },
+  "login": {
+    "title": "登录 - 项目管理工具",
+    "username": "用户名",
+    "password": "密码",
+    "submit": "登录",
+    "forgotPassword": "忘记密码？",
+    "registerPrompt": "没有账号？注册"
+  },
+  "dashboard": {
+    "title": "仪表板",
+    "welcome": "欢迎，{{name}}",
+    "projects": "项目",
+    "tasks": "任务",
+    "meetings": "会议",
+    "reports": "报告",
+    "teams": "团队"
+  },
+  "projects": {
+    "title": "项目",
+    "addProject": "添加项目",
+    "editProject": "编辑项目",
+    "deleteProject": "删除项目",
+    "projectName": "项目名称",
+    "description": "描述",
+    "startDate": "开始日期",
+    "endDate": "结束日期",
+    "status": "状态"
+  },
+  "tasks": {
+    "title": "任务",
+    "addTask": "添加任务",
+    "editTask": "编辑任务",
+    "deleteTask": "删除任务",
+    "status": "状态",
+    "priority": "优先级",
+    "dueDate": "截止日期",
+    "assignedTo": "分配给",
+    "description": "描述"
+  },
+  "teams": {
+    "title": "团队",
+    "addTeam": "添加团队",
+    "editTeam": "编辑团队",
+    "deleteTeam": "删除团队",
+    "teamName": "团队名称",
+    "members": "成员",
+    "addMember": "添加成员"
+  },
+  "reports": {
+    "title": "报告",
+    "generateReport": "生成报告",
+    "reportType": "报告类型",
+    "dateRange": "日期范围",
+    "project": "项目",
+    "export": "导出"
+  },
+  "errors": {
+    "pageError": "页面错误",
+    "typeError": "类型错误：无法转换值",
+    "fileSystem": "文件系统错误",
+    "unexpectedError": "发生意外错误",
+    "retry": "重试",
+    "contact": "联系支持"
+  },
+  "landing": {
+    "title": "欢迎使用项目管理工具",
+    "subtitle": "通过AI驱动的项目管理简化您的工作流程",
+    "getStarted": "开始使用",
+    "learnMore": "了解更多"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": "{{field}} is required",
+  "invalidEmail": "Please enter a valid email address",
+  "minLength": "Must be at least {{count}} characters",
+  "maxLength": "Cannot exceed {{count}} characters",
+  "passwordsDontMatch": "Passwords don't match",
+  "termsRequired": "You must accept the terms and conditions to continue",
+  "invalidFormat": "Invalid format",
+  "invalidDate": "Please enter a valid date",
+  "invalidNumber": "Please enter a valid number",
+  "emailExists": "This email is already registered",
+  "weakPassword": "Password is too weak",
+  "invalidPhone": "Please enter a valid phone number"
+}

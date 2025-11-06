@@ -1,0 +1,501 @@
+{
+  "app": {
+    "title": "Outil de Gestion de Projets",
+    "welcome": "Bienvenue dans l'Outil de Gestion de Projets",
+    "tagline": "Rationalisez votre flux de travail avec notre solution complète de gestion de projet",
+    "loading": "Chargement de l'application...",
+    "footer": "© {{year}} Outil de Gestion de Projets - Tous droits réservés"
+  },
+  "auth": {
+    "login": {
+      "title": "Connectez-vous à votre compte",
+      "email": "Adresse e-mail",
+      "password": "Mot de passe",
+      "remember": "Se souvenir de moi",
+      "forgot": "Mot de passe oublié ?",
+      "button": "Se connecter",
+      "noAccount": "Vous n'avez pas de compte ?",
+      "signUp": "S'inscrire",
+      "invalidCredentials": "Email ou mot de passe invalide"
+    },
+    "registration": {
+      "title": "Créer un nouveau compte",
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "company": "Nom de l'entreprise",
+      "phone": "Numéro de téléphone",
+      "terms": "J'accepte les Conditions et la Politique de confidentialité",
+      "button": "S'inscrire",
+      "existingAccount": "Vous avez déjà un compte ?",
+      "signIn": "Se connecter",
+      "passwordRequirements": "Le mot de passe doit contenir :",
+      "requirementLength": "8+ caractères",
+      "requirementNumber": "1 chiffre",
+      "requirementSpecial": "1 caractère spécial"
+    }
+  },
+  "onboarding": {
+    "welcome": "Bienvenue sur IntelliFlow !",
+    "step1": {
+      "title": "Configurez votre profil",
+      "description": "Parlez-nous de vous pour personnaliser votre expérience"
+    },
+    "step2": {
+      "title": "Créez votre premier projet",
+      "description": "Commencez par configurer votre projet initial"
+    },
+    "step3": {
+      "title": "Invitez des membres d'équipe",
+      "description": "Collaborez en ajoutant des membres à l'équipe"
+    },
+    "step4": {
+      "title": "Connectez des outils",
+      "description": "Intégrez vos applications préférées"
+    },
+    "skip": "Passer pour l'instant",
+    "next": "Suivant",
+    "complete": "Commencer"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "projects": "Projets",
+    "tasks": "Tâches",
+    "team": "Équipe",
+    "settings": "Paramètres",
+    "reports": "Rapports",
+    "calendar": "Calendrier",
+    "resources": "Ressources",
+    "logout": "Se déconnecter",
+    "profile": "Mon Profil"
+  },
+  "projects": {
+    "title": "Projets",
+    "create": "Créer un projet",
+    "edit": "Modifier le projet",
+    "delete": "Supprimer le projet",
+    "name": "Nom",
+    "description": "Description",
+    "startDate": "Date de début",
+    "endDate": "Date de fin",
+    "status": "Statut",
+    "priority": "Priorité",
+    "budget": "Budget",
+    "manager": "Chef de projet",
+    "members": "Membres de l'équipe",
+    "noProjects": "Aucun projet trouvé",
+    "filterByStatus": "Filtrer par statut",
+    "statuses": {
+      "notStarted": "Non commencé",
+      "inProgress": "En cours",
+      "onHold": "En attente",
+      "completed": "Terminé",
+      "cancelled": "Annulé"
+    },
+    "priorities": {
+      "low": "Basse",
+      "medium": "Moyenne",
+      "high": "Haute",
+      "urgent": "Urgent"
+    },
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce projet ? Cette action ne peut pas être annulée."
+  },
+  "tasks": {
+    "title": "Tâches",
+    "create": "Créer une tâche",
+    "edit": "Modifier la tâche",
+    "delete": "Supprimer la tâche",
+    "name": "Nom",
+    "description": "Description",
+    "assignee": "Assigné à",
+    "dueDate": "Date d'échéance",
+    "status": "Statut",
+    "priority": "Priorité",
+    "project": "Projet",
+    "estimatedHours": "Heures estimées",
+    "actualHours": "Heures réelles",
+    "dependencies": "Dépendances",
+    "attachments": "Pièces jointes",
+    "comments": "Commentaires",
+    "noTasks": "Aucune tâche trouvée",
+    "addComment": "Ajouter un commentaire",
+    "statuses": {
+      "todo": "À faire",
+      "inProgress": "En cours",
+      "inReview": "En révision",
+      "done": "Terminé",
+      "blocked": "Bloqué"
+    }
+  },
+  "team": {
+    "members": "Membres de l'équipe",
+    "addMember": "Ajouter un membre",
+    "removeMember": "Supprimer un membre",
+    "role": "Rôle",
+    "skills": "Compétences",
+    "availability": "Disponibilité",
+    "contactInfo": "Informations de contact",
+    "roles": {
+      "admin": "Administrateur",
+      "manager": "Chef de projet",
+      "developer": "Développeur",
+      "designer": "Designer",
+      "tester": "Testeur"
+    }
+  },
+  "dashboard": {
+    "welcome": "Bienvenue, {{name}} !",
+    "summary": "Résumé du projet",
+    "recentActivities": "Activités récentes",
+    "upcomingDeadlines": "Échéances à venir",
+    "projectProgress": "Progression du projet",
+    "taskDistribution": "Répartition des tâches",
+    "teamWorkload": "Charge de travail de l'équipe"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "profile": "Paramètres du profil",
+    "notifications": "Paramètres de notification",
+    "appearance": "Apparence",
+    "language": "Langue",
+    "privacy": "Paramètres de confidentialité",
+    "security": "Sécurité",
+    "theme": {
+      "title": "Thème",
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Par défaut du système"
+    }
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "search": "Rechercher",
+    "add": "Ajouter",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "view": "Voir",
+    "download": "Télécharger",
+    "upload": "Téléverser",
+    "yes": "Oui",
+    "no": "Non",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "apply": "Appliquer",
+    "reset": "Réinitialiser",
+    "loading": "Chargement...",
+    "noResults": "Aucun résultat trouvé",
+    "success": "Succès !",
+    "error": "Une erreur est survenue",
+    "copied": "Copié dans le presse-papiers",
+    "dateFormat": "DD/MM/YYYY",
+    "refresh": "Actualiser",
+    "viewAll": "Voir tout",
+    "unknown": "Inconnu",
+    "na": "N/D",
+    "logout": "Déconnexion",
+    "login": "Connexion"
+  },
+  "validation": {
+    "required": "Ce champ est obligatoire",
+    "minLength": "Doit contenir au moins {{count}} caractères",
+    "maxLength": "Ne peut pas dépasser {{count}} caractères",
+    "email": "Adresse e-mail invalide",
+    "passwordMatch": "Les mots de passe ne correspondent pas",
+    "date": "Format de date invalide",
+    "number": "Doit être un nombre"
+  },
+  "errors": {
+    "401": "Non autorisé - Veuillez vous connecter",
+    "403": "Interdit - Vous n'avez pas la permission",
+    "404": "Ressource non trouvée",
+    "500": "Erreur serveur - Veuillez réessayer plus tard",
+    "network": "Erreur réseau - Vérifiez votre connexion",
+    "loginFailed": "E-mail ou mot de passe invalide",
+    "sessionExpired": "Session expirée - Veuillez vous reconnecter",
+    "rateLimit": "Trop de requêtes - Veuillez patienter"
+  },
+  "emptyStates": {
+    "projects": {
+      "title": "Aucun projet pour l'instant",
+      "description": "Créez votre premier projet pour commencer",
+      "action": "Créer un projet"
+    },
+    "tasks": {
+      "title": "Aucune tâche trouvée",
+      "description": "Ajoutez des tâches pour organiser votre travail",
+      "action": "Ajouter une tâche"
+    },
+    "team": {
+      "title": "Aucun membre d'équipe",
+      "description": "Invitez des collègues à collaborer",
+      "action": "Inviter des membres"
+    }
+  },
+  "confirmations": {
+    "deleteProject": {
+      "title": "Supprimer le projet",
+      "message": "Êtes-vous sûr de vouloir supprimer ce projet ? Toutes les tâches associées seront également supprimées.",
+      "confirm": "Supprimer",
+      "cancel": "Annuler"
+    },
+    "leaveProject": {
+      "title": "Quitter le projet",
+      "message": "Vous n'aurez plus accès à ce projet. Êtes-vous sûr ?",
+      "confirm": "Quitter",
+      "cancel": "Rester"
+    }
+  },
+  "ai": {
+    "assistant": {
+      "title": "Assistant IA",
+      "prompt": "Demandez-moi n'importe quoi sur vos projets...",
+      "suggestions": [
+        "Résumer l'état de ce projet",
+        "Qui a le plus de tâches en retard ?",
+        "Créer un rapport d'évaluation des risques"
+      ],
+      "thinking": "Analyse de votre demande...",
+      "actions": {
+        "summarize": "Résumer",
+        "enhance": "Améliorer le texte",
+        "suggest": "Suggérer des améliorations"
+      }
+    }
+  },
+  "features": {
+    "title": "Pourquoi les Équipes Choisissent IntelliFlow Plutôt que les Gestionnaires de Tâches Basiques",
+    "subtitle": "Découvrez la différence avec notre plateforme alimentée par l'IA conçue pour les équipes modernes",
+    "ai": {
+      "title": "Co-Pilote IA",
+      "desc": "Pas seulement de l'automatisation—vos projets bénéficient d'un stratège autonome",
+      "details": {
+        "1": "Prédit les risques de délais 72 heures plus tôt que le suivi manuel",
+        "2": "Attribue automatiquement les tâches en fonction de la cartographie des compétences en temps réel",
+        "3": "Génère des rapports prêts pour la salle de conseil avec une simple commande en langage naturel",
+        "4": "Fournit des suggestions d'optimisation continues au fur et à mesure que le travail progresse"
+      },
+      "enhancedTitle": "Capacités IA Avancées",
+      "enhancedSubtitle": "Des fonctionnalités d'IA complètes pour transformer votre expérience de gestion de projet",
+      "allFeatures": "Toutes les Fonctionnalités",
+      "projectManagement": "Gestion de Projet",
+      "teamCollaboration": "Collaboration d'Équipe",
+      "intelligentAnalytics": "Analyses Intelligentes",
+      "systemIntegrations": "Intégrations",
+      "exploreFeatures": "Explorer Toutes les Fonctionnalités IA",
+      "projectTaskGuidance": {
+        "desc": "Notre IA génère des guides d'implémentation détaillés et décompose intelligemment les tâches complexes"
+      },
+      "timeResource": {
+        "desc": "Estimations de temps et recommandations d'allocation des ressources optimisées par l'IA"
+      },
+      "teamFormation": {
+        "desc": "Composition d'équipe intelligente et équilibrage de la charge de travail pour une performance optimale"
+      },
+      "predictiveAnalytics": {
+        "desc": "Prévoyez la progression du projet et identifiez les risques potentiels avant qu'ils n'impactent votre projet"
+      },
+      "reporting": {
+        "desc": "Générez automatiquement des rapports complets et des résumés de contenu concis"
+      },
+      "fileManagement": {
+        "desc": "Gestion intelligente des fichiers avec compression, vérification d'intégrité et résumé de contenu"
+      },
+      "chatAssistant": {
+        "desc": "Interagissez avec un assistant intelligent qui comprend le contexte de votre projet et vos besoins"
+      },
+      "integration": {
+        "desc": "Connectez-vous facilement aux outils populaires et accédez à une marketplace de thèmes et d'extensions"
+      },
+      "roles": {
+        "desc": "Créez des rôles personnalisés avec des permissions spécifiques pour différents besoins organisationnels"
+      },
+      "attendance": {
+        "desc": "Suivi automatisé des présences et allocation intelligente des heures de travail"
+      },
+      "analytics": {
+        "desc": "Surveillez les métriques de performance clés et prédisez les problèmes potentiels du système"
+      },
+      "versionControl": {
+        "desc": "Suivi de version intégré et processus de flux de travail personnalisables"
+      }
+    },
+    "workflows": {
+      "title": "Flux de travail personnalisés",
+      "desc": "Créez des flux de travail sur mesure pour différents types de projets et d'équipes",
+      "details": {
+        "1": "Concepteur de flux de travail par glisser-déposer",
+        "2": "Transitions de tâches et notifications automatisées",
+        "3": "Processus d'approbation personnalisés et règles de validation"
+      }
+    },
+    "military": {
+      "title": "Sécurité de niveau militaire",
+      "desc": "Sécurité de niveau entreprise avec chiffrement avancé et conformité",
+      "details": {
+        "1": "Chiffrement de bout en bout pour toutes les données",
+        "2": "Contrôles d'accès basés sur les rôles et journaux d'audit",
+        "3": "Conformité avec les normes GDPR, HIPAA et ISO"
+      }
+    },
+    "integrations": {
+      "title": "Intégrations transparentes",
+      "desc": "Connectez-vous avec vos outils et plateformes favoris pour un flux de travail unifié",
+      "details": {
+        "1": "Plus de 100 intégrations préconçues avec des outils populaires",
+        "2": "Accès API personnalisé pour des connexions spécialisées",
+        "3": "Synchronisation bidirectionnelle des données avec des systèmes externes"
+      }
+    },
+    "showDetails": "Afficher les Détails",
+    "hideDetails": "Masquer les Détails"
+  },
+  "results": {
+    "title": "Résultats Éprouvés au Combat",
+    "faster": "Démarrages de projets 227% plus rapides avec des modèles générés par l'IA",
+    "saved": "41 heures/mois économisées par membre d'équipe sur les mises à jour de statut",
+    "earlyWarning": "Le système d'alerte précoce détecte 83% des risques avant qu'ils n'escaladent"
+  },
+  "roi": {
+    "title": "Calculateur de ROI",
+    "standups": {
+      "before": "5 h/équipe",
+      "after": "22 min (compte-rendu par IA)"
+    },
+    "risk": {
+      "before": "Post-mortem",
+      "after": "Préemptif (en moyenne 9 jours plus tôt)"
+    },
+    "reports": {
+      "before": "8 h/manuel",
+      "after": "12 sec/généré par IA"
+    },
+    "enhancedTitle": "Impact Réel",
+    "enhancedSubtitle": "Résultats mesurables que notre plateforme alimentée par l'IA offre",
+    "downloadReport": "Télécharger le Rapport ROI Complet",
+    "enhancedProductivity": {
+      "metric": "68%",
+      "desc": "d'augmentation de la productivité de l'équipe grâce aux conseils IA"
+    },
+    "costSavings": {
+      "metric": "42%",
+      "desc": "de réduction des coûts de projet grâce à l'optimisation des ressources par l'IA"
+    },
+    "riskReduction": {
+      "metric": "76%",
+      "desc": "des risques potentiels identifiés avant qu'ils n'impactent le calendrier"
+    },
+    "timeToMarket": {
+      "metric": "55%",
+      "desc": "plus rapide pour la mise sur le marché avec l'automatisation des flux de travail IA"
+    },
+    "stats": {
+      "speedIncrease": "Achèvement du projet plus rapide",
+      "averageReturn": "Retour sur investissement moyen",
+      "hoursSaved": "Heures économisées par membre de l'équipe par semaine",
+      "productivityIncrease": "Augmentation de la productivité"
+    }
+  },
+  "perfectFor": {
+    "title": "Parfait Pour",
+    "scaleups": "Entreprises en croissance où les processus se brisent à 50+ employés",
+    "distributed": "Équipes distribuées noyées dans le chaos asynchrone",
+    "gov": "Gouvernement/Santé nécessitant des pistes d'audit hermétiques",
+    "vc": "Startups financées par capital-risque nécessitant des rapports de niveau investisseur"
+  },
+  "difference": {
+    "title": "La Différence IntelliFlow",
+    "quote": "D'autres outils vous montrent où en sont vos projets—nous vous montrons où ils vont, pourquoi c'est important et exactement comment optimiser la voie à suivre."
+  },
+  "cta": {
+    "title": "Voir la plateforme en action",
+    "demo": "Réserver une Démo de 7 min",
+    "playground": "Essayer le Playground IA"
+  },
+  "pricing": {
+    "title": "Tarification Simple et Transparente",
+    "subtitle": "Choisissez le forfait qui correspond aux besoins de votre équipe",
+    "starter": {
+      "title": "Débutant"
+    },
+    "pro": {
+      "title": "Pro"
+    },
+    "enterprise": {
+      "title": "Entreprise"
+    },
+    "mostPopular": "Le Plus Populaire",
+    "contactSales": "Contacter les Ventes",
+    "getStarted": "Commencer",
+    "getTrial": "Commencer l'essai gratuit",
+    "compareFeatures": "Comparer les fonctionnalités",
+    "roiCalculator": {
+      "title": "Calculateur de ROI",
+      "subtitle": "Découvrez combien vous pouvez économiser",
+      "cta": "Calculez vos économies"
+    },
+    "testimonials": {
+      "title": "Témoignages des clients"
+    },
+    "faq": {
+      "title": "Questions fréquemment posées"
+    },
+    "finalCta": {
+      "title": "Prêt à commencer?",
+      "subtitle": "Rejoignez des milliers de clients satisfaits",
+      "trial": "Commencer l'essai gratuit",
+      "sales": "Contacter les ventes"
+    }
+  },
+  "integrations": {
+    "slack": {
+      "name": "Slack",
+      "description": "Connectez votre espace de travail Slack"
+    },
+    "jira": {
+      "name": "Jira",
+      "description": "Intégration avec les problèmes et projets Jira"
+    },
+    "github": {
+      "name": "GitHub",
+      "description": "Connexion aux dépôts GitHub"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "viewDetails": "Voir les Détails",
+      "attendees": "Participants",
+      "taskCompletion": "Achèvement des Tâches"
+    }
+  },
+  "usecases": {
+    "title": "Cas d'utilisation",
+    "executives": "Dirigeants",
+    "executivesCase": "Besoin de visibilité en temps réel sur l'avancement du projet, l'allocation des ressources et les performances financières.",
+    "executivesResult": "Obtenez des tableaux de bord complets avec des KPI, un suivi budgétaire et des métriques d'utilisation des ressources.",
+    "engineers": "Ingénieurs",
+    "engineersCase": "Besoin de collaborer sur des tâches techniques, de suivre les problèmes et de gérer l'intégration du code.",
+    "engineersResult": "Accès à un système de tickets optimisé avec intégration Git et workflows automatisés.",
+    "pms": "Chefs de projet",
+    "pmsCase": "Besoin de planifier des projets, d'allouer des ressources, de suivre les progrès et de faire des rapports sur les étapes.",
+    "pmsResult": "Utilisez des diagrammes de Gantt interactifs, des outils d'allocation de ressources et des rapports automatisés."
+  },
+  "login": {
+    "logoAlt": "Logo de l'entreprise",
+    "welcomeBack": "Bienvenue à nouveau",
+    "signInPrompt": "Connectez-vous à votre compte",
+    "email": "Email",
+    "password": "Mot de passe",
+    "forgotPassword": "Mot de passe oublié ?",
+    "signIn": "Se connecter",
+    "signingIn": "Connexion en cours...",
+    "noAccount": "Vous n'avez pas de compte ?",
+    "signUp": "S'inscrire"
+  }
+}

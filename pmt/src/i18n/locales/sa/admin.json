@@ -1,0 +1,54 @@
+{
+  "errors": {
+    "somethingWentWrong": "किञ्चित् अशुद्धं अभवत्",
+    "projectCreationError": "परियोजना निर्माणे त्रुटिः",
+    "taskCreationError": "कार्य निर्माणे त्रुटिः"
+  },
+  "stats": {
+    "totalUsers": "सम्पूर्ण उपयोगकर्ताः",
+    "totalProjects": "सम्पूर्ण परियोजनाः",
+    "totalTasks": "सम्पूर्ण कार्याणि",
+    "pendingTasks": "अनिष्पन्न कार्याणि"
+  },
+  "projects": {
+    "title": "परियोजनाः",
+    "new": "नवीन परियोजना",
+    "team": "दलम्",
+    "progress": "प्रगतिः",
+    "actions": "क्रियाः",
+    "members": "सदस्याः",
+    "noProjects": "कापि परियोजना उपलब्धा नास्ति",
+    "noProjectsAvailable": "कापि परियोजना उपलब्धा नास्ति"
+  },
+  "tasks": {
+    "recentTasks": "अद्यतन कार्याणि",
+    "new": "नवीन कार्यम्",
+    "title": "शीर्षकम्",
+    "project": "परियोजना",
+    "assignedTo": "नियुक्तः",
+    "dueDate": "नियतकालः",
+    "startDate": "प्रारम्भदिनाङ्कः",
+    "noTasks": "अद्यतन कार्याणि अनुपलब्धानि",
+    "createNewTask": "नवीनं कार्यं सृज",
+    "priority": {
+      "low": "न्यूनम्",
+      "medium": "मध्यमम्",
+      "high": "उच्चम्"
+    }
+  },
+  "tools": {
+    "title": "प्रशासकीय उपकरणानि",
+    "databaseBackup": "डेटाबेस बैकअप्",
+    "exportData": "डेटा निर्यात",
+    "bulkImport": "समूह आयात",
+    "securityScan": "सुरक्षा स्कैन",
+    "printAllData": "सर्वं डेटा मुद्रय",
+    "processing": "प्रक्रियारतम्...",
+    "backupFolderPath": "बैकअप फोल्डर स्थानम्",
+    "confirmBackup": "बैकअप् पुष्टि",
+    "output": "निष्क्रमणम्",
+    "usingCachedData": "पूर्वसङ्ग्रहित डेटा उपयोगः"
+  },
+  "actionFailed": "क्रिया विफला",
+  "usingCachedData": "सङ्ग्रहित डेटा उपयोगः"
+}

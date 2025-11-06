@@ -1,0 +1,31 @@
+{
+  "title": "चैट",
+  "you": "आप",
+  "typing": "{{user}} टाइप कर रहा है...",
+  "severalTyping": "कई लोग टाइप कर रहे हैं...",
+  "sendMessage": "संदेश भेजें",
+  "typeMessage": "संदेश लिखें...",
+  "upload": "अपलोड",
+  "pin": "पिन करें",
+  "unpin": "अनपिन करें",
+  "teamChat": "टीम चैट",
+  "projectChat": "प्रोजेक्ट चैट - {{projectId}}",
+  "minutes": "{{count}} मिनट पहले",
+  "hours": "{{count}} घंटे पहले",
+  "yesterday": "कल",
+  "copy": "टेक्स्ट कॉपी करें",
+  "sendNotification": "नोटिफिकेशन के रूप में भेजें",
+  "reminder": "रिमाइंडर सेट करें",
+  "reminders": {
+    "hour": "1 घंटे में",
+    "day": "1 दिन में",
+    "week": "1 सप्ताह में"
+  },
+  "notifications": {
+    "title": "सूचनाएं",
+    "noNotifications": "कोई सूचना नहीं",
+    "generalNotification": "सामान्य सूचना",
+    "urgentNotification": "आवश्यक सूचना",
+    "responseReminder": "जवाब रिमाइंडर"
+  }
+}

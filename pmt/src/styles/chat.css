@@ -1,0 +1,135 @@
+/* Chat component z-index management */
+.chat-overlay {
+  z-index: 9999 !important;
+}
+
+.chat-modal {
+  z-index: 10000 !important;
+}
+
+.chat-button {
+  z-index: 9997 !important;
+}
+
+.chat-header {
+  z-index: 10001 !important;
+}
+
+.chat-message-input {
+  z-index: 10002 !important;
+}
+
+/* Floating chat button animations */
+.floating-chat-enter {
+  opacity: 0;
+  transform: scale(0.3);
+}
+
+.floating-chat-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.floating-chat-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.floating-chat-exit-active {
+  opacity: 0;
+  transform: scale(0.3);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Chat modal animations */
+.chat-modal-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.chat-modal-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.chat-modal-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.chat-modal-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Message animations */
+.message-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.message-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Typing indicator animation */
+@keyframes typing-dots {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+}
+
+.typing-dot {
+  animation: typing-dots 1.4s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 160ms;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 320ms;
+}
+
+/* Responsive design for chat */
+@media (max-width: 768px) {
+  .chat-modal {
+    width: 95vw !important;
+    height: 90vh !important;
+    margin: 2.5vh 2.5vw !important;
+  }
+  
+  .floating-chat-button {
+    bottom: 20px !important;
+    right: 20px !important;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .chat-modal {
+    background-color: #1f2937;
+    color: #f9fafb;
+  }
+  
+  .chat-message-user {
+    background-color: #3b82f6;
+  }
+  
+  .chat-message-other {
+    background-color: #374151;
+    color: #f9fafb;
+  }
+}

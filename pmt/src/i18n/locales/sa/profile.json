@@ -1,0 +1,38 @@
+{
+  "title": "मम परिचयः",
+  "editProfile": "परिचयं संपादयतु",
+  "save": "परिवर्तनानि रक्षतु",
+  "cancel": "निरस्यताम्",
+  "loading": "परिचयः आरोह्यते...",
+  "verified": "प्रमाणीकृतं खातम्",
+  "personalDetails": "वैयक्तिक विवरणानि",
+  "security": "सुरक्षा एवं गुप्तशब्दः",
+  "name": "पूर्णं नाम",
+  "email": "ईमेल-पत्ता",
+  "phone": "दूरभाष संख्या",
+  "location": "स्थानम्",
+  "company": "संस्था",
+  "language": "प्राथमिकी भाषा",
+  "memberSince": "सदस्यता आरम्भः",
+  "lastPasswordChange": "अन्तिम गुप्तशब्द परिवर्तनम्",
+  "changePassword": "गुप्तशब्दं परिवर्तयतु",
+  "currentPassword": "वर्तमानः गुप्तशब्दः",
+  "newPassword": "नूतनः गुप्तशब्दः",
+  "confirmPassword": "गुप्तशब्दं पुष्टीकरोतु",
+  "notSpecified": "निर्दिष्टं नास्ति",
+  "notProvided": "प्रदत्तं नास्ति",
+  "notAvailable": "उपलब्धं नास्ति",
+  "success": {
+    "profileUpdated": "परिचयः सफलतया अद्यतनीकृतम्",
+    "avatarUpdated": "परिचय-चित्रं सफलतया अद्यतनीकृतम्",
+    "passwordChanged": "गुप्तशब्दः सफलतया परिवर्तितः"
+  },
+  "errors": {
+    "fetchFailed": "परिचय-विवरणानि प्राप्तुं न शक्यते",
+    "updateFailed": "परिचयम् अद्यतनीकर्तुं विफलम्",
+    "passwordsMismatch": "गुप्तशब्दाः न मेलयन्ति",
+    "avatarUploadFailed": "परिचय-चित्रम् आरोपयितुं विफलम्",
+    "invalidCurrentPassword": "वर्तमानः गुप्तशब्दः अयथार्थः",
+    "weakPassword": "गुप्तशब्दे न्यूनातिन्यूनम् ८ वर्णाः अक्षराणि च संख्याः च भवितव्याः"
+  }
+}

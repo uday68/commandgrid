@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\project_management_tool\\backend\\logs\\.bf6d681cf0aef8aba38e8061561e46c1bec9e77c-audit.json",
+    "files": [
+        {
+            "date": 1749418172045,
+            "name": "D:\\project_management_tool\\backend\\logs\\error-2025-06-09.log",
+            "hash": "a044535a15dc97553f29666b1fea8a698448f5a4a9a2733f12b08c2737eb5549"
+        },
+        {
+            "date": 1749494286438,
+            "name": "D:\\project_management_tool\\backend\\logs\\error-2025-06-10.log",
+            "hash": "b10bdc5ab11bea4ff561d0520bc2dce05431adcac7cf116828dbf6f5a7b57c45"
+        },
+        {
+            "date": 1749581206142,
+            "name": "D:\\project_management_tool\\backend\\logs\\error-2025-06-11.log",
+            "hash": "0bf943f0c7160283ed6139039dc65fe4924512c2e341e160006fa54f7bfcb309"
+        },
+        {
+            "date": 1749727232336,
+            "name": "D:\\project_management_tool\\backend\\logs\\error-2025-06-12.log",
+            "hash": "ec5d3f2d6ebfcf208cdf1089ca5a36036bd666f75725b533e7399603c05ec586"
+        },
+        {
+            "date": 1749814125553,
+            "name": "D:\\project_management_tool\\backend\\logs\\error-2025-06-13.log",
+            "hash": "f43cf379ee27046e8f9c23ec53f76e1d02915695565a3aff97452a073bd4e690"
+        },
+        {
+            "date": 1749902368835,
+            "name": "D:\\project_management_tool\\backend\\logs\\error-2025-06-14.log",
+            "hash": "5cbff3e2273e1077982ca1660a4085268e15bd3630a508683a66c7978a33f1a7"
+        },
+        {
+            "date": 1749925800937,
+            "name": "D:\\project_management_tool\\backend\\logs\\error-2025-06-15.log",
+            "hash": "8c32668c5fea5e909817acfce14ceea7d8eebb6ec2d38676451e75779d68fb65"
+        },
+        {
+            "date": 1750012200139,
+            "name": "D:\\project_management_tool\\backend\\logs\\error-2025-06-16.log",
+            "hash": "ba5a923cebed61a0d6308d3534db765dbffded12040cc418f1e2d06eccd3dbc7"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "d:\\project_management_tool\\backend\\logs\\.a7ad9750c501d49a4740d2549e35db5d088c32af-audit.json",
+    "files": [
+        {
+            "date": 1749924596339,
+            "name": "d:\\project_management_tool\\backend\\logs\\combined-2025-06-14.log",
+            "hash": "6841667eae832742d299c213435e7b91ca61fba55fa6ddc00972dfdaf56d61a1"
+        }
+    ],
+    "hashType": "sha256"
+}

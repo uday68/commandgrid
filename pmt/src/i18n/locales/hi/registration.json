@@ -1,0 +1,96 @@
+{
+  "title": "अपना खाता बनाएं",
+  "subtitle": "हजारों टीमों में शामिल हों और बेहतर प्रोजेक्ट प्रबंधन की ओर अपनी यात्रा शुरू करें",
+  "steps": {
+    "account": "खाता",
+    "personal": "व्यक्तिगत",
+    "team": "टीम",
+    "organization": "संगठन",
+    "admin": "प्रशासक",
+    "review": "समीक्षा"
+  },
+  "registrationType": {
+    "individual": "व्यक्तिगत",
+    "team": "टीम",
+    "company": "कंपनी",
+    "companyAdmin": "कंपनी + प्रशासक"
+  },
+  "fields": {
+    "email": "ईमेल पता",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "firstName": "पहला नाम",
+    "lastName": "अंतिम नाम",
+    "phone": "फोन नंबर",
+    "companyName": "कंपनी का नाम",
+    "industry": "उद्योग",
+    "companySize": "कंपनी का आकार",
+    "role": "आपकी भूमिका",
+    "teamName": "टीम का नाम",
+    "teamDescription": "टीम का विवरण",
+    "teamSize": "टीम का आकार",
+    "address": "पता",
+    "city": "शहर",
+    "state": "राज्य/प्रांत",
+    "zipCode": "पिन कोड",
+    "country": "देश",
+    "category": "कंपनी श्रेणी",
+    "sector": "व्यापार क्षेत्र",
+    "adminFirstName": "प्रशासक का पहला नाम",
+    "adminLastName": "प्रशासक का अंतिम नाम",
+    "adminEmail": "प्रशासक का ईमेल",
+    "adminPassword": "प्रशासक का पासवर्ड",
+    "adminConfirmPassword": "प्रशासक के पासवर्ड की पुष्टि करें"
+  },
+  "placeholders": {
+    "phone": "अपना फोन नंबर दर्ज करें (वैकल्पिक)",
+    "category": "अपनी कंपनी की श्रेणी दर्ज करें (वैकल्पिक)"
+  },
+  "industries": {
+    "technology": "तकनीकी",
+    "finance": "वित्त",
+    "healthcare": "स्वास्थ्य देखभाल",
+    "education": "शिक्षा",
+    "retail": "खुदरा"
+  },
+  "roles": {
+    "owner": "मालिक",
+    "manager": "प्रबंधक",
+    "developer": "डेवलपर",
+    "designer": "डिज़ाइनर",
+    "analyst": "विश्लेषक"
+  },
+  "defaults": {
+    "industry": "तकनीकी",
+    "role": "मालिक"
+  },
+  "buttons": {
+    "uploadPhoto": "फोटो अपलोड करें",
+    "completeRegistration": "पंजीकरण पूरा करें"
+  },
+  "labels": {
+    "preferAgile": "मैं प्रोजेक्ट प्रबंधन के लिए एजाइल पद्धति पसंद करता हूं",
+    "agilePreference": "एजाइल प्राथमिकता"
+  },
+  "passwordRequirement": "कम से कम 8 अक्षर आवश्यक हैं",
+  "review": {
+    "account": "खाता जानकारी",
+    "personal": "व्यक्तिगत जानकारी",
+    "organization": "संगठन जानकारी",
+    "team": "टीम जानकारी",
+    "admin": "प्रशासक जानकारी"
+  },
+  "terms": {
+    "agree": "मैं सहमत हूं",
+    "termsService": "सेवा की शर्तें",
+    "and": "और",
+    "privacyPolicy": "गोपनीयता नीति"
+  },
+  "haveAccount": "पहले से ही खाता है?",
+  "signIn": "साइन इन करें",
+  "notProvided": "प्रदान नहीं किया गया",
+  "adminInfo": "प्रशासक खाता जानकारी",
+  "errors": {
+    "registrationFailed": "पंजीकरण विफल हुआ। कृपया पुन: प्रयास करें।"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "title": "मीटिंग्स",
+  "create": "मीटिंग बनाएं",
+  "createNew": "नई मीटिंग बनाएं",
+  "description": "मीटिंग विवरण",
+  "start": "मीटिंग शुरू करें",
+  "startImmediate": "तुरंत मीटिंग शुरू करें",
+  "stats": {
+    "Active_Meetings": "सक्रिय मीटिंग्स",
+    "Team_Members": "टीम के सदस्य",
+    "Project_Progress": "प्रोजेक्ट प्रगति"
+  },
+  "errors": {
+    "teamsFetchFailed": "टीम फेच करने में विफल। कृपया पुन: प्रयास करें।",
+    "userDataFetchFailed": "उपयोगकर्ता डेटा फेच करने में विफल। कृपया पुन: प्रयास करें।",
+    "projectsFetchFailed": "प्रोजेक्ट फेच करने में विफल। कृपया पुन: प्रयास करें।",
+    "teamMembersFetchFailed": "टीम के सदस्यों को फेच करने में विफल। कृपया पुन: प्रयास करें।",
+    "projectTeamsFetchFailed": "प्रोजेक्ट टीम फेच करने में विफल। कृपया पुन: प्रयास करें।",    "titleRequired": "मीटिंग शीर्षक आवश्यक है",
+    "dateRequired": "मीटिंग तिथि आवश्यक है",
+    "timeRequired": "मीटिंग का समय आवश्यक है",
+    "durationInvalid": "मीटिंग की अवधि सकारात्मक होनी चाहिए",
+    "contextRequired": "मीटिंग संदर्भ आवश्यक है",
+    "schedulingFailed": "मीटिंग शेड्यूल करने में विफल। कृपया पुन: प्रयास करें।",
+    "createFailed": "मीटिंग बनाने में विफल। कृपया पुन: प्रयास करें।",
+    "fetchFailed": "मीटिंग फेच करने में विफल। कृपया पुन: प्रयास करें।"
+  },
+  "scheduler": {
+    "title": "मीटिंग शेड्यूल करें",
+    "meetingTitle": "मीटिंग का शीर्षक",
+    "description": "विवरण",
+    "agenda": "एजेंडा",
+    "date": "तारीख",
+    "time": "समय",
+    "duration": "अवधि",
+    "context": "मीटिंग संदर्भ",
+    "contexts": {
+      "company": "कंपनी",
+      "team": "टीम",
+      "project": "प्रोजेक्ट"
+    },
+    "project": "प्रोजेक्ट",
+    "noProject": "कोई प्रोजेक्ट नहीं",
+    "team": "टीम",
+    "noTeam": "कोई टीम नहीं",
+    "attendees": "प्रतिभागी",
+    "isRecurring": "आवर्ती मीटिंग",
+    "isPublic": "सार्वजनिक मीटिंग",
+    "schedule": "मीटिंग शेड्यूल करें",
+    "recurringPattern": "आवर्ती पैटर्न",
+    "patterns": {
+      "daily": "दैनिक",
+      "weekly": "साप्ताहिक",
+      "biweekly": "द्वि-साप्ताहिक",
+      "monthly": "मासिक"
+    }
+  },  "details": {
+    "join": "मीटिंग में शामिल हों",
+    "edit": "मीटिंग संपादित करें",
+    "delete": "मीटिंग हटाएं",
+    "notFound": "मीटिंग नहीं मिली",
+    "information": "मीटिंग जानकारी",
+    "organizer": "आयोजक",
+    "agenda": "एजेंडा",
+    "attachments": "अनुलग्नक",
+    "participants": "प्रतिभागी",
+    "deleteConfirm": "हटाने की पुष्टि करें",
+    "deleteWarning": "क्या आप वाकई इस मीटिंग को हटाना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।"
+  }
+}

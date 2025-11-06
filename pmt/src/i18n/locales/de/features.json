@@ -1,0 +1,64 @@
+{
+  "title": "Leistungsstarke Funktionen",
+  "subtitle": "Alles, was Sie für effizientes Projektmanagement benötigen",
+  "ai": {
+    "title": "KI-Unterstützung",
+    "desc": "Intelligente KI-Funktionen zur Steigerung der Produktivität",
+    "details": {
+      "1": "Automatisierte Aufgabenpriorisierung",
+      "2": "Intelligente Zeiterfassung",
+      "3": "Inhaltszusammenfassung",
+      "4": "Codeüberprüfungsvorschläge"
+    }
+  },
+  "wellbeing": {
+    "title": "Team-Wohlbefinden",
+    "desc": "Tools zur Aufrechterhaltung des Team-Wohlbefindens und zur Vermeidung von Burnout",
+    "details": {
+      "1": "Work-Life-Balance-Indikatoren",
+      "2": "Pausenerinnerungen",
+      "3": "Arbeitsbelastungsanalyse",
+      "4": "Wohlbefindensressourcen"
+    }
+  },
+  "community": {
+    "title": "Gemeinschaftliche Zusammenarbeit",
+    "desc": "Integrierte Community-Funktionen zur Förderung der Teamarbeit",
+    "details": {
+      "1": "Team-Foren und Diskussionen",
+      "2": "Wissensaustausch-Hubs",
+      "3": "Peer-Anerkennungssystem",
+      "4": "Praxisgemeinschaften"
+    }
+  },
+  "integrations": {
+    "title": "Leistungsstarke Integrationen",
+    "desc": "Verbinden Sie sich mühelos mit Ihren Lieblingstools",
+    "details": {
+      "1": "GitHub- und GitLab-Integration",
+      "2": "Slack und Microsoft Teams",
+      "3": "Google Workspace und Office 365",
+      "4": "Zoom und Google Meet"
+    }
+  },
+  "workflows": {
+    "title": "Benutzerdefinierte Arbeitsabläufe",
+    "desc": "Erstellen Sie maßgeschneiderte Prozesse für Ihr Team",
+    "details": {
+      "1": "Drag-and-Drop-Workflow-Builder",
+      "2": "Automatisierte Statusaktualisierungen",
+      "3": "Benutzerdefinierte Genehmigungsprozesse"
+    }
+  },
+  "military": {
+    "title": "Militärische Sicherheit",
+    "desc": "Unternehmensweiter Schutz für Ihre Daten",
+    "details": {
+      "1": "Ende-zu-Ende-Verschlüsselung",
+      "2": "Rollenbasierte Zugriffskontrolle",
+      "3": "Einhaltung wichtiger Vorschriften"
+    }
+  },
+  "showDetails": "Details anzeigen",
+  "hideDetails": "Details ausblenden"
+}

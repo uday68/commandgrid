@@ -1,0 +1,32 @@
+{
+  "alt": {
+    "dashboard_graph": "Dashboard performance graph showing project metrics over time",
+    "profile_picture": "User profile picture",
+    "team_avatar": "Team member avatar",
+    "project_thumbnail": "Project thumbnail image",
+    "empty_state": "Empty state illustration",
+    "loading": "Loading animation",
+    "logo": "Project Management Tool logo"
+  },
+  "carousel": {
+    "slide1": "Team collaboration features",
+    "slide2": "Task management dashboard",
+    "slide3": "Analytics and reporting tools"
+  },
+  "onboarding": {
+    "step1": "Welcome to Project Management Tool",
+    "step2": "Create your first project",
+    "step3": "Invite team members",
+    "step4": "Track your progress"
+  },
+  "captioning": {
+    "enabled": "Image captioning is enabled",
+    "processing": "Processing image for captions...",
+    "error": "Could not generate captions for this image"
+  },
+  "model": {
+    "type": "DPT_Large",
+    "render_size": 1024,
+    "scale_factor": 1.5
+  }
+}

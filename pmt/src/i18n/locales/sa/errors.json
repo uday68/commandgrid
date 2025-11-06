@@ -1,0 +1,46 @@
+{
+  "general": {
+    "unknown": "अज्ञात त्रुटिः अभवत्",
+    "serverError": "वितरक त्रुटिः अभवत्",
+    "connectionFailed": "वितरकेन सह सम्बन्धः विफलः",
+    "timeout": "अनुरोधस्य समयः समाप्तः",
+    "unauthorized": "अनधिकृत प्रवेशः",
+    "forbidden": "प्रवेशः निषिद्धः",
+    "notFound": "संसाधनं न प्राप्तम्",
+    "validationFailed": "सत्यापनं विफलम्"
+  },
+  "auth": {
+    "invalidCredentials": "अवैधं उपयोगकर्तृ नाम अथवा गुप्तशब्दः",
+    "accountLocked": "भवतः खातं तालितम् अस्ति",
+    "sessionExpired": "भवतः सत्रं समाप्तम्, कृपया पुनः प्रविशतु",
+    "emailInUse": "ईमेल् पूर्वमेव उपयोगे अस्ति",
+    "weakPassword": "गुप्तशब्दः अतिदुर्बलः अस्ति",
+    "loginRequired": "एतां सुविधाम् उपयोक्तुं भवता प्रवेशः करणीयः"
+  },
+  "connection": {
+    "offline": "भवान् सम्प्रति विनासम्पर्कं अस्ति",
+    "reconnecting": "पुनः सम्पर्कः स्थापयति...",
+    "reconnected": "सम्पर्कः पुनर्स्थापितः",
+    "failed": "सम्पर्कः विफलः",
+    "realtimeConnection": "तात्कालिक-सम्पर्क त्रुटिः: {{error}}"
+  },
+  "projects": {
+    "createFailed": "परियोजना निर्माणं विफलम्",
+    "updateFailed": "परियोजना अद्यतनं विफलम्",
+    "deleteFailed": "परियोजना विलोपनं विफलम्",
+    "accessDenied": "भवतः एतां परियोजनाम् उपयोक्तुं अनुमतिः नास्ति"
+  },
+  "tasks": {
+    "createFailed": "कार्य निर्माणं विफलम्",
+    "updateFailed": "कार्य अद्यतनं विफलम्",
+    "deleteFailed": "कार्य विलोपनं विफलम्",
+    "assignFailed": "कार्य नियोजनं विफलम्",
+    "statusChangeFailed": "कार्य स्थिति परिवर्तनं विफलम्"
+  },
+  "files": {
+    "uploadFailed": "सञ्चिका आरोपणं विफलम्",
+    "downloadFailed": "सञ्चिका अवारोपणं विफलम्",
+    "fileTooLarge": "सञ्चिका अतिविशाला अस्ति",
+    "invalidFileType": "अवैधः सञ्चिका प्रकारः"
+  }
+}

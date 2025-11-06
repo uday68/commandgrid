@@ -1,0 +1,66 @@
+{
+  "languageSelector": {
+    "tooltip": "Change language",
+    "language": "{{language}}"
+  },
+  "loadingSpinner": {
+    "loading": "Loading..."
+  },
+  "profile": {
+    "title": "Profile",
+    "editProfile": "Edit Profile",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "save": "Save",
+    "cancel": "Cancel",
+    "saving": "Saving...",
+    "successMessage": "Profile updated successfully",
+    "errorMessage": "Profile update failed"
+  },
+  "chatRoom": {
+    "title": "Chat",
+    "typing": "{{user}} is typing...",
+    "send": "Send",
+    "typeMessage": "Type a message...",
+    "pinnedMessages": "Pinned Messages",
+    "unpin": "Unpin message",
+    "pin": "Pin message",
+    "you": "You",
+    "minimize": "Minimize",
+    "maximize": "Maximize",
+    "restore": "Restore",
+    "teamChat": "Team Chat",
+    "projectChat": "Project Chat - {projectId}",
+    "severalTyping": "Several people are typing..."
+  },
+  "validation": {
+    "required": "{{field}} is required",
+    "minLength": "Must be at least {{count}} characters",
+    "passwordRequirement": "Minimum 8 characters",
+    "termsRequired": "You must accept the terms"
+  },
+  "translationStats": {
+    "title": "Translation Coverage",
+    "language": "Language",
+    "coverage": "Coverage",
+    "missingKeys": "Missing Keys",
+    "totalKeys": "Total Keys",
+    "percentage": "Percentage"
+  },
+  "translationWrapper": {
+    "defaultTitle": "Project Management Tool",
+    "rtlSupport": "RTL Support",
+    "ltrSupport": "LTR Support"
+  },
+  "button_label": "Button",
+  "common": {
+    "errors": {
+      "translation": "Translation error:"
+    }
+  },
+  "home": {
+    "get_started": "Get Started",
+    "book_demo": "Book Demo"
+  }
+}

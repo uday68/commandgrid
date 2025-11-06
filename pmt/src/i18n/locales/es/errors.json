@@ -1,0 +1,55 @@
+{
+  "generic_error": "Ha ocurrido un error",
+  "general": {
+    "unknown": "Se ha producido un error desconocido",
+    "serverError": "Se ha producido un error en el servidor",
+    "connectionFailed": "Error al conectar con el servidor",
+    "timeout": "La solicitud ha expirado",
+    "unauthorized": "Acceso no autorizado",
+    "forbidden": "Acceso prohibido",
+    "notFound": "Recurso no encontrado",
+    "validationFailed": "La validación ha fallado"
+  },
+  "auth": {
+    "invalidCredentials": "Nombre de usuario o contraseña inválidos",
+    "accountLocked": "Su cuenta ha sido bloqueada",
+    "sessionExpired": "Su sesión ha expirado, inicie sesión nuevamente",
+    "emailInUse": "El correo electrónico ya está en uso",
+    "weakPassword": "La contraseña es demasiado débil",
+    "loginRequired": "Debe iniciar sesión para acceder a esta función"
+  },
+  "connection": {
+    "offline": "Actualmente está sin conexión",
+    "reconnecting": "Reconectando...",
+    "reconnected": "Conexión restaurada",
+    "failed": "La conexión falló",
+    "realtimeConnection": "Error de conexión en tiempo real: {{error}}"
+  },
+  "projects": {
+    "createFailed": "Error al crear el proyecto",
+    "updateFailed": "Error al actualizar el proyecto",
+    "deleteFailed": "Error al eliminar el proyecto",
+    "accessDenied": "No tiene permiso para acceder a este proyecto"
+  },
+  "tasks": {
+    "createFailed": "Error al crear la tarea",
+    "updateFailed": "Error al actualizar la tarea",
+    "deleteFailed": "Error al eliminar la tarea",
+    "assignFailed": "Error al asignar la tarea",
+    "statusChangeFailed": "Error al cambiar el estado de la tarea"
+  },
+  "files": {
+    "uploadFailed": "Error al subir el archivo",
+    "downloadFailed": "Error al descargar el archivo",
+    "fileTooLarge": "El archivo es demasiado grande",
+    "invalidFileType": "Tipo de archivo inválido"
+  },
+  "pageError": "Error de página",
+  "unexpectedError": "Se produjo un error inesperado",
+  "goBack": "Volver",
+  "returnHome": "Volver al inicio",
+  "tryAgain": "Intentar de nuevo",
+  "somethingWentWrong": "Algo salió mal",
+  "applicationCrashed": "La aplicación encontró un error inesperado",
+  "checkConnection": "Por favor, verifique su conexión a Internet"
+}

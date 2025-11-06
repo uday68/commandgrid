@@ -1,0 +1,38 @@
+{
+  "title": "मेरा प्रोफाइल",
+  "editProfile": "प्रोफाइल संपादित करें",
+  "save": "परिवर्तन सहेजें",
+  "cancel": "रद्द करें",
+  "loading": "प्रोफाइल लोड हो रहा है...",
+  "verified": "सत्यापित खाता",
+  "personalDetails": "व्यक्तिगत विवरण",
+  "security": "सुरक्षा और पासवर्ड",
+  "name": "पूरा नाम",
+  "email": "ईमेल पता",
+  "phone": "फ़ोन नंबर",
+  "location": "स्थान",
+  "company": "कंपनी",
+  "language": "पसंदीदा भाषा",
+  "memberSince": "सदस्यता तिथि",
+  "lastPasswordChange": "अंतिम पासवर्ड परिवर्तन",
+  "changePassword": "पासवर्ड बदलें",
+  "currentPassword": "वर्तमान पासवर्ड",
+  "newPassword": "नया पासवर्ड",
+  "confirmPassword": "पासवर्ड की पुष्टि करें",
+  "notSpecified": "निर्दिष्ट नहीं",
+  "notProvided": "प्रदान नहीं किया गया",
+  "notAvailable": "उपलब्ध नहीं",
+  "success": {
+    "profileUpdated": "प्रोफाइल सफलतापूर्वक अपडेट की गई",
+    "avatarUpdated": "प्रोफाइल चित्र सफलतापूर्वक अपडेट किया गया",
+    "passwordChanged": "पासवर्ड सफलतापूर्वक बदला गया"
+  },
+  "errors": {
+    "fetchFailed": "प्रोफाइल डेटा लोड नहीं किया जा सका",
+    "updateFailed": "प्रोफाइल अपडेट करने में विफल",
+    "passwordsMismatch": "पासवर्ड मेल नहीं खाते",
+    "avatarUploadFailed": "प्रोफाइल चित्र अपलोड करने में विफल",
+    "invalidCurrentPassword": "वर्तमान पासवर्ड गलत है",
+    "weakPassword": "पासवर्ड में कम से कम 8 अक्षर और अंक होने चाहिए"
+  }
+}

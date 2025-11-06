@@ -1,0 +1,75 @@
+{
+  "languageSelector": {
+    "tooltip": "भाषा बदलें",
+    "language": "{{language}}"
+  },
+  "loadingSpinner": {
+    "loading": "लोड हो रहा है..."
+  },
+  "profile": {
+    "title": "प्रोफाइल",
+    "editProfile": "प्रोफाइल संपादित करें",
+    "currentPassword": "वर्तमान पासवर्ड",
+    "newPassword": "नया पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "save": "सहेजें",
+    "cancel": "रद्द करें",
+    "saving": "सहेज रहा है...",
+    "successMessage": "प्रोफाइल सफलतापूर्वक अपडेट की गई",
+    "errorMessage": "प्रोफाइल अपडेट करने में विफल",
+    "verified": "सत्यापित खाता",
+    "personalDetails": "व्यक्तिगत विवरण",
+    "security": "सुरक्षा और पासवर्ड",
+    "name": "पूरा नाम",
+    "email": "ईमेल पता",
+    "phone": "फोन नंबर",
+    "location": "स्थान",
+    "company": "कंपनी",
+    "language": "पसंदीदा भाषा",
+    "memberSince": "सदस्यता तिथि",
+    "lastPasswordChange": "अंतिम पासवर्ड परिवर्तन",
+    "loading": "प्रोफ़ाइल लोड हो रही है..."
+  },
+  "chatRoom": {
+    "title": "चैट",
+    "typing": "{{user}} टाइप कर रहा है...",
+    "send": "भेजें",
+    "typeMessage": "संदेश लिखें...",
+    "pinnedMessages": "पिन किए गए संदेश",
+    "unpin": "पिन हटाएं",
+    "pin": "पिन करें",
+    "you": "आप",
+    "minimize": "छोटा करें",
+    "maximize": "बड़ा करें",
+    "restore": "पुनर्स्थापित करें",
+    "teamChat": "टीम चैट",
+    "projectChat": "प्रोजेक्ट चैट - {projectId}",
+    "severalTyping": "कई लोग टाइप कर रहे हैं..."
+  },
+  "validation": {
+    "required": "{{field}} आवश्यक है",
+    "minLength": "कम से कम {{count}} अक्षर होने चाहिए",
+    "passwordRequirement": "न्यूनतम 8 अक्षर",
+    "termsRequired": "आपको नियम स्वीकार करने होंगे"
+  },
+  "userManagementComponent": {
+    "title": "उपयोगकर्ता प्रबंधन",
+    "addUser": "उपयोगकर्ता जोड़ें",
+    "editUser": "उपयोगकर्ता संपादित करें",
+    "deleteUser": "उपयोगकर्ता हटाएं",
+    "confirmDelete": "क्या आप वाकई इस उपयोगकर्ता को हटाना चाहते हैं?",
+    "userDeleted": "उपयोगकर्ता सफलतापूर्वक हटा दिया गया",
+    "userUpdated": "उपयोगकर्ता सफलतापूर्वक अपडेट किया गया",
+    "userCreated": "उपयोगकर्ता सफलतापूर्वक बनाया गया",
+    "emailSent": "ईमेल सफलतापूर्वक भेजा गया",
+    "impersonateUser": "उपयोगकर्ता के रूप में लॉगिन करें",
+    "impersonating": "आप वर्तमान में इनके रूप में लॉगिन हैं:",
+    "securityNotice": "महत्वपूर्ण सुरक्षा सूचना",
+    "impersonationDescription": "उपयोगकर्ता के रूप में लॉगिन करते समय, आपके पास उस उपयोगकर्ता के समान पहुंच स्तर होगा। प्रतिरूपण के दौरान किए गए सभी कार्यों को आपकी प्रशासक आईडी के साथ लॉग किया जाएगा।",
+    "searchPlaceholder": "उपयोगकर्ता खोजें",
+    "filterUsers": "उपयोगकर्ता फ़िल्टर करें",
+    "basicInfo": "बुनियादी जानकारी",
+    "accessControl": "पहुंच नियंत्रण",
+    "communication": "संचार"
+  }
+}

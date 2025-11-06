@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Management Tool</title>
+    
+    <!-- Preload THREE.js resources to improve loading reliability -->
+    <link rel="preload" href="https://unpkg.com/three@0.134.0/build/three.min.js" as="script" />
+    
+    <!-- THREE.js Core from CDN with multiple fallbacks -->
+    <script>
+      // Global object to track script loading status
+      window.THREEJS_LOADER = {
+        loaded: false,
+        errors: [],
+        librariesLoaded: {}
+      };
+      
+      // Error handler for script loading
+      function handleScriptError(scriptName) {
+        console.error(`Failed to load ${scriptName} from CDN`);
+        window.THREEJS_LOADER.errors.push(scriptName);
+      }
+    </script>
+    
+    <!-- THREE.js Core (primary) -->
+    <script 
+      src="https://unpkg.com/three@0.134.0/build/three.min.js" 
+      onload="window.THREEJS_LOADER.librariesLoaded.core = true;" 
+      onerror="handleScriptError('THREE.js core'); loadFallbackScript('https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js', 'core');"
+    ></script>
+    
+    <!-- Fallback script loader -->
+    <script>
+      function loadFallbackScript(url, libraryName) {
+        console.log(`Loading fallback for ${libraryName} from ${url}`);
+        const script = document.createElement('script');
+        script.src = url;
+        script.onload = function() {
+          console.log(`Fallback for ${libraryName} loaded successfully`);
+          window.THREEJS_LOADER.librariesLoaded[libraryName] = true;
+        };
+        script.onerror = function() {
+          console.error(`Fallback for ${libraryName} also failed`);
+          window.THREEJS_LOADER.errors.push(`${libraryName} (fallback)`);
+        };
+        document.head.appendChild(script);
+      }
+    </script>
+    
+    <!-- THREE.js Extensions -->
+    <script 
+      src="https://unpkg.com/three@0.134.0/examples/js/controls/OrbitControls.js" 
+      onload="window.THREEJS_LOADER.librariesLoaded.OrbitControls = true;"
+      onerror="handleScriptError('OrbitControls');"
+    ></script>
+    
+    <script 
+      src="https://unpkg.com/three@0.134.0/examples/js/postprocessing/EffectComposer.js" 
+      onload="window.THREEJS_LOADER.librariesLoaded.EffectComposer = true;"
+      onerror="handleScriptError('EffectComposer');"
+    ></script>
+    
+    <script 
+      src="https://unpkg.com/three@0.134.0/examples/js/postprocessing/RenderPass.js" 
+      onload="window.THREEJS_LOADER.librariesLoaded.RenderPass = true;"
+      onerror="handleScriptError('RenderPass');"
+    ></script>
+    
+    <script 
+      src="https://unpkg.com/three@0.134.0/examples/js/postprocessing/ShaderPass.js" 
+      onload="window.THREEJS_LOADER.librariesLoaded.ShaderPass = true;"
+      onerror="handleScriptError('ShaderPass');"
+    ></script>
+    
+    <script 
+      src="https://unpkg.com/three@0.134.0/examples/js/postprocessing/OutlinePass.js" 
+      onload="window.THREEJS_LOADER.librariesLoaded.OutlinePass = true;"
+      onerror="handleScriptError('OutlinePass');"
+    ></script>
+    
+    <!-- Script to verify and fix THREE.js loading -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Fix namespace issues
+        function fixNamespace() {
+          if (window.THREE) {
+            // Save reference to the global THREE object
+            window.THREEJS = window.THREE;
+            
+            // Fix known namespace issues
+            if (window.OrbitControls && !window.THREE.OrbitControls) {
+              window.THREE.OrbitControls = window.OrbitControls;
+            }
+            if (window.EffectComposer && !window.THREE.EffectComposer) {
+              window.THREE.EffectComposer = window.EffectComposer;
+            }
+            if (window.RenderPass && !window.THREE.RenderPass) {
+              window.THREE.RenderPass = window.RenderPass;
+            }
+            if (window.ShaderPass && !window.THREE.ShaderPass) {
+              window.THREE.ShaderPass = window.ShaderPass;
+            }
+            if (window.OutlinePass && !window.THREE.OutlinePass) {
+              window.THREE.OutlinePass = window.OutlinePass;
+            }
+            
+            window.THREEJS_LOADER.loaded = true;
+            console.log("✅ THREE.js namespace fixed and ready");
+          } else {
+            console.error("❌ THREE.js core library not available");
+          }
+        }
+        
+        // Try to fix immediately
+        fixNamespace();
+        
+        // Also try again after a short delay to ensure all scripts have loaded
+        setTimeout(fixNamespace, 500);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

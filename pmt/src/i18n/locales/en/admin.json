@@ -1,0 +1,112 @@
+{
+  "dashboard": {
+    "title": "Admin Dashboard",
+    "summary": "Admin Overview",
+    "cards": {
+      "users": "Users",
+      "projects": "Projects",
+      "tasks": "Tasks",
+      "security": "Security Status"
+    },
+    "metrics": {
+      "active": "Active",
+      "completed": "Completed",
+      "new": "New",
+      "overdue": "Overdue",
+      "threats": "Threats",
+      "vulnerabilities": "Vulnerabilities"
+    },
+    "sections": {
+      "keyMetrics": "Key Metrics",
+      "activityCharts": "Activity Charts",
+      "systemHealth": "System Health",
+      "recentActivity": "Recent Activity",
+      "teamAndEvents": "Team & Events"
+    },
+    "charts": {
+      "active": "Active",
+      "completed": "Completed",
+      "pending": "Pending",
+      "projectStatusDistribution": "Project Status Distribution",
+      "taskCompletion": "Task Completion",
+      "userActivity": "User Activity",
+      "taskTrend": "Task Completion Trend",
+      "tasksCreated": "Tasks Created",
+      "tasksCompleted": "Tasks Completed",
+      "activeUsers": "Active Users"
+    },
+    "system": {
+      "cpu": "CPU Usage",
+      "memory": "Memory Usage",
+      "disk": "Disk Space",
+      "uptime": "Uptime",
+      "days": "days",
+      "temperature": "Temperature",
+      "services": "Services",
+      "lastReboot": "Last Reboot",
+      "networkIn": "Network In",
+      "networkOut": "Network Out"
+    },
+    "noActivity": "No recent activity",
+    "view": "View",
+    "viewAll": "View All",
+    "loadError": "Failed to load dashboard data",
+    "retry": "Retry",
+    "teamStatus": "Team Status",
+    "activeMembers": "Active Members",
+    "projectProgress": "Project Progress",
+    "manageTeam": "Manage Team",
+    "upcomingEvents": "Upcoming Events",
+    "attendees": "attendees",
+    "viewDetails": "View Details",
+    "viewCalendar": "View Calendar"
+  },
+  "userManagement": {
+    "title": "User Management",
+    "createUser": "Create User",
+    "editUser": "Edit User",
+    "deleteUser": "Delete User",
+    "roles": {
+      "title": "Roles",
+      "admin": "Administrator",
+      "manager": "Manager",
+      "user": "Regular User",
+      "guest": "Guest"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive",
+      "suspended": "Suspended",
+      "pending": "Pending Approval"
+    }
+  },
+  "auditLogs": {
+    "title": "Audit Logs",
+    "exportLogs": "Export Logs",
+    "filterByDate": "Filter by Date",
+    "filterByUser": "Filter by User",
+    "filterByAction": "Filter by Action",
+    "noLogsFound": "No logs found matching your criteria"
+  },
+  "systemSettings": {
+    "title": "System Settings",
+    "general": "General Settings",
+    "security": "Security Settings",
+    "backup": "Backup & Restore",
+    "maintenance": "System Maintenance",
+    "apiKeys": "API Keys"
+  },
+  "tools": {
+    "title": "Admin Tools",
+    "databaseBackup": "Database Backup",
+    "exportData": "Export Data",
+    "bulkImport": "Bulk Import",
+    "securityScan": "Security Scan",
+    "printAllData": "Print All Data",
+    "processing": "Processing...",
+    "backupFolderPath": "Backup Folder Path",
+    "confirmBackup": "Confirm Backup",
+    "output": "Output",
+    "usingCachedData": "Using cached data from previous session"
+  }
+}

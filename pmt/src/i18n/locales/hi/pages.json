@@ -1,0 +1,141 @@
+{
+  "app": {
+    "title": "प्रोजेक्ट मैनेजमेंट टूल"
+  },
+  "home": {
+    "title": "होम",
+    "welcomeMessage": "प्रोजेक्ट मैनेजमेंट टूल में आपका स्वागत है"
+  },
+  "login": {
+    "title": "लॉगिन - प्रोजेक्ट मैनेजमेंट टूल",
+    "username": "उपयोगकर्ता नाम",
+    "password": "पासवर्ड",
+    "submit": "लॉगिन करें",
+    "forgotPassword": "पासवर्ड भूल गए?",
+    "registerPrompt": "खाता नहीं है? रजिस्टर करें"
+  },
+  "register": {
+    "title": "रजिस्टर",
+    "fullName": "पूरा नाम",
+    "email": "ईमेल",
+    "username": "उपयोगकर्ता नाम",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड की पुष्टि करें",
+    "submit": "रजिस्टर करें",
+    "loginPrompt": "पहले से खाता है? लॉगिन करें",
+    "termsAgreement": "मैं नियम और शर्तों से सहमत हूं"
+  },
+  "registration": {
+    "title": "पंजीकरण"
+  },
+  "dashboard": {
+    "title": "डैशबोर्ड",
+    "welcome": "स्वागत है, {{name}}",
+    "projects": "प्रोजेक्ट्स",
+    "tasks": "कार्य",
+    "meetings": {
+      "title": "मीटिंग्स"
+    },
+    "reports": "रिपोर्ट्स",
+    "teams": "टीम्स"
+  },
+  "teamMemberDashboard": {
+    "title": "टीम सदस्य डैशबोर्ड",
+    "tasks": "कार्य",
+    "files": "फ़ाइलें",
+    "chat": "चैट"
+  },
+  "userDashboard": {
+    "title": "उपयोगकर्ता डैशबोर्ड",
+    "overview": "अवलोकन",
+    "files": "फ़ाइलें",
+    "integrations": "एकीकरण",
+    "settings": "सेटिंग्स"
+  },
+  "adminDashboard": {
+    "title": "व्यवस्थापक डैशबोर्ड",
+    "users": "उपयोगकर्ता",
+    "projects": "प्रोजेक्ट्स",
+    "security": "सुरक्षा",
+    "settings": "सेटिंग्स"
+  },
+  "tasks": {
+    "title": "कार्य",
+    "addTask": "कार्य जोड़ें",
+    "editTask": "कार्य संपादित करें",
+    "deleteTask": "कार्य हटाएं",
+    "status": "स्थिति",
+    "priority": "प्राथमिकता",
+    "dueDate": "समाप्ति तिथि",
+    "assignedTo": "को सौंपा गया",
+    "description": "विवरण"
+  },
+  "projects": {
+    "title": "प्रोजेक्ट्स",
+    "addProject": "प्रोजेक्ट जोड़ें",
+    "editProject": "प्रोजेक्ट संपादित करें",
+    "deleteProject": "प्रोजेक्ट हटाएं",
+    "projectName": "प्रोजेक्ट का नाम",
+    "description": "विवरण",
+    "startDate": "प्रारंभ तिथि",
+    "endDate": "समाप्ति तिथि",
+    "status": "स्थिति"
+  },
+  "projectPoster": {
+    "title": "प्रोजेक्ट पोस्टर"
+  },
+  "teams": {
+    "title": "टीम्स",
+    "addTeam": "टीम जोड़ें",
+    "editTeam": "टीम संपादित करें",
+    "deleteTeam": "टीम हटाएं",
+    "teamName": "टीम का नाम",
+    "members": "सदस्य",
+    "addMember": "सदस्य जोड़ें"
+  },
+  "viewTeam": {
+    "title": "टीम विवरण"
+  },
+  "reports": {
+    "title": "रिपोर्ट्स",
+    "generateReport": "रिपोर्ट जनरेट करें",
+    "reportType": "रिपोर्ट प्रकार",
+    "dateRange": "दिनांक श्रेणी",
+    "project": "प्रोजेक्ट",
+    "export": "निर्यात करें"
+  },
+  "meeting": {
+    "title": "वीडियो कॉल",
+    "scheduleMeeting": "मीटिंग शेड्यूल करें",
+    "joinMeeting": "मीटिंग में शामिल हों",
+    "endMeeting": "मीटिंग समाप्त करें",
+    "participants": "प्रतिभागी",
+    "date": "दिनांक",
+    "time": "समय"
+  },
+  "meetings": {
+    "title": "मीटिंग्स"
+  },
+  "meetingReports": {
+    "title": "मीटिंग रिपोर्ट्स"
+  },
+  "community": {
+    "title": "समुदाय",
+    "posts": "पोस्ट्स",
+    "createPost": "पोस्ट बनाएं",
+    "helpRequests": "सहायता अनुरोध",
+    "askForHelp": "सहायता मांगें"
+  },
+  "chat": {
+    "title": "चैट"
+  },
+  "resetPassword": {
+    "title": "पासवर्ड रीसेट करें"
+  },
+  "landing": {
+    "title": "प्रोजेक्ट मैनेजमेंट टूल में आपका स्वागत है",
+    "subtitle": "AI संचालित प्रोजेक्ट प्रबंधन के साथ अपने वर्कफ़्लो को सुव्यवस्थित करें",
+    "getStarted": "शुरू करें",
+    "learnMore": "और जानें"
+  }
+}

@@ -1,0 +1,821 @@
+{
+  "sidebar": {
+    "title": "Navigation",
+    "collapse": "Collapse sidebar",
+    "expand": "Expand sidebar",
+    "version": "v1.0.0",
+    "items": {
+      "dashboard": "Dashboard",
+      "projects": "Projects",
+      "tasks": "Tasks",
+      "teams": "Teams",
+      "reports": "Reports",
+      "settings": "Settings"
+    }
+  },
+  "app": {
+    "title": "Project Management Tool",
+    "welcome": "Welcome to the Project Management Tool",
+    "tagline": "Streamline your workflow with our comprehensive project management solution",
+    "loading": "Loading application...",
+    "footer": "© {{year}} Project Management Tool - All rights reserved"
+  },
+  "auth": {
+    "login": {
+      "title": "Login to Your Account",
+      "email": "Email Address",
+      "password": "Password",
+      "welcomeBack": "Welcome Back!",
+      "signInPrompt": "Sign in to continue to your workspace",
+      "forgotPassword": "Forgot Password?",
+      "signIn": "Sign In",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign Up",
+      "rememberMe": "Remember me",
+      "loginFailed": "Invalid email or password. Please try again.",
+      "sessionExpired": "Your session has expired. Please sign in again.",
+      "loggingIn": "Signing in...",
+      "logoAlt": "Project Management Tool Logo",
+      "signingIn": "Signing In...",
+      "invalidCredentials": "Invalid email or password"
+    },
+    "registration": {
+      "title": "Create New Account",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "company": "Company Name",
+      "phone": "Phone Number",
+      "terms": "I agree to the Terms and Privacy Policy",
+      "button": "Register",
+      "existingAccount": "Already have an account?",
+      "signIn": "Sign In",
+      "passwordRequirements": "Password must contain:",
+      "requirementLength": "8+ characters",
+      "requirementNumber": "1 number",
+      "requirementSpecial": "1 special character"
+    }
+  },
+  "onboarding": {
+    "welcome": "Welcome to IntelliFlow!",
+    "step1": {
+      "title": "Set Up Your Profile",
+      "description": "Tell us about yourself to personalize your experience"
+    },
+    "step2": {
+      "title": "Create Your First Project",
+      "description": "Get started by setting up your initial project"
+    },
+    "step3": {
+      "title": "Invite Team Members",
+      "description": "Collaborate by adding team members"
+    },
+    "step4": {
+      "title": "Connect Tools",
+      "description": "Integrate with your favorite apps"
+    },
+    "skip": "Skip for now",
+    "next": "Next",
+    "complete": "Get Started"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "projects": "Projects",
+    "tasks": "Tasks",
+    "team": "Team",
+    "settings": "Settings",
+    "reports": "Reports",
+    "calendar": "Calendar",
+    "resources": "Resources",
+    "logout": "Sign out",
+    "profile": "My Profile"
+  },
+  "projects": {
+    "title": "Projects",
+    "create": "Create Project",
+    "edit": "Edit Project",
+    "delete": "Delete Project",
+    "name": "Name",
+    "description": "Description",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "status": "Status",
+    "priority": "Priority",
+    "budget": "Budget",
+    "manager": "Project Manager",
+    "members": "Team Members",
+    "noProjects": "No projects found",
+    "filterByStatus": "Filter by status",
+    "statuses": {
+      "notStarted": "Not Started",
+      "inProgress": "In Progress",
+      "onHold": "On Hold",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "priorities": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "confirmDelete": "Are you sure you want to delete this project? This action cannot be undone.",
+    "assignManager": "Assign Project Manager",
+    "enterManagerId": "Enter Manager User ID",
+    "managerAssignSuccess": "Project Manager assigned successfully!",
+    "managerAssignError": "Error assigning project manager.",
+    "errors": {
+      "nameRequired": "Project name is required",
+      "managerRequired": "Manager is required",
+      "invalidDateRange": "End date must be after start date"
+    }
+  },
+  "tasks": {
+    "title": "Tasks",
+    "create": "Create Task",
+    "edit": "Edit Task",
+    "delete": "Delete Task",
+    "name": "Name",
+    "description": "Description",
+    "assignee": "Assignee",
+    "dueDate": "Due Date",
+    "status": "Status",
+    "priority": "Priority",
+    "project": "Project",
+    "estimatedHours": "Estimated Hours",
+    "actualHours": "Actual Hours",
+    "dependencies": "Dependencies",
+    "attachments": "Attachments",
+    "comments": "Comments",
+    "noTasks": "No tasks found",
+    "addComment": "Add Comment",
+    "statuses": {
+      "todo": "To Do",
+      "inProgress": "In Progress",
+      "inReview": "In Review",
+      "done": "Done",
+      "blocked": "Blocked"
+    }
+  },
+  "team": {
+    "members": "Team Members",
+    "addMember": "Add Member",
+    "removeMember": "Remove Member",
+    "role": "Role",
+    "skills": "Skills",
+    "availability": "Availability",
+    "contactInfo": "Contact Information",
+    "roles": {
+      "admin": "Administrator",
+      "manager": "Project Manager",
+      "developer": "Developer",
+      "designer": "Designer",
+      "tester": "Tester"
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome, {{name}}!",
+    "summary": "Project Summary",
+    "recentActivities": "Recent Activities",
+    "upcomingDeadlines": "Upcoming Deadlines",
+    "projectProgress": "Project Progress",
+    "taskDistribution": "Task Distribution",
+    "teamWorkload": "Team Workload"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile Settings",
+    "notifications": "Notification Settings",
+    "appearance": "Appearance",
+    "language": "Language",
+    "privacy": "Privacy Settings",
+    "security": "Security",
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System Default"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "search": "Search",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "yes": "Yes",
+    "no": "No",
+    "filter": "Filter",
+    "sort": "Sort",
+    "apply": "Apply",
+    "reset": "Reset",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "success": "Success!",
+    "error": "Error occurred",
+    "copied": "Copied to clipboard",
+    "dateFormat": "MM/DD/YYYY",
+    "refresh": "Refresh",
+    "viewAll": "View All",
+    "unknown": "Unknown",
+    "assign": "Assign Manager",
+    "close": "Close",
+    "na": "N/A",
+    "genericError": "An error occurred",
+    "none": "None",
+    "logout": "Logout",
+    "login": "Sign In",
+    "completed": "Completed"
+  },
+  "validation": {
+    "required": "This field is required",
+    "minLength": "Must be at least {{count}} characters",
+    "maxLength": "Cannot exceed {{count}} characters",
+    "email": "Invalid email address",
+    "passwordMatch": "Passwords do not match",
+    "date": "Invalid date format",
+    "number": "Must be a number"
+  },
+  "errors": {
+    "401": "Unauthorized - Please login",
+    "403": "Forbidden - You don't have permission",
+    "404": "Resource not found",
+    "500": "Server error - Please try again later",
+    "network": "Network error - Check your connection",
+    "loginFailed": "Invalid email or password",
+    "sessionExpired": "Session expired - Please login again",
+    "rateLimit": "Too many requests - Please wait",
+    "serverError": "Server responded with {{status}}",
+    "networkError": "Network error - request was made but no response received",
+    "unknownError": "Unknown error occurred",
+    "somethingWentWrong": "Something went wrong",
+    "applicationCrashed": "The application encountered an error",
+    "tryAgain": "Try again",
+    "returnHome": "Return home"
+  },
+  "emptyStates": {
+    "projects": {
+      "title": "No Projects Yet",
+      "description": "Create your first project to get started",
+      "action": "Create Project"
+    },
+    "tasks": {
+      "title": "No Tasks Found",
+      "description": "Add tasks to organize your work",
+      "action": "Add Task"
+    },
+    "team": {
+      "title": "No Team Members",
+      "description": "Invite colleagues to collaborate",
+      "action": "Invite Members"
+    }
+  },
+  "confirmations": {
+    "deleteProject": {
+      "title": "Delete Project",
+      "message": "Are you sure you want to delete this project? All associated tasks will also be removed.",
+      "confirm": "Delete",
+      "cancel": "Cancel"
+    },
+    "leaveProject": {
+      "title": "Leave Project",
+      "message": "You will no longer have access to this project. Are you sure?",
+      "confirm": "Leave",
+      "cancel": "Stay"
+    }
+  },
+  "ai": {
+    "assistant": {
+      "title": "AI Assistant",
+      "prompt": "Ask me anything about your projects...",
+      "suggestions": [
+        "Summarize this project's status",
+        "Who has the most overdue tasks?",
+        "Create a risk assessment report"
+      ],
+      "thinking": "Analyzing your request...",
+      "actions": {
+        "summarize": "Summarize",
+        "enhance": "Enhance Text",
+        "suggest": "Suggest Improvements"
+      }
+    }
+  },
+  "timeTracking": {
+    "title": "Time Tracking",
+    "start": "Start Timer",
+    "stop": "Stop Timer",
+    "manual": "Manual Entry",
+    "today": "Today's Work",
+    "week": "This Week",
+    "project": "Project Time",
+    "task": "Task Time",
+    "billable": "Billable Hours",
+    "nonBillable": "Non-Billable",
+    "description": "Work Description"
+  },
+  "documents": {
+    "title": "Documents",
+    "upload": "Upload Files",
+    "newFolder": "New Folder",
+    "search": "Search Documents",
+    "recent": "Recent Files",
+    "shared": "Shared With Me",
+    "types": {
+      "all": "All Files",
+      "images": "Images",
+      "documents": "Documents",
+      "spreadsheets": "Spreadsheets",
+      "presentations": "Presentations"
+    }
+  },
+  "a11y": {
+    "skipNav": "Skip to main content",
+    "increaseText": "Increase text size",
+    "decreaseText": "Decrease text size",
+    "highContrast": "High contrast mode",
+    "keyboardNav": "Keyboard navigation",
+    "screenReader": "Screen reader mode"
+  },
+  "presence": {
+    "online": "Online",
+    "offline": "Offline",
+    "away": "Away",
+    "busy": "Do Not Disturb",
+    "inMeeting": "In a Meeting",
+    "onVacation": "On Vacation"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "newMessage": "New message from {{user}}",
+    "projectUpdate": "Project update: {{project}}",
+    "taskDue": "Task due soon: {{task}}",
+    "reminder": "Reminder: {{message}}",
+    "markAllRead": "Mark all as read",
+    "clearAll": "Clear all notifications",
+    "noNotifications": "No notifications",
+    "generalNotification": "General Notification",
+    "urgentNotification": "Urgent Notification",
+    "responseReminder": "Response Reminder"
+  },
+  "feedback": {
+    "title": "Feedback",
+    "submit": "Submit Feedback",
+    "rating": "Rate your experience",
+    "comments": "Additional comments",
+    "thankYou": "Thank you for your feedback!",
+    "error": "Error submitting feedback. Please try again."
+  },
+  "chatRoom": {
+    "title": "Chat",
+    "you": "You",
+    "typing": "{{user}} is typing...",
+    "severalTyping": "Several people are typing...",
+    "sendMessage": "Send Message",
+    "typeMessage": "Type a message...",
+    "upload": "Upload",
+    "pin": "Pin message",
+    "unpin": "Unpin message",
+    "teamChat": "Team Chat",
+    "projectChat": "Project Chat - {{projectId}}",
+    "minutes": "{{count}} min ago",
+    "hours": "{{count}} hours ago",
+    "yesterday": "Yesterday",
+    "copy": "Copy Text",
+    "sendNotification": "Send as Notification",
+    "reminder": "Set Reminder",
+    "reminders": {
+      "hour": "In 1 hour",
+      "day": "In 1 day",
+      "week": "In 1 week"
+    }
+  },
+  "languageSelector": {
+    "tooltip": "Change language",
+    "language": "{{language}}"
+  },
+  "hero": {
+    "title": "The AI-Powered Productivity Operating System",
+    "subtitle": "Transform team performance with the world's first self-learning project intelligence platform that anticipates roadblocks, automates workflows, and delivers real-time strategic insights—before you even know you need them.",
+    "getStarted": "Get Started",
+    "bookDemo": "Book 7-min Demo",
+    "tryAI": "Try AI Playground",
+    "joinCommunity": "Join our Community",
+    "kanban": "War Room View",
+    "table": "Analytics View",
+    "timeline": "Timeline View",
+    "kanbanPreview": "AI-powered kanban with predictive insights",
+    "tablePreview": "Data-driven decisions with real-time metrics",
+    "timelinePreview": "Smart timeline with automated dependency mapping"
+  },
+  "features": {
+    "title": "Why Teams Choose IntelliFlow Over Basic Task Managers",
+    "subtitle": "Experience the difference with our AI-powered platform designed for modern teams",
+    "ai": {
+      "title": "AI Co-Pilot",
+      "desc": "Not just automation—your projects get an autonomous strategist",
+      "details": {
+        "1": "Predicts deadline risks 72 hours earlier than manual tracking",
+        "2": "Auto-assigns tasks based on real-time skills mapping",
+        "3": "Generates boardroom-ready reports with one natural language command",
+        "4": "Provides continuous optimization suggestions as work progresses"
+      },
+      "enhancedTitle": "Advanced AI Capabilities",
+      "enhancedSubtitle": "Comprehensive AI functionalities to transform your project management experience",
+      "allFeatures": "All Features",
+      "projectManagement": "Project Management",
+      "teamCollaboration": "Team Collaboration",
+      "intelligentAnalytics": "Intelligent Analytics",
+      "systemIntegrations": "Integrations",
+      "exploreFeatures": "Explore All AI Features",
+      "projectTaskGuidance": {
+        "desc": "Our AI generates detailed implementation guides and intelligently breaks down complex tasks",
+        "guides": {
+          "title": "Implementation Guides",
+          "desc": "AI generates detailed, step-by-step implementation guides for tasks based on historical data, best practices, and individual user skills. These guides break down complex tasks into manageable subtasks and include resource recommendations and estimated completion times."
+        },
+        "decomposition": {
+          "title": "Task Decomposition",
+          "desc": "The system intelligently suggests how to divide large tasks into smaller, actionable components, ensuring a smoother workflow and better progress tracking."
+        }
+      },
+      "timeResource": {
+        "desc": "AI-powered time estimates and resource allocation recommendations to optimize project planning",
+        "estimates": {
+          "title": "Accurate Time Estimates",
+          "desc": "Using historical time entry data, the AI calculates optimistic, realistic, and pessimistic time estimates for tasks. It factors in the team members' skills to adjust estimates dynamically."
+        },
+        "allocation": {
+          "title": "Resource Allocation Recommendations",
+          "desc": "The system recommends optimal resource distribution (e.g., budget allocation, manpower) based on project complexity and past performance, ensuring balanced workloads and efficient operations."
+        }
+      },
+      "teamFormation": {
+        "desc": "Intelligent team composition and workload balancing for optimal project performance",
+        "skillMatching": {
+          "title": "Skill Matching",
+          "desc": "AI evaluates team members' profiles and historical performance to recommend ideal team compositions. It matches required skills for tasks with available expertise, ensuring the best fit for each project."
+        },
+        "workloadBalancing": {
+          "title": "Workload Balancing",
+          "desc": "The system monitors individual workloads and suggests adjustments to prevent burnout and maintain efficiency across the team."
+        }
+      },
+      "predictiveAnalytics": {
+        "desc": "Forecast project progress and identify potential risks before they impact your project",
+        "forecasting": {
+          "title": "Progress Forecasting",
+          "desc": "The AI predicts project progress by analyzing trends and historical data, offering early warnings about potential delays or budget overruns."
+        },
+        "riskIdentification": {
+          "title": "Risk Identification",
+          "desc": "Advanced algorithms assess project risks such as security vulnerabilities, schedule delays, and financial discrepancies, providing actionable recommendations to mitigate these risks."
+        }
+      },
+      "reporting": {
+        "desc": "Generate comprehensive reports and concise content summaries automatically",
+        "generation": {
+          "title": "Dynamic Report Generation",
+          "desc": "The system automatically generates detailed reports, including progress summaries, financial overviews, and team performance metrics. Reports are customizable by role and can be delivered in various formats."
+        },
+        "summarization": {
+          "title": "Content Summarization",
+          "desc": "For lengthy documents or reports, AI generates concise summaries, highlights key metrics, and checks for plagiarism to ensure originality and consistency."
+        }
+      },
+      "fileManagement": {
+        "desc": "Intelligent file handling with compression, integrity verification, and content summarization",
+        "compression": {
+          "title": "File Compression and Integrity",
+          "desc": "The system supports dynamic file compression and converts files to secure hash values to prevent tampering. Users can easily zip files or folders for efficient space management."
+        },
+        "summary": {
+          "title": "Document Summarization",
+          "desc": "AI automatically extracts and summarizes the content of long documents, making it easier for users to get an overview without reading the entire file."
+        }
+      },
+      "chatAssistant": {
+        "desc": "Interact with an intelligent assistant that understands your project context and needs",
+        "interface": {
+          "title": "Chatbot Interface",
+          "desc": "Users interact with an AI-powered chatbot that can answer queries about projects, tasks, and system status. The chatbot uses natural language processing to understand context and provide relevant information."
+        },
+        "contextAware": {
+          "title": "Context-Aware Responses",
+          "desc": "The assistant tailors its responses based on user roles and current project context, ensuring that the advice and recommendations are highly relevant."
+        }
+      },
+      "integration": {
+        "desc": "Seamlessly connect with popular tools and access a marketplace of themes and extensions",
+        "options": {
+          "title": "Flexible Integration Options",
+          "desc": "The system supports seamless integration with popular third-party tools like Slack, Jira, Trello, and VSCode. This allows developers and teams to customize their workflows and access data across platforms."
+        },
+        "marketplace": {
+          "title": "Marketplace for Themes and Extensions",
+          "desc": "A built-in marketplace offers a variety of UI themes and additional feature modules. Users can purchase and apply themes dynamically, just like mobile devices change skins."
+        }
+      },
+      "roles": {
+        "desc": "Create custom roles with specific permissions for different organizational needs",
+        "creation": {
+          "title": "Dynamic Role Creation",
+          "desc": "Administrators can create custom roles with specific permissions to cater to different organizational structures. This flexibility allows single users, small teams, or large enterprises to tailor the system to their unique requirements."
+        },
+        "access": {
+          "title": "Granular Access Control",
+          "desc": "Different levels of access ensure that sensitive features are only available to authorized users, while regular team members get a simplified interface."
+        }
+      },
+      "attendance": {
+        "desc": "Automated attendance monitoring and intelligent work hour allocation",
+        "system": {
+          "title": "Automated Attendance System",
+          "desc": "The platform includes a flexible attendance system with customizable intervals. This system allows managers to monitor active hours and adjust work schedules dynamically."
+        },
+        "allocation": {
+          "title": "Dynamic Work Hour Allotment",
+          "desc": "AI analyzes work patterns and allocates optimal work hours for each team member, ensuring that projects progress steadily and employees are not overburdened."
+        }
+      },
+      "analytics": {
+        "desc": "Monitor key performance metrics and predict potential system issues",
+        "dashboard": {
+          "title": "Real-Time Dashboard",
+          "desc": "The system offers a centralized dashboard that visualizes key performance metrics such as system uptime, resource utilization, budget utilization, and more."
+        },
+        "maintenance": {
+          "title": "Predictive Maintenance",
+          "desc": "By analyzing system metrics, AI can predict potential hardware or software issues and recommend proactive measures to prevent downtime."
+        }
+      },
+      "versionControl": {
+        "desc": "Integrated version tracking and customizable workflow processes",
+        "integrated": {
+          "title": "Integrated Version Control",
+          "desc": "The platform supports version control on a per-team and per-user basis, enabling effective collaboration and tracking of changes over time."
+        },
+        "workflow": {
+          "title": "Customizable Workflow Options",
+          "desc": "Users can define their workflow processes, set deadlines, and manage task dependencies. The system provides notifications and reminders to keep projects on track."
+        }
+      },
+      "showDetails": "Show Details",
+      "workflows": {
+        "title": "Custom Workflows",
+        "desc": "Create tailored workflows for different project types and teams",
+        "details": {
+          "1": "Drag-and-drop workflow designer",
+          "2": "Automated task transitions and notifications",
+          "3": "Custom approval processes and validation rules"
+        }
+      },
+      "military": {
+        "title": "Military-Grade Security",
+        "desc": "Enterprise-level security with advanced encryption and compliance",
+        "details": {
+          "1": "End-to-end encryption for all data",
+          "2": "Role-based access controls and audit logs",
+          "3": "Compliance with GDPR, HIPAA, and ISO standards"
+        }
+      },
+      "integrations": {
+        "title": "Seamless Integrations",
+        "desc": "Connect with your favorite tools and platforms for a unified workflow",
+        "details": {
+          "1": "Over 100+ pre-built integrations with popular tools",
+          "2": "Custom API access for specialized connections",
+          "3": "Bi-directional data sync with external systems"
+        }
+      }
+    }
+  },
+  "results": {
+    "title": "Battle-Tested Results",
+    "faster": "227% faster project kickoffs with AI-generated templates",
+    "saved": "41 hours/month saved per team member on status updates",
+    "earlyWarning": "Early warning system catches 83% of risks before they escalate"
+  },
+  "roi": {
+    "title": "ROI Calculator",
+    "standups": {
+      "before": "5 hrs/team",
+      "after": "22 mins (AI-minuted)"
+    },
+    "risk": {
+      "before": "Post-mortem",
+      "after": "Pre-emptive (avg. 9 days earlier)"
+    },
+    "reports": {
+      "before": "8 hrs/manual",
+      "after": "12 sec/AI-generated"
+    },
+    "enhancedTitle": "Real-World Impact",
+    "enhancedSubtitle": "Measurable outcomes that our AI-powered platform delivers",
+    "downloadReport": "Download Full ROI Report",
+    "enhancedProductivity": {
+      "metric": "68%",
+      "desc": "increase in team productivity with AI task guidance"
+    },
+    "costSavings": {
+      "metric": "42%",
+      "desc": "reduction in project costs through AI resource optimization"
+    },
+    "riskReduction": {
+      "metric": "76%",
+      "desc": "of potential project risks identified before they impact timeline"
+    },
+    "timeToMarket": {
+      "metric": "55%",
+      "desc": "faster time-to-market with AI workflow automation"
+    },
+    "stats": {
+      "speedIncrease": "Faster Project Completion",
+      "averageReturn": "Average Return on Investment",
+      "hoursSaved": "Hours Saved Per Team Member Weekly",
+      "productivityIncrease": "Productivity Increase"
+    }
+  },
+  "perfectFor": {
+    "title": "Perfect For",
+    "scaleups": "Scaleups where processes break at 50+ employees",
+    "distributed": "Distributed teams drowning in async chaos",
+    "gov": "Gov/Healthcare needing airtight audit trails",
+    "vc": "VC-backed startups requiring investor-grade reporting"
+  },
+  "difference": {
+    "title": "The IntelliFlow Difference",
+    "quote": "Other tools show you where your projects are—we show you where they're going, why it matters, and exactly how to optimize the path forward."
+  },
+  "cta": {
+    "title": "See the platform in action",
+    "demo": "Book 7-min Demo",
+    "playground": "Try AI Playground"
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the plan that fits your team's needs",
+    "starter": {
+      "title": "Starter"
+    },
+    "pro": {
+      "title": "Pro"
+    },
+    "enterprise": {
+      "title": "Enterprise"
+    },
+    "mostPopular": "Most Popular",
+    "contactSales": "Contact Sales",
+    "getStarted": "Get Started",
+    "getTrial": "Start Free Trial",
+    "compareFeatures": "Compare Features",
+    "roiCalculator": {
+      "title": "ROI Calculator",
+      "subtitle": "See how much you can save",
+      "cta": "Calculate Your Savings"
+    },
+    "testimonials": {
+      "title": "Customer Testimonials"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions"
+    },
+    "finalCta": {
+      "title": "Ready to get started?",
+      "subtitle": "Join thousands of happy customers",
+      "trial": "Start Free Trial",
+      "sales": "Contact Sales"
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "cards": {
+        "users": "Users",
+        "projects": "Projects",
+        "tasks": "Tasks",
+        "security": "Security Status"
+      },
+      "metrics": {
+        "active": "Active",
+        "completed": "Completed",
+        "new": "New",
+        "overdue": "Overdue",
+        "threats": "Threats",
+        "vulnerabilities": "Vulnerabilities"
+      },
+      "sections": {
+        "keyMetrics": "Key Metrics",
+        "activityCharts": "Activity Charts",
+        "systemHealth": "System Health",
+        "recentActivity": "Recent Activity",
+        "teamAndEvents": "Team & Events"
+      },
+      "charts": {
+        "active": "Active",
+        "completed": "Completed",
+        "pending": "Pending",
+        "projectStatusDistribution": "Project Status Distribution",
+        "taskCompletion": "Task Completion",
+        "userActivity": "User Activity"
+      },
+      "system": {
+        "cpu": "CPU Usage",
+        "memory": "Memory Usage",
+        "disk": "Disk Space",
+        "uptime": "Uptime",
+        "days": "days",
+        "temperature": "Temperature",
+        "services": "Services",
+        "lastReboot": "Last Reboot",
+        "networkIn": "Network In",
+        "networkOut": "Network Out"
+      },
+      "noActivity": "No recent activity",
+      "view": "View",
+      "viewAll": "View All",
+      "viewDetails": "View Details",
+      "attendees": "Attendees",
+      "loadError": "Failed to load dashboard data",
+      "retry": "Retry",
+      "teamStatus": "Team Status",
+      "activeMembers": "Active Members",
+      "projectProgress": "Project Progress",
+      "manageTeam": "Manage Team",
+      "upcomingEvents": "Upcoming Events"
+    },
+    "title": "Admin Dashboard"
+  },
+  "auditLogs": {
+    "title": "Audit Logs",
+    "timestamp": "Timestamp",
+    "action": "Action",
+    "user": "User",
+    "project": "Project",
+    "system": "System",
+    "searchPlaceholder": "Search logs...",
+    "noLogsFound": "No logs found",
+    "timeframe": {
+      "last24Hours": "Last 24 hours",
+      "last7Days": "Last 7 days",
+      "allTime": "All time"
+    }
+  },
+  "dataViz": {
+    "dataExplorer": "Data Explorer",
+    "predictiveAnalytics": "Predictive Analytics",
+    "aiChat": "AI Chat Assistant"
+  },
+  "pages": {
+    "admin": {
+      "title": "Admin Dashboard"
+    }
+  },
+  "integrations": {
+    "slack": {
+      "name": "Slack",
+      "description": "Connect your Slack workspace"
+    },
+    "jira": {
+      "name": "Jira",
+      "description": "Integrate with Jira issues and projects"
+    },
+    "github": {
+      "name": "GitHub",
+      "description": "Connect to GitHub repositories"
+    }
+  },
+  "usecases": {
+    "title": "Use Cases",
+    "executives": "Executives",
+    "executivesCase": "Need real-time visibility into project progress, resource allocation, and financial performance.",
+    "executivesResult": "Get comprehensive dashboards with KPIs, budget tracking, and resource utilization metrics.",
+    "engineers": "Engineers",
+    "engineersCase": "Need to collaborate on technical tasks, track issues, and manage code integration.",
+    "engineersResult": "Access streamlined ticketing system with Git integration and automated workflows.",
+    "pms": "Project Managers",
+    "pmsCase": "Need to plan projects, allocate resources, track progress, and report on milestones.",
+    "pmsResult": "Use interactive Gantt charts, resource allocation tools, and automated reporting."
+  },
+  "login": {
+    "logoAlt": "Company Logo",
+    "welcomeBack": "Welcome Back",
+    "signInPrompt": "Sign in to your account",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign In",
+    "signingIn": "Signing In...",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign up"
+  }
+}

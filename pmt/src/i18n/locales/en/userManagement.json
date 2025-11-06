@@ -1,0 +1,93 @@
+{
+  "title": "User Management",
+  "createUser": "Create User",
+  "editUser": "Edit User",
+  "deleteUser": "Delete User",
+  "fullName": "Full Name",
+  "email": "Email",
+  "username": "Username",
+  "password": "Password",
+  "confirmPassword": "Confirm Password",
+  "role": "Role",
+  "status": "Status",
+  "requirePasswordUpdate": "Require Password Update",
+  "sendWelcomeEmail": "Send Welcome Email",
+  "noUsers": "No users found",
+  "searchUsers": "Search users",
+  "impersonate": "Impersonate User",
+  "impersonateDescription": "Temporarily log in as another user to troubleshoot issues or assist them",
+  "endImpersonation": "End Impersonation",
+  "selectUser": "Select User",
+  "lastActive": "Last Active",
+  "createdAt": "Created At",
+  "actionsColumn": "Actions",
+  "resetPassword": "Reset Password",
+  "passwordReset": "Password Reset",
+  "passwordResetSuccess": "Password has been reset successfully",
+  "passwordResetFailed": "Failed to reset password",
+  "newPassword": "New Password",
+  "welcomeEmail": {
+    "title": "Welcome Email",
+    "sent": "Welcome email sent successfully",
+    "failed": "Failed to send welcome email",
+    "customMessage": "Custom message (optional)",
+    "template": "Email Template",
+    "preview": "Preview Email"
+  },
+  "validation": {
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email format",
+    "usernameRequired": "Username is required",
+    "passwordRequired": "Password is required",
+    "nameRequired": "Full name is required",
+    "confirmPasswordMatch": "Passwords must match",
+    "passwordLength": "Password must be at least 8 characters"
+  },
+  "confirmation": {
+    "deleteTitle": "Confirm Delete",
+    "deleteMessage": "Are you sure you want to delete this user? This action cannot be undone.",
+    "resetPasswordTitle": "Confirm Password Reset",
+    "resetPasswordMessage": "This will reset the user's password and send them a notification. Continue?"
+  },
+  "filters": {
+    "all": "All Users",
+    "active": "Active Users",
+    "inactive": "Inactive Users",
+    "admin": "Administrators",
+    "manager": "Project Managers",
+    "team": "Team Members",
+    "recent": "Recently Active",
+    "custom": "Custom Filter"
+  },
+  "impersonation": {
+    "title": "User Impersonation",
+    "warning": "Important Security Notice",
+    "description": "When impersonating a user, you will have the same access level as that user. All actions performed while impersonating will be logged with your administrator ID.",
+    "responsibly": "Use this feature responsibly.",
+    "currently": "You are currently impersonating:",
+    "return": "Return to your account",
+    "session": "Impersonation session expires in:",
+    "allActionsLogged": "All actions are being logged"
+  },
+  "roles": {
+    "admin": "Administrator",
+    "projectManager": "Project Manager",
+    "teamLeader": "Team Leader",
+    "member": "Member",
+    "developer": "Developer"
+  },
+  "statuses": {
+    "active": "Active",
+    "inactive": "Inactive",
+    "suspended": "Suspended",
+    "pending": "Pending Activation"
+  },
+  "bulkActions": {
+    "title": "Bulk Actions",
+    "activate": "Activate Selected",
+    "deactivate": "Deactivate Selected",
+    "delete": "Delete Selected",
+    "export": "Export Selected",
+    "assign": "Assign to Project"
+  }
+}

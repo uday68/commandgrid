@@ -1,0 +1,54 @@
+{
+  "errors": {
+    "somethingWentWrong": "出现了问题",
+    "projectCreationError": "创建项目时出错",
+    "taskCreationError": "创建任务时出错"
+  },
+  "stats": {
+    "totalUsers": "用户总数",
+    "totalProjects": "项目总数",
+    "totalTasks": "任务总数",
+    "pendingTasks": "待处理任务"
+  },
+  "projects": {
+    "title": "项目",
+    "new": "新项目",
+    "team": "团队",
+    "progress": "进度",
+    "actions": "操作",
+    "members": "成员",
+    "noProjects": "没有可用项目",
+    "noProjectsAvailable": "没有可用项目"
+  },
+  "tasks": {
+    "recentTasks": "最近的任务",
+    "new": "新任务",
+    "title": "标题",
+    "project": "项目",
+    "assignedTo": "分配给",
+    "dueDate": "截止日期",
+    "startDate": "开始日期",
+    "noTasks": "没有可用的最近任务",
+    "createNewTask": "创建新任务",
+    "priority": {
+      "low": "低",
+      "medium": "中",
+      "high": "高"
+    }
+  },
+  "tools": {
+    "title": "管理工具",
+    "databaseBackup": "数据库备份",
+    "exportData": "导出数据",
+    "bulkImport": "批量导入",
+    "securityScan": "安全扫描",
+    "printAllData": "打印所有数据",
+    "processing": "处理中...",
+    "backupFolderPath": "备份文件夹路径",
+    "confirmBackup": "确认备份",
+    "output": "输出",
+    "usingCachedData": "使用上一会话的缓存数据"
+  },
+  "actionFailed": "操作失败",
+  "usingCachedData": "使用缓存数据"
+}

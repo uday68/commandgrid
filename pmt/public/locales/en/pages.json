@@ -1,0 +1,38 @@
+{
+  "app": {
+    "title": "Project Management Tool"
+  },
+  "home": {
+    "title": "Home"
+  },
+  "login": {
+    "title": "Login - Project Management Tool"
+  },
+  "register": {
+    "title": "Register"
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  },
+  "tasks": {
+    "title": "Tasks"
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "meetings": {
+    "title": "Meetings"
+  },
+  "teams": {
+    "title": "Teams"
+  },
+  "settings": {
+    "title": "Settings"
+  },
+  "profile": {
+    "title": "Profile"
+  },
+  "reports": {
+    "title": "Reports"
+  }
+}

@@ -1,0 +1,7 @@
+uuid
+transformers
+fastapi
+jose
+passlib
+reportlab
+smtplib

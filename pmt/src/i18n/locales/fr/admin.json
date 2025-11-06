@@ -1,0 +1,116 @@
+{
+  "errors": {
+    "somethingWentWrong": "Quelque chose s'est mal passé",
+    "projectCreationError": "Erreur lors de la création du projet",
+    "taskCreationError": "Erreur lors de la création de la tâche"
+  },
+  "stats": {
+    "totalUsers": "Utilisateurs Totaux",
+    "totalProjects": "Projets Totaux",
+    "totalTasks": "Tâches Totales",
+    "pendingTasks": "Tâches en Attente"
+  },
+  "projects": {
+    "title": "Projets",
+    "new": "Nouveau Projet",
+    "team": "Équipe",
+    "progress": "Progression",
+    "actions": "Actions",
+    "members": "membres",
+    "noProjects": "Aucun projet disponible",
+    "noProjectsAvailable": "Aucun projet disponible"
+  },
+  "tasks": {
+    "recentTasks": "Tâches Récentes",
+    "new": "Nouvelle Tâche",
+    "title": "Titre",
+    "project": "Projet",
+    "assignedTo": "Assigné à",
+    "dueDate": "Date d'échéance",
+    "startDate": "Date de début",
+    "noTasks": "Aucune tâche récente disponible",
+    "createNewTask": "Créer une Nouvelle Tâche",
+    "priority": {
+      "low": "Faible",
+      "medium": "Moyenne",
+      "high": "Élevée"
+    }
+  },
+  "tools": {
+    "title": "Outils Administratifs",
+    "databaseBackup": "Sauvegarde de Base de Données",
+    "exportData": "Exporter les Données",
+    "bulkImport": "Importation en Masse",
+    "securityScan": "Analyse de Sécurité",
+    "printAllData": "Imprimer Toutes les Données",
+    "processing": "Traitement en cours...",
+    "backupFolderPath": "Chemin du Dossier de Sauvegarde",
+    "confirmBackup": "Confirmer la Sauvegarde",
+    "output": "Sortie",
+    "usingCachedData": "Utilisation des données mises en cache depuis la session précédente"
+  },
+  "actionFailed": "Action Échouée",
+  "usingCachedData": "Utilisation des données en cache",
+  "dashboard": {
+    "title": "Tableau de Bord Administrateur",
+    "summary": "Aperçu Administrateur",
+    "cards": {
+      "users": "Utilisateurs",
+      "projects": "Projets",
+      "tasks": "Tâches",
+      "security": "État de Sécurité"
+    },
+    "metrics": {
+      "active": "Actif",
+      "completed": "Terminé",
+      "new": "Nouveau",
+      "overdue": "En retard",
+      "threats": "Menaces",
+      "vulnerabilities": "Vulnérabilités"
+    },
+    "sections": {
+      "keyMetrics": "Métriques Clés",
+      "activityCharts": "Graphiques d'Activité",
+      "systemHealth": "Santé du Système",
+      "recentActivity": "Activité Récente",
+      "teamAndEvents": "Équipe et Événements"
+    },
+    "charts": {
+      "active": "Actif",
+      "completed": "Terminé",
+      "pending": "En attente",
+      "projectStatusDistribution": "Distribution de l'État des Projets",
+      "taskCompletion": "Achèvement des Tâches",
+      "userActivity": "Activité des Utilisateurs",
+      "taskTrend": "Tendance d'Achèvement des Tâches",
+      "tasksCreated": "Tâches Créées",
+      "tasksCompleted": "Tâches Terminées",
+      "activeUsers": "Utilisateurs Actifs"
+    },
+    "system": {
+      "cpu": "Utilisation CPU",
+      "memory": "Utilisation Mémoire",
+      "disk": "Espace Disque",
+      "uptime": "Temps de Fonctionnement",
+      "days": "jours",
+      "temperature": "Température",
+      "services": "Services",
+      "lastReboot": "Dernier Redémarrage",
+      "networkIn": "Réseau Entrant",
+      "networkOut": "Réseau Sortant"
+    },
+    "noActivity": "Aucune activité récente",
+    "view": "Voir",
+    "viewAll": "Voir Tout",
+    "loadError": "Échec du chargement des données du tableau de bord",
+    "retry": "Réessayer",
+    "teamStatus": "État de l'Équipe",
+    "activeMembers": "Membres Actifs",
+    "projectProgress": "Progression du Projet",
+    "manageTeam": "Gérer l'Équipe",
+    "upcomingEvents": "Événements à Venir",
+    "attendees": "participants",
+    "viewDetails": "Voir les Détails",
+    "viewCalendar": "Voir le Calendrier"
+  }
+}

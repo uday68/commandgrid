@@ -1,0 +1,31 @@
+{
+  "title": "Chat",
+  "you": "Tú",
+  "typing": "{{user}} está escribiendo...",
+  "severalTyping": "Varias personas están escribiendo...",
+  "sendMessage": "Enviar mensaje",
+  "typeMessage": "Escribe un mensaje...",
+  "upload": "Subir",
+  "pin": "Fijar mensaje",
+  "unpin": "Desfijar mensaje",
+  "teamChat": "Chat del equipo",
+  "projectChat": "Chat del proyecto - {{projectId}}",
+  "minutes": "hace {{count}} minutos",
+  "hours": "hace {{count}} horas",
+  "yesterday": "Ayer",
+  "copy": "Copiar texto",
+  "sendNotification": "Enviar como notificación",
+  "reminder": "Establecer recordatorio",
+  "reminders": {
+    "hour": "En 1 hora",
+    "day": "En 1 día",
+    "week": "En 1 semana"
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "noNotifications": "Sin notificaciones",
+    "generalNotification": "Notificación general",
+    "urgentNotification": "Notificación urgente",
+    "responseReminder": "Recordatorio de respuesta"
+  }
+}

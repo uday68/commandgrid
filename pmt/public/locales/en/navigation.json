@@ -1,0 +1,11 @@
+{
+  "dashboard": "Dashboard",
+  "meetings": "Meetings",
+  "projects": "Projects",
+  "tasks": "Tasks",
+  "teams": "Teams",
+  "reports": "Reports",
+  "settings": "Settings",
+  "profile": "Profile",
+  "logout": "Logout"
+}

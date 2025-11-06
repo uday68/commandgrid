@@ -1,0 +1,14 @@
+{
+  "required": "{{field}} مطلوب",
+  "invalidEmail": "يرجى إدخال بريد إلكتروني صحيح",
+  "minLength": "يجب أن يحتوي على الأقل {{count}} أحرف",
+  "maxLength": "لا يمكن أن يتجاوز {{count}} أحرف",
+  "passwordsDontMatch": "كلمات المرور غير متطابقة",
+  "termsRequired": "يجب الموافقة على الشروط والأحكام للمتابعة",
+  "invalidFormat": "تنسيق غير صالح",
+  "invalidDate": "يرجى إدخال تاريخ صالح",
+  "invalidNumber": "يرجى إدخال رقم صالح",
+  "emailExists": "هذا البريد الإلكتروني مسجل بالفعل",
+  "weakPassword": "كلمة المرور ضعيفة جدا",
+  "invalidPhone": "يرجى إدخال رقم هاتف صالح"
+}

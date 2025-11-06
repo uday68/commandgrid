@@ -1,0 +1,143 @@
+{
+  "hero": {
+    "title": "Gestion de Projet Alimentée par l'IA pour les Équipes Haute Performance",
+    "subtitle": "La plateforme intelligente qui aide les équipes à automatiser les tâches routinières, prévoir les obstacles, et terminer les projets plus rapidement et plus efficacement.",
+    "getStarted": "Commencer",
+    "bookDemo": "Réserver une Démo",
+    "tryAI": "Essayer l'Assistant IA",
+    "joinCommunity": "Rejoindre notre Communauté",
+    "kanban": "Kanban",
+    "table": "Tableau",
+    "timeline": "Chronologie",
+    "kanbanPreview": "Visualisez Votre Flux de Travail",
+    "tablePreview": "Suivez Tous les Détails du Projet",
+    "timelinePreview": "Surveillez la Chronologie du Projet"
+  },
+  "features": {
+    "title": "Fonctionnalités Principales",
+    "subtitle": "Conçu pour les équipes modernes avec des outils puissants pour améliorer la collaboration et la productivité",
+    "showDetails": "Afficher les Détails",
+    "hideDetails": "Masquer les Détails",
+    "ai": {
+      "title": "Assistant IA",
+      "desc": "Conseils intelligents sur les tâches, les délais et les ressources",
+      "details": {
+        "1": "Recommandations intelligentes de tâches basées sur la charge de travail actuelle",
+        "2": "Estimation automatique du temps à partir des données historiques",
+        "3": "Identification des risques avant que les problèmes ne surviennent",
+        "4": "Résumé des réunions et extraction des éléments d'action"
+      }
+    }
+  },
+  "results": {
+    "title": "Résultats Réels pour des Équipes Comme la Vôtre",
+    "faster": "Achèvement des Projets 35% Plus Rapide",
+    "saved": "Réduction des Coûts de 28%",
+    "earlyWarning": "87% des Problèmes Identifiés Précocement"
+  },
+  "technical": {
+    "title": "Excellence Technique",
+    "cognitive": "Assistant IA Cognitif",
+    "multiagent": "Collaboration Multi-Agents",
+    "realtime": "Analyses en Temps Réel",
+    "predictive": "Évaluation Prédictive des Risques",
+    "enterprise": "Sécurité de Niveau Entreprise"
+  },
+  "usecases": {
+    "title": "Histoires de Réussite",
+    "executives": "Direction Exécutive",
+    "executivesCase": "\"Nous avions besoin d'un moyen de comprendre rapidement l'état des projets à travers 12 équipes\"",
+    "executivesResult": "Les tableaux de bord exécutifs offrent une visibilité instantanée sur les métriques de santé des projets et les goulots d'étranglement potentiels, économisant 5 heures par semaine en réunions de statut.",
+    "engineers": "Équipes d'Ingénierie",
+    "engineersCase": "\"La gestion des tâches à travers plusieurs référentiels devenait chaotique\"",
+    "engineersResult": "L'intégration avec les systèmes de contrôle de version crée des mises à jour automatiques des tâches, réduisant le suivi manuel de 40% et améliorant le temps de livraison du code.",
+    "pms": "Chefs de Projet",
+    "pmsCase": "\"Prévoir les délais avec précision était notre plus grand défi\"",
+    "pmsResult": "L'estimation propulsée par l'IA a amélioré la précision des prévisions de 65%, permettant des engagements clients plus fiables et une meilleure allocation des ressources."
+  },
+  "roi": {
+    "title": "La Valeur que Nous Délivrons",
+    "standups": {
+      "before": "15 minutes par personne quotidiennement",
+      "after": "5 minutes par personne quotidiennement"
+    },
+    "risk": {
+      "before": "Trouvé dans les phases tardives",
+      "after": "Prédit avant l'impact"
+    },
+    "reports": {
+      "before": "4 heures de préparation hebdomadaire",
+      "after": "Générés automatiquement"
+    },
+    "enhancedTitle": "Impact dans le Monde Réel",
+    "enhancedSubtitle": "Résultats mesurables que notre plateforme propulsée par l'IA délivre",
+    "downloadReport": "Télécharger le Rapport ROI Complet",
+    "enhancedProductivity": {
+      "metric": "68%",
+      "desc": "d'augmentation de la productivité de l'équipe avec l'orientation IA des tâches"
+    },
+    "costSavings": {
+      "metric": "42%",
+      "desc": "de réduction des coûts de projet grâce à l'optimisation des ressources par l'IA"
+    },
+    "riskReduction": {
+      "metric": "76%",
+      "desc": "des risques potentiels de projet identifiés avant qu'ils n'affectent le calendrier"
+    },
+    "timeToMarket": {
+      "metric": "55%",
+      "desc": "de mise sur le marché plus rapide avec l'automatisation du flux de travail par l'IA"
+    }
+  },
+  "perfectFor": {
+    "title": "Parfait Pour",
+    "scaleups": "Startups en Croissance",
+    "distributed": "Équipes Distribuées",
+    "gov": "Projets Gouvernementaux",
+    "vc": "Gestion de Portefeuille de VC"
+  },
+  "difference": {
+    "title": "La Différence IntelliFlow",
+    "quote": "Contrairement aux outils traditionnels de gestion de projet, nous exploitons l'intelligence artificielle pour non seulement suivre le travail mais le guider activement vers une conclusion réussie."
+  },
+  "cta": {
+    "title": "Prêt à transformer votre gestion de projet?",
+    "demo": "Réserver une Démo",
+    "playground": "Essayer le Terrain de Jeu IA"
+  },
+  "pricing": {
+    "title": "Tarification Simple et Transparente",
+    "subtitle": "Choisissez le plan qui convient à votre équipe",
+    "starter": {
+      "title": "Débutant"
+    },
+    "pro": {
+      "title": "Professionnel"
+    },
+    "enterprise": {
+      "title": "Entreprise"
+    },
+    "mostPopular": "Le Plus Populaire",
+    "contactSales": "Contacter les Ventes",
+    "getStarted": "Commencer",
+    "getTrial": "Démarrer l'Essai Gratuit",
+    "compareFeatures": "Comparer les Fonctionnalités",
+    "roiCalculator": {
+      "title": "Calculez Votre ROI",
+      "subtitle": "Voyez combien de temps et d'argent vous pourriez économiser en utilisant notre plateforme. Nos clients typiques voient un ROI en quelques semaines, pas en mois.",
+      "cta": "Calculez Vos Économies"
+    },
+    "testimonials": {
+      "title": "Ce que Disent Nos Clients"
+    },
+    "faq": {
+      "title": "Questions Fréquemment Posées"
+    },
+    "finalCta": {
+      "title": "Prêt à Commencer?",
+      "subtitle": "Rejoignez des milliers d'équipes qui ont transformé leur approche de gestion de projet et ont vu un ROI incroyable.",
+      "trial": "Démarrer Votre Essai Gratuit",
+      "sales": "Parler aux Ventes"
+    }
+  }
+}

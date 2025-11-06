@@ -1,0 +1,16 @@
+{
+  "title": "संवादः",
+  "typing": "{{user}} लिखति...",
+  "send": "प्रेषयतु",
+  "typeMessage": "संदेशं लिखतु...",
+  "pinnedMessages": "आरोपित-संदेशाः",
+  "unpin": "अनारोपयतु",
+  "pin": "आरोपयतु",
+  "you": "भवान्",
+  "minimize": "न्यूनीकरोतु",
+  "maximize": "विस्तारयतु",
+  "restore": "पुनर्स्थापयतु",
+  "teamChat": "दलस्य संवादः",
+  "projectChat": "परियोजनायाः संवादः - {projectId}",
+  "severalTyping": "बहवः जनाः लिखन्ति..."
+}

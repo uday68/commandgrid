@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Login Storage</title>
+</head>
+<body>
+    <h1>Debug Login Storage</h1>
+    <button onclick="checkStorage()">Check Storage</button>
+    <button onclick="clearStorage()">Clear Storage</button>
+    <div id="output"></div>
+
+    <script>
+        function checkStorage() {
+            const output = document.getElementById('output');
+            const authToken = localStorage.getItem('authToken');
+            const refreshToken = localStorage.getItem('refreshToken');
+            const user = localStorage.getItem('user');
+            const userData = localStorage.getItem('userData');
+
+            output.innerHTML = `
+                <h2>Storage Contents:</h2>
+                <p><strong>authToken:</strong> ${authToken ? 'EXISTS' : 'NOT FOUND'}</p>
+                <p><strong>refreshToken:</strong> ${refreshToken ? 'EXISTS' : 'NOT FOUND'}</p>
+                <p><strong>user:</strong> ${user ? 'EXISTS' : 'NOT FOUND'}</p>
+                <p><strong>userData:</strong> ${userData ? 'EXISTS' : 'NOT FOUND'}</p>
+                
+                <h3>User Data:</h3>
+                <pre>${user}</pre>
+                
+                <h3>User Data (old key):</h3>
+                <pre>${userData}</pre>
+            `;
+        }
+
+        function clearStorage() {
+            localStorage.clear();
+            alert('Storage cleared');
+        }
+
+        // Auto-check on page load
+        checkStorage();
+    </script>
+</body>
+</html>
